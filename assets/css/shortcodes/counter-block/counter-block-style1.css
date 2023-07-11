@@ -1,0 +1,44 @@
+.counter-item {
+  position: relative;
+  z-index: 1;
+  padding: 65px 50px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(76, 76, 76, 0.1);
+}
+.counter-item:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+.counter-item:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #e9e056;
+  -webkit-filter: blur(57.5px);
+  filter: blur(57.5px);
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.counter-item .counter-icon {
+  font-size: 64px;
+  color: var(--theme-color1);
+  margin-bottom: 15px;
+  line-height: 1;
+}
+.counter-item .text .counter {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 56px;
+  line-height: 60px;
+}

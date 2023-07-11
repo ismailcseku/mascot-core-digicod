@@ -1,0 +1,100 @@
+.tm-give-donation-form {
+  border: 1px solid #ddd;
+  @include transition( all .3s ease);
+  .give-donation-form-inner {
+    .form-progress-goal-block {
+      @include transition( all .3s ease);
+      .form-progress-goal-header-text {
+        .subtitle {
+          margin-top: 0;
+          margin-bottom: 0;
+          @include transition( all .3s ease);
+        }
+        .title {
+          margin-top: 0;
+          margin-bottom: 10px;
+          @include transition( all .3s ease);
+        }
+        .description {
+          margin-bottom: 20px;
+          @include transition( all .3s ease);
+        }
+      }
+      .give-goal-raised {
+        .goal-raised-inner {
+          display: flex;
+          justify-content: space-between;
+          .goal, .raised {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: left;
+            .value {
+              font-size: 26px;
+              font-weight: bold;
+              color: var(--theme-color1);
+            }
+            .label {
+              font-size: 14px;
+              color: #111;
+            }
+          }
+          .raised {
+            text-align: right;
+          }
+        }
+      }
+      .give-goal-progress-bar {
+        .tm-sc-progress-bar { 
+          .progress-holder {
+            background-color:#fff;
+            height: 15px;
+            overflow: hidden;
+            .progress-content {
+              height: 15px;
+            }
+          }
+        }
+      }
+      .give-btn-modal {
+        color: var(--text-color-bg-theme-color1);
+        background: var(--theme-color1);
+        padding: 23px 20px;
+        outline: none;
+        border-radius: 2px;
+        margin-top: 15px;
+        @include transition( all .3s ease);
+        &:hover {
+          color: var(--text-color-bg-theme-color2);
+          background: var(--theme-color2);
+        }
+      }
+    }
+    .form-block {
+      @include transition( all .3s ease);
+      .form-header-text {
+        .subtitle {
+          margin-top: 0;
+          margin-bottom: 0;
+          @include transition( all .3s ease);
+        }
+        .title {
+          margin-top: 0;
+          margin-bottom: 10px;
+          @include transition( all .3s ease);
+        }
+        .description {
+          margin-bottom: 20px;
+          @include transition( all .3s ease);
+        }
+      }
+      .give-btn-modal {
+        @include transition( all .3s ease);
+      }
+    }
+  }
+}
+
+.give-modal .mfp-content [id*=give-form] #give-payment-mode-select {
+  clear: both;
+  padding: 20px 0 0;
+}

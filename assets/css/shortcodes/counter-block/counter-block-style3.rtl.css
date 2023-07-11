@@ -1,0 +1,29 @@
+.counter-block-three {
+  padding: 50px 30px 40px;
+  border-radius: 7px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  z-index: 1;
+  position: relative;
+}
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-three {
+    transition: none;
+  }
+}
+.counter-block-three:hover {
+  border-color: var(--theme-color1);
+}
+.counter-block-three .counter-icon {
+  font-size: 64px;
+  color: var(--theme-color1);
+  margin-bottom: 15px;
+  line-height: 1;
+}
+.counter-block-three .text .counter {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 56px;
+  line-height: 60px;
+}

@@ -1,0 +1,89 @@
+.tm-sc-tribe-events-vertical-list1 {
+  .event {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    @include transition(all .3s ease-in-out);
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+    .event-left {
+      .event-date {
+        background: #fff;
+        border: 1px solid rgba(200,200,200,0.3);
+        border-radius: 10px;
+        margin-right: 20px;
+        padding: 20px 30px;
+        text-align: center;
+        @include box-shadow( 0px 0px 22px 0px rgba(5, 5, 5, 0.07) );
+        @include transition(all .3s ease-in-out);
+        .day {
+          color: $headings-color;
+          font-size: 26px;
+          line-height: 1.1;
+          @include transition(all .3s ease-in-out);
+        }
+        .month {
+          font-size: 15px;
+          line-height: 1.1;
+          @include transition(all .3s ease-in-out);
+        }
+        .year {
+          font-size: 15px;
+          line-height: 1.1;
+          @include transition(all .3s ease-in-out);
+        }
+      }
+      &.has-bg-theme-colored:not(.left-block-bordered) {
+        .event-date {
+          color: #fff;
+        }
+      }
+      .event-thumb {
+        overflow: hidden;
+        border-radius: 10px;
+        margin-right: 20px;
+        @include box-shadow( 0px 0px 22px 0px rgba(5, 5, 5, 0.07) );
+        @include transition(all .3s ease-in-out);
+        img {
+          max-width: 100%;
+        }
+      }
+      @include media-breakpoint-down(md) {
+        margin-bottom: 15px;
+      }
+    }
+    .event-content {
+      margin-right: auto;
+      .event-single-meta-date {
+        color: #fff;
+        background-color: var(--theme-color1);
+        border-radius: 10rem;
+        display: inline-block;
+        padding: 8px 24px;
+        margin-bottom: 0;
+        font-size: 75%;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        @include transition(all .3s ease-in-out);
+      }
+      .event-title {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .event-meta {
+        font-size: 14px;
+        color: #888;
+        .each-meta {
+          display: inline-block;
+          margin-right: 10px;
+        }
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

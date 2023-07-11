@@ -1,0 +1,71 @@
+@import "../../bootstrap-loader";
+
+// Feature Current Style3
+.feature-current-item-style3 {
+  position: relative;
+  margin-bottom: 40px;
+  .inner-box {
+    position: relative;
+    padding-left: 130px;
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+      text-align: center;
+    }
+    &:hover {
+      .icon-box {
+        .icon {
+          background-color: var(--theme-color1);
+          i {
+            color: #fff;
+          }
+        }
+        &:after {
+          background-color: var(--theme-color2);
+          right: -8px;
+          bottom: -8px;
+        }
+      }
+    }
+  }
+  .icon-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-bottom: 25px;
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      display: inline-block;
+    }
+    &:after {
+      position: absolute;
+      left: 20px;
+      top: 7px;
+      right: -4px;
+      bottom: -4px;
+      clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
+      background-color: var(--theme-color1);
+      @include transition(all 300ms ease);
+      content: "";
+    }
+    .icon {
+      position: relative;
+      height: 87px;
+      width: 95px;
+      @include flex-center;
+      z-index: 3;
+      line-height: 1em;
+      background-color: #fff;
+      box-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+      @include transition(all 300ms ease);
+      i {
+        font-size: 62px;
+        color: var(--theme-color1);
+        display: inline-flex;
+      }
+    }
+  }
+  .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}

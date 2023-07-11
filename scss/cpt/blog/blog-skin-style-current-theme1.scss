@@ -1,0 +1,55 @@
+@import "../../bootstrap-loader";
+@import "blog-common";
+
+.blog-item-current-style1 {
+  &:hover {
+    .entry-content {
+      -webkit-box-shadow: 0px 10px 60px 0px rgba(89, 86, 233, 0.1);
+      box-shadow: 0px 10px 60px 0px rgba(89, 86, 233, 0.1);
+      border-color: transparent;
+    }
+  }
+  .entry-content {
+    padding: 40px;
+    border-radius: 7px;
+    border: 1px solid rgba(88, 86, 233, 0.149);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    .post-single-meta {
+      background: var(--theme-color1);
+      color: var(--text-color-bg-theme-color1);
+      display: inline-block;
+      padding: 8px 20px;
+      margin-bottom: 5px;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 5px;
+      @include transition(all 0.3s ease);
+      i {
+        display: none;
+      }
+      a {
+        color: #fff;
+      }
+      &:hover {
+        background: var(--theme-color2);
+        color: var(--text-color-bg-theme-color2);
+      }
+    }
+    .entry-title {
+      margin-bottom: 15px;
+      letter-spacing: -0.03em;
+
+      &:hover {
+        color: var(--theme-color1);
+      }
+    }
+    .post-excerpt {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+}

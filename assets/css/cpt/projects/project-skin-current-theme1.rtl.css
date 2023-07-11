@@ -1,0 +1,96 @@
+.tm-sc-projects .cat-list {
+  list-style: none;
+  margin: 0;
+}
+.tm-sc-projects .cat-list li {
+  display: inline;
+  color: #aaa;
+  margin-left: 7px;
+  font-size: 13px;
+}
+.tm-sc-projects .cat-list li a {
+  color: #aaa;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tm-sc-projects .cat-list li a {
+    transition: none;
+  }
+}
+.tm-sc-projects .cat-list li:last-child span {
+  display: none;
+}
+
+.tm-sc-projects .projects-current-theme1 {
+  margin-bottom: 20px;
+}
+.tm-sc-projects .projects-current-theme1:hover .img-holder .project-hover {
+  visibility: visible;
+  opacity: 1;
+}
+.tm-sc-projects .projects-current-theme1:hover .img-holder .project-hover .hover-content {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.tm-sc-projects .projects-current-theme1 .img-holder {
+  position: relative;
+  overflow: hidden;
+}
+.tm-sc-projects .projects-current-theme1 .img-holder img {
+  width: 100%;
+}
+.tm-sc-projects .projects-current-theme1 .img-holder .project-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 2, 72, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.tm-sc-projects .projects-current-theme1 .img-holder .project-hover .hover-content {
+  -webkit-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  transform: translateY(-40px);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.tm-sc-projects .projects-current-theme1 .img-holder .project-hover .hover-content i {
+  color: #fff;
+  font-size: 34px;
+}
+.tm-sc-projects .projects-current-theme1 .text {
+  padding-top: 20px;
+}
+.tm-sc-projects .projects-current-theme1 .text .title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 34px;
+}
+.tm-sc-projects .projects-current-theme1 .text .title:hover {
+  color: var(--theme-color1);
+}
+.tm-sc-projects .projects-current-theme1 .cat-list li {
+  font-size: 16px;
+  font-weight: 400;
+}
+.tm-sc-projects .projects-current-theme1 .cat-list li:hover {
+  color: var(--theme-color1);
+}

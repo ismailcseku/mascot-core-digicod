@@ -1,0 +1,33 @@
+@import "../../bootstrap-loader";
+@import "testimonial-common";
+.testimonial-block-style10 {
+  .testimonial-content {
+    i {
+      font-size: 55px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .author-text {
+      font-size: 40px;
+      line-height: 1.6;
+      color: #fff;
+      font-weight: 400;
+      margin-bottom: 35px;
+      @include media-breakpoint-down(lg) {
+        font-size: 32px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 26px;
+      }
+    }
+  }
+  .author-details {
+    .testimonial-name {
+      color: #fff;
+      margin: 0;
+    }
+    .testimonial-position {
+      color: #fff;
+    }
+  }
+}

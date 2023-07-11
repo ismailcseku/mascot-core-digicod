@@ -1,0 +1,65 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+
+.service-block-style5 {
+  position: relative;
+  margin-bottom: 30px;
+  .inner-box {
+    position: relative;
+    padding: 40px 40px 35px;
+    height: 100%;
+    background-color: #fafafb;
+    @include transition(all 0.3s ease);
+    &:hover {
+      .icon-box {
+        @include transform(scaleX(-1));
+      }
+    }
+    .icon-box {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 30px;
+      @include transition(all 300ms ease);
+      i {
+        font-size: 60px;
+      }
+    }
+    .service-count {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: var(--theme-color1);
+      width: 51px;
+      height: 52px;
+      font-weight: 700;
+      font-size: 27px;
+      line-height: 52px;
+      text-align: center;
+      color: #fff;
+      border-radius: 0px 0px 0px 10px;
+    }
+    .service-title {
+      margin-bottom: 15px;
+      margin-top: 0;
+      &:hover {
+        color: var(--theme-color1);
+      }
+    }
+    .service-details {
+      margin-bottom: 20px;
+    }
+    .btn-plain-text-with-arrow-right {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1em;
+      @include transform(all 300ms ease);
+      i {
+        margin-left: 10px;
+        font-size: 18px;
+      }
+      &:hover {
+        color: var(--theme-color1);
+      }
+    }
+  }
+}

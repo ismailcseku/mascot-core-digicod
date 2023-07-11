@@ -1,0 +1,40 @@
+.tm-sc-tribe-events {
+  .event {
+    @include transition(all .3s ease);
+    .event-single-meta-date {
+      @include transition(all .3s ease);
+    }
+    .event-content {
+      @include transition(all .3s ease);
+      > :last-child {
+        margin-bottom: 0;
+      }
+    }
+    .event-cat-single,
+    .event-title,
+    .event-excerpt {
+      @include transition(all .3s ease);
+    }
+    .event-meta {
+      @include transition(all .3s ease);
+      .each-meta {
+        i {
+          @include transition(all .3s ease);
+          color: var(--theme-color1);
+          margin-right: 5px;
+        }
+      }
+    }
+    .event-cat-list {
+      list-style: none;
+      font-size: 14px;
+      color: #999;
+      a {
+        color: #999;
+        &:hover {
+          color: var(--hover-theme-color);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "FlaticonDigicod";
+    src: url("fonts/flaticon-set-digicod.ttf") format("truetype"),
+    url("fonts/flaticon-set-digicod.woff") format("woff"),
+    url("fonts/flaticon-set-digicod.woff2") format("woff2"),
+    url("fonts/flaticon-set-digicod.eot#iefix") format("embedded-opentype"),
+    url("fonts/flaticon-set-digicod.svg#FlaticonLogistics") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+i[class^="flaticon-digicod-"]:before, i[class*=" flaticon-digicod-"]:before {
+    font-family: FlaticonDigicod !important;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.flaticon-digicod-geometrical-shape:before {
+    content: "\f101";
+}
+.flaticon-digicod-right-arrow:before {
+    content: "\f102";
+}
+.flaticon-digicod-strategy:before {
+    content: "\f103";
+}
+.flaticon-digicod-design:before {
+    content: "\f104";
+}
+.flaticon-digicod-source-code:before {
+    content: "\f105";
+}
+.flaticon-digicod-start-up:before {
+    content: "\f106";
+}
+.flaticon-digicod-creativity:before {
+    content: "\f107";
+}
+.flaticon-digicod-medal:before {
+    content: "\f108";
+}
+.flaticon-digicod-technical-support:before {
+    content: "\f109";
+}
+.flaticon-digicod-quotation:before {
+    content: "\f10a";
+}

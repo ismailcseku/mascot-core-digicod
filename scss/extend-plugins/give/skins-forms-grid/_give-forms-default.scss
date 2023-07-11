@@ -1,0 +1,122 @@
+.tm-give-forms-default {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .form-inner {
+    background: #fff;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    @include box-shadow( 0px 0px 50px rgba(5, 5, 5, 0.1) );
+    @include transition(all .3s);
+    .form-content {
+      padding: 40px;
+      .form-title {
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      .form-meta {
+        font-size: 0.95rem;
+        color: $gray-silver-text-color;
+        margin: 0 0 30px;
+        font-weight: normal;
+        .each-meta {
+          a {
+            color: #999;
+            font-weight: normal;
+          }
+          display: inline-block;
+          margin-right: 10px;
+          i {
+            margin-right: 3px;
+          }
+        }
+      }
+      .give-goal-progress {
+        font-size: 15px;
+        color: #787878;
+        margin-bottom: 0;
+        span {
+          font-size: 17px;
+          color: var(--theme-color1);
+          &:last-child {
+            font-size: 16px;
+            color: var(--theme-color2);
+          }
+          &:first-child {
+            color: var(--theme-color1);
+          }
+        }
+      }
+      .campaigns-btn {
+        a {
+          margin-top: 15px;
+        }
+      }
+      .btn {
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+      > :last-child {
+        margin-bottom: 0;
+      }
+    }
+    .form-footer {
+      background-color: #F1F0EC;
+      padding: 20px 40px;
+      @include media-breakpoint-down(lg) {
+        padding: 25px;
+      }
+      @include media-breakpoint-down(sm) {
+        padding: 20px;
+      }
+      $progress-height: 8px;
+      .give-goal-progress-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.9rem;
+        .tm-sc-progress-bar {
+          width: 60%;
+          border-radius: 18px;
+          overflow: hidden;
+          @include media-breakpoint-down(sm) {
+            width: 50%;
+          }
+          .progress-holder {
+            background-color: #fff;
+            height: $progress-height;
+            width: 100%;
+            border-radius: 0;
+            position: relative;
+            .progress-content {
+              background-color: var(--theme-color2);
+              height: $progress-height;
+              float: left;
+              border-radius: 0;
+              margin-right: 5px;
+              &:after {
+                display: none;
+              }
+            }
+            .value {
+              position: absolute;
+              top: -37px;
+              color: #fff;
+              font-size: 10px;
+              background-color: var(--theme-color2);
+              line-height: 1;
+              padding: 10px 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &:hover {
+    .form-inner {
+      @include box-shadow( 0 15px 40px 5px rgba(50, 50, 50, 0.25) );
+    }
+  }
+}

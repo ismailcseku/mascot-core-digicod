@@ -1,0 +1,99 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-style10 {
+  position: relative;
+  margin-bottom: 30px;
+}
+.service-block-style10 .inner-box {
+  position: relative;
+  padding: 40px 40px 38px;
+  height: 100%;
+  box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .service-block-style10 .inner-box {
+    transition: none;
+  }
+}
+.service-block-style10 .inner-box:hover .service-icon {
+  color: #222222;
+}
+.service-block-style10 .inner-box:hover .service-icon::before {
+  background-color: #66FDFF;
+  opacity: 0.5;
+}
+.service-block-style10 .inner-box:hover .service-icon::after {
+  background-color: #66FDFF;
+}
+.service-block-style10 .inner-box .service-icon {
+  position: relative;
+  height: 90px;
+  width: 90px;
+  margin-bottom: 30px;
+  font-size: 60px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .service-block-style10 .inner-box .service-icon {
+    transition: none;
+  }
+}
+.service-block-style10 .inner-box .service-icon:before, .service-block-style10 .inner-box .service-icon:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--theme-color1);
+  content: "";
+  transition: all 300ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .service-block-style10 .inner-box .service-icon:before, .service-block-style10 .inner-box .service-icon:after {
+    transition: none;
+  }
+}
+.service-block-style10 .inner-box .service-icon:after {
+  -webkit-transform: rotate(-12.07deg);
+  -moz-transform: rotate(-12.07deg);
+  -ms-transform: rotate(-12.07deg);
+  transform: rotate(-12.07deg);
+  opacity: 0.2;
+}
+.service-block-style10 .inner-box .service-icon i {
+  position: relative;
+}
+.service-block-style10 .inner-box .service-count {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: transparent;
+  border-radius: 0px 0px 10px 0px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7a7a7a;
+}
+.service-block-style10 .inner-box .service-title {
+  margin-bottom: 15px;
+}
+.service-block-style10 .inner-box .service-title:hover {
+  color: var(--theme-color1);
+}
+.service-block-style10 .inner-box .service-details {
+  margin-bottom: 18px;
+}

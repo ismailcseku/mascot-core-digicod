@@ -1,0 +1,83 @@
+.tm-sc-projects .cat-list {
+  list-style: none;
+  margin: 0;
+}
+.tm-sc-projects .cat-list li {
+  display: inline;
+  color: #aaa;
+  margin-left: 7px;
+  font-size: 13px;
+}
+.tm-sc-projects .cat-list li a {
+  color: #aaa;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tm-sc-projects .cat-list li a {
+    transition: none;
+  }
+}
+.tm-sc-projects .cat-list li:last-child span {
+  display: none;
+}
+
+/* Portfolio Style two */
+.projects-current-theme2:hover .img-holder .project-hover {
+  visibility: visible;
+  opacity: 1;
+}
+.projects-current-theme2:hover .img-holder .project-hover .hover-content {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.projects-current-theme2 .img-holder {
+  position: relative;
+  overflow: hidden;
+}
+.projects-current-theme2 .img-holder .project-hover {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding: 30px 20px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.projects-current-theme2 .img-holder .project-hover .hover-content {
+  -webkit-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.projects-current-theme2 .img-holder .project-hover .hover-content .cat-list li {
+  margin-left: 2px;
+}
+.projects-current-theme2 .img-holder .project-hover .hover-content .cat-list li a {
+  background: purple;
+  color: #fff;
+  padding: 5px 8px;
+  display: inline-block;
+}
+.projects-current-theme2 .img-holder .project-hover .hover-content .cat-btn {
+  border-radius: 0px;
+  display: table-caption;
+  padding: 7px 15px;
+}
+.projects-current-theme2 .img-holder .project-hover .hover-content .title {
+  display: inline-block;
+  background-color: #fff;
+  padding: 5px 20px;
+  margin-top: 0;
+}

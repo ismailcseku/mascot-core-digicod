@@ -1,0 +1,102 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-style12 {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  padding: 30px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+.service-block-style12:hover .details .service-title {
+  color: #fff;
+}
+.service-block-style12:hover .details .service-details {
+  color: #fff;
+}
+.service-block-style12:hover .details .btn-view-details .btn-plain-text-with-arrow-right:hover {
+  color: #fff !important;
+}
+.service-block-style12:hover .details .btn-view-details .btn-plain-text-with-arrow-right:hover:after {
+  color: #fff !important;
+}
+.service-block-style12:hover .details .btn-view-details .btn-plain-text-with-arrow-right:after {
+  color: #fff;
+}
+.service-block-style12:after {
+  position: absolute;
+  content: "";
+  bottom: 60px;
+  left: 40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.service-block-style12 .service-icon {
+  margin-bottom: 10px;
+}
+.service-block-style12 .service-icon i {
+  height: 85px;
+  width: 85px;
+  z-index: 1;
+  font-size: 38px;
+  line-height: 85px;
+  background: #fff;
+  position: relative;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  display: inline-block;
+  color: var(--theme-color1);
+}
+.service-block-style12 .service-icon i:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  right: 10px;
+  top: 10px;
+  z-index: -1;
+  opacity: 0.15;
+  position: absolute;
+  border-radius: 7px;
+  border: 1px solid #edebfd;
+}
+.service-block-style12 .details .service-title {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 35px;
+}
+.service-block-style12 .details .service-details {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.service-block-style12 .details .btn-view-details .btn-plain-text-with-arrow-right {
+  color: #fff;
+  border-bottom-color: #fff !important;
+}
+.service-block-style12 .details .btn-view-details .btn-plain-text-with-arrow-right:after {
+  color: #fff;
+  transform: rotate(0deg) !important;
+}

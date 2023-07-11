@@ -1,0 +1,30 @@
+@import "../../bootstrap-loader";
+@import "features-common";
+.features-block-style4 {
+  padding: 30px 25px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(88, 86, 233, 0.1);
+  transition: all 0.3s;
+  &:hover {
+    background-color: var(--theme-color1);
+    .icon i,
+    .features-details,
+    .features-title {
+      color: #fff;
+    }
+  }
+  .icon {
+    margin-bottom: 15px;
+    line-height: 1;
+    i {
+      color: var(--theme-color1);
+      font-size: 35px;
+    }
+  }
+  .details {
+    .features-title {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}

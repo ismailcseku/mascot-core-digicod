@@ -1,0 +1,136 @@
+.tm-give-donation-form1 {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  .give-donation-form-inner {
+    .form-progress-goal-block {
+      padding: 30px;
+      background-color: #eee;
+      .form-progress-goal-header-text {
+      }
+      .give-goal-progress-bar {
+        margin-bottom: 20px;
+        .tm-sc-progress-bar { 
+          .progress-holder {
+            .progress-content {
+            }
+          }
+        }
+      }
+    }
+    .form-block {
+      padding: 30px;
+      background-color: #fcfcfc;
+      .form-header-text {
+      }
+      form.give-form,
+      form[id*=give-form] {
+        position: relative;
+        margin: 0;
+        .give-total-wrap {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: calc(50% - 7.5px);
+          margin-bottom: 0;
+          @include media-breakpoint-down(sm) {
+            position: relative;
+            width: 100%;
+            margin-bottom: 15px;
+          }
+          .give-donation-amount {
+            margin-bottom: 0;
+            display: flex;
+          }
+          .give-currency-symbol {
+            height: form-control-height();
+            background: var(--theme-color1);
+            display: flex;
+            align-items: center;
+          }
+          #give-amount {
+            width: 100%;
+            color: #333333;
+            background: #efefef;
+            border-color: #efefef;
+          }
+          #give-amount-text,
+          #give-amount {
+            border-width: 1px;
+            height: form-control-height();
+            padding: 14px 20px;
+          }
+        }
+        #give-donation-level-button-wrap {
+          grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+          display: grid;
+          grid-gap: 12px;
+          margin: 0 0 15px;
+          > li {
+            margin: 0;
+          }
+          .give-btn {
+            border-radius: 0;
+            position: relative;
+            width: calc(100%);
+            color: #333333;
+            background: #efefef;
+            overflow: unset;
+            border-color: #efefef;
+            padding: 15px 12px;
+            margin: 0;
+            &:hover {
+              color: var(--theme-color1);
+              border-color: #efefef;
+            }
+            &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 6px;
+              height: 100%;
+              background: var(--theme-color1);
+              @include transition( all .3s ease);
+            }
+            &.give-default-level {
+              color: var(--text-color-bg-theme-color1);
+              background: var(--theme-color1);
+              border-color: var(--theme-color1);
+              &:before {
+                background: var(--theme-color2);
+              }
+              &:hover {
+                color: var(--text-color-bg-theme-color2);
+                background: var(--theme-color2);
+                &:before {
+                  background: var(--theme-color1);
+                }
+              }
+            }
+            &.give-btn-level-custom {
+              padding: 8px;
+              line-height: 1;
+              min-height: 50px;
+            }
+          }
+        }
+        .give-btn-modal {
+          width: calc(50% - 7.5px);
+          color: var(--text-color-bg-theme-color1);
+          background: var(--theme-color1);
+          margin: 0 0 0 calc(50% + 7.5px);
+          padding: 23px 20px;
+          outline: none;
+          border-radius: 2px;
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+            margin: 0;
+          }
+          &:hover {
+            color: var(--text-color-bg-theme-color2);
+            background: var(--theme-color2);
+          }
+        }
+      }
+    }
+  }
+}

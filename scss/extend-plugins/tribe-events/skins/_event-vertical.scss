@@ -1,0 +1,70 @@
+/* event vertical css code below */
+.tm-sc-tribe-events {
+  &.tm-sc-tribe-events-list-vertical-slide { 
+    .bx-wrapper {
+      margin-bottom: 0;
+      padding: 0;
+      box-shadow: none;
+      border: none;
+      background: transparent;
+    }
+
+    /* bx top nav style */
+    &.has-nav-arrow {
+      .media {
+        margin-top: 0;
+      }
+      .bx-controls {
+        .bx-controls-direction {
+          > a {
+            background-color: #eee;
+            border: 1px solid #eee;
+            height: auto;
+            line-height: 28px;
+            padding: 7px 12px;
+            width: auto;
+            text-indent: 0;
+            top: -50px;
+            z-index: 0;
+            display: inline-flex;
+            border-radius: 5px;
+            @include transition(all 0.2s ease);
+            i {
+              color: var(--theme-color1);
+              font-size: 18px;
+            }
+            &:hover {
+              background-color: var(--theme-color1);
+              i {
+                color: var(--text-color-bg-theme-color1);
+              }
+            }
+          }
+          .bx-prev {
+            margin-right: 4px;
+          }
+        }
+      }
+
+      &.nav-arrow-position-bottom {
+        .bx-controls {
+          .bx-controls-direction {
+          }
+        }
+      }
+
+      &.nav-arrow-position-top {
+        .bx-wrapper {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .bx-controls {
+          .bx-controls-direction {
+            margin-bottom: 25px;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

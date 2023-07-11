@@ -1,0 +1,81 @@
+@import "../../bootstrap-loader";
+.team-current-theme8 {
+  position: relative;
+  .inner-box {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    @include transition(all 300ms ease);
+    &:hover {
+      .image img {
+        @include transform(scale(1.1));
+      }
+      .social-link {
+        @include transform(scaleY(1));
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .image {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include transition(all 400ms ease);
+    }
+  }
+  .info-box {
+    position: relative;
+    padding: 30px 30px 40px;
+  }
+  .team-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    &:hover {
+      color: var(--theme-color1);
+    }
+  }
+  .team-subtitle {
+    position: relative;
+    display: block;
+    @include transition(all 400ms ease);
+    margin-bottom: 11px;
+  }
+  .text {
+    margin-bottom: 17px;
+  }
+  .social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include transition(all 400ms ease);
+    li {
+      list-style: none;
+      margin-bottom: 0;
+      a {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        display: inline-block;
+        background: #fafafb;
+        color: var(--theme-color1);
+        text-align: center;
+        border-radius: 5px;
+        margin: 0 5px;
+        @include transition(all 300ms ease);
+        &:hover {
+          color: #fff;
+          background-color: var(--theme-color1);
+        }
+      }
+    }
+  }
+}

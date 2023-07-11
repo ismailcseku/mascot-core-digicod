@@ -1,0 +1,45 @@
+.tm-give-donation-form-only-btn-goal {
+  border: none;
+  .give-donation-form-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+    .give-goal-raised {
+      .goal-raised-inner {
+        display: block;
+        .goal, .raised {
+          display: block;
+          text-align: left;
+          .value {
+            display: block;
+            font-size: 26px;
+            font-weight: bold;
+            color: var(--theme-color1);
+          }
+          .label {
+            font-size: 14px;
+            color: #111;
+          }
+        }
+        .goal {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .give-btn-modal {
+    color: var(--text-color-bg-theme-color1);
+    background: var(--theme-color1);
+    padding: 20px 30px;
+    outline: none;
+    border-radius: 30px;
+    width: 100%;
+    &:hover {
+      color: var(--text-color-bg-theme-color2);
+      background: var(--theme-color2);
+    }
+  }
+}

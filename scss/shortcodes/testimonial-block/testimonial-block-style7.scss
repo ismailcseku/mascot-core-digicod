@@ -1,0 +1,125 @@
+@import "../../bootstrap-loader";
+@import "testimonial-common";
+.testimonial-block-style7 {
+  position: relative;
+  padding: 15px 15px;
+  margin-bottom: 30px;
+  .testimonial-content {
+    position: relative;
+    padding: 40px 30px 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    @include media-breakpoint-down(sm) {
+      padding: 30px 20px 30px;
+      text-align: center;
+      margin-top: 0;
+    }
+    &:hover {
+      .thumb {
+        img {
+          @include transform(scale(1.1));
+        }
+      }
+    }
+  }
+  .rating {
+    position: absolute;
+    left: 30px;
+    top: -17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    font-size: 14px;
+    line-height: 18px;
+    color: #dac935;
+    background: #fafafb;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 9px 15px;
+    width: 172px;
+    height: 32px;
+    padding-right: 0px;
+    .star-rating {
+      margin-top: 0;
+      margin-bottom: 0;
+      display: inline-block;
+      span:before {
+        color: #dac935;
+        font-weight: 600;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      left: 0;
+      top: 0;
+      display: inline-flex;
+      margin-bottom: 10px;
+    }
+    .rating-count {
+      margin-right: 15px;
+      display: block;
+      color: #808285;
+      height: 36px;
+      font-size: 18px;
+      line-height: 36px;
+      margin-left: 16px;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+  .quote-icon {
+    position: absolute;
+    right: 30px;
+    top: -30px;
+    font-size: 72px;
+    line-height: 0.8em;
+    color: var(--theme-color1);
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  .author-text {
+    margin-bottom: 40px;
+  }
+  .info-box {
+    position: relative;
+    padding-left: 90px;
+    min-height: 70px;
+    padding-top: 10px;
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+      padding-top: 0;
+      text-align: center;
+    }
+    .thumb {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 70px;
+      width: 70px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      border: 2px solid #e1e1e1;
+      border-radius: 5px;
+      overflow: hidden;
+      @include media-breakpoint-down(sm) {
+        position: relative;
+        display: inline-block;
+      }
+      img {
+        @include transition(all 300ms ease);
+      }
+    }
+    .testimonial-name {
+      margin-top: 0;
+      margin-bottom: 0px;
+    }
+    .testimonial-position {
+      display: block;
+      margin-bottom: 11px;
+    }
+  }
+}

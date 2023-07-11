@@ -1,0 +1,66 @@
+@import "../../bootstrap-loader";
+@import "features-common";
+.features-block-style5 {
+  transition: 0.5s;
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: 1px solid #edebfd;
+  &:hover {
+    border-color: #fff;
+    box-shadow: 10px 0 60px rgba(81, 56, 238, 0.1);
+  }
+  .inner-box {
+    padding: 35px 30px 30px;
+    border-bottom: 1px solid #edebfd;
+    transition: all 0.3s;
+    .icon {
+      margin-bottom: 15px;
+      line-height: 1;
+      i {
+        z-index: 1;
+        font-size: 65px;
+        position: relative;
+        display: inline-block;
+        color: var(--theme-color1);
+        &:before {
+          color: var(--theme-color1);
+        }
+        &:after {
+          content: "";
+          height: 75px;
+          width: 75px;
+          top: -15px;
+          left: -25px;
+          z-index: -1;
+          position: absolute;
+          background: #f3f1fe;
+          border-radius: 50%;
+        }
+      }
+    }
+    .details {
+      .features-title {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .btn-view-details {
+    .btn-plain-text-with-arrow-right {
+      padding: 15px 5px;
+      color: var(--theme-color1);
+      margin-top: 0 !important;
+      border-bottom: none !important;
+      display: block !important;
+      &:hover {
+        background: var(--theme-color1);
+        color: #fff !important;
+        &:after {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

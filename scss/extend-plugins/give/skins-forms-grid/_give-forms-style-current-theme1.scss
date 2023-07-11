@@ -1,0 +1,119 @@
+.tm-give-forms-style-current-theme1 {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .form-inner {
+    border: 1px solid #eee;
+    background-color: #F6F4EE;
+    @include transition(all .3s);
+    .form-content {
+      padding: 37px 40px 33px;
+      .form-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        a:hover {
+        }
+      }
+      .form-description {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .form-meta {
+        font-size: 0.95rem;
+        color: $gray-silver-text-color;
+        margin: 0 0 30px;
+        font-weight: normal;
+        .each-meta {
+          a {
+            color: #999;
+            font-weight: normal;
+          }
+          display: inline-block;
+          margin-right: 10px;
+          i {
+            margin-right: 3px;
+          }
+        }
+      }
+      .donation-info{
+        display: flex;
+        justify-content: space-between;
+        color: #000;
+        font-size: 15px;
+        .text {
+          color: #777;
+        }
+      }
+      .give-goal-progress-bar {
+        $progress-height: 6px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        > .label, > .value {
+          display: none;
+        }
+        .tm-sc-progress-bar {
+          width: 100%;
+          border-radius: 0;
+          .progress-holder {
+            background-color: #fff;
+            height: $progress-height;
+            width: 100%;
+            border-radius: 0;
+            .progress-content {
+              background-color: var(--theme-color1);
+              height: $progress-height;
+              float: left;
+              border-radius: 0;
+              margin-right: 5px;
+              position: relative;
+              &:after {
+                display: none;
+              }
+            }
+            .value {
+              position: absolute;
+              right: -40px;
+              bottom: 16px;
+              color: var(--text-color-bg-theme-color1);
+              line-height: 20px;
+              font-size: 10px;
+              text-align: center;
+              font-weight: 400;
+              -webkit-transition: all 500ms ease;
+              transition: all 500ms ease;
+              height: 20px;
+              width: 40px;
+              background: var(--theme-color1);
+              border-top-left-radius: 3px;
+              border-top-right-radius: 3px;
+              border-bottom-right-radius: 3px;
+              &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 100%;
+                border-right: 6px solid transparent;
+                border-top: 4px solid var(--theme-color1);
+              }
+            }
+          }
+        }
+      }
+      .campaigns-btn {
+        margin-top: 30px;
+      }
+      > :last-child {
+        margin-bottom: 0;
+      }
+    }
+    .form-footer {
+    }
+  }
+  &:hover {
+    .form-inner {
+    }
+  }
+}

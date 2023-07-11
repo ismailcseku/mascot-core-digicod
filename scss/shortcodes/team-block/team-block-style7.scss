@@ -1,0 +1,100 @@
+@import "../../bootstrap-loader";
+.team-current-theme7 {
+  position: relative;
+  .inner-box {
+    position: relative;
+    &:hover {
+      .image img {
+        @include transform(scale(1.1));
+      }
+      .social-link {
+        @include transform(scaleY(1));
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .image-box {
+    position: relative;
+    .image {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 0;
+      z-index: 1;
+      img {
+        width: 100%;
+        @include transition(all 400ms ease);
+      }
+    }
+  }
+  .info-box {
+    position: relative;
+    padding: 28px 30px 28px;
+    background-color: #fafafb;
+    text-align: center;
+    z-index: 2;
+    .team-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      &:hover {
+        color: var(--theme-color1);
+      }
+    }
+    .team-subtitle {
+      position: relative;
+      display: block;
+      @include transition(all 400ms ease);
+    }
+  }
+  .share-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--theme-color1);
+    background-color: #fff;
+    border-radius: 50px;
+    z-index: 3;
+    @include transition(all 300ms ease);
+  }
+  .social-link {
+    position: absolute;
+    right: 30px;
+    top: 75px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include transform(scaleY(0));
+    transform-origin: top;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all 400ms ease);
+    li {
+      list-style: none;
+      margin-bottom: 0;
+      a {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 16px;
+        display: inline-block;
+        color: var(--theme-color1);
+        background-color: #fff;
+        border-radius: 50px;
+        margin-bottom: 5px;
+        @include transition(all 300ms ease);
+        &:hover {
+          color: #fff;
+          background-color: var(--theme-color1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.events-fullwidth-style1 {
+  .event {
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid rgba(200, 200, 200, 0.15);
+    background-color: #fff;
+    border-radius: 5px;
+    @include box-shadow( 0px 0px 22px 0px rgba(5, 5, 5, 0.07) );
+    .event-wrapper {
+      display: flex;
+      align-items: center;
+      .event-date {
+        background: #fff;
+        border: 1px solid rgba(200,200,200,0.3);
+        border-radius: 10px;
+        margin-right: 20px;
+        padding: 20px 30px;
+        text-align: center;
+        @include box-shadow( 0px 0px 22px 0px rgba(5, 5, 5, 0.07) );
+        @include transition(all .3s ease-in-out);
+        .day {
+          color: var(--theme-color1);
+          font-size: 48px;
+          line-height: 1.1;
+          font-weight: 600;
+          display: block;
+        }
+        .month {
+          color: #999;
+          font-size: 20px;
+          line-height: 1.1;
+          text-transform: uppercase;
+        }
+      }
+      .event-thumb {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 200px;
+        flex: 0 0 200px;
+      }
+      .event-content {
+        flex: 1 0 0%;
+        padding-right: 20px;
+        padding-left: 20px;
+        .event-title {
+          margin-bottom: 0;
+        }
+        .event-single-meta-date {
+          color: #fff;
+          background-color: var(--theme-color1);
+          border-radius: 10rem;
+          display: inline-block;
+          padding: 8px 24px;
+          margin-bottom: 0;
+          font-size: 75%;
+          line-height: 1;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: baseline;
+          @include transition(all .3s ease-in-out);
+        }
+        .event-cat-single {
+          .event-cat {
+            list-style: none;
+            a {
+              background-color: var(--theme-color1);
+              color: var(--text-color-bg-theme-color1);
+              font-size: 13px;
+              padding: 8px 15px;
+            }
+          }
+        }
+        .event-meta {
+          .event-cat {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

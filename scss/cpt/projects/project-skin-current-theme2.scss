@@ -1,0 +1,65 @@
+@import "../../bootstrap-loader";
+@import "project-skin-common";
+
+/* Portfolio Style two */
+
+.projects-current-theme2 {
+  &:hover .img-holder .project-hover {
+    visibility: visible;
+    opacity: 1;
+    .hover-content {
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  }
+  .img-holder {
+    position: relative;
+    overflow: hidden;
+    .project-hover {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      padding: 30px 20px;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      .hover-content {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        .cat-list li {
+          a {
+            background: purple;
+            color: #fff;
+            padding: 5px 8px;
+            display: inline-block;
+          }
+          margin-right: 2px;
+        }
+        .cat-btn {
+          border-radius: 0px;
+          display: table-caption;
+          padding: 7px 15px;
+        }
+        .title {
+          display: inline-block;
+          background-color: #fff;
+          padding: 5px 20px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

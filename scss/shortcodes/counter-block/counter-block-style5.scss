@@ -1,0 +1,53 @@
+@import "../../bootstrap-loader";
+
+
+.counter-block-five {
+	position: relative;
+	margin-bottom: 40px;
+	.inner {
+		position: relative;
+		padding-left: 110px;
+		@include transition(all 300ms ease);
+		@include media-breakpoint-down(xl) {
+			max-width: 100%;
+		}
+		&:hover {
+			.counter-icon {
+				background-color: #fff;
+				color: var(--theme-color1);
+				border-radius: 50%;
+			}
+		}
+	}
+	.counter-icon {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 90px;
+		width: 90px;
+		@include flex-center;
+		color: var(--theme-color1);
+		background-color: rgba(255, 255, 255, 0.1);
+		font-size: 42px;
+		line-height: 1em;
+		border-radius: 50%;
+		@include transition(all 300ms ease);
+	}
+	.count-box {
+		position: relative;
+		font-size: 30px;
+		line-height: 42px;
+		font-weight: 700;
+		margin-bottom: 5px;
+		.counter {
+			font-size: 32px;
+			line-height: 42px;
+			font-weight: 700;
+			margin-top: 0;
+		}
+	}
+
+	.title {
+		margin-bottom: 0;
+	}
+}

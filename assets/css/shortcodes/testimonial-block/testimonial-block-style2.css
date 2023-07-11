@@ -1,0 +1,102 @@
+.tm-sc-testimonials .star-rating {
+  float: right;
+  overflow: hidden;
+  position: relative;
+  height: 1.1em;
+  line-height: 1.2;
+  font-size: 0.9em;
+  width: 5.6em;
+}
+.tm-sc-testimonials .star-rating::before {
+  content: "\f005\f005\f005\f005\f005";
+  color: #d3ced2;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.tm-sc-testimonials .star-rating span {
+  overflow: hidden;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-top: 1.5em;
+}
+.tm-sc-testimonials .star-rating span::before {
+  content: "\f005\f005\f005\f005\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  color: #f1c40f;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+.tm-sc-testimonials .star-rating {
+  float: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  overflow: visible;
+}
+.tm-sc-testimonials .star-rating span:before {
+  color: var(--theme-color2);
+}
+.tm-sc-testimonials .author-text,
+.tm-sc-testimonials .name,
+.tm-sc-testimonials .job-position {
+  transition: all 0.3s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tm-sc-testimonials .author-text,
+.tm-sc-testimonials .name,
+.tm-sc-testimonials .job-position {
+    transition: none;
+  }
+}
+.tm-sc-testimonials .star-rating span:before {
+  transition: all 0.3s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tm-sc-testimonials .star-rating span:before {
+    transition: none;
+  }
+}
+
+.owl-carousel .type-testimonials {
+  box-shadow: none;
+}
+
+.tm-sc-testimonials .testimonial-block-style2 .testimonial-content {
+  padding: 60px 50px;
+  border-radius: 7px;
+  border: 5px solid rgba(89, 86, 233, 0.102);
+  background-color: #fff;
+}
+.tm-sc-testimonials .testimonial-block-style2 .testimonial-content .author-text {
+  font-size: 24px;
+  line-height: 38px;
+  margin-bottom: 30px;
+  color: var(--headings-color);
+}
+.tm-sc-testimonials .testimonial-block-style2 .testimonial-content .author-title-thumb .author-thumb {
+  flex: 0 0 65px;
+  max-width: 65px;
+  height: 65px;
+  margin-right: 25px;
+}
+.tm-sc-testimonials .testimonial-block-style2 .testimonial-content .author-title-thumb .author-thumb img {
+  border-radius: 50%;
+  width: 100%;
+}
+.tm-sc-testimonials .testimonial-block-style2 .testimonial-content .author-details .testimonial-name {
+  margin: 0;
+}
+.tm-sc-testimonials .testimonial-block-style2 .testimonial-content .author-details .testimonial-position {
+  color: var(--theme-color1);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 0;
+}

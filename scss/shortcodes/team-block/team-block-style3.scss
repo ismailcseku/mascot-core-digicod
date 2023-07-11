@@ -1,0 +1,122 @@
+@import "../../bootstrap-loader";
+.team-current-theme3 {
+  position: relative;
+  .inner-box {
+    position: relative;
+    &:hover {
+      .image img {
+        @include transform(scale(1.1));
+      }
+      .social-link {
+        @include transform(scaleY(1));
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .image-box {
+    position: relative;
+    padding-bottom: 67px;
+    .image {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 0;
+      z-index: 1;
+      img {
+        width: 100%;
+        @include transition(all 400ms ease);
+      }
+    }
+  }
+  .info-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 67px 30px 16px;
+    max-width: 370px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+    &::before {
+      @include overlay;
+      background-color: #fafafb;
+      border-top: 5px solid var(--theme-color1);
+      @include transform(skewY(10deg));
+      transform-origin: left top;
+      content: "";
+    }
+    @include media-breakpoint-down(sm) {
+      padding-top: 50px;
+    }
+    .team-title {
+      margin-bottom: 5px;
+      z-index: 1;
+      position: relative;
+      margin-top: 0;
+      &:hover {
+        color: var(--theme-color1);
+      }
+    }
+    .team-subtitle {
+      position: relative;
+      display: block;
+      @include transition(all 400ms ease);
+    }
+    .team-short-bio {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .share-icon {
+    position: absolute;
+    bottom: 104px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--theme-color1);
+    border: 1px solid var(--theme-color1);
+    background-color: #fff;
+    @include transition(all 300ms ease);
+    border-radius: 2px;
+    z-index: 3;
+  }
+  .social-link {
+    position: absolute;
+    right: 20px;
+    bottom: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all 400ms ease);
+    li {
+      list-style: none;
+      margin-bottom: 0;
+      a {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 16px;
+        display: inline-block;
+        color: var(--theme-color1);
+        background-color: #fff;
+        border-radius: 5px;
+        margin-top: 5px;
+        @include transition(all 300ms ease);
+        &:hover {
+          color: #fff;
+          background-color: var(--theme-color1);
+        }
+      }
+    }
+  }
+}

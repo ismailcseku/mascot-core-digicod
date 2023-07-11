@@ -1,0 +1,351 @@
+<?php
+namespace MascotCoreDigicod\Widgets\TeamBlock\Skins;
+use Elementor\Widget_Base;
+use Elementor\Controls_Manager;
+use Elementor\Group_Control_Image_Size;
+use Elementor\Skin_Base as Elementor_Skin_Base;
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+class Skin_Style3 extends Elementor_Skin_Base {
+
+	protected function _register_controls_actions() {
+		add_action( 'elementor/element/tm-ele-team-block/general/after_section_end', [ $this, 'register_layout_controls' ] );
+	}
+
+	public function get_id() {
+		return 'skin-style3';
+	}
+
+
+	public function get_title() {
+		return __( 'Skin Style3', 'mascot-core-digicod' );
+	}
+
+
+	public function register_layout_controls( Widget_Base $widget ) {
+		$this->parent = $widget;
+
+		$this->start_controls_section(
+			'current_wrapper_styling',
+			[
+				'label' => esc_html__( 'Current Skin Styling', 'mascot-core-digicod' ),
+				'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->start_controls_tabs('tabs_current_theme_styling');
+		$this->start_controls_tab(
+			'tabs_current_theme_styling_normal1',
+			[
+				'label' => esc_html__('Normal', 'mascot-core-digicod'),
+			]
+		);
+		// Background Color
+		$this->add_control(
+			'content_wrapper_color_options',
+			[
+				'label' => esc_html__( 'BG Color Options', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+
+		$this->add_responsive_control(
+			'content_wrapper_custom_bg_color',
+			[
+				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .info-box::before' => 'background-color: {{VALUE}};'
+				]
+			]
+		);
+
+		$this->add_responsive_control(
+			'content_wrapper_theme_colored',
+			[
+				'label' => esc_html__( "Make BG Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .info-box::before' => 'background-color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+
+		// Border Color
+		$this->add_control(
+			'content_border_color_options',
+			[
+				'label' => esc_html__( 'Border Color Options', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+		$this->add_responsive_control(
+			'content_border_custom_bg_color',
+			[
+				'label' => esc_html__( "Custom Border Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .info-box::before' => 'border-top-color: {{VALUE}};'
+				]
+			]
+		);
+		$this->add_responsive_control(
+			'content_border_theme_colored',
+			[
+				'label' => esc_html__( "Make Border Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .info-box::before' => 'border-top-color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+
+		// Social Background Color
+		$this->add_control(
+			'content_social_box_color_options',
+			[
+				'label' => esc_html__( 'Social Box Color Options', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+
+		$this->add_responsive_control(
+			'content_social_box_custom_bg_color',
+			[
+				'label' => esc_html__( "Custom Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .share-icon' => 'background-color: {{VALUE}};'
+				]
+			]
+		);
+
+		$this->add_responsive_control(
+			'content_social_box_bg_theme_colored',
+			[
+				'label' => esc_html__( "Make Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .share-icon' => 'background-color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+		$this->add_responsive_control(
+			'content_icon_border_custom_color_normal',
+			[
+				'label' => esc_html__( "Icon Border Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .share-icon' => 'border-color: {{VALUE}};'
+				]
+			]
+		);
+		// Social Icon Color
+		$this->add_responsive_control(
+			'content_social_box_icon_color',
+			[
+				'label' => esc_html__( "Icon Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .share-icon' => 'color: {{VALUE}};'
+				]
+			]
+		);
+
+		$this->add_responsive_control(
+			'content_social_box_icon_theme_colored',
+			[
+				'label' => esc_html__( "Icon Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .share-icon' => 'color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+
+		$this->end_controls_tab();
+
+		$this->start_controls_tab(
+			'tabs_current_theme_styling_hover1',
+			[
+				'label' => esc_html__('Hover', 'mascot-core-digicod'),
+			]
+		);
+		//Background Hover Color
+		$this->add_control(
+			'content_wrapper_color_options_hover',
+			[
+				'label' => esc_html__( 'BG Color Options (Hover)', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+		$this->add_responsive_control(
+			'content_wrapper_custom_bg_color_hover',
+			[
+				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item:hover .info-box::before' => 'background-color: {{VALUE}};'
+				]
+			]
+		);
+		$this->add_responsive_control(
+			'content_wrapper_theme_colored_hover',
+			[
+				'label' => esc_html__( "Make BG Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item:hover .info-box::before' => 'background-color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+
+		//Border Hover Color
+		$this->add_control(
+			'content_border_color_options_hover',
+			[
+				'label' => esc_html__( 'Border Color Options (Hover)', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+		$this->add_responsive_control(
+			'content_border_custom_bg_color_hover',
+			[
+				'label' => esc_html__( "Custom Border Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item:hover .info-box::before' => 'border-color: {{VALUE}};'
+				]
+			]
+		);
+		$this->add_responsive_control(
+			'content_border_theme_colored_hover',
+			[
+				'label' => esc_html__( "Make Border Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item:hover .info-box::before' => 'border-color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+
+		// Social Background Hover Color
+		$this->add_control(
+			'content_social_box_hover_color_options',
+			[
+				'label' => esc_html__( 'Social Box Hover Color Options', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+
+		$this->add_responsive_control(
+			'content_social_box_hover_icon_bg_color',
+			[
+				'label' => esc_html__( "Icon Bg Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .share-icon:hover' => 'background-color: {{VALUE}};'
+				]
+			]
+		);
+
+		$this->add_responsive_control(
+			'content_social_box_hover_theme_colored',
+			[
+				'label' => esc_html__( "Make Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .share-icon:hover' => 'background-color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+		$this->add_responsive_control(
+			'content_icon_border_custom_color_hover',
+			[
+				'label' => esc_html__( "Icon Border Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .share-icon:hover' => 'border-color: {{VALUE}};'
+				]
+			]
+		);
+		// Social Icon Color
+		$this->add_responsive_control(
+			'content_social_box_icon_hover_color',
+			[
+				'label' => esc_html__( "Icon Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .share-icon:hover' => 'color: {{VALUE}};'
+				]
+			]
+		);
+
+		$this->add_responsive_control(
+			'content_social_box_icon_hover_theme_colored',
+			[
+				'label' => esc_html__( "Icon Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .share-icon:hover' => 'color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+
+		$this->end_controls_tab();
+		$this->end_controls_tabs();
+		$this->end_controls_section();
+	}
+
+	public function render() {
+		$settings = $this->parent->get_settings_for_display();
+
+		//enqueue css
+		$direction_suffix = is_rtl() ? '.rtl' : '';
+		wp_enqueue_style( 'tm-team-block-style3', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/team-block/team-block-style3' . $direction_suffix . '.css' );
+
+		//icon classes
+		$icon_classes = array();
+		$settings['icon_classes'] = $icon_classes;
+
+		//button classes
+		$settings['btn_classes'] = mascot_core_prepare_button_classes_from_params( $settings );
+
+
+		//icon classes
+		$icon_classes = array();
+		$settings['icon_classes'] = $icon_classes;
+
+		//Owl Carousel Data
+		$settings['owl_carousel_data_info'] = mascot_core_prepare_owlcarousel_data_from_params( $settings );
+		$settings['holder_id'] = digicod_get_isotope_holder_ID('team-block');
+
+		$settings['settings'] = $settings;
+
+		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
+		$html = mascot_core_digicod_get_shortcode_template_part( 'team', $settings['display_type'], 'team-block/tpl', $settings, true );
+
+		echo $html;
+	}
+}
