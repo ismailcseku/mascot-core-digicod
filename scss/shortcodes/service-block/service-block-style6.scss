@@ -1,86 +1,97 @@
 @import "../../bootstrap-loader";
 @import "service-common";
-
-
-
 .service-block-style6 {
   position: relative;
-  margin-bottom: 30px;
   .inner-box {
     position: relative;
-    overflow: hidden;
-    text-align: center;
-    padding: 40px;
-    height: 100%;
-    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
-    @include transition(all 300ms ease);
-    z-index: 0;
-    &:before {
-      position: absolute;
-      left: 50%;
-      right: 0;
-      top: 0px;
-      margin-left: -222px;
-      width: 444px;
-      height: 444px;
-      background-image: url(../../../images/current-theme/shadow-1.png);
-      opacity: 0.8;
-      pointer-events: none;
-      transform: scale(0);
-      background-repeat: no-repeat;
-      background-position: center;
-      @include transition(all 300ms ease);
-      content: "";
-      z-index: -1;
-    }
+    margin-top: 30px;
+    @include transition(all 0.3s ease);
     &:hover {
-      &:before {
-        @include transform(scale(1));
+      .image-box {
+        .service-icon {
+          i {
+            background-color: var(--theme-color1);
+            color: #fff;
+          }
+        }
+        .service-featured-img {
+          img {
+            @include transform(scale(1.1));
+          }
+        }
       }
-      .icon-box {
-        &:before {
-          @include transform(translate(7px, 7px));
+      .read-more {
+        i {
+          color: var(--theme-color1);
         }
       }
     }
-
-    .icon-box {
+  }
+  .image-box {
+    position: relative;
+    .service-featured-img {
       position: relative;
-      display: inline-block;
-      width: 100px;
-      height: 100px;
-      background-color: var(--theme-color2);
-      margin-bottom: 45px;
-      @include transition(all 300ms ease);
-      &:before {
-        @include overlay;
-        background-color: var(--theme-color1);
-        @include transition(all 300ms ease);
-        content: "";
-      }
-      i {
-        position: relative;
-        @include flex-center;
-        height: 100%;
+      overflow: hidden;
+      margin-bottom: 0;
+      border-radius: 10px 10px 0 0;
+      img {
+        display: block;
         width: 100%;
-        text-align: center;
-        background: #00fcff;
-        color: #333;
-        font-size: 58px;
-        position: relative;
-        z-index: 99;
+        @include transition(all 400ms ease);
       }
     }
+    .service-icon {
+      i {
+        position: absolute;
+        top: -30px;
+        left: 30px;
+        width: 80px;
+        height: 80px;
+        @include flex-center;
+        text-align: center;
+        color: var(--theme-color1);
+        font-size: 48px;
+        background-color: #fff;
+        border-radius: 10px;
+        @include transition(all 0.3s ease);
+      }
+    }
+  }
+  .content-box {
+    position: relative;
+    padding: 20px 30px 30px;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    @include transition(all 0.3s ease);
+    .service-subtitle {
+      margin-bottom: 10px;
+      display: inline-block;
+    }
     .service-title {
-      margin-bottom: 15px;
       margin-top: 0;
-      &:hover {
+      margin-bottom: 20px;
+      color: var(--theme-color2);
+      a:hover {
         color: var(--theme-color1);
       }
     }
     .service-details {
-      position: relative;
-      margin-bottom: 20px;
+      color: var(--text-color);
+      margin-bottom: 12px;
+    }
+    .read-more {
+      font-weight: 600;
+      color: var(--theme-color2);
+      letter-spacing: 0.8px;
+      i {
+        margin-left: 10px;
+        @include transition(all 0.3s ease);
+      }
+      &:hover {
+        color: var(--theme-color1);
+      }
     }
   }
 }

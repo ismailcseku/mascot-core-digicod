@@ -33,7 +33,7 @@
       background-color: #ffffff;
       font-size: 42px;
       color: var(--theme-color1);
-      transition: all 300ms ease;
+      @include transition(all 300ms ease);
     }
     .service-title {
       color: var(--theme-color2);

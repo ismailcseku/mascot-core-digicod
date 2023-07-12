@@ -1,61 +1,62 @@
 @import "../../bootstrap-loader";
 @import "service-common";
-
 .service-block-style5 {
   position: relative;
   margin-bottom: 30px;
   .inner-box {
     position: relative;
-    padding: 40px 40px 35px;
-    height: 100%;
-    background-color: #fafafb;
+    text-align: center;
+    padding: 60px 30px 30px;
+    border-radius: 10px;
+    background-color: #fff;
     @include transition(all 0.3s ease);
+    margin-top: 30px;
+    border: 1px solid #eee;
     &:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--theme-color1);
+      @include transition(all 0.3s ease);
       .icon-box {
         @include transform(scaleX(-1));
+        border-color: var(--theme-color1);
       }
     }
     .icon-box {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 30px;
-      @include transition(all 300ms ease);
-      i {
-        font-size: 60px;
-      }
-    }
-    .service-count {
       position: absolute;
-      right: 0;
-      top: 0;
-      background: var(--theme-color1);
-      width: 51px;
-      height: 52px;
-      font-weight: 700;
-      font-size: 27px;
-      line-height: 52px;
-      text-align: center;
+      left: 50%;
+      top: -30px;
+      margin-left: -30px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 40px;
       color: #fff;
-      border-radius: 0px 0px 0px 10px;
+      background-color: var(--theme-color1);
+      border-radius: 10px;
+      text-align: center;
+      @include transition(all 0.3s ease);
     }
     .service-title {
-      margin-bottom: 15px;
+      color: var(--theme-color2);
       margin-top: 0;
+      margin-bottom: 20px;
       &:hover {
         color: var(--theme-color1);
       }
     }
     .service-details {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
-    .btn-plain-text-with-arrow-right {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1em;
-      @include transform(all 300ms ease);
+    .read-more {
+      font-size: var(--body-font-size);
+      line-height: 16px;
+      color: var(--theme-color2);
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      @include transition(all 0.3s ease);
       i {
         margin-left: 10px;
-        font-size: 18px;
+        color: var(--theme-color1);
       }
       &:hover {
         color: var(--theme-color1);
