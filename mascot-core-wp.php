@@ -238,7 +238,7 @@ final class Mascot_Core_Digicod_Elementor {
 					),
 					'prefix'        => '',
 					'displayPrefix' => '',
-					'labelIcon'     => 'flaticon-digicod-geometrical-shape',
+					'labelIcon'     => 'flaticon-digicod-diamond-2',
 					'ver'           => '1.0',
 					'fetchJson'     => MASCOT_CORE_DIGICOD_URL_PATH . 'assets/flaticon-set-digicod/icon-list.js',
 					'native'        => 1,
