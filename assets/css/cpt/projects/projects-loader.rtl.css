@@ -500,65 +500,51 @@
 .projects-current-theme5 {
   position: relative;
   margin-bottom: 30px;
-  overflow: hidden;
-}
-.projects-current-theme5:hover {
-  box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.05);
 }
 .projects-current-theme5 .inner-box {
   position: relative;
 }
-.projects-current-theme5 .inner-box:hover .info-box {
-  bottom: 0px;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s ease;
+.projects-current-theme5 .inner-box:hover .image {
+  border-radius: 10px;
 }
-@media (prefers-reduced-motion: reduce) {
-  .projects-current-theme5 .inner-box:hover .info-box {
-    transition: none;
-  }
-}
-.projects-current-theme5 .inner-box:hover .image-box img {
+.projects-current-theme5 .inner-box:hover .image img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  transition: all 300ms ease;
 }
-@media (prefers-reduced-motion: reduce) {
-  .projects-current-theme5 .inner-box:hover .image-box img {
-    transition: none;
-  }
+.projects-current-theme5 .inner-box:hover .info-box {
+  border-bottom: 2px solid var(--theme-color1);
 }
-.projects-current-theme5 .inner-box .image-box {
+.projects-current-theme5 .inner-box .image {
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
   margin-bottom: 0px;
 }
-.projects-current-theme5 .inner-box .image-box img {
+.projects-current-theme5 .inner-box .image img {
   position: relative;
   width: 100%;
-  min-height: 320px;
   object-fit: cover;
   transition: all 0.3s ease;
 }
 @media (prefers-reduced-motion: reduce) {
-  .projects-current-theme5 .inner-box .image-box img {
+  .projects-current-theme5 .inner-box .image img {
     transition: none;
   }
 }
 .projects-current-theme5 .inner-box .info-box {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: -10px;
-  padding: 30px 30px 25px;
-  z-index: 3;
-  background-color: #fff;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s linear;
+  position: relative;
+  background-color: #ffffff;
+  padding: 30px 30px;
+  background: #ffffff;
+  border-bottom: 2px solid transparent;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  text-align: center;
+  max-width: 350px;
+  margin: -50px auto 0;
+  transition: all 300ms ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .projects-current-theme5 .inner-box .info-box {
@@ -566,14 +552,9 @@
   }
 }
 .projects-current-theme5 .inner-box .info-box .title {
-  margin-bottom: 5px;
-  margin-top: 0;
-}
-.projects-current-theme5 .inner-box .info-box .title a:hover {
-  color: var(--theme-color1);
-}
-.projects-current-theme5 .inner-box .info-box .excerpt {
   margin-bottom: 0;
+  color: var(--theme-color2);
+  margin-top: 0;
 }
 
 .tm-sc-projects .cat-list {
@@ -600,138 +581,6 @@
   display: none;
 }
 
-.projects-current-theme6 {
-  position: relative;
-  margin-bottom: 30px;
-}
-.projects-current-theme6 .inner-box {
-  position: relative;
-}
-.projects-current-theme6 .inner-box:hover .info-box {
-  bottom: 40px;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .projects-current-theme6 .inner-box:hover .info-box {
-    transition: none;
-  }
-}
-@media (max-width: 575.98px) {
-  .projects-current-theme6 .inner-box:hover .info-box {
-    bottom: 10px;
-  }
-}
-.projects-current-theme6 .inner-box:hover .image-box .image img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .projects-current-theme6 .inner-box:hover .image-box .image img {
-    transition: none;
-  }
-}
-.projects-current-theme6 .inner-box:hover .image-box .read-more {
-  top: 40px;
-  left: 40px;
-  opacity: 1;
-  transition-delay: 200ms;
-}
-@media (max-width: 575.98px) {
-  .projects-current-theme6 .inner-box:hover .image-box .read-more {
-    left: 20px;
-    top: 20px;
-  }
-}
-.projects-current-theme6 .inner-box .image-box {
-  position: relative;
-}
-.projects-current-theme6 .inner-box .image-box .image {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 0px;
-}
-.projects-current-theme6 .inner-box .image-box .image img {
-  position: relative;
-  width: 100%;
-  object-fit: cover;
-  transition: all 0.3s ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .projects-current-theme6 .inner-box .image-box .image img {
-    transition: none;
-  }
-}
-.projects-current-theme6 .inner-box .image-box .read-more {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  width: 65px;
-  height: 65px;
-  background: var(--theme-color1);
-  color: #ffffff;
-  line-height: 65px;
-  font-size: 30px;
-  opacity: 0;
-  text-align: center;
-  transition: all 0.3s ease;
-  z-index: 2;
-}
-@media (prefers-reduced-motion: reduce) {
-  .projects-current-theme6 .inner-box .image-box .read-more {
-    transition: none;
-  }
-}
-@media (max-width: 575.98px) {
-  .projects-current-theme6 .inner-box .image-box .read-more {
-    height: 35px;
-    width: 35px;
-    line-height: 35px;
-    font-size: 18px;
-  }
-}
-.projects-current-theme6 .inner-box .image-box .read-more i {
-  position: relative;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  font-weight: 600;
-}
-.projects-current-theme6 .inner-box .info-box {
-  position: absolute;
-  right: 40px;
-  left: 40px;
-  bottom: 10px;
-  padding: 33px 30px 25px;
-  z-index: 3;
-  background-color: #ffffff;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s linear;
-}
-@media (prefers-reduced-motion: reduce) {
-  .projects-current-theme6 .inner-box .info-box {
-    transition: none;
-  }
-}
-@media (max-width: 575.98px) {
-  .projects-current-theme6 .inner-box .info-box {
-    right: 10px;
-    left: 10px;
-  }
-}
-.projects-current-theme6 .inner-box .info-box .title {
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-.projects-current-theme6 .inner-box .info-box .title a:hover {
-  color: var(--theme-color1);
-}
 .tm-sc-projects .cat-list {
   list-style: none;
   margin: 0;
