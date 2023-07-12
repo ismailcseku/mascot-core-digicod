@@ -103,99 +103,72 @@
 
 .service-block-style2 {
   position: relative;
-  z-index: 1;
-  padding: 50px;
-  border-radius: 8px;
-  background-color: #fff;
-  border: 1px solid rgba(88, 86, 233, 0.2);
+}
+.service-block-style2 .inner-box {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  overflow: hidden;
   transition: all 0.3s;
 }
 @media (prefers-reduced-motion: reduce) {
-  .service-block-style2 {
+  .service-block-style2 .inner-box {
     transition: none;
   }
 }
-.service-block-style2:hover {
-  background-color: var(--theme-color1);
-  border-color: transparent;
+.service-block-style2 .inner-box:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid var(--theme-color1);
 }
-.service-block-style2:hover .service-icon i {
-  color: #fff;
+.service-block-style2 .inner-box:hover .image img {
+  transform: scale(1.1);
 }
-.service-block-style2:hover .details .service-title {
-  color: #fff;
+.service-block-style2 .inner-box:hover .content-box .icon {
+  -webkit-transform: scale(-1) rotate(-180deg);
+  -moz-transform: scale(-1) rotate(-180deg);
+  -ms-transform: scale(-1) rotate(-180deg);
+  transform: scale(-1) rotate(-180deg);
 }
-.service-block-style2:hover .details .service-title a:hover {
-  color: #fff;
+.service-block-style2 .inner-box .image {
+  position: relative;
+  overflow: hidden;
 }
-.service-block-style2:hover .details .service-details {
-  color: #fff;
+.service-block-style2 .inner-box .image img {
+  transition: all 300ms ease;
 }
-.service-block-style2:hover .details .btn-view-details .btn-plain-text-with-arrow-right {
-  color: #fff;
-  border-bottom-color: #fff !important;
+.service-block-style2 .inner-box .content-box {
+  position: relative;
+  padding: 50px 30px 40px;
 }
-.service-block-style2:hover .details .btn-view-details .btn-plain-text-with-arrow-right:hover {
-  color: #fff !important;
-}
-.service-block-style2:hover .details .btn-view-details .btn-plain-text-with-arrow-right:hover:after {
-  color: #fff !important;
-}
-.service-block-style2:hover .details .btn-view-details .btn-plain-text-with-arrow-right:after {
-  color: #fff;
-}
-.service-block-style2:hover:after {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
-}
-.service-block-style2:after {
+.service-block-style2 .inner-box .content-box .service-icon {
   position: absolute;
-  content: "";
-  bottom: 60px;
-  left: 40px;
-  width: 180px;
-  height: 180px;
+  right: 50%;
+  top: -40px;
+  margin-right: -40px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 70px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.05);
-  -webkit-transform: translateY(-30px);
-  -moz-transform: translateY(-30px);
-  -ms-transform: translateY(-30px);
-  transform: translateY(-30px);
-  z-index: -1;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.4s;
+  color: #ffffff;
+  border: 5px solid #ffffff;
+  background-color: var(--theme-color1);
+  font-size: 36px;
+  transition: all 300ms ease;
 }
-@media (prefers-reduced-motion: reduce) {
-  .service-block-style2:after {
-    transition: none;
-  }
+.service-block-style2 .inner-box .content-box .service-title {
+  color: var(--theme-color2);
+  margin-top: 0;
+  margin-bottom: 0px;
 }
-.service-block-style2 .service-icon {
-  margin-bottom: 10px;
-}
-.service-block-style2 .service-icon i {
-  font-size: 75px;
-  line-height: 1;
+.service-block-style2 .inner-box .content-box .service-title:hover {
   color: var(--theme-color1);
 }
-.service-block-style2 .details .service-title {
-  margin-bottom: 15px;
-  font-size: 24px;
-  line-height: 35px;
-}
-.service-block-style2 .details .service-details {
+.service-block-style2 .inner-box .content-box .service-subtitle {
+  display: block;
   margin-bottom: 10px;
-}
-.service-block-style2 .details .btn-view-details .btn-plain-text-with-arrow-right:after {
-  -webkit-transform: rotate(0deg) !important;
-  -moz-transform: rotate(0deg) !important;
-  -ms-transform: rotate(0deg) !important;
-  transform: rotate(0deg) !important;
 }
 
 .tm-sc-service .icon {
