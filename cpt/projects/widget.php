@@ -108,6 +108,12 @@ class TM_Elementor_Projects extends Widget_Base {
 		$this->add_skin( new Skins\Skin_Style_Current_Theme5( $this ) );
 		$this->add_skin( new Skins\Skin_Style_Current_Theme6( $this ) );
 		$this->add_skin( new Skins\Skin_Style_Current_Theme7( $this ) );
+		$this->add_skin( new Skins\Skin_Style_Current_Theme8( $this ) );
+		$this->add_skin( new Skins\Skin_Style_Current_Theme9( $this ) );
+		$this->add_skin( new Skins\Skin_Style_Current_Theme10( $this ) );
+		$this->add_skin( new Skins\Skin_Style_Current_Theme11( $this ) );
+		$this->add_skin( new Skins\Skin_Style_Current_Theme12( $this ) );
+		$this->add_skin( new Skins\Skin_Style_Current_Theme13( $this ) );
 		$this->add_skin( new Skins\Skin_Style2( $this ) );
 		$this->add_skin( new Skins\Skin_Style3( $this ) );
 		$this->add_skin( new Skins\Skin_Style4( $this ) );
@@ -1028,7 +1034,7 @@ class TM_Elementor_Projects extends Widget_Base {
 		$settings['ptTaxKey'] = $new_cpt_class['ptTaxKey'];
 		//Owl Carousel Data
 		$settings['owl_carousel_data_info'] = mascot_core_prepare_owlcarousel_data_from_params( $settings );
-		
+
 		$settings['settings'] = $settings;
 
 		$html = mascot_core_digicod_get_cpt_shortcode_template_part( 'projects', $settings['display_type'], 'projects/tpl', $settings, true );

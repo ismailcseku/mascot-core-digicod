@@ -1,0 +1,67 @@
+@import "../../bootstrap-loader";
+@import "project-skin-common";
+
+.tm-sc-projects {
+  .projects-current-theme10 {
+    position: relative;
+    margin-bottom: 40px;
+    .inner-box {
+      position: relative;
+      @include transition(all 0.3s ease);
+      &:hover {
+        box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        .info-box {
+          background: #ffffff;
+        }
+        .image img {
+          @include transform(scale(1.1));
+        }
+        .social-links {
+          @include transform(scaleY(1));
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 0;
+      border-radius: 5px 5px 0 0;
+      z-index: 1;
+      img {
+        width: 100%;
+        @include transition(all 400ms ease);
+        object-fit: cover;
+      }
+    }
+
+    .info-box {
+      border-radius: 0 0 10px 10px;
+      position: relative;
+      padding: 20px 30px 30px;
+      padding-right: 60px;
+      background: #f2f3f5;
+      z-index: 2;
+      @include transition(all 0.3s ease);
+      .title {
+        margin-bottom: 10px;
+      }
+      .cat-list a {
+        color: var(--theme-color2);
+      }
+      .icon {
+        position: absolute;
+        bottom: 58px;
+        right: 25px;
+        line-height: 20px;
+        i {
+          color: var(--theme-color1);
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../bootstrap-loader";
+@import "project-skin-common";
+
+.tm-sc-projects {
+  .projects-current-theme8 {
+    position: relative;
+    margin-bottom: 40px;
+    .inner-box {
+      position: relative;
+      &:hover {
+        .info-box {
+          .read-more {
+            background-color: var(--theme-color1);
+            color: #ffffff;
+          }
+        }
+        .image img {
+          @include transform(scale(1.1));
+        }
+        .social-links {
+          @include transform(scaleY(1));
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 0;
+      border-radius: 10px 10px 0 0;
+      z-index: 1;
+      img {
+        width: 100%;
+        transition: all 400ms ease;
+      }
+    }
+
+    .info-box {
+      position: relative;
+      padding: 30px;
+      background: #f2f3f5;
+      border-radius: 0px 0px 10px 10px;
+      width: 100%;
+      z-index: 2;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      .title {
+        color: var(--theme-color2);
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      .read-more {
+        position: relative;
+        display: block;
+        text-align: center;
+        color: var(--theme-color2);
+        font-size: 15px;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

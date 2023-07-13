@@ -1,0 +1,89 @@
+.tm-sc-projects .cat-list {
+  list-style: none;
+  margin: 0;
+}
+.tm-sc-projects .cat-list li {
+  display: inline;
+  color: #aaa;
+  margin-right: 7px;
+  font-size: 13px;
+}
+.tm-sc-projects .cat-list li a {
+  color: #aaa;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tm-sc-projects .cat-list li a {
+    transition: none;
+  }
+}
+.tm-sc-projects .cat-list li:last-child span {
+  display: none;
+}
+
+.tm-sc-projects .projects-current-theme8 {
+  position: relative;
+  margin-bottom: 40px;
+}
+.tm-sc-projects .projects-current-theme8 .inner-box {
+  position: relative;
+}
+.tm-sc-projects .projects-current-theme8 .inner-box:hover .info-box .read-more {
+  background-color: var(--theme-color1);
+  color: #ffffff;
+}
+.tm-sc-projects .projects-current-theme8 .inner-box:hover .image img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.tm-sc-projects .projects-current-theme8 .inner-box:hover .social-links {
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+  opacity: 1;
+  visibility: visible;
+}
+.tm-sc-projects .projects-current-theme8 .image {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  z-index: 1;
+}
+.tm-sc-projects .projects-current-theme8 .image img {
+  width: 100%;
+  transition: all 400ms ease;
+}
+.tm-sc-projects .projects-current-theme8 .info-box {
+  position: relative;
+  padding: 30px;
+  background: #f2f3f5;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.tm-sc-projects .projects-current-theme8 .info-box .title {
+  color: var(--theme-color2);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.tm-sc-projects .projects-current-theme8 .info-box .read-more {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: var(--theme-color2);
+  font-size: 15px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}

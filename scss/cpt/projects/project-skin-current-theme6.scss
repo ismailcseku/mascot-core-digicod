@@ -1,2 +1,52 @@
 @import "../../bootstrap-loader";
 @import "project-skin-common";
+
+.projects-current-theme6 {
+  position: relative;
+  margin-bottom: 30px;
+  .inner-box {
+    position: relative;
+    &:hover {
+      .image img {
+        @include transform(scale(1.1));
+      }
+      .social-links {
+        @include transform(scaleY(1));
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    border-radius: 10px;
+    z-index: 1;
+    img {
+      width: 100%;
+      @include transition(all 400ms ease);
+    }
+  }
+  .info-box {
+    position: relative;
+    padding: 30px;
+    background: #f2f3f5;
+    border-right: 3px solid var(--theme-color1);
+    border-radius: 0px 10px 10px 0px;
+    margin-top: -90px;
+    z-index: 2;
+    margin-right: 50px;
+    .title {
+      margin-top: 0;
+    }
+    .read-more {
+      color: var(--theme-color1);
+      font-size: 15px;
+      position: absolute;
+      bottom: 30px;
+      right: 25px;
+      line-height: 15px;
+    }
+  }
+}
