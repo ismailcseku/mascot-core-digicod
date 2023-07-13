@@ -117,6 +117,9 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 		$this->add_skin( new Skins\Skin_Style10( $this ) );
 		$this->add_skin( new Skins\Skin_Style11( $this ) );
 		$this->add_skin( new Skins\Skin_Style12( $this ) );
+		$this->add_skin( new Skins\Skin_Style13( $this ) );
+		$this->add_skin( new Skins\Skin_Style14( $this ) );
+		$this->add_skin( new Skins\Skin_Style15( $this ) );
 	}
 
 	/**

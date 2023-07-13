@@ -1,38 +1,75 @@
 @import "../../bootstrap-loader";
 @import "service-common";
-
-
-
 .service-block-style9 {
-  margin-bottom: 30px;
+  position: relative;
   .inner-box {
     position: relative;
-    padding: 58px 30px 33px;
-    background: rgba(255, 255, 255, .05);
     @include transition(all 300ms ease);
-    margin-top: 32px;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 30px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #eee;
     &:hover {
-      i {
-        background-color: var(--theme-color2);
+      border-color: var(--theme-color1);
+      .image-box {
+        .service-featured-img {
+          a:after {
+            left: 0;
+            right: 0;
+            opacity: 0;
+            @include transition(all 400ms ease);
+          }
+          img {
+            @include transform(scale(1.1));
+          }
+        }
       }
     }
-    i {
-      margin-bottom: 30px;
-      position: absolute;
-      top: -32px;
-      left: 30px;
-      font-size: 38px;
-      width: 60px;
-      height: 60px;
-      background-color: var(--theme-color1);
-      line-height: 60px;
-      text-align: center;
-      color: #fff;
-      @include transition(all 300ms ease);
+  }
+  .image-box {
+    position: relative;
+    .service-featured-img {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 0;
+      border-radius: 10px;
+      img {
+        display: block;
+        width: 100%;
+        transition: all 400ms ease;
+      }
+      a:after {
+        background: rgba(255, 255, 255, 0.3);
+        bottom: 0;
+        content: "";
+        left: 50%;
+        position: absolute;
+        right: 51%;
+        top: 0;
+        opacity: 1;
+        pointer-events: none;
+        @include transition(all 400ms ease);
+      }
     }
-    .service-title {}
+  }
+  .content-box {
+    position: relative;
+    padding: 30px 20px 0;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+    @include transition(all 300ms ease);
+    .service-title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--theme-color2);
+      &:hover {
+        color: var(--theme-color2);
+      }
+    }
     .service-details {
-      margin-bottom: 37px;
+      margin-bottom: 30px;
     }
   }
 }

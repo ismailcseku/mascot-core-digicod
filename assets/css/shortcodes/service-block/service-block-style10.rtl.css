@@ -10,90 +10,83 @@
 
 .service-block-style10 {
   position: relative;
-  margin-bottom: 30px;
 }
 .service-block-style10 .inner-box {
-  position: relative;
-  padding: 40px 40px 38px;
-  height: 100%;
-  box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  background: #ffffff;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
 }
-@media (prefers-reduced-motion: reduce) {
-  .service-block-style10 .inner-box {
-    transition: none;
-  }
+.service-block-style10 .inner-box:hover .image-box .image img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
-.service-block-style10 .inner-box:hover .service-icon {
-  color: #222222;
-}
-.service-block-style10 .inner-box:hover .service-icon::before {
-  background-color: #66FDFF;
-  opacity: 0.5;
-}
-.service-block-style10 .inner-box:hover .service-icon::after {
-  background-color: #66FDFF;
-}
-.service-block-style10 .inner-box .service-icon {
-  position: relative;
-  height: 90px;
-  width: 90px;
-  margin-bottom: 30px;
-  font-size: 60px;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 300ms ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .service-block-style10 .inner-box .service-icon {
-    transition: none;
-  }
-}
-.service-block-style10 .inner-box .service-icon:before, .service-block-style10 .inner-box .service-icon:after {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+.service-block-style10 .inner-box:hover .content-box .service-icon {
   background-color: var(--theme-color1);
-  content: "";
+  color: #fff;
+}
+.service-block-style10 .inner-box .content-box {
+  position: relative;
+  padding: 30px 30px 30px;
+}
+@media (max-width: 991.98px) {
+  .service-block-style10 .inner-box .content-box {
+    padding: 50px 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .service-block-style10 .inner-box .content-box {
+    padding: 30px 20px;
+  }
+}
+.service-block-style10 .inner-box .content-box .service-icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: var(--theme-color1);
+  font-size: 30px;
+  border: 1px solid var(--theme-color1);
+  border-radius: 50%;
+  margin-bottom: 20px;
   transition: all 300ms ease;
 }
 @media (prefers-reduced-motion: reduce) {
-  .service-block-style10 .inner-box .service-icon:before, .service-block-style10 .inner-box .service-icon:after {
+  .service-block-style10 .inner-box .content-box .service-icon {
     transition: none;
   }
 }
-.service-block-style10 .inner-box .service-icon:after {
-  -webkit-transform: rotate(-12.07deg);
-  -moz-transform: rotate(-12.07deg);
-  -ms-transform: rotate(-12.07deg);
-  transform: rotate(-12.07deg);
-  opacity: 0.2;
+.service-block-style10 .inner-box .content-box .service-title {
+  color: var(--theme-color2);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
-.service-block-style10 .inner-box .service-icon i {
-  position: relative;
-}
-.service-block-style10 .inner-box .service-count {
-  position: absolute;
-  left: 40px;
-  top: 40px;
-  font-size: 32px;
-  line-height: 42px;
-  text-align: center;
-  color: transparent;
-  border-radius: 0px 0px 10px 0px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #7a7a7a;
-}
-.service-block-style10 .inner-box .service-title {
-  margin-bottom: 15px;
-}
-.service-block-style10 .inner-box .service-title:hover {
+.service-block-style10 .inner-box .content-box .service-title a:hover {
   color: var(--theme-color1);
 }
-.service-block-style10 .inner-box .service-details {
-  margin-bottom: 18px;
+.service-block-style10 .inner-box .content-box .service-details {
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+.service-block-style10 .inner-box .content-box .read-more {
+  border: 1px solid var(--theme-color1);
+  line-height: 18px;
+  background-color: #ffffff;
+  color: var(--theme-color2);
+}
+.service-block-style10 .inner-box .content-box .read-more:before {
+  background-color: var(--bg-theme-color1);
+}
+.service-block-style10 .inner-box .content-box .read-more:hover {
+  color: #fff;
+}
+.service-block-style10 .inner-box .image-box .image {
+  position: relative;
+  overflow: hidden;
+}
+.service-block-style10 .inner-box .image-box .image img {
+  border-radius: 10px;
+  transition: all 300ms ease;
 }

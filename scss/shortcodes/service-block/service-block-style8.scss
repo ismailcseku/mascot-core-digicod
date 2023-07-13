@@ -1,72 +1,54 @@
 @import "../../bootstrap-loader";
 @import "service-common";
-
-
-
 .service-block-style8 {
-  margin-bottom: 30px;
+  position: relative;
   .inner-box {
     position: relative;
-    border: 1px solid #E1E1E1;
+    text-align: center;
+    padding: 30px 55px 25px;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
     @include transition(all 300ms ease);
+    @include media-breakpoint-down(sm) {
+      padding: 30px 20px 25px;
+    }
     &:hover {
-      .theme-btn,
-      .content {
-        box-shadow: 0 10px 30px rgba(0, 0, 0, .10);
-      }
-      .service-featured-img {
-        img {
-          @include transform(scale(1.1));
-        }
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--theme-color1);
+      .service-icon {
+        @include transform(scale(-1) rotate(180deg));
       }
     }
-    .service-featured-img {
-      position: relative;
-      overflow: hidden;
-      margin: 0;
-      img {
-        width: 100%;
+    .service-icon {
+      display: inline-block;
+      font-size: 72px;
+      color: var(--theme-color1);
       @include transition(all 300ms ease);
-      }
-    }
-    .content {
-      position: relative;
-      background-color: #fff;
-      padding: 40px 40px 40px;
-      @include transition(all 300ms ease);
-      @include media-breakpoint-down(sm) {
-        padding: 30px 30px 30px;
-      }
-    }
-    i {
-      position: absolute;
-      right: 40px;
-      top: -20px;
-      margin: 0 auto;
-      height: 65px;
-      width: 65px;
-      background-color: var(--theme-color1);
-      color: #fff;
-      @include flex-center;
-      font-size: 42px;
       line-height: 1em;
-      @include transition(all 300ms ease);
-      @include media-breakpoint-down(sm) {
-        right: 30px;
-        top: -50px;
-      }
+      margin-bottom: 32px;
     }
     .service-title {
-      padding-bottom: 20px;
-      border-bottom: 1px solid #E1E1E1;
-      margin-bottom: 15px;
-      margin-top: 0;
-      &:hover {
+      color: var(--theme-color2);
+      margin-bottom: 10px;
+      a:hover {
         color: var(--theme-color1);
       }
     }
     .service-details {
-      margin-bottom: 18px;
+      margin-bottom: 25px;
+    }
+    .read-more {
+      line-height: 22px;
+      color: var(--theme-color2);
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      @include transition(all 300ms ease);
+      i {
+        margin-left: 10px;
+      }
+      &:hover {
+        color: var(--theme-color1);
+      }
     }
   }
 }

@@ -1,72 +1,88 @@
 @import "../../bootstrap-loader";
 @import "service-common";
-
 .service-block-style7 {
-  margin-bottom: 50px;
   .inner-box {
     position: relative;
-    margin-bottom: 37px;
-    @include transition(all 300ms ease);
-    &:hover {
-      i {
-        background-color: var(--theme-color1);
-        color: #fff;
-      }
-      .btn-theme-colored1 {
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      }
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 46px 23px 40px 40px;
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    @include media-breakpoint-down(xl) {
+      padding: 30px 30px;
     }
-    .service-featured-img {
-      margin: 0;
-      img {
-        width: 100%;
+    &:before {
+      @include overlay;
+      height: 0;
+      background-color: var(--theme-color1);
+      content: "";
+      @include transition(all 300ms ease);
+    }
+    &:hover {
+      &:before {
+        height: 100%;
+      }
+      .content {
+        .icon-box {
+          border-color: #fff;
+          .service-icon {
+            color: var(--theme-color1);
+            background-color: #fff;
+          }
+        }
+        .service-details {
+          color: #fff;
+        }
+        .service-title {
+          color: #fff;
+        }
       }
     }
     .content {
       position: relative;
-      background-color: #fff;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      margin-top: -140px;
-      margin-left: 26px;
-      margin-right: 26px;
-      padding: 60px 30px 50px;
-      text-align: center;
-      @include transition(all 300ms ease);
+      padding-left: 95px;
       @include media-breakpoint-down(lg) {
-        margin: 0;
-        padding: 60px 30px;
+        padding-left: 0;
+        text-align: center;
       }
-    }
-    i {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -32px;
-      margin: 0 auto;
-      height: 65px;
-      width: 65px;
-      background-color: var(--theme-color2);
-      color: #fff;
-      @include flex-center;
-      font-size: 42px;
-      line-height: 1em;
-      @include transition(all 300ms ease);
-    }
-    .service-title {
-      margin-bottom: 10px;
-      &:hover {
-        color: var(--theme-color1);
+      .icon-box {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        border: 1px solid var(--theme-color1);
+        padding: 7px;
+        border-radius: 50%;
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg) {
+          display: inline-block;
+          position: relative;
+          margin-bottom: 10px;
+        }
+        .service-icon {
+          display: block;
+          height: 65px;
+          width: 65px;
+          font-size: 36px;
+          line-height: 65px;
+          background-color: var(--theme-color1);
+          text-align: center;
+          border-radius: 50%;
+          color: #fff;
+          @include transition(all 300ms ease);
+        }
       }
-    }
-    .service-details {
-      margin-bottom: 0;
-    }
-    .btn {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 20px 30px;
-      bottom: -37px;
+      .service-title {
+        color: var(--theme-color2);
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      .service-details {
+        color: var(--text-color);
+        @include transition(all 300ms ease);
+        margin-bottom: 0;
+      }
     }
   }
 }
