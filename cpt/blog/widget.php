@@ -101,6 +101,11 @@ class TM_Elementor_Blog extends Widget_Base {
 		$this->add_skin( new Skins\Skin_Style_Current_Theme1( $this ) );
 		$this->add_skin( new Skins\Skin_Style_Current_Theme2( $this ) );
 		$this->add_skin( new Skins\Skin_Style_Current_Theme3( $this ) );
+		$this->add_skin( new Skins\Skin_Style_Current_Theme4( $this ) );
+		$this->add_skin( new Skins\Skin_Style_Current_Theme5( $this ) );
+		$this->add_skin( new Skins\Skin_Style_Current_Theme6( $this ) );
+		$this->add_skin( new Skins\Skin_Style_Current_Theme7( $this ) );
+		$this->add_skin( new Skins\Skin_Style_Current_Theme8( $this ) );
 		$this->add_skin( new Skins\Skin_Style2( $this ) );
 		$this->add_skin( new Skins\Skin_Style3( $this ) );
 		$this->add_skin( new Skins\Skin_Style4( $this ) );

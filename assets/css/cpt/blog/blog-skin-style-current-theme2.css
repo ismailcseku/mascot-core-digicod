@@ -55,7 +55,6 @@
 }
 .blog-item-current-style2 .entry-content .entry-title {
   color: var(--theme-color2);
-  margin-bottom: 20px;
 }
 .blog-item-current-style2 .entry-content .entry-title:hover a {
   color: var(--theme-color1);
