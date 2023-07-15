@@ -38,3 +38,22 @@
   </div>
   <div class="clearfix"></div>
 </div>
+
+
+
+<div class="news-block">
+  <div class="inner-box">
+    <div class="image-box">
+      <figure class="image"><a href="news-details.html"><img src="images/resource/news1-1.jpg" alt=""></a></figure>
+      <span class="cat">Evaulation</span>
+    </div>
+    <div class="content-box">
+      <ul class="post-info">
+        <li><i class="fas fa-calendar-alt"></i> 01 January 2023</li>
+      </ul>
+      <h4 class="title"><a href="news-details.html">Your online success is our priority amplify your digital presence</a></h4>
+      <div class="text">Our mission is there are variations passages of Lorem Ipsum available, but the majority have suffered alteration</div>
+      <a href="news-details.html" class="theme-btn btn-style-one read-more"><span class="btn-title">Read More <i class="fa fa-arrow-right"></i></span></a>
+    </div>
+  </div>
+</div>
