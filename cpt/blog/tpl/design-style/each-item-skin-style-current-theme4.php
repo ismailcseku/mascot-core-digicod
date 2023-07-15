@@ -19,13 +19,6 @@
     <?php endif; ?>
 
     <div class="entry-content">
-      <!-- <div class="author-thumb">
-        <?php if($avatar = get_avatar(get_the_author_meta('ID')) !== FALSE): ?>
-          <?php echo get_avatar( get_the_author_meta( 'ID' ), 128 ); ?>
-        <?php else: ?>
-          <img src="https://via.placeholder.com/150x150" alt="avatar">
-        <?php endif; ?>
-      </div> -->
 
       <?php if ( $show_post_meta == 'yes' ) : ?>
         <?php digicod_post_shortcode_meta( $post_meta_options, array( $show_post_meta_over_featured_image ) ); ?>
