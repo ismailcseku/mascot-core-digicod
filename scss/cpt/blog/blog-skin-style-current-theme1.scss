@@ -1,5 +1,4 @@
 @import "../../bootstrap-loader";
-@import "blog-common";
 
 .tm-sc-blog {
   .blog-item-current-style1 {
@@ -64,7 +63,7 @@
     }
     .entry-content {
       position: relative;
-      padding: 25px 30px 40px;
+      padding: 30px;
       border: 1px solid #e3e3e3;
       border-top: 0;
       border-radius: 0 0 10px 10px;
@@ -75,6 +74,9 @@
         &:hover {
           color: var(--theme-color2);
         }
+      }
+      .entry-meta i {
+        color: var(--theme-color1);
       }
       .mascot-post-excerpt {
         margin-bottom: 30px;
