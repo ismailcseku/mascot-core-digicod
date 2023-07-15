@@ -3,15 +3,33 @@
   position: relative;
   .inner-box {
     position: relative;
-    max-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 60px;
     &:hover {
+      .info-box {
+        &::before {
+          height: 100%;
+        }
+        .team-title,
+        .team-subtitle {
+          color: #fff;
+          a {
+            &:hover,
+            &:focus {
+              color: #fff;
+            }
+          }
+        }
+      }
       .image img {
         @include transform(scale(1.1));
       }
-      .social-link {
+      .share-icon {
+        background-color: var(--theme-color1);
+        color: #fff;
+      }
+      .social-links {
         @include transform(scaleY(1));
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -19,9 +37,9 @@
     position: relative;
     .image {
       position: relative;
-      border-radius: 150px 150px 0 0;
       overflow: hidden;
       margin-bottom: 0;
+      border-radius: 10px 10px 0 0;
       z-index: 1;
       img {
         width: 100%;
@@ -30,22 +48,25 @@
     }
   }
   .info-box {
-    position: absolute;
-    left: 22px;
-    right: 22px;
-    bottom: 0;
-    padding: 35px 30px 28px;
-    border-radius: 10px;
-    box-shadow: 0px 16px 52px rgba(0, 0, 0, 0.07);
-    background-color: #fff;
+    position: relative;
+    padding: 30px 30px;
     text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+    border-radius: 0px 0px 10px 10px;
     z-index: 2;
+    overflow: hidden;
+    &:before {
+      @include overlay;
+      content: "";
+      height: 0;
+      background-color: var(--theme-color1);
+      @include transition(all 300ms ease);
+    }
     .team-title {
+      position: relative;
       margin-top: 0;
       margin-bottom: 5px;
-      &:hover {
-        color: var(--theme-color1);
-      }
     }
     .team-subtitle {
       position: relative;
@@ -53,37 +74,51 @@
       @include transition(all 400ms ease);
     }
   }
-  .social-link {
+  .share-icon {
     position: absolute;
-    left: 0;
-    width: 100%;
-    top: -40px;
+    top: 30px;
+    left: 30px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--theme-color1);
+    background-color: #fff;
+    @include transition(all 300ms ease);
+    border-radius: 50px;
+    z-index: 3;
+  }
+  .social-links {
+    position: absolute;
+    left: 30px;
+    top: 45px;
+    padding-top: 45px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    transform: scaleY(0);
-    transform-origin: bottom;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 50px;
     z-index: 3;
+    transform: scaleY(0);
+    transform-origin: top;
     @include transition(all 400ms ease);
     li {
       list-style: none;
       margin-bottom: 0;
       a {
         position: relative;
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        color: #fff;
-        background-color: var(--theme-color1);
-        border-radius: 5px 5px 0px 0px;
-        margin: 0 5px;
+        line-height: 16px;
+        display: block;
+        color: var(--text-color);
+        background-color: #fff;
+        border-radius: 50px;
+        opacity: 0.3;
+        padding: 0 12px 20px;
+        border-radius: 0 0 50px 50px;
         @include transition(all 300ms ease);
         &:hover {
           color: var(--theme-color1);
-          background-color: #fff;
+          opacity: 1;
         }
       }
     }
