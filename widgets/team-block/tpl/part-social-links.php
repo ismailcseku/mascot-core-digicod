@@ -20,15 +20,15 @@
     }
 ?>
 
-<?php 
+<?php
     if( $settings['show_social_links'] == 'yes' && is_array($social_links) && !empty($social_links) ) {
 ?>
-<ul class="social-link">
-    <?php 
+<ul class="social-links">
+    <?php
         foreach( $social_links as $key => $value ) {
     ?>
     <li><a href="<?php echo esc_url($value);?>"><i class="fab fa-<?php echo esc_attr($key);?>"></i></a></li>
-    <?php 
+    <?php
         }
     ?>
 </ul>
