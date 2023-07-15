@@ -6,7 +6,6 @@
       <div class="image">
         <?php mascot_core_digicod_get_shortcode_template_part( 'part-thumb', null, 'team-block/tpl', $team_item, false );?>
       </div>
-      <span class="share-icon fa fa-share-alt"></span>
       <?php mascot_core_digicod_get_shortcode_template_part( 'part-social-links', null, 'team-block/tpl', $team_item, false );?>
     </div>
     <div class="info-box">

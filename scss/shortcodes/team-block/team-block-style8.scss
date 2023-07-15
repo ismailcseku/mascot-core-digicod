@@ -3,77 +3,96 @@
   position: relative;
   .inner-box {
     position: relative;
-    text-align: center;
-    background-color: #fff;
-    @include transition(all 300ms ease);
+    border: 2px solid #e3e3e3;
+    border-radius: 10px;
+    overflow: hidden;
     &:hover {
       .image img {
         @include transform(scale(1.1));
       }
-      .social-link {
+      .social-links {
         @include transform(scaleY(1));
         opacity: 1;
         visibility: visible;
       }
     }
   }
-  .image {
+  .image-box {
     position: relative;
-    display: block;
-    overflow: hidden;
-    z-index: 1;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      @include transition(all 400ms ease);
+    .image {
+      position: relative;
+      margin-bottom: 0;
+      z-index: 1;
+      img {
+        width: 100%;
+        @include transition(all 400ms ease);
+      }
     }
   }
   .info-box {
     position: relative;
-    padding: 30px 30px 40px;
-  }
-  .team-title {
-    margin-top: 0;
-    margin-bottom: 5px;
-    &:hover {
-      color: var(--theme-color1);
+    text-align: center;
+    padding: 20px 30px 30px;
+    background-color: #fff;
+    z-index: 2;
+    .team-title {
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 5px;
+      a:hover {
+        color: var(--theme-color1);
+      }
+    }
+    .team-subtitle {
+      position: relative;
+      display: block;
+      @include transition(all 400ms ease);
     }
   }
-  .team-subtitle {
-    position: relative;
-    display: block;
+  .share-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--theme-color1);
     @include transition(all 400ms ease);
-    margin-bottom: 11px;
+    border-radius: 50px;
+    z-index: 3;
   }
-  .text {
-    margin-bottom: 17px;
-  }
-  .social-link {
-    position: relative;
+  .social-links {
+    position: absolute;
+    right: 30px;
+    top: 80px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    background-color: var(--theme-color1);
+    transform-origin: top;
+    transform: scaleY(0);
+    border-radius: 50px;
+    z-index: 3;
+    padding: 17px 10px 17px;
+    opacity: 0;
+    visibility: hidden;
     @include transition(all 400ms ease);
     li {
       list-style: none;
       margin-bottom: 0;
       a {
         position: relative;
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 20px;
         display: inline-block;
-        background: #fafafb;
-        color: var(--theme-color1);
-        text-align: center;
-        border-radius: 5px;
-        margin: 0 5px;
-        @include transition(all 300ms ease);
-        &:hover {
-          color: #fff;
-          background-color: var(--theme-color1);
+        color: #fff;
+        margin-bottom: 25px;
+        @include transition(all 400ms ease);
+        &:last-child {
+          margin-bottom: 0px;
         }
       }
     }

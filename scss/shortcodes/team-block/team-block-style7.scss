@@ -4,11 +4,26 @@
   .inner-box {
     position: relative;
     &:hover {
+      .info-box {
+        &:before {
+          height: 100%;
+        }
+        .team-title,
+        .team-subtitle {
+          color: #fff;
+          a {
+            &:hover,
+            &:focus {
+              color: #fff;
+            }
+          }
+        }
+      }
       .image img {
         @include transform(scale(1.1));
       }
-      .social-link {
-        @include transform(scaleY(1));
+      .social-links {
+        bottom: 30px;
         opacity: 1;
         visibility: visible;
       }
@@ -20,6 +35,7 @@
       position: relative;
       overflow: hidden;
       margin-bottom: 0;
+      border-radius: 10px 10px 0 0;
       z-index: 1;
       img {
         width: 100%;
@@ -29,13 +45,25 @@
   }
   .info-box {
     position: relative;
-    padding: 28px 30px 28px;
-    background-color: #fafafb;
+    padding: 20px 30px;
     text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    border-radius: 0px 0px 10px 10px;
     z-index: 2;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    &:before {
+      @include overlay;
+      content: "";
+      height: 0;
+      background-color: var(--theme-color1);
+      @include transition(all 400ms ease);
+    }
     .team-title {
+      position: relative;
       margin-top: 0;
-      margin-bottom: 0;
+      margin-bottom: 5px;
       &:hover {
         color: var(--theme-color1);
       }
@@ -46,50 +74,45 @@
       @include transition(all 400ms ease);
     }
   }
-  .share-icon {
+  .social-links {
     position: absolute;
-    top: 30px;
-    right: 30px;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    font-size: 16px;
-    text-align: center;
-    color: var(--theme-color1);
-    background-color: #fff;
-    border-radius: 50px;
-    z-index: 3;
-    @include transition(all 300ms ease);
-  }
-  .social-link {
-    position: absolute;
-    right: 30px;
-    top: 75px;
+    left: 50%;
+    bottom: 0px;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    @include transform(scaleY(0));
-    transform-origin: top;
     z-index: 3;
     opacity: 0;
     visibility: hidden;
+    @include transform(translateX(-50%));
     @include transition(all 400ms ease);
     li {
       list-style: none;
       margin-bottom: 0;
+      &:last-child {
+        a {
+          border-radius: 0 10px 10px 0;
+          border-right: 0;
+        }
+      }
+      &:first-child {
+        a {
+          border-radius: 10px 0px 0px 10px;
+        }
+      }
       a {
         position: relative;
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        text-align: center;
-        font-size: 16px;
-        display: inline-block;
-        color: var(--theme-color1);
+        line-height: 16px;
+        color: #333f4d;
         background-color: #fff;
         border-radius: 50px;
-        margin-bottom: 5px;
-        @include transition(all 300ms ease);
+        width: 44px;
+        height: 41px;
+        display: inline-block;
+        line-height: 41px;
+        text-align: center;
+        border-radius: 0;
+        @include transition(all 400ms ease);
+        border-right: 1px solid #f2f3f5;
         &:hover {
           color: #fff;
           background-color: var(--theme-color1);
