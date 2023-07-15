@@ -3,7 +3,7 @@
 <div class="testimonial-block testimonial-block-style1">
   <div class="inner-box">
     <div class="info-box">
-      <div class="quote">
+      <div class="quote-icon">
         <?php \Elementor\Icons_Manager::render_icon( $settings['icon'], [ 'aria-hidden' => 'true' , 'class' => 'icon' ] ); ?>
       </div>
       <?php mascot_core_digicod_get_shortcode_template_part( 'part-title', null, 'testimonial-block/tpl', $testimonial_item, false );?>

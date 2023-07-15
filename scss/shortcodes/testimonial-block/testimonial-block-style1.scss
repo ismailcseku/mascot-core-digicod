@@ -3,7 +3,6 @@
 .tm-sc-testimonials {
   .testimonial-block-style1 {
     position: relative;
-    margin-bottom: 30px;
     .inner-box {
       position: relative;
       padding: 60px 60px;
@@ -25,7 +24,8 @@
       @include media-breakpoint-down(sm) {
         padding-right: 0;
       }
-      .testimonial-name {
+      .testimonial-title {
+        margin-top: 0;
         margin-bottom: 4px;
       }
       .testimonial-position {
@@ -34,7 +34,6 @@
       }
       .rating {
         position: relative;
-        font-size: var(--body-font-size);
         z-index: 2;
         line-height: 20px;
         color: #ffba08;
@@ -72,7 +71,7 @@
           height: 50px;
           width: 50px;
           color: #fff;
-          background-color: var(--bg-theme-color1);
+          background-color: var(--theme-color1);
           font-size: 24px;
           border-radius: 50%;
         }
@@ -87,8 +86,6 @@
         display: block;
         font-size: 18px;
         font-weight: 700;
-        color: var(--theme-color-dark);
-        @include title-font;
       }
       .author-text {
         position: relative;
