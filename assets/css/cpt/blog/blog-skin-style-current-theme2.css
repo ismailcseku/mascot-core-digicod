@@ -59,9 +59,6 @@
 .blog-item-current-style2 .entry-content .entry-title:hover a {
   color: var(--theme-color1);
 }
-.blog-item-current-style2 .entry-content .post-excerpt {
-  margin-bottom: 0;
-}
 .blog-item-current-style2 .entry-content .entry-meta i {
   color: var(--theme-color1);
 }
