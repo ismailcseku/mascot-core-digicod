@@ -41,6 +41,7 @@
         letter-spacing: 0.2em;
         margin-bottom: 12px;
         .star-rating {
+          margin-top: 0;
           margin-bottom: 0;
           display: inline-block;
           span:before {
@@ -54,7 +55,7 @@
           margin-top: 0;
           font-weight: 500;
           color: #151718;
-          margin-bottom: 3px;
+          margin-bottom: 0;
         }
         .testimonial-position {
           margin-bottom: 15px;

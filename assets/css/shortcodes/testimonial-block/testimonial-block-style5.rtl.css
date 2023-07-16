@@ -113,6 +113,7 @@
   margin-bottom: 10px;
 }
 .testimonial-block-style5 .inner-box .info-box .rating .star-rating {
+  margin-top: 0;
   margin-bottom: 0;
   display: inline-block;
 }
@@ -134,13 +135,13 @@
     flex-direction: column;
   }
 }
-.testimonial-block-style5 .inner-box .info-box .name-box .testimonial-title {
+.testimonial-block-style5 .inner-box .info-box .name-box .testimonial-name {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 10px;
 }
 @media (max-width: 575.98px) {
-  .testimonial-block-style5 .inner-box .info-box .name-box .testimonial-title {
+  .testimonial-block-style5 .inner-box .info-box .name-box .testimonial-name {
     margin-left: 0;
   }
 }

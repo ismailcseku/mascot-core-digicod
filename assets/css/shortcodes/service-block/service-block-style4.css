@@ -32,7 +32,7 @@
 .service-block-style4 .inner-box:hover {
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
 }
-.service-block-style4 .inner-box:hover .image-box .image img {
+.service-block-style4 .inner-box:hover .image-box .service-featured-img img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -40,7 +40,7 @@
   transition: all 300ms ease;
 }
 @media (prefers-reduced-motion: reduce) {
-  .service-block-style4 .inner-box:hover .image-box .image img {
+  .service-block-style4 .inner-box:hover .image-box .service-featured-img img {
     transition: none;
   }
 }
@@ -57,16 +57,16 @@
 .service-block-style4 .inner-box .image-box {
   position: relative;
 }
-.service-block-style4 .inner-box .image-box .image {
+.service-block-style4 .inner-box .image-box .service-featured-img {
   overflow: hidden;
   border-radius: 10px;
 }
-.service-block-style4 .inner-box .image-box .image img {
+.service-block-style4 .inner-box .image-box .service-featured-img img {
   width: 100%;
   transition: all 300ms ease;
 }
 @media (prefers-reduced-motion: reduce) {
-  .service-block-style4 .inner-box .image-box .image img {
+  .service-block-style4 .inner-box .image-box .service-featured-img img {
     transition: none;
   }
 }

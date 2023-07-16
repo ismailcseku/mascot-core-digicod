@@ -2,7 +2,7 @@
 <?php $service_item['settings'] = $settings; ?>
 <div class="service-block-style4">
   <div class="inner-box">
-    <div class="image">
+    <div class="image-box">
       <?php mascot_core_digicod_get_shortcode_template_part( 'part-featured-image', null, 'service-block/tpl', $service_item, false );?>
     </div>
     <div class="content-box">

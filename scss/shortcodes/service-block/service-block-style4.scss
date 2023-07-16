@@ -15,7 +15,7 @@
     &:hover {
       box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
       .image-box {
-        .image {
+        .service-featured-img {
           img {
             @include transform(scale(1.1));
             @include transition(all 300ms ease);
@@ -32,7 +32,7 @@
     }
     .image-box {
       position: relative;
-      .image {
+      .service-featured-img {
         overflow: hidden;
         border-radius: 10px;
         img {

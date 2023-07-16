@@ -102,6 +102,7 @@
   margin-bottom: 22px;
 }
 .testimonial-block-style6 .content-box .rating .star-rating {
+  margin-top: 0;
   margin-bottom: 0;
   display: inline-block;
 }

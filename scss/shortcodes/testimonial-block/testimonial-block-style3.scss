@@ -59,12 +59,13 @@
       }
       .rating {
         position: relative;
-        font-size: var(--body-font-size);
+        font-size: 16px;
         z-index: 2;
-        line-height: 20px;
+        line-height: 15px;
         color: #ffba08;
         margin-bottom: 10px;
         .star-rating {
+          margin-top: 0;
           margin-bottom: 0;
           display: inline-block;
           span:before {

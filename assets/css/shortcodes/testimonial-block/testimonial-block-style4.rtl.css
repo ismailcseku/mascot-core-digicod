@@ -110,6 +110,7 @@
   margin-bottom: 12px;
 }
 .tm-sc-testimonials .testimonial-block-style4 .inner-box .rating .star-rating {
+  margin-top: 0;
   margin-bottom: 0;
   display: inline-block;
 }
@@ -121,7 +122,7 @@
   margin-top: 0;
   font-weight: 500;
   color: #151718;
-  margin-bottom: 3px;
+  margin-bottom: 0;
 }
 .tm-sc-testimonials .testimonial-block-style4 .inner-box .info-box .testimonial-position {
   margin-bottom: 15px;

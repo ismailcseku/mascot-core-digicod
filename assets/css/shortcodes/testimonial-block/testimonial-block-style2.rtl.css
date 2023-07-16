@@ -123,6 +123,7 @@
   margin-bottom: 20px;
 }
 .tm-sc-testimonials .testimonial-block-style2 .content-box .rating .star-rating {
+  margin-top: 0;
   margin-bottom: 0;
   display: inline-block;
 }
