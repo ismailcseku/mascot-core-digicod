@@ -10,14 +10,15 @@
 
 .working-block-style1 {
   position: relative;
-  margin-bottom: 60px;
 }
 .working-block-style1 .inner-box {
   text-align: center;
-  max-width: 240px;
   margin: 0 auto;
 }
 .working-block-style1 .inner-box:hover .icon {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 .working-block-style1 .inner-box .icon-box {
@@ -36,6 +37,11 @@
   line-height: 1em;
   color: var(--theme-color1);
   transition: all 300ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .working-block-style1 .inner-box .icon-box i::before {
+    transition: none;
+  }
 }
 .working-block-style1 .inner-box .icon-box .count {
   position: absolute;
@@ -56,6 +62,7 @@
   opacity: 0.5;
 }
 .working-block-style1 .inner-box .working-title {
+  margin-top: 0;
   margin-bottom: 10px;
   color: var(--theme-color2);
 }

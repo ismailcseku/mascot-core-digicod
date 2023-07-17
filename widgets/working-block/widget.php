@@ -106,6 +106,12 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 	 */
 	protected function register_skins() {
 		$this->add_skin( new Skins\Skin_Style1( $this ) );
+		$this->add_skin( new Skins\Skin_Style2( $this ) );
+		$this->add_skin( new Skins\Skin_Style3( $this ) );
+		$this->add_skin( new Skins\Skin_Style4( $this ) );
+		$this->add_skin( new Skins\Skin_Style5( $this ) );
+		$this->add_skin( new Skins\Skin_Style6( $this ) );
+		$this->add_skin( new Skins\Skin_Style7( $this ) );
 	}
 
 	/**

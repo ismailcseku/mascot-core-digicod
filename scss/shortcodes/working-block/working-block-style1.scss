@@ -2,14 +2,12 @@
 @import "working-block-common";
 .working-block-style1 {
   position: relative;
-  margin-bottom: 60px;
   .inner-box {
     text-align: center;
-    max-width: 240px;
     margin: 0 auto;
     &:hover {
       .icon {
-        transform: scaleX(-1);
+        @include transform(scaleX(-1));
       }
     }
     .icon-box {
@@ -26,7 +24,7 @@
         font-size: 84px;
         line-height: 1em;
         color: var(--theme-color1);
-        transition: all 300ms ease;
+        @include transition(all 300ms ease);
       }
       .count {
         position: absolute;
@@ -48,6 +46,7 @@
       }
     }
     .working-title {
+      margin-top: 0;
       margin-bottom: 10px;
       color: var(--theme-color2);
     }
