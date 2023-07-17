@@ -25,6 +25,96 @@ class Skin_Style5 extends Elementor_Skin_Base {
 
 	public function register_layout_controls( Widget_Base $widget ) {
 		$this->parent = $widget;
+
+		$this->start_controls_section(
+			'current_wrapper_styling',
+			[
+				'label' => esc_html__( 'Current Skin Styling', 'mascot-core-digicod' ),
+				'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->start_controls_tabs('tabs_current_theme_styling');
+		$this->start_controls_tab(
+			'tabs_current_theme_styling_normal1',
+			[
+				'label' => esc_html__('Normal', 'mascot-core-digicod'),
+			]
+		);
+		// Background Color
+		$this->add_control(
+			'content_wrapper_color_options',
+			[
+				'label' => esc_html__( 'BG Color Options', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+
+		$this->add_responsive_control(
+			'content_wrapper_custom_bg_color',
+			[
+				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .info-box' => 'background-color: {{VALUE}};'
+				]
+			]
+		);
+
+		$this->add_responsive_control(
+			'content_wrapper_theme_colored',
+			[
+				'label' => esc_html__( "Make BG Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .info-box' => 'background-color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+		$this->end_controls_tab();
+
+		$this->start_controls_tab(
+			'tabs_current_theme_styling_hover1',
+			[
+				'label' => esc_html__('Hover', 'mascot-core-digicod'),
+			]
+		);
+		//Background Hover Color
+		$this->add_control(
+			'content_wrapper_color_options_hover',
+			[
+				'label' => esc_html__( 'BG Color Options (Hover)', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+		$this->add_responsive_control(
+			'content_wrapper_custom_bg_color_hover',
+			[
+				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item:hover .info-box' => 'background-color: {{VALUE}};'
+				]
+			]
+		);
+		$this->add_responsive_control(
+			'content_wrapper_theme_colored_hover',
+			[
+				'label' => esc_html__( "Make BG Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item:hover .info-box' => 'background-color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+
+		$this->end_controls_tab();
+		$this->end_controls_tabs();
+		$this->end_controls_section();
 	}
 
 	public function render() {

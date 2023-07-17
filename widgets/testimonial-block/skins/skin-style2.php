@@ -40,7 +40,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+					'{{WRAPPER}} .testimonial-block .content-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
 				]
 			]
 		);
@@ -51,7 +51,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .testimonial-block .content-box' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -62,7 +62,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .testimonial-block .content-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -89,7 +89,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .testimonial-block .content-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -102,7 +102,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .testimonial-block .content-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -113,7 +113,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 			[
 				'name' => 'content_area_normal_border',
 				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .testimonial-block .testimonial-content',
+				'selector' => '{{WRAPPER}} .testimonial-block .content-box',
 			]
 		);
 		$this->add_group_control(
@@ -121,7 +121,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 			[
 				'name' => 'content_area_normal_box_shadow',
 				'label' => esc_html__( 'Box Shadow', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .testimonial-block .testimonial-content',
+				'selector' => '{{WRAPPER}} .testimonial-block .content-box',
 			]
 		);
 
@@ -147,7 +147,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block:hover .testimonial-content' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .testimonial-block:hover .content-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -159,7 +159,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block:hover .testimonial-content' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .testimonial-block:hover .content-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -170,7 +170,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 			[
 				'name' => 'content_area_hover_border',
 				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .testimonial-block:hover .testimonial-content',
+				'selector' => '{{WRAPPER}} .testimonial-block:hover .content-box',
 			]
 		);
 		$this->add_group_control(
@@ -178,7 +178,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 			[
 				'name' => 'content_area_hover_box_shadow',
 				'label' => esc_html__( 'Box Shadow', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .testimonial-block:hover .testimonial-content',
+				'selector' => '{{WRAPPER}} .testimonial-block:hover .content-box',
 			]
 		);
 

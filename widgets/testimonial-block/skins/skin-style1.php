@@ -41,7 +41,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+					'{{WRAPPER}} .testimonial-block .inner-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
 				]
 			]
 		);
@@ -52,7 +52,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .testimonial-block .inner-box' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -63,7 +63,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .testimonial-block .inner-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -90,7 +90,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .testimonial-block .inner-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -103,7 +103,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .testimonial-block .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -114,7 +114,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 			[
 				'name' => 'content_area_normal_border',
 				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .testimonial-block .testimonial-content',
+				'selector' => '{{WRAPPER}} .testimonial-block .inner-box',
 			]
 		);
 		$this->add_group_control(
@@ -122,7 +122,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 			[
 				'name' => 'content_area_normal_box_shadow',
 				'label' => esc_html__( 'Box Shadow', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .testimonial-block .testimonial-content',
+				'selector' => '{{WRAPPER}} .testimonial-block .inner-box',
 			]
 		);
 
@@ -148,7 +148,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block:hover .testimonial-content' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .testimonial-block:hover .inner-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -160,7 +160,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block:hover .testimonial-content' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .testimonial-block:hover .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -171,7 +171,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 			[
 				'name' => 'content_area_hover_border',
 				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .testimonial-block:hover .testimonial-content',
+				'selector' => '{{WRAPPER}} .testimonial-block:hover .inner-box',
 			]
 		);
 		$this->add_group_control(
@@ -179,7 +179,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 			[
 				'name' => 'content_area_hover_box_shadow',
 				'label' => esc_html__( 'Box Shadow', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .testimonial-block:hover .testimonial-content',
+				'selector' => '{{WRAPPER}} .testimonial-block:hover .inner-box',
 			]
 		);
 
@@ -199,30 +199,52 @@ class Skin_Style1 extends Elementor_Skin_Base {
 		$this->start_controls_tabs('tabs_quote_icon_styling');
 		//Normal Color
 		$this->start_controls_tab(
-			'content_quote_icon_norlam_styling',
+			'content_quote_icon_mormal_styling',
 			[
 				'label' => esc_html__('Normal', 'mascot-core-digicod'),
 			]
 		);
 		$this->add_responsive_control(
-			'content_quote_icon_norlam_color',
+			'content_quote_icon_mormal_bg_color',
 			[
-				'label' => esc_html__( "Quote Icon Color", 'mascot-core-digicod' ),
+				'label' => esc_html__( "Quote Icon Bg Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content .icon' => 'color: {{VALUE}};'
+					'{{WRAPPER}} .testimonial-block .inner-box .quote-icon .icon' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
 		$this->add_responsive_control(
-			'content_quote_icon_norlam_theme_colored',
+			'content_quote_icon_mormal_bg_theme_colored',
+			[
+				'label' => esc_html__( "Quote Icon Bg Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .testimonial-block .inner-box .quote-icon .icon' => 'background-color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+		$this->add_responsive_control(
+			'content_quote_icon_mormal_color',
+			[
+				'label' => esc_html__( "Quote Icon Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .testimonial-block .inner-box .quote-icon .icon' => 'color: {{VALUE}};'
+				]
+			]
+		);
+		$this->add_responsive_control(
+			'content_quote_icon_mormal_theme_colored',
 			[
 				'label' => esc_html__( "Quote Icon Theme Colored", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content .icon' => 'color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .testimonial-block .inner-box .quote-icon .icon' => 'color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -244,12 +266,34 @@ class Skin_Style1 extends Elementor_Skin_Base {
 			]
 		);
 		$this->add_responsive_control(
+			'content_quote_icon_bg_hover_color',
+			[
+				'label' => esc_html__( "Quote Icon Bg Color (Hover)", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .testimonial-block:hover .inner-box .quote-icon .icon' => 'background-color: {{VALUE}};'
+				]
+			]
+		);
+		$this->add_responsive_control(
+			'content_quote_icon_hover_bg_theme_colored',
+			[
+				'label' => esc_html__( "Quote Icon Bg Theme Colored (Hover)", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .testimonial-block:hover .inner-box .quote-icon .icon' => 'background-color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+		$this->add_responsive_control(
 			'content_quote_icon_hover_color',
 			[
 				'label' => esc_html__( "Quote Icon Color (Hover)", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block:hover .testimonial-content .icon' => 'color: {{VALUE}};'
+					'{{WRAPPER}} .testimonial-block:hover .inner-box .quote-icon .icon' => 'color: {{VALUE}};'
 				]
 			]
 		);
@@ -261,7 +305,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block:hover .testimonial-content .icon' => 'color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .testimonial-block:hover .inner-box .quote-icon .icon' => 'color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);

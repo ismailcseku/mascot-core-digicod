@@ -107,6 +107,7 @@ class Plugin {
 			'blog-list',
 			'award-block',
 			'features-block',
+			'working-block',
 			'service-block',
 			'team-block',
 			'testimonial-block',
@@ -257,6 +258,7 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\AwardBlock\TM_Elementor_AwardBlock() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\FeaturesBlock\TM_Elementor_FeaturesBlock() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\ServiceBlock\TM_Elementor_ServiceBlock() );
+		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\WorkingBlock\TM_Elementor_WorkingBlock() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\TeamBlock\TM_Elementor_TeamBlock() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\TestimonialBlock\TM_Elementor_TestimonialBlock() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\CounterBlock\TM_Elementor_CounterBlock() );
