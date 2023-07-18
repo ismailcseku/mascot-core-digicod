@@ -9,14 +9,14 @@
     text-align: center;
     padding: 30px 30px;
     height: 100%;
-    transition: all 300ms ease;
+    @include transition(all 300ms ease);
     &::before {
       @include overlay;
       background: var(--theme-color2);
       opacity: 0.05;
       border-radius: 10px;
       content: "";
-      transition: all 300ms ease;
+      @include transition(all 300ms ease);
       z-index: -1;
     }
     &:hover {
@@ -24,7 +24,7 @@
         opacity: 1;
       }
       .counter-icon {
-        transform: scale(-1) rotate(180deg);
+        @include transform(scale(-1) rotate(180deg));
       }
       .counter,
       .counter-icon,
@@ -37,7 +37,7 @@
     display: inline-block;
     font-size: 60px;
     line-height: 1em;
-    transition: all 300ms ease;
+    @include transition(all 300ms ease);
     margin-bottom: 18px;
     color: var(--headings-color);
   }

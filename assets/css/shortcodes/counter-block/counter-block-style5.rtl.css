@@ -54,6 +54,11 @@
   background-color: var(--theme-color1);
   transition: all 300ms ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-five .counter-icon {
+    transition: none;
+  }
+}
 @media (max-width: 575.98px) {
   .counter-block-five .counter-icon {
     right: 0;

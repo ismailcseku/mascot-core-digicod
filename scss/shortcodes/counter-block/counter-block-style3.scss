@@ -6,7 +6,7 @@
   border-radius: 7px;
   background-color: #fff;
   border: 1px solid#333f4d;
-  @include transition(all 0.3s);
+  @include transition(all 300ms ease);
   z-index: 1;
   position: relative;
   text-align: center;

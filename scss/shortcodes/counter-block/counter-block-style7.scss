@@ -5,13 +5,13 @@
   margin-bottom: 50px;
   .inner {
     position: relative;
-    transition: all 300ms ease;
+    @include transition(all 300ms ease);
     @include media-breakpoint-down(xl) {
       text-align: center;
     }
     &:hover {
       .counter-icon {
-        transform: scale(-1) rotate(180deg);
+        @include transform(scale(-1) rotate(180deg));
       }
     }
   }
@@ -19,7 +19,7 @@
     display: inline-block;
     font-size: 60px;
     line-height: 1em;
-    transition: all 300ms ease;
+    @include transition(all 300ms ease);
     margin-bottom: 25px;
     color: var(--headings-color);
   }

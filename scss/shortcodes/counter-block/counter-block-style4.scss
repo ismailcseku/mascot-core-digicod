@@ -11,7 +11,7 @@
   .inner {
     &:hover {
       .counter-icon {
-        transform: scale(-1) rotate(180deg);
+        @include transform(scale(-1) rotate(180deg));
       }
     }
   }
@@ -39,7 +39,7 @@
     background-color: #ffffff;
     border-radius: 50%;
     border: 2px solid var(--theme-color1);
-    transition: all 300ms ease;
+    @include transition(all 300ms ease);
     z-index: 1;
   }
   .counter {

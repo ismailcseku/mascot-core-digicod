@@ -6,12 +6,20 @@
   position: relative;
   transition: all 300ms ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-saven .inner {
+    transition: none;
+  }
+}
 @media (max-width: 1199.98px) {
   .counter-block-saven .inner {
     text-align: center;
   }
 }
 .counter-block-saven .inner:hover .counter-icon {
+  -webkit-transform: scale(-1) rotate(180deg);
+  -moz-transform: scale(-1) rotate(180deg);
+  -ms-transform: scale(-1) rotate(180deg);
   transform: scale(-1) rotate(180deg);
 }
 .counter-block-saven .counter-icon {
@@ -21,6 +29,11 @@
   transition: all 300ms ease;
   margin-bottom: 25px;
   color: var(--headings-color);
+}
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-saven .counter-icon {
+    transition: none;
+  }
 }
 .counter-block-saven .count-box .counter {
   font-size: 48px;

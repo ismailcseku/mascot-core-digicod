@@ -3,6 +3,11 @@
   margin-bottom: 50px;
   transition: all 300ms ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-item {
+    transition: none;
+  }
+}
 .counter-item:hover .counter-icon {
   background-color: #ffffff;
   color: var(--theme-color1);
@@ -34,6 +39,11 @@
   border-radius: 5px;
   transition: all 300ms ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-item .counter-icon {
+    transition: none;
+  }
+}
 @media (max-width: 575.98px) {
   .counter-item .counter-icon {
     position: relative;
@@ -57,6 +67,11 @@
   margin-bottom: 50px;
   transition: all 300ms ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-two {
+    transition: none;
+  }
+}
 .counter-block-two .text {
   padding-right: 100px;
   position: relative;
@@ -76,6 +91,11 @@
   line-height: 1em;
   border-radius: 5px;
   transition: all 300ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-two .counter-icon {
+    transition: none;
+  }
 }
 @media (max-width: 575.98px) {
   .counter-block-two .counter-icon {
@@ -122,7 +142,7 @@
   border-radius: 7px;
   background-color: #fff;
   border: 1px solid #333f4d;
-  transition: all 0.3s;
+  transition: all 300ms ease;
   z-index: 1;
   position: relative;
   text-align: center;
@@ -157,6 +177,9 @@
   color: var(--theme-color2);
 }
 .counter-block-four .inner:hover .counter-icon {
+  -webkit-transform: scale(-1) rotate(-180deg);
+  -moz-transform: scale(-1) rotate(-180deg);
+  -ms-transform: scale(-1) rotate(-180deg);
   transform: scale(-1) rotate(-180deg);
 }
 .counter-block-four .count-box {
@@ -187,6 +210,11 @@
   border: 2px solid var(--theme-color1);
   transition: all 300ms ease;
   z-index: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-four .counter-icon {
+    transition: none;
+  }
 }
 .counter-block-four .counter {
   font-size: 48px;
@@ -251,6 +279,11 @@
   background-color: var(--theme-color1);
   transition: all 300ms ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-five .counter-icon {
+    transition: none;
+  }
+}
 @media (max-width: 575.98px) {
   .counter-block-five .counter-icon {
     right: 0;
@@ -278,6 +311,11 @@
   height: 100%;
   transition: all 300ms ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-six .inner {
+    transition: none;
+  }
+}
 .counter-block-six .inner::before {
   position: absolute;
   right: 0;
@@ -291,10 +329,18 @@
   transition: all 300ms ease;
   z-index: -1;
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-six .inner::before {
+    transition: none;
+  }
+}
 .counter-block-six .inner:hover::before {
   opacity: 1;
 }
 .counter-block-six .inner:hover .counter-icon {
+  -webkit-transform: scale(-1) rotate(-180deg);
+  -moz-transform: scale(-1) rotate(-180deg);
+  -ms-transform: scale(-1) rotate(-180deg);
   transform: scale(-1) rotate(-180deg);
 }
 .counter-block-six .inner:hover .counter,
@@ -310,6 +356,11 @@
   margin-bottom: 18px;
   color: var(--headings-color);
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-six .counter-icon {
+    transition: none;
+  }
+}
 .counter-block-six .count-box .counter {
   font-size: 48px;
   margin-top: 0;
@@ -323,12 +374,20 @@
   position: relative;
   transition: all 300ms ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-saven .inner {
+    transition: none;
+  }
+}
 @media (max-width: 1199.98px) {
   .counter-block-saven .inner {
     text-align: center;
   }
 }
 .counter-block-saven .inner:hover .counter-icon {
+  -webkit-transform: scale(-1) rotate(-180deg);
+  -moz-transform: scale(-1) rotate(-180deg);
+  -ms-transform: scale(-1) rotate(-180deg);
   transform: scale(-1) rotate(-180deg);
 }
 .counter-block-saven .counter-icon {
@@ -338,6 +397,11 @@
   transition: all 300ms ease;
   margin-bottom: 25px;
   color: var(--headings-color);
+}
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-saven .counter-icon {
+    transition: none;
+  }
 }
 .counter-block-saven .count-box .counter {
   font-size: 48px;
@@ -359,7 +423,15 @@
   max-width: 230px;
   margin: 30px auto 0;
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-eight .inner {
+    transition: none;
+  }
+}
 .counter-block-eight .inner:hover .counter-icon {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
   color: #ffffff;
   background-color: var(--theme-color2);
@@ -378,6 +450,11 @@
   font-size: 36px;
   border-radius: 10px;
   transition: all 300ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-eight .counter-icon {
+    transition: none;
+  }
 }
 .counter-block-eight .count-box .counter {
   font-size: 48px;
@@ -402,6 +479,11 @@
   border-radius: 10px;
   border: 1px solid #e3e3e3;
 }
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-nine .inner {
+    transition: none;
+  }
+}
 .counter-block-nine .inner:before {
   position: absolute;
   right: 10px;
@@ -412,6 +494,9 @@
   content: "";
 }
 .counter-block-nine .inner:hover .counter-icon {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
   color: #ffffff;
   background-color: var(--theme-color2);
@@ -429,6 +514,11 @@
   border-radius: 100px;
   transition: all 300ms ease;
   margin-bottom: 20px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .counter-block-nine .counter-icon {
+    transition: none;
+  }
 }
 .counter-block-nine .count-box .counter {
   font-size: 48px;
