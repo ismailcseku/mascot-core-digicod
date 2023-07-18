@@ -45,7 +45,12 @@
 }
 .blog-item-current-style2 .entry-header .thumb img {
   width: 100%;
-  transition: all 0.3s ease;
+  transition: all 300ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .blog-item-current-style2 .entry-header .thumb img {
+    transition: none;
+  }
 }
 .blog-item-current-style2 .entry-content {
   background-color: #f2f3f5;

@@ -12,7 +12,7 @@
       padding: 35px 0;
       background-color: #fff;
       border-bottom: 1px solid #eee;
-      @include transition(all .4s ease-in-out);
+      @include transition(all 0.4s ease-in-out);
       @include media-breakpoint-up(md) {
         display: flex;
         align-items: center;
@@ -42,7 +42,7 @@
               color: var(--theme-color2);
             }
             a {
-              &:hover{
+              &:hover {
                 color: var(--theme-color2);
               }
             }

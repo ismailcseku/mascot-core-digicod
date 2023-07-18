@@ -3,7 +3,7 @@
 .tm-sc-blog {
   .blog-item-current-style1 {
     position: relative;
-    transition: all 300ms ease;
+    @include transition(all 300ms ease);
     &:hover {
       .entry-content {
         border-color: var(--theme-color1);
@@ -68,7 +68,7 @@
       border-top: 0;
       border-radius: 0 0 10px 10px;
       background-color: #ffffff;
-      transition: all 300ms ease;
+      @include transition(all 300ms ease);
       .entry-title {
         margin-bottom: 12px;
         &:hover {

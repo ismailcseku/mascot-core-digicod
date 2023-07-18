@@ -35,7 +35,7 @@
       }
       img {
         width: 100%;
-        transition: all 0.3s ease;
+        @include transition(all 300ms ease);
       }
     }
   }
