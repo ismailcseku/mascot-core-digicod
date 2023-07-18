@@ -11,6 +11,9 @@
       border-radius: 5px;
       padding: 30px 30px;
       margin-bottom: 80px;
+      @include media-breakpoint-down(xl) {
+        margin-bottom: 110px;
+      }
       &:hover {
         i::before {
           @include transform(scale(-1) rotate(180deg));

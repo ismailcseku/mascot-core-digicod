@@ -332,6 +332,11 @@
   padding: 30px 30px;
   margin-bottom: 80px;
 }
+@media (max-width: 1199.98px) {
+  .working-block-style5 .inner-box .content-box {
+    margin-bottom: 110px;
+  }
+}
 .working-block-style5 .inner-box .content-box:hover i::before {
   -webkit-transform: scale(-1) rotate(-180deg);
   -moz-transform: scale(-1) rotate(-180deg);
@@ -410,6 +415,7 @@
   border: 1px solid #e3e3e3;
   border-radius: 5px;
   padding: 40px 20px 36px;
+  margin-top: 40px;
   transition: all 300ms ease;
 }
 @media (prefers-reduced-motion: reduce) {

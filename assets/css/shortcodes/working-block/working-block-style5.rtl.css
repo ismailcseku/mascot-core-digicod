@@ -22,6 +22,11 @@
   padding: 30px 30px;
   margin-bottom: 80px;
 }
+@media (max-width: 1199.98px) {
+  .working-block-style5 .inner-box .content-box {
+    margin-bottom: 110px;
+  }
+}
 .working-block-style5 .inner-box .content-box:hover i::before {
   -webkit-transform: scale(-1) rotate(-180deg);
   -moz-transform: scale(-1) rotate(-180deg);
