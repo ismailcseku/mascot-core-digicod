@@ -39,6 +39,9 @@
   border-radius: 10px;
 }
 .tm-sc-projects .projects-current-theme11 .inner-box:hover .image img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 .tm-sc-projects .projects-current-theme11 .inner-box .image {
@@ -50,6 +53,11 @@
 .tm-sc-projects .projects-current-theme11 .inner-box .image img {
   transition: all 0.3s ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .tm-sc-projects .projects-current-theme11 .inner-box .image img {
+    transition: none;
+  }
+}
 .tm-sc-projects .projects-current-theme11 .inner-box .info-box {
   position: relative;
   display: inline-flex;
@@ -59,6 +67,11 @@
   border-radius: 10px;
   text-align: center;
   transition: all 0.3s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tm-sc-projects .projects-current-theme11 .inner-box .info-box {
+    transition: none;
+  }
 }
 .tm-sc-projects .projects-current-theme11 .inner-box .info-box .title {
   color: var(--theme-color2);

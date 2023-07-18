@@ -17,7 +17,7 @@
         .image {
           border-radius: 10px;
           img {
-            transform: scale(1.1);
+            @include transform(scale(1.1));
           }
         }
       }
@@ -27,7 +27,7 @@
         margin-bottom: 0;
         margin-bottom: -38px;
         img {
-          transition: all 0.3s ease;
+          @include transition(all 0.3s ease);
         }
       }
       .info-box {
@@ -38,7 +38,7 @@
         padding: 20px 30px;
         border-radius: 10px;
         text-align: center;
-        transition: all 0.3s ease;
+        @include transition(all 0.3s ease);
         .title {
           color: var(--theme-color2);
           margin-bottom: 0;

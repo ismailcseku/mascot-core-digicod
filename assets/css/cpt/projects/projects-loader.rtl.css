@@ -827,6 +827,11 @@
   background-color: #ffffff;
   transition: all 0.3s ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .tm-sc-projects .projects-current-theme8 .info-box .read-more {
+    transition: none;
+  }
+}
 
 .tm-sc-projects .cat-list {
   list-style: none;
