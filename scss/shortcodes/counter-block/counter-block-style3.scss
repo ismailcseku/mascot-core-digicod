@@ -5,24 +5,26 @@
   padding: 50px 30px 40px;
   border-radius: 7px;
   background-color: #fff;
-  border: 1px solid transparent;
+  border: 1px solid#333f4d;
   @include transition(all 0.3s);
   z-index: 1;
   position: relative;
+  text-align: center;
   &:hover {
     border-color: var(--theme-color1);
   }
   .counter-icon {
-    font-size: 64px;
-    color: var(--theme-color1);
+    font-size: 60px;
     margin-bottom: 15px;
     line-height: 1;
+    color: var(--headings-color);
   }
   .text {
     .counter {
       margin-top: 0;
+      color: var(--theme-color1);
       margin-bottom: 10px;
-      font-size: 56px;
+      font-size: 48px;
       line-height: 60px;
     }
   }

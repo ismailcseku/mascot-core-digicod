@@ -9,9 +9,9 @@
 				<?php if ( $show_counter == 'yes' ): ?>
 					<?php mascot_core_digicod_get_shortcode_template_part( 'counter', null, 'counter-block/tpl', $settings, false );?>
 				<?php endif;?>
+				<?php if ( $show_title == 'yes' ): ?>
+					<?php mascot_core_digicod_get_shortcode_template_part( 'title', null, 'counter-block/tpl', $settings, false );?>
+				<?php endif;?>
 	    </div>
-			<?php if ( $show_title == 'yes' ): ?>
-				<?php mascot_core_digicod_get_shortcode_template_part( 'title', null, 'counter-block/tpl', $settings, false );?>
-			<?php endif;?>
 	</div>
 </div>

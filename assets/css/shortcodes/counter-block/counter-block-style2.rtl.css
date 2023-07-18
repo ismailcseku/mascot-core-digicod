@@ -1,50 +1,64 @@
 .counter-block-two {
-  padding: 60px 45px 53px;
-  border-radius: 7px;
-  background-color: transparent;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  z-index: 1;
+  position: relative;
+  margin-bottom: 50px;
+  transition: all 300ms ease;
+}
+.counter-block-two .text {
+  padding-right: 100px;
   position: relative;
 }
-.counter-block-two:hover, .counter-block-two.item-active {
-  background-color: #fff;
-}
-.counter-block-two:hover:after, .counter-block-two.item-active:after {
-  visibility: visible;
-  opacity: 1;
-}
-.counter-block-two:after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  right: 50%;
-  -webkit-transform: translate(50%, -50%);
-  -ms-transform: translate(50%, -50%);
-  transform: translate(50%, -50%);
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: #e9e056;
-  -webkit-filter: blur(57.5px);
-  filter: blur(57.5px);
-  visibility: hidden;
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+@media (max-width: 575.98px) {
+  .counter-block-two .text {
+    padding-right: 0;
+    text-align: center;
+  }
 }
 .counter-block-two .counter-icon {
-  font-size: 64px;
+  position: absolute;
+  right: 35px;
+  top: 5px;
   color: var(--theme-color1);
-  margin-bottom: 15px;
-  line-height: 1;
+  font-size: 48px;
+  line-height: 1em;
+  border-radius: 5px;
+  transition: all 300ms ease;
 }
-.counter-block-two .text .counter {
+@media (max-width: 575.98px) {
+  .counter-block-two .counter-icon {
+    position: relative;
+    right: 0;
+    top: 0;
+    display: inline-flex;
+    margin-bottom: 10px;
+  }
+}
+.counter-block-two .counter {
+  font-size: 48px;
   margin-top: 0;
+  line-height: 1;
   margin-bottom: 10px;
-  font-size: 56px;
-  line-height: 60px;
+}
+.counter-block-two .title-wrapper {
+  position: relative;
+}
+.counter-block-two .title-wrapper .title {
+  padding-top: 10px;
+}
+@media (max-width: 767.98px) {
+  .counter-block-two .title-wrapper .title {
+    padding-top: 0px;
+  }
+}
+.counter-block-two .title-wrapper:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 150px;
+  border-top: 1px solid #e3e3e3;
+  content: "";
+}
+@media (max-width: 767.98px) {
+  .counter-block-two .title-wrapper:before {
+    display: none;
+  }
 }

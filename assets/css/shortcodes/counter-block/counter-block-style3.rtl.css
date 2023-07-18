@@ -2,10 +2,11 @@
   padding: 50px 30px 40px;
   border-radius: 7px;
   background-color: #fff;
-  border: 1px solid transparent;
+  border: 1px solid #333f4d;
   transition: all 0.3s;
   z-index: 1;
   position: relative;
+  text-align: center;
 }
 @media (prefers-reduced-motion: reduce) {
   .counter-block-three {
@@ -16,14 +17,15 @@
   border-color: var(--theme-color1);
 }
 .counter-block-three .counter-icon {
-  font-size: 64px;
-  color: var(--theme-color1);
+  font-size: 60px;
   margin-bottom: 15px;
   line-height: 1;
+  color: var(--headings-color);
 }
 .counter-block-three .text .counter {
   margin-top: 0;
+  color: var(--theme-color1);
   margin-bottom: 10px;
-  font-size: 56px;
+  font-size: 48px;
   line-height: 60px;
 }
