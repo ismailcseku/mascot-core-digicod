@@ -58,6 +58,11 @@
   width: 100%;
   transition: all 400ms ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .tm-sc-projects .projects-current-theme8 .image img {
+    transition: none;
+  }
+}
 .tm-sc-projects .projects-current-theme8 .info-box {
   position: relative;
   padding: 30px;
