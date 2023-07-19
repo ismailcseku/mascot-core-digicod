@@ -16,7 +16,7 @@
   margin: 0 auto;
   padding: 0 20px;
 }
-.working-block-style1 .inner-box:hover .icon {
+.working-block-style1 .inner-box:hover .icon-box {
   -webkit-transform: scaleX(-1);
   -moz-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
