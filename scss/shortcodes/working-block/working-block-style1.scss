@@ -7,7 +7,7 @@
     margin: 0 auto;
     padding: 0 20px;
     &:hover {
-      .icon-box i {
+      .icon-box i::before {
         @include transform(scaleX(-1));
       }
     }
