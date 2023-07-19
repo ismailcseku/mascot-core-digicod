@@ -17,12 +17,6 @@
   padding-left: 100px;
   position: relative;
 }
-@media (max-width: 575.98px) {
-  .counter-item .text {
-    padding-left: 0;
-    text-align: center;
-  }
-}
 .counter-item .counter-icon {
   position: absolute;
   left: 0;
@@ -42,13 +36,6 @@
 @media (prefers-reduced-motion: reduce) {
   .counter-item .counter-icon {
     transition: none;
-  }
-}
-@media (max-width: 575.98px) {
-  .counter-item .counter-icon {
-    position: relative;
-    display: inline-flex;
-    margin-bottom: 20px;
   }
 }
 .counter-item .counter {

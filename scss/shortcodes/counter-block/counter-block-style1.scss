@@ -16,10 +16,6 @@
   .text {
     padding-left: 100px;
     position: relative;
-    @include media-breakpoint-down(sm) {
-      padding-left: 0;
-      text-align: center;
-    }
   }
   .counter-icon {
     @include absolute;
@@ -32,11 +28,6 @@
     font-size: 48px;
     border-radius: 5px;
     @include transition(all 300ms ease);
-    @include media-breakpoint-down(sm) {
-      position: relative;
-      display: inline-flex;
-      margin-bottom: 20px;
-    }
   }
   .counter {
     font-size: 48px;
