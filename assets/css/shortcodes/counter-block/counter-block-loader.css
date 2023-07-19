@@ -60,19 +60,11 @@
   }
 }
 .counter-block-two .text {
-  padding-left: 100px;
+  padding-left: 75px;
   position: relative;
-}
-@media (max-width: 575.98px) {
-  .counter-block-two .text {
-    padding-left: 0;
-    text-align: center;
-  }
 }
 .counter-block-two .counter-icon {
   position: absolute;
-  left: 35px;
-  top: 5px;
   color: var(--theme-color1);
   font-size: 48px;
   line-height: 1em;
@@ -82,15 +74,6 @@
 @media (prefers-reduced-motion: reduce) {
   .counter-block-two .counter-icon {
     transition: none;
-  }
-}
-@media (max-width: 575.98px) {
-  .counter-block-two .counter-icon {
-    position: relative;
-    left: 0;
-    top: 0;
-    display: inline-flex;
-    margin-bottom: 10px;
   }
 }
 .counter-block-two .counter {

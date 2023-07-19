@@ -7,29 +7,16 @@
   margin-bottom: 50px;
   @include transition(all 300ms ease);
   .text {
-    padding-left: 100px;
+    padding-left: 75px;
     position: relative;
-    @include media-breakpoint-down(sm) {
-      padding-left: 0;
-      text-align: center;
-    }
   }
   .counter-icon {
     position: absolute;
-    left: 35px;
-    top: 5px;
     color: var(--theme-color1);
     font-size: 48px;
     line-height: 1em;
     border-radius: 5px;
     @include transition(all 300ms ease);
-    @include media-breakpoint-down(sm) {
-      position: relative;
-      left: 0;
-      top: 0;
-      display: inline-flex;
-      margin-bottom: 10px;
-    }
   }
   .counter {
     font-size: 48px;
