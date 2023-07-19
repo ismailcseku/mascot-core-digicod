@@ -1,5 +1,6 @@
 @import "../../bootstrap-loader";
 @import "testimonial-common";
+
 .tm-sc-testimonials {
   .testimonial-block-style4 {
     position: relative;
@@ -38,7 +39,6 @@
         position: relative;
         color: #ffba25;
         font-size: 14px;
-        letter-spacing: 0.2em;
         margin-bottom: 12px;
         .star-rating {
           margin-top: 0;
