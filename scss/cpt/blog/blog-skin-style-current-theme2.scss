@@ -21,6 +21,7 @@
     .thumb {
       overflow: hidden;
       border-radius: 10px;
+      position: relative;
       &::after {
         background: rgba(255, 255, 255, 0.3);
         bottom: 0;

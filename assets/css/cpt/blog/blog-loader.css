@@ -176,6 +176,7 @@
 .blog-item-current-style2 .entry-header .thumb {
   overflow: hidden;
   border-radius: 10px;
+  position: relative;
 }
 .blog-item-current-style2 .entry-header .thumb::after {
   background: rgba(255, 255, 255, 0.3);
