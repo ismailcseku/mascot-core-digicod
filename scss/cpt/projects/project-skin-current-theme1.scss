@@ -4,7 +4,6 @@
 .tm-sc-projects {
   .projects-current-theme1 {
     position: relative;
-    margin-bottom: 30px;
     &:hover {
       .info-box {
         bottom: 0;
@@ -72,7 +71,7 @@
         margin-top: 0;
         a {
           &:hover {
-            color: var(--theme-color1);
+            color: var(--theme-color3);
           }
         }
       }

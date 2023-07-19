@@ -48,7 +48,6 @@
 
 .tm-sc-projects .projects-current-theme1 {
   position: relative;
-  margin-bottom: 30px;
 }
 .tm-sc-projects .projects-current-theme1:hover .info-box {
   bottom: 0;
@@ -142,7 +141,7 @@
   margin-top: 0;
 }
 .tm-sc-projects .projects-current-theme1 .info-box .title a:hover {
-  color: var(--theme-color1);
+  color: var(--theme-color3);
 }
 .tm-sc-projects .projects-current-theme1 .info-box .excerpt {
   position: relative;
