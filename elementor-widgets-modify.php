@@ -29,7 +29,7 @@ class Mascot_Core_Digicod_Modify_Widgets {
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'horizontal_line_background',
-				'label' => esc_html__( 'Background', 'mascot-core' ),
+				'label' => esc_html__( 'Background', 'mascot-core-digicod' ),
 				'types' => [ 'gradient' ],
 				'selector' => '{{WRAPPER}} .subtitle:before, {{WRAPPER}} .subtitle:after',
 				'fields_options' => [

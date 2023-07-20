@@ -96,7 +96,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 		$this->add_responsive_control(
 			'current_skin_bg_theme_colored_hover',
 			[
-				'label' => esc_html__( "Make BG Theme Colored (Hover)", 'mascot-core-mascot-core-digicod' ),
+				'label' => esc_html__( "Make BG Theme Colored (Hover)", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',

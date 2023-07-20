@@ -883,14 +883,14 @@ class TM_Elementor_Blog extends Widget_Base {
 		$this->add_control(
 			'content_wrapper_color_options',
 			[
-				'label' => esc_html__( 'BG Color Options', 'mascot-core-oitech' ),
+				'label' => esc_html__( 'BG Color Options', 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 			]
 		);
 		$this->add_responsive_control(
 			'content_wrapper_custom_bg_color',
 			[
-				'label' => esc_html__( "Custom Background Color", 'mascot-core-oitech' ),
+				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .type-post .entry-content' => 'background-color: {{VALUE}};'
@@ -900,7 +900,7 @@ class TM_Elementor_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'content_wrapper_theme_colored',
 			[
-				'label' => esc_html__( "Make BG Theme Colored", 'mascot-core-oitech' ),
+				'label' => esc_html__( "Make BG Theme Colored", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
@@ -912,7 +912,7 @@ class TM_Elementor_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'content_wrapper_margin',
 			[
-				'label' => esc_html__( 'Margin', 'mascot-core-oitech' ),
+				'label' => esc_html__( 'Margin', 'mascot-core-digicod' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -923,7 +923,7 @@ class TM_Elementor_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'content_wrapper_padding',
 			[
-				'label' => esc_html__( 'Padding', 'mascot-core-oitech' ),
+				'label' => esc_html__( 'Padding', 'mascot-core-digicod' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -942,7 +942,7 @@ class TM_Elementor_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'content_wrapper_custom_bg_color_hover',
 			[
-				'label' => esc_html__( "Custom Background Color (Hover)", 'mascot-core-oitech' ),
+				'label' => esc_html__( "Custom Background Color (Hover)", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .type-post:hover .entry-content' => 'background-color: {{VALUE}};'
@@ -952,7 +952,7 @@ class TM_Elementor_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'content_wrapper_theme_colored_hover',
 			[
-				'label' => esc_html__( "Make BG Theme Colored (Hover)", 'mascot-core-oitech' ),
+				'label' => esc_html__( "Make BG Theme Colored (Hover)", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
