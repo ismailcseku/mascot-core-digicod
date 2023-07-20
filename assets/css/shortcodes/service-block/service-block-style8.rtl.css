@@ -55,6 +55,7 @@
 .service-block-style8 .inner-box .service-title {
   color: var(--theme-color2);
   margin-bottom: 10px;
+  margin-top: 0;
 }
 .service-block-style8 .inner-box .service-title a:hover {
   color: var(--theme-color1);
