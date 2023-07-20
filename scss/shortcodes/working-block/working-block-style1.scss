@@ -22,6 +22,9 @@
       background-color: var(--theme-light-background);
       min-height: 170px;
       margin-bottom: 50px;
+      i {
+        line-height: 1;
+      }
       i::before {
         position: relative;
         display: inline-block;
