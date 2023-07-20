@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Package Name\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-20 18:19+0600\n"
+"POT-Creation-Date: 2023-07-20 18:24+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
 msgstr ""
 
 #: mascot-core-wp.php:178
-msgid "Mascot Core - Pixlab"
+msgid "Mascot Core - Digicod"
 msgstr ""
 
 #: mascot-core-wp.php:179
@@ -77,7 +77,7 @@ msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
 msgstr ""
 
 #: mascot-core-wp.php:201 mascot-core-wp.php:303
-msgid "Mascot Core - Pixlab Elementor"
+msgid "Mascot Core - Digicod Elementor"
 msgstr ""
 
 #: mascot-core-wp.php:202
@@ -92,45 +92,45 @@ msgstr ""
 msgid "Blog/News Grid"
 msgstr ""
 
-#: cpt/blog/widget.php:167 widgets/blog-list/widget.php:118
+#: cpt/blog/widget.php:172 widgets/blog-list/widget.php:118
 #: widgets/give-forms/widget.php:161
 msgid "Show Author"
 msgstr ""
 
-#: cpt/blog/widget.php:168 inc/post-types/portfolio/cpt-portfolio.php:549
+#: cpt/blog/widget.php:173 inc/post-types/portfolio/cpt-portfolio.php:549
 #: widgets/blog-list/widget.php:119 widgets/give-forms/widget.php:162
 msgid "Show Date"
 msgstr ""
 
-#: cpt/blog/widget.php:169 inc/post-types/portfolio/cpt-portfolio.php:550
+#: cpt/blog/widget.php:174 inc/post-types/portfolio/cpt-portfolio.php:550
 #: widgets/blog-list/widget.php:120
 msgid "Show Date Split"
 msgstr ""
 
-#: cpt/blog/widget.php:170 cpt/projects/widget.php:406
+#: cpt/blog/widget.php:175 cpt/projects/widget.php:412
 #: inc/post-types/portfolio/cpt-portfolio.php:551
 #: widgets/blog-list/widget.php:121 widgets/give-forms/widget.php:163
 #: widgets/give-forms/widget.php:528 widgets/tribe-events/widget.php:1926
 msgid "Show Category"
 msgstr ""
 
-#: cpt/blog/widget.php:171 widgets/blog-list/widget.php:122
+#: cpt/blog/widget.php:176 widgets/blog-list/widget.php:122
 #: widgets/give-forms/widget.php:164
 msgid "Show Comments Count"
 msgstr ""
 
-#: cpt/blog/widget.php:172 inc/post-types/portfolio/cpt-portfolio.php:552
+#: cpt/blog/widget.php:177 inc/post-types/portfolio/cpt-portfolio.php:552
 #: widgets/blog-list/widget.php:123 widgets/give-forms/widget.php:165
 #: widgets/give-forms/widget.php:529
 msgid "Show Tag"
 msgstr ""
 
-#: cpt/blog/widget.php:173 widgets/blog-list/widget.php:124
+#: cpt/blog/widget.php:178 widgets/blog-list/widget.php:124
 #: widgets/give-forms/widget.php:166
 msgid "Show Like Button"
 msgstr ""
 
-#: cpt/blog/widget.php:178 cpt/projects/widget.php:170
+#: cpt/blog/widget.php:183 cpt/projects/widget.php:176
 #: widgets/app-button/widget.php:114 widgets/award-block/widget.php:123
 #: widgets/blog-list/widget.php:129 widgets/countdown-timer/widget.php:129
 #: widgets/give-donation-form/widget.php:125 widgets/give-forms/widget.php:171
@@ -147,21 +147,22 @@ msgstr ""
 msgid "General"
 msgstr ""
 
-#: cpt/blog/widget.php:184 widgets/award-block/widget.php:189
-#: widgets/blog-list/widget.php:135 widgets/features-block/widget.php:134
+#: cpt/blog/widget.php:189 widgets/award-block/widget.php:189
+#: widgets/blog-list/widget.php:135 widgets/features-block/widget.php:135
 #: widgets/give-forms/widget.php:177 widgets/pricing-plan/widget.php:136
-#: widgets/service-block/widget.php:142
+#: widgets/service-block/widget.php:145 widgets/working-block/widget.php:137
 #: widgets-shop/wc-products/widget.php:128
 msgid "Custom CSS class"
 msgstr ""
 
-#: cpt/blog/widget.php:190 cpt/projects/widget.php:176
-#: widgets/award-block/widget.php:129 widgets/features-block/widget.php:350
-#: widgets/give-forms/widget.php:183 widgets/service-block/widget.php:390
+#: cpt/blog/widget.php:195 cpt/projects/widget.php:182
+#: widgets/award-block/widget.php:129 widgets/features-block/widget.php:351
+#: widgets/give-forms/widget.php:183 widgets/service-block/widget.php:393
 #: widgets/team-block/widget.php:311 widgets/testimonial-block/widget.php:275
 #: widgets/tribe-events/widget.php:238
 #: widgets/tribe-events/skins/skin-vertical-list-current-theme.php:35
 #: widgets/tribe-events/skins/skin-vertical-list1.php:35
+#: widgets/working-block/widget.php:353
 #: widgets-shop/info-banner/widget.php:715
 #: widgets-shop/info-banner/widget.php:810
 #: widgets-shop/info-banner/widget.php:907
@@ -169,102 +170,107 @@ msgstr ""
 msgid "Display Type"
 msgstr ""
 
-#: cpt/blog/widget.php:193 cpt/projects/widget.php:179
-#: widgets/award-block/widget.php:132 widgets/features-block/widget.php:353
-#: widgets/give-forms/widget.php:186 widgets/service-block/widget.php:393
+#: cpt/blog/widget.php:198 cpt/projects/widget.php:185
+#: widgets/award-block/widget.php:132 widgets/features-block/widget.php:354
+#: widgets/give-forms/widget.php:186 widgets/service-block/widget.php:396
 #: widgets/team-block/widget.php:314 widgets/testimonial-block/widget.php:278
-#: widgets/tribe-events/widget.php:241 widgets-shop/wc-products/widget.php:137
+#: widgets/tribe-events/widget.php:241 widgets/working-block/widget.php:356
+#: widgets-shop/wc-products/widget.php:137
 msgid "Grid"
 msgstr ""
 
-#: cpt/blog/widget.php:194 cpt/projects/widget.php:180
-#: widgets/award-block/widget.php:133 widgets/features-block/widget.php:354
-#: widgets/give-forms/widget.php:187 widgets/service-block/widget.php:394
+#: cpt/blog/widget.php:199 cpt/projects/widget.php:186
+#: widgets/award-block/widget.php:133 widgets/features-block/widget.php:355
+#: widgets/give-forms/widget.php:187 widgets/service-block/widget.php:397
 #: widgets/team-block/widget.php:315 widgets/testimonial-block/widget.php:279
-#: widgets/tribe-events/widget.php:242 widgets-shop/wc-products/widget.php:138
+#: widgets/tribe-events/widget.php:242 widgets/working-block/widget.php:357
+#: widgets-shop/wc-products/widget.php:138
 msgid "Masonry"
 msgstr ""
 
-#: cpt/blog/widget.php:195
+#: cpt/blog/widget.php:200
 msgid "Masonry Tiles"
 msgstr ""
 
-#: cpt/blog/widget.php:196 cpt/projects/widget.php:181
-#: widgets/award-block/widget.php:134 widgets/features-block/widget.php:355
-#: widgets/give-forms/widget.php:188 widgets/service-block/widget.php:395
+#: cpt/blog/widget.php:201 cpt/projects/widget.php:187
+#: widgets/award-block/widget.php:134 widgets/features-block/widget.php:356
+#: widgets/give-forms/widget.php:188 widgets/service-block/widget.php:398
 #: widgets/team-block/widget.php:316 widgets/testimonial-block/widget.php:280
-#: widgets/tribe-events/widget.php:243 widgets-shop/wc-products/widget.php:139
+#: widgets/tribe-events/widget.php:243 widgets/working-block/widget.php:358
+#: widgets-shop/wc-products/widget.php:139
 msgid "Carousel"
 msgstr ""
 
-#: cpt/blog/widget.php:197 widgets-shop/info-banner/widget.php:130
+#: cpt/blog/widget.php:202 widgets-shop/info-banner/widget.php:130
 msgid "Basic"
 msgstr ""
 
-#: cpt/blog/widget.php:198
+#: cpt/blog/widget.php:203
 msgid "Floating Parallax"
 msgstr ""
 
-#: cpt/blog/widget.php:205 cpt/projects/widget.php:188
-#: widgets/award-block/widget.php:141 widgets/features-block/widget.php:362
-#: widgets/give-forms/widget.php:195 widgets/service-block/widget.php:402
+#: cpt/blog/widget.php:210 cpt/projects/widget.php:194
+#: widgets/award-block/widget.php:141 widgets/features-block/widget.php:363
+#: widgets/give-forms/widget.php:195 widgets/service-block/widget.php:405
 #: widgets/team-block/widget.php:323 widgets/testimonial-block/widget.php:287
-#: widgets/tribe-events/widget.php:253 widgets-shop/wc-products/widget.php:146
+#: widgets/tribe-events/widget.php:253 widgets/working-block/widget.php:365
+#: widgets-shop/wc-products/widget.php:146
 msgid "Columns Layout"
 msgstr ""
 
-#: cpt/blog/widget.php:225 cpt/projects/widget.php:208
-#: widgets/award-block/widget.php:161 widgets/features-block/widget.php:382
-#: widgets/give-forms/widget.php:215 widgets/service-block/widget.php:422
+#: cpt/blog/widget.php:230 cpt/projects/widget.php:214
+#: widgets/award-block/widget.php:161 widgets/features-block/widget.php:383
+#: widgets/give-forms/widget.php:215 widgets/service-block/widget.php:425
 #: widgets/team-block/widget.php:343 widgets/testimonial-block/widget.php:307
-#: widgets/tribe-events/widget.php:276 widgets-shop/wc-products/widget.php:166
+#: widgets/tribe-events/widget.php:276 widgets/working-block/widget.php:385
+#: widgets-shop/wc-products/widget.php:166
 msgid "Gutter"
 msgstr ""
 
-#: cpt/blog/widget.php:236
+#: cpt/blog/widget.php:241
 msgid "Use Predefined Image Size in Masonry Mode"
 msgstr ""
 
-#: cpt/blog/widget.php:238
+#: cpt/blog/widget.php:243
 msgid ""
 "You can select predefined image size from each items edit page. If you "
 "choose yes, then 'Featured Image Size' will not work"
 msgstr ""
 
-#: cpt/blog/widget.php:259 cpt/projects/widget.php:233
+#: cpt/blog/widget.php:264 cpt/projects/widget.php:239
 #: widgets/blog-list/widget.php:218 widgets/give-forms/widget.php:367
 #: widgets/tribe-events/widget.php:428
 msgid "Query"
 msgstr ""
 
-#: cpt/blog/widget.php:265 cpt/projects/widget.php:239
+#: cpt/blog/widget.php:270 cpt/projects/widget.php:245
 #: widgets/blog-list/widget.php:224 widgets/give-forms/widget.php:373
 #: widgets/tribe-events/widget.php:434
 msgid "Number of Items to Query from Database"
 msgstr ""
 
-#: cpt/blog/widget.php:267 cpt/projects/widget.php:241
+#: cpt/blog/widget.php:272 cpt/projects/widget.php:247
 #: widgets/blog-list/widget.php:226 widgets/give-forms/widget.php:375
 #: widgets/tribe-events/widget.php:436
 msgid "How many items do you wish to show? Put -1 to show all. Default 3"
 msgstr ""
 
-#: cpt/blog/widget.php:273 cpt/projects/widget.php:247
+#: cpt/blog/widget.php:278 cpt/projects/widget.php:253
 #: widgets/blog-list/widget.php:232
 msgid "Show Only Selected Single Item"
 msgstr ""
 
-#: cpt/blog/widget.php:280 cpt/projects/widget.php:254
+#: cpt/blog/widget.php:285 cpt/projects/widget.php:260
 #: widgets/blog-list/widget.php:239
 msgid "Choose Single Item"
 msgstr ""
 
-#: cpt/blog/widget.php:291 cpt/projects/widget.php:265
+#: cpt/blog/widget.php:296 cpt/projects/widget.php:271
 #: widgets/give-forms/widget.php:389 widgets/tribe-events/widget.php:443
 msgid "Ids"
 msgstr ""
 
-#: cpt/blog/widget.php:301 cpt/projects/widget.php:275
+#: cpt/blog/widget.php:306 cpt/projects/widget.php:281
 #: inc/post-types/portfolio/cpt-portfolio.php:246
 #: inc/post-types/projects/cpt-projects.php:195
 #: widgets/blog-list/widget.php:249 widgets/give-forms/widget.php:399
@@ -273,7 +279,7 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: cpt/blog/widget.php:310 cpt/projects/widget.php:284
+#: cpt/blog/widget.php:315 cpt/projects/widget.php:290
 #: widgets/blog-list/widget.php:256 widgets/give-forms/widget.php:409
 #: widgets/tribe-events/widget.php:512
 #: widgets-shop/product-list/widget.php:226
@@ -282,7 +288,7 @@ msgstr ""
 msgid "Order By"
 msgstr ""
 
-#: cpt/blog/widget.php:317 cpt/projects/widget.php:291
+#: cpt/blog/widget.php:322 cpt/projects/widget.php:297
 #: widgets/blog-list/widget.php:263 widgets/give-forms/widget.php:421
 #: widgets/tribe-events/widget.php:519
 #: widgets-shop/product-list/widget.php:247
@@ -291,91 +297,92 @@ msgstr ""
 msgid "Order"
 msgstr ""
 
-#: cpt/blog/widget.php:320 cpt/projects/widget.php:294
+#: cpt/blog/widget.php:325 cpt/projects/widget.php:300
 #: widgets/blog-list/widget.php:266 widgets/give-forms/widget.php:424
 #: widgets/tribe-events/widget.php:522
 msgid "Descending"
 msgstr ""
 
-#: cpt/blog/widget.php:321 cpt/projects/widget.php:295
+#: cpt/blog/widget.php:326 cpt/projects/widget.php:301
 #: widgets/blog-list/widget.php:267 widgets/give-forms/widget.php:425
 #: widgets/tribe-events/widget.php:523
 msgid "Ascending"
 msgstr ""
 
-#: cpt/blog/widget.php:336
+#: cpt/blog/widget.php:341
 msgid "All Items(Content) Show/Hide"
 msgstr ""
 
-#: cpt/blog/widget.php:342 widgets/blog-list/widget.php:141
+#: cpt/blog/widget.php:347 widgets/blog-list/widget.php:141
 msgid "Show Featured Image"
 msgstr ""
 
-#: cpt/blog/widget.php:349 widgets/award-block/widget.php:271
-#: widgets/blog-list/widget.php:159 widgets/service-block/widget.php:217
+#: cpt/blog/widget.php:354 widgets/award-block/widget.php:271
+#: widgets/blog-list/widget.php:159 widgets/service-block/widget.php:220
 msgid "Featured Image Size"
 msgstr ""
 
-#: cpt/blog/widget.php:361 cpt/projects/widget.php:371
+#: cpt/blog/widget.php:366 cpt/projects/widget.php:377
 #: widgets/blog-list/widget.php:309 widgets/counter-block/widget.php:1491
 #: widgets/give-forms/widget.php:481 widgets/tribe-events/widget.php:1872
 msgid "Show Title"
 msgstr ""
 
-#: cpt/blog/widget.php:369 cpt/projects/widget.php:378
+#: cpt/blog/widget.php:374 cpt/projects/widget.php:384
 #: widgets/award-block/widget.php:204 widgets/blog-list/widget.php:317
-#: widgets/counter-block/widget.php:259 widgets/features-block/widget.php:149
+#: widgets/counter-block/widget.php:259 widgets/features-block/widget.php:150
 #: widgets/give-donation-form/widget.php:200
 #: widgets/give-donation-form/widget.php:332 widgets/give-forms/widget.php:488
-#: widgets/pricing-plan/widget.php:151 widgets/service-block/widget.php:157
-#: widgets/tribe-events/widget.php:1880
+#: widgets/pricing-plan/widget.php:151 widgets/service-block/widget.php:160
+#: widgets/tribe-events/widget.php:1880 widgets/working-block/widget.php:152
 #: widgets-shop/info-banner/widget.php:221
 msgid "Title Tag"
 msgstr ""
 
-#: cpt/blog/widget.php:380 cpt/projects/widget.php:389
+#: cpt/blog/widget.php:385 cpt/projects/widget.php:395
 #: widgets/blog-list/widget.php:338 widgets/give-forms/widget.php:499
 #: widgets/tribe-events/widget.php:1892
 msgid "Show Excerpt"
 msgstr ""
 
-#: cpt/blog/widget.php:387 cpt/projects/widget.php:396
+#: cpt/blog/widget.php:392 cpt/projects/widget.php:402
 #: widgets/blog-list/widget.php:345 widgets/give-forms/widget.php:506
 #: widgets/tribe-events/widget.php:1899
 #: widgets-shop/wc-products/skins/skin-current-theme1.php:38
 msgid "Excerpt Length"
 msgstr ""
 
-#: cpt/blog/widget.php:389 widgets/blog-list/widget.php:330
+#: cpt/blog/widget.php:394 widgets/blog-list/widget.php:330
 #: widgets/blog-list/widget.php:347
 msgid "Number of words to display"
 msgstr ""
 
-#: cpt/blog/widget.php:398 widgets/blog-list/widget.php:356
+#: cpt/blog/widget.php:403 widgets/blog-list/widget.php:356
 #: widgets/tribe-events/widget.php:1910
 msgid "Show Post Meta"
 msgstr ""
 
-#: cpt/blog/widget.php:406 widgets/blog-list/widget.php:379
+#: cpt/blog/widget.php:411 widgets/blog-list/widget.php:379
 msgid "Choose Post Meta"
 msgstr ""
 
-#: cpt/blog/widget.php:419
+#: cpt/blog/widget.php:424
 msgid "Show This Meta Over Thumbnail"
 msgstr ""
 
-#: cpt/blog/widget.php:439 cpt/projects/widget.php:623
+#: cpt/blog/widget.php:444 cpt/projects/widget.php:629
 #: widgets/blog-list/widget.php:400 widgets/counter-block/widget.php:945
-#: widgets/features-block/widget.php:445 widgets/give-forms/widget.php:610
+#: widgets/features-block/widget.php:446 widgets/give-forms/widget.php:610
 #: widgets/interactive-tabs-title/widget.php:190
-#: widgets/service-block/widget.php:451 widgets/tribe-events/widget.php:539
+#: widgets/service-block/widget.php:454 widgets/tribe-events/widget.php:539
+#: widgets/working-block/widget.php:448
 #: widgets-shop/product-list/widget.php:342
 msgid "Title Styling"
 msgstr ""
 
-#: cpt/blog/widget.php:446 cpt/blog/widget.php:555 cpt/blog/widget.php:640
-#: cpt/blog/widget.php:779 cpt/projects/widget.php:630
-#: cpt/projects/widget.php:751 cpt/projects/widget.php:858
+#: cpt/blog/widget.php:451 cpt/blog/widget.php:560 cpt/blog/widget.php:645
+#: cpt/blog/widget.php:784 cpt/projects/widget.php:636
+#: cpt/projects/widget.php:757 cpt/projects/widget.php:864
 #: cpt/projects/skins/skin-style-current-theme2.php:101
 #: widgets/app-button/widget.php:186 widgets/app-button/widget.php:223
 #: widgets/app-button/widget.php:283 widgets/app-button/widget.php:320
@@ -386,9 +393,9 @@ msgstr ""
 #: widgets/counter-block/widget.php:966 widgets/counter-block/widget.php:1026
 #: widgets/counter-block/widget.php:1056 widgets/counter-block/widget.php:1111
 #: widgets/counter-block/widget.php:1171 widgets/counter-block/widget.php:1201
-#: widgets/features-block/widget.php:459 widgets/features-block/widget.php:519
-#: widgets/features-block/widget.php:549 widgets/features-block/widget.php:596
-#: widgets/features-block/widget.php:656
+#: widgets/features-block/widget.php:460 widgets/features-block/widget.php:520
+#: widgets/features-block/widget.php:550 widgets/features-block/widget.php:597
+#: widgets/features-block/widget.php:657
 #: widgets/give-donation-form/widget.php:628
 #: widgets/give-donation-form/widget.php:730
 #: widgets/give-donation-form/widget.php:832
@@ -416,9 +423,9 @@ msgstr ""
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:71
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:169
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:255
-#: widgets/service-block/widget.php:465 widgets/service-block/widget.php:525
-#: widgets/service-block/widget.php:555 widgets/service-block/widget.php:602
-#: widgets/service-block/widget.php:662
+#: widgets/service-block/widget.php:468 widgets/service-block/widget.php:528
+#: widgets/service-block/widget.php:558 widgets/service-block/widget.php:605
+#: widgets/service-block/widget.php:665
 #: widgets/spin-text-around-logo/widget.php:189
 #: widgets/team-block/widget.php:407 widgets/team-block/widget.php:467
 #: widgets/team-block/widget.php:497 widgets/team-block/widget.php:547
@@ -436,6 +443,9 @@ msgstr ""
 #: widgets/testimonial-block/widget.php:842
 #: widgets/testimonial-block/widget.php:902
 #: widgets/testimonial-block/widget.php:932
+#: widgets/working-block/widget.php:462 widgets/working-block/widget.php:522
+#: widgets/working-block/widget.php:552 widgets/working-block/widget.php:599
+#: widgets/working-block/widget.php:659
 #: widgets-shop/info-banner/widget.php:297
 #: widgets-shop/product-category/widget.php:534
 #: widgets-shop/product-category/widget.php:641
@@ -445,20 +455,20 @@ msgstr ""
 msgid "Text Color"
 msgstr ""
 
-#: cpt/blog/widget.php:456 cpt/projects/widget.php:641
+#: cpt/blog/widget.php:461 cpt/projects/widget.php:647
 #: cpt/projects/skins/skin-style-current-theme2.php:112
 #: widgets/give-forms/widget.php:627
 msgid "Text Color (Title Hover)"
 msgstr ""
 
-#: cpt/blog/widget.php:467 cpt/projects/widget.php:652
-#: cpt/projects/widget.php:771
+#: cpt/blog/widget.php:472 cpt/projects/widget.php:658
+#: cpt/projects/widget.php:777
 #: cpt/projects/skins/skin-style-current-theme2.php:123
 #: widgets/give-forms/widget.php:638
 msgid "Text Color (Item Hover)"
 msgstr ""
 
-#: cpt/blog/widget.php:477 cpt/projects/widget.php:663
+#: cpt/blog/widget.php:482 cpt/projects/widget.php:669
 #: cpt/projects/skins/skin-style-current-theme2.php:134
 #: widgets/blog-list/widget.php:437 widgets/give-forms/widget.php:648
 #: widgets/interactive-tabs-title/widget.php:222
@@ -467,20 +477,20 @@ msgstr ""
 msgid "Title Theme Colored"
 msgstr ""
 
-#: cpt/blog/widget.php:489 cpt/projects/widget.php:676
+#: cpt/blog/widget.php:494 cpt/projects/widget.php:682
 #: cpt/projects/skins/skin-style-current-theme2.php:147
 #: widgets/give-forms/widget.php:660
 msgid "Title Theme Colored (Title Hover)"
 msgstr ""
 
-#: cpt/blog/widget.php:502 cpt/projects/widget.php:689
+#: cpt/blog/widget.php:507 cpt/projects/widget.php:695
 #: widgets/give-forms/widget.php:673
 msgid "Title Theme Colored (Item Hover)"
 msgstr ""
 
-#: cpt/blog/widget.php:515 cpt/blog/widget.php:600 cpt/blog/widget.php:685
-#: cpt/blog/widget.php:824 cpt/projects/widget.php:703
-#: cpt/projects/widget.php:818 cpt/projects/widget.php:903
+#: cpt/blog/widget.php:520 cpt/blog/widget.php:605 cpt/blog/widget.php:690
+#: cpt/blog/widget.php:829 cpt/projects/widget.php:709
+#: cpt/projects/widget.php:824 cpt/projects/widget.php:909
 #: widgets/app-button/widget.php:209 widgets/app-button/widget.php:246
 #: widgets/app-button/widget.php:306 widgets/app-button/widget.php:343
 #: widgets/app-button/widget.php:406 widgets/app-button/widget.php:453
@@ -488,8 +498,8 @@ msgstr ""
 #: widgets/countdown-timer/widget.php:263
 #: widgets/countdown-timer/widget.php:362 widgets/counter-block/widget.php:553
 #: widgets/counter-block/widget.php:843 widgets/counter-block/widget.php:989
-#: widgets/counter-block/widget.php:1134 widgets/features-block/widget.php:482
-#: widgets/features-block/widget.php:619 widgets/features-block/widget.php:765
+#: widgets/counter-block/widget.php:1134 widgets/features-block/widget.php:483
+#: widgets/features-block/widget.php:620 widgets/features-block/widget.php:766
 #: widgets/give-donation-form/widget.php:592
 #: widgets/give-donation-form/widget.php:694
 #: widgets/give-donation-form/widget.php:796
@@ -520,13 +530,15 @@ msgstr ""
 #: widgets/pricing-plan-switcher/skins/skin-style1.php:160
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:94
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:278
-#: widgets/service-block/widget.php:488 widgets/service-block/widget.php:625
-#: widgets/service-block/widget.php:783 widgets/team-block/widget.php:430
+#: widgets/service-block/widget.php:491 widgets/service-block/widget.php:628
+#: widgets/service-block/widget.php:786 widgets/team-block/widget.php:430
 #: widgets/team-block/widget.php:570 widgets/team-block/widget.php:710
 #: widgets/team-block/widget.php:867 widgets/testimonial-block/widget.php:449
 #: widgets/testimonial-block/widget.php:587
 #: widgets/testimonial-block/widget.php:726
 #: widgets/testimonial-block/widget.php:865
+#: widgets/working-block/widget.php:485 widgets/working-block/widget.php:622
+#: widgets/working-block/widget.php:768
 #: widgets-shop/header-cart/widget.php:256
 #: widgets-shop/info-banner/widget.php:320
 #: widgets-shop/info-banner/widget.php:728
@@ -536,7 +548,7 @@ msgstr ""
 msgid "Typography"
 msgstr ""
 
-#: cpt/blog/widget.php:522 cpt/projects/widget.php:711
+#: cpt/blog/widget.php:527 cpt/projects/widget.php:717
 #: widgets/blog-list/widget.php:463 widgets/give-forms/widget.php:693
 #: widgets/tribe-events/widget.php:626
 #: widgets-shop/product-category/widget.php:588
@@ -544,19 +556,20 @@ msgstr ""
 msgid "Title Margin"
 msgstr ""
 
-#: cpt/blog/widget.php:533 cpt/projects/widget.php:723
+#: cpt/blog/widget.php:538 cpt/projects/widget.php:729
 #: widgets/give-forms/widget.php:704
 msgid "Title Padding"
 msgstr ""
 
-#: cpt/blog/widget.php:548 cpt/projects/widget.php:851
-#: widgets/features-block/widget.php:582 widgets/give-forms/widget.php:726
-#: widgets/service-block/widget.php:588 widgets/tribe-events/widget.php:1522
+#: cpt/blog/widget.php:553 cpt/projects/widget.php:857
+#: widgets/features-block/widget.php:583 widgets/give-forms/widget.php:726
+#: widgets/service-block/widget.php:591 widgets/tribe-events/widget.php:1522
+#: widgets/working-block/widget.php:585
 msgid "Excerpt Styling"
 msgstr ""
 
-#: cpt/blog/widget.php:565 cpt/blog/widget.php:650 cpt/blog/widget.php:789
-#: cpt/projects/widget.php:868 widgets/award-block/widget.php:388
+#: cpt/blog/widget.php:570 cpt/blog/widget.php:655 cpt/blog/widget.php:794
+#: cpt/projects/widget.php:874 widgets/award-block/widget.php:388
 #: widgets/award-block/widget.php:429 widgets/countdown-timer/widget.php:280
 #: widgets/countdown-timer/widget.php:387
 #: widgets/give-donation-form/widget.php:638
@@ -581,8 +594,8 @@ msgstr ""
 msgid "Text Color (Hover)"
 msgstr ""
 
-#: cpt/blog/widget.php:575 cpt/blog/widget.php:660 cpt/blog/widget.php:799
-#: cpt/projects/widget.php:878 widgets/app-button/widget.php:196
+#: cpt/blog/widget.php:580 cpt/blog/widget.php:665 cpt/blog/widget.php:804
+#: cpt/projects/widget.php:884 widgets/app-button/widget.php:196
 #: widgets/app-button/widget.php:233 widgets/app-button/widget.php:293
 #: widgets/app-button/widget.php:330 widgets/countdown-timer/widget.php:290
 #: widgets/countdown-timer/widget.php:397 widgets/counter-block/widget.php:830
@@ -590,9 +603,9 @@ msgstr ""
 #: widgets/counter-block/widget.php:976 widgets/counter-block/widget.php:1036
 #: widgets/counter-block/widget.php:1066 widgets/counter-block/widget.php:1121
 #: widgets/counter-block/widget.php:1181 widgets/counter-block/widget.php:1211
-#: widgets/features-block/widget.php:469 widgets/features-block/widget.php:529
-#: widgets/features-block/widget.php:560 widgets/features-block/widget.php:606
-#: widgets/features-block/widget.php:666
+#: widgets/features-block/widget.php:470 widgets/features-block/widget.php:530
+#: widgets/features-block/widget.php:561 widgets/features-block/widget.php:607
+#: widgets/features-block/widget.php:667
 #: widgets/give-donation-form/widget.php:648
 #: widgets/give-donation-form/widget.php:750
 #: widgets/give-donation-form/widget.php:852
@@ -616,9 +629,9 @@ msgstr ""
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:81
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:180
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:265
-#: widgets/service-block/widget.php:475 widgets/service-block/widget.php:535
-#: widgets/service-block/widget.php:566 widgets/service-block/widget.php:612
-#: widgets/service-block/widget.php:672
+#: widgets/service-block/widget.php:478 widgets/service-block/widget.php:538
+#: widgets/service-block/widget.php:569 widgets/service-block/widget.php:615
+#: widgets/service-block/widget.php:675
 #: widgets/spin-text-around-logo/widget.php:199
 #: widgets/team-block/widget.php:417 widgets/team-block/widget.php:477
 #: widgets/team-block/widget.php:508 widgets/team-block/widget.php:557
@@ -636,6 +649,9 @@ msgstr ""
 #: widgets/testimonial-block/widget.php:852
 #: widgets/testimonial-block/widget.php:912
 #: widgets/testimonial-block/widget.php:943
+#: widgets/working-block/widget.php:472 widgets/working-block/widget.php:532
+#: widgets/working-block/widget.php:563 widgets/working-block/widget.php:609
+#: widgets/working-block/widget.php:669
 #: widgets-shop/product-category/widget.php:544
 #: widgets-shop/product-category/widget.php:651
 #: widgets-shop/product-category/widget.php:746
@@ -647,8 +663,8 @@ msgstr ""
 msgid "Text Theme Colored"
 msgstr ""
 
-#: cpt/blog/widget.php:587 cpt/blog/widget.php:672 cpt/blog/widget.php:811
-#: cpt/projects/widget.php:890 widgets/countdown-timer/widget.php:302
+#: cpt/blog/widget.php:592 cpt/blog/widget.php:677 cpt/blog/widget.php:816
+#: cpt/projects/widget.php:896 widgets/countdown-timer/widget.php:302
 #: widgets/countdown-timer/widget.php:409
 #: widgets/give-donation-form/widget.php:660
 #: widgets/give-donation-form/widget.php:762
@@ -670,41 +686,42 @@ msgstr ""
 msgid "Text Theme Colored (Hover)"
 msgstr ""
 
-#: cpt/blog/widget.php:607 cpt/blog/widget.php:692 cpt/blog/widget.php:831
-#: cpt/projects/widget.php:910 widgets/give-forms/widget.php:785
+#: cpt/blog/widget.php:612 cpt/blog/widget.php:697 cpt/blog/widget.php:836
+#: cpt/projects/widget.php:916 widgets/give-forms/widget.php:785
 #: widgets/give-forms/widget.php:825
 msgid "Text Margin"
 msgstr ""
 
-#: cpt/blog/widget.php:618 cpt/blog/widget.php:703 cpt/blog/widget.php:842
-#: cpt/projects/widget.php:921 widgets/give-forms/widget.php:796
+#: cpt/blog/widget.php:623 cpt/blog/widget.php:708 cpt/blog/widget.php:847
+#: cpt/projects/widget.php:927 widgets/give-forms/widget.php:796
 #: widgets/give-forms/widget.php:836
 msgid "Text Padding"
 msgstr ""
 
-#: cpt/blog/widget.php:633 widgets/blog-list/widget.php:480
+#: cpt/blog/widget.php:638 widgets/blog-list/widget.php:480
 #: widgets/tribe-events/widget.php:1347
 msgid "Post Meta Styling"
 msgstr ""
 
-#: cpt/blog/widget.php:716 widgets/counter-block/widget.php:631
-#: widgets/counter-block/widget.php:709 widgets/features-block/widget.php:733
-#: widgets/features-block/widget.php:955 widgets/service-block/widget.php:751
-#: widgets/service-block/widget.php:973 widgets/team-block/widget.php:837
-#: widgets/team-block/widget.php:1055
+#: cpt/blog/widget.php:721 widgets/counter-block/widget.php:631
+#: widgets/counter-block/widget.php:709 widgets/features-block/widget.php:734
+#: widgets/features-block/widget.php:956 widgets/service-block/widget.php:754
+#: widgets/service-block/widget.php:976 widgets/team-block/widget.php:837
+#: widgets/team-block/widget.php:1055 widgets/working-block/widget.php:736
+#: widgets/working-block/widget.php:958
 msgid "Icon Color Options"
 msgstr ""
 
-#: cpt/blog/widget.php:724 widgets/app-button/widget.php:383
+#: cpt/blog/widget.php:729 widgets/app-button/widget.php:383
 #: widgets/app-button/widget.php:430
 #: widgets/header-nav-side-icons/skins/skin-hamburger-nav.php:40
 #: widgets/header-nav-side-icons/skins/skin-mini-cart.php:46
 #: widgets/header-nav-side-icons/skins/skin-search-btn.php:47
 #: widgets/header-nav-side-icons/skins/skin-side-push-panel.php:60
+#: widgets/team-block/skins/skin-style10.php:115
+#: widgets/team-block/skins/skin-style10.php:213
 #: widgets/team-block/skins/skin-style2.php:148
 #: widgets/team-block/skins/skin-style2.php:277
-#: widgets/team-block/skins/skin-style3.php:156
-#: widgets/team-block/skins/skin-style3.php:295
 #: widgets/team-block/skins/skin-style7.php:115
 #: widgets/team-block/skins/skin-style7.php:212
 #: widgets-shop/account/widget.php:156 widgets-shop/header-cart/widget.php:279
@@ -727,7 +744,7 @@ msgstr ""
 msgid "Icon Color"
 msgstr ""
 
-#: cpt/blog/widget.php:734
+#: cpt/blog/widget.php:739
 #: widgets/header-nav-side-icons/skins/skin-hamburger-nav.php:50
 #: widgets/header-nav-side-icons/skins/skin-mini-cart.php:56
 #: widgets/header-nav-side-icons/skins/skin-search-btn.php:57
@@ -738,17 +755,17 @@ msgstr ""
 msgid "Icon Color (Hover)"
 msgstr ""
 
-#: cpt/blog/widget.php:744 widgets/app-button/widget.php:393
+#: cpt/blog/widget.php:749 widgets/app-button/widget.php:393
 #: widgets/app-button/widget.php:440
 #: widgets/header-nav-side-icons/skins/skin-hamburger-nav.php:60
 #: widgets/header-nav-side-icons/skins/skin-mini-cart.php:66
 #: widgets/header-nav-side-icons/skins/skin-search-btn.php:67
 #: widgets/header-nav-side-icons/skins/skin-side-push-panel.php:80
 #: widgets/interactive-tabs-title/widget.php:309
+#: widgets/team-block/skins/skin-style10.php:126
+#: widgets/team-block/skins/skin-style10.php:224
 #: widgets/team-block/skins/skin-style2.php:159
 #: widgets/team-block/skins/skin-style2.php:288
-#: widgets/team-block/skins/skin-style3.php:167
-#: widgets/team-block/skins/skin-style3.php:306
 #: widgets/team-block/skins/skin-style7.php:126
 #: widgets/team-block/skins/skin-style7.php:223
 #: widgets-shop/header-cart/widget.php:299
@@ -764,7 +781,7 @@ msgstr ""
 msgid "Icon Theme Colored"
 msgstr ""
 
-#: cpt/blog/widget.php:756
+#: cpt/blog/widget.php:761
 #: widgets/header-nav-side-icons/skins/skin-hamburger-nav.php:72
 #: widgets/header-nav-side-icons/skins/skin-mini-cart.php:78
 #: widgets/header-nav-side-icons/skins/skin-search-btn.php:79
@@ -775,43 +792,63 @@ msgstr ""
 msgid "Icon Theme Colored (Hover)"
 msgstr ""
 
-#: cpt/blog/widget.php:772
+#: cpt/blog/widget.php:777
 msgid "Single Meta Styling"
 msgstr ""
 
-#: cpt/blog/widget.php:867
+#: cpt/blog/widget.php:872
 msgid "Wrapper Styling"
 msgstr ""
 
-#: cpt/blog/widget.php:875 cpt/blog/skins/skin-vertical-list.php:121
+#: cpt/blog/widget.php:880 cpt/blog/skins/skin-vertical-list.php:121
 #: cpt/projects/skins/skin-style-current-theme1.php:45
 #: cpt/projects/skins/skin-style-current-theme1.php:119
+#: cpt/projects/skins/skin-style-current-theme10.php:45
+#: cpt/projects/skins/skin-style-current-theme10.php:119
+#: cpt/projects/skins/skin-style-current-theme11.php:45
+#: cpt/projects/skins/skin-style-current-theme11.php:119
+#: cpt/projects/skins/skin-style-current-theme12.php:45
+#: cpt/projects/skins/skin-style-current-theme12.php:119
+#: cpt/projects/skins/skin-style-current-theme13.php:45
+#: cpt/projects/skins/skin-style-current-theme13.php:119
+#: cpt/projects/skins/skin-style-current-theme8.php:45
+#: cpt/projects/skins/skin-style-current-theme8.php:119
+#: cpt/projects/skins/skin-style-current-theme9.php:45
+#: cpt/projects/skins/skin-style-current-theme9.php:119
 #: external-plugins/mouse-helper/mouse-helper.php:648
 #: widgets/counter-block/widget.php:625 widgets/counter-block/widget.php:814
 #: widgets/counter-block/widget.php:960 widgets/counter-block/widget.php:1105
-#: widgets/counter-block/widget.php:1245 widgets/features-block/widget.php:453
-#: widgets/features-block/widget.php:590 widgets/features-block/widget.php:702
+#: widgets/counter-block/widget.php:1245 widgets/features-block/widget.php:454
+#: widgets/features-block/widget.php:591 widgets/features-block/widget.php:703
 #: widgets/features-block/skins/skin-style4.php:42
+#: widgets/features-block/skins/skin-style5.php:42
 #: widgets/interactive-tabs-title/widget.php:206
 #: widgets/interactive-tabs-title/widget.php:293
 #: widgets/interactive-tabs-title/widget.php:435
 #: widgets/interactive-tabs-title/widget.php:546
 #: widgets/moving-text/widget.php:564 widgets/moving-text/widget.php:970
-#: widgets/moving-text/widget.php:1202 widgets/service-block/widget.php:459
-#: widgets/service-block/widget.php:596 widgets/service-block/widget.php:720
-#: widgets/service-block/skins/skin-style1.php:49
-#: widgets/service-block/skins/skin-style12.php:48
-#: widgets/service-block/skins/skin-style2.php:48
-#: widgets/service-block/skins/skin-style3.php:48
-#: widgets/service-block/skins/skin-style4.php:48
-#: widgets/service-block/skins/skin-style5.php:49
-#: widgets/service-block/skins/skin-style7.php:49
-#: widgets/service-block/skins/skin-style8.php:48
+#: widgets/moving-text/widget.php:1202 widgets/service-block/widget.php:462
+#: widgets/service-block/widget.php:599 widgets/service-block/widget.php:723
+#: widgets/service-block/skins/skin-style1.php:53
+#: widgets/service-block/skins/skin-style12.php:52
+#: widgets/service-block/skins/skin-style13.php:52
+#: widgets/service-block/skins/skin-style14.php:52
+#: widgets/service-block/skins/skin-style15.php:52
+#: widgets/service-block/skins/skin-style2.php:52
+#: widgets/service-block/skins/skin-style3.php:52
+#: widgets/service-block/skins/skin-style4.php:52
+#: widgets/service-block/skins/skin-style5.php:53
+#: widgets/service-block/skins/skin-style7.php:53
+#: widgets/service-block/skins/skin-style8.php:52
 #: widgets/team-block/widget.php:401 widgets/team-block/widget.php:541
 #: widgets/team-block/widget.php:681 widgets/team-block/widget.php:825
+#: widgets/team-block/skins/skin-style1.php:41
+#: widgets/team-block/skins/skin-style10.php:40
 #: widgets/team-block/skins/skin-style2.php:41
 #: widgets/team-block/skins/skin-style3.php:41
-#: widgets/team-block/skins/skin-style6.php:40
+#: widgets/team-block/skins/skin-style4.php:41
+#: widgets/team-block/skins/skin-style5.php:41
+#: widgets/team-block/skins/skin-style6.php:41
 #: widgets/team-block/skins/skin-style7.php:40
 #: widgets/team-block/skins/skin-style8.php:41
 #: widgets/team-block/skins/skin-style9.php:42
@@ -829,19 +866,21 @@ msgstr ""
 #: widgets/testimonial-block/skins/skin-style4.php:74
 #: widgets/testimonial-block/skins/skin-style4.php:226
 #: widgets/testimonial-block/skins/skin-style5.php:74
-#: widgets/testimonial-block/skins/skin-style5.php:202
+#: widgets/testimonial-block/skins/skin-style5.php:231
 #: widgets/testimonial-block/skins/skin-style6.php:74
 #: widgets/testimonial-block/skins/skin-style6.php:204
 #: widgets/testimonial-block/skins/skin-style7.php:74
-#: widgets/testimonial-block/skins/skin-style7.php:202
+#: widgets/testimonial-block/skins/skin-style7.php:236
 #: widgets/testimonial-block/skins/skin-style8.php:74
-#: widgets/testimonial-block/skins/skin-style8.php:228
+#: widgets/testimonial-block/skins/skin-style8.php:251
 #: widgets/testimonial-block/skins/skin-style9.php:40
 #: widgets/tribe-events/skins/skin-fullwidth-style-current-theme1.php:621
 #: widgets/tribe-events/skins/skin-fullwidth-style1.php:621
 #: widgets/tribe-events/skins/skin-fullwidth-style2.php:621
 #: widgets/tribe-events/skins/skin-vertical-list-current-theme.php:642
 #: widgets/tribe-events/skins/skin-vertical-list1.php:642
+#: widgets/working-block/widget.php:456 widgets/working-block/widget.php:593
+#: widgets/working-block/widget.php:705
 #: widgets-shop/info-banner/widget.php:391
 #: widgets-shop/info-banner/widget.php:471
 #: widgets-shop/info-banner/widget.php:1391
@@ -864,28 +903,40 @@ msgstr ""
 msgid "Normal"
 msgstr ""
 
-#: cpt/blog/widget.php:881 cpt/blog/skins/skin-style-current-theme1.php:42
+#: cpt/blog/widget.php:886 cpt/blog/skins/skin-style-current-theme1.php:42
 #: cpt/blog/skins/skin-style-current-theme2.php:41
 #: cpt/blog/skins/skin-style-current-theme3.php:41
+#: cpt/blog/skins/skin-style-current-theme4.php:41
+#: cpt/blog/skins/skin-style-current-theme5.php:41
+#: cpt/blog/skins/skin-style-current-theme6.php:41
+#: cpt/blog/skins/skin-style-current-theme7.php:41
+#: cpt/blog/skins/skin-style-current-theme8.php:41
 #: widgets/countdown-timer/widget.php:421
 #: widgets/countdown-timer/widget.php:552
 #: widgets/counter-block/widget.php:1294 widgets/counter-block/widget.php:1380
 #: widgets/give-donation-form/widget.php:503
 #: widgets/give-donation-form/widget.php:1798
 #: widgets/give-donation-form/widget.php:2967
-#: widgets/service-block/skins/skin-style1.php:40
-#: widgets/service-block/skins/skin-style10.php:39
-#: widgets/service-block/skins/skin-style11.php:39
-#: widgets/service-block/skins/skin-style12.php:39
-#: widgets/service-block/skins/skin-style2.php:39
-#: widgets/service-block/skins/skin-style3.php:39
-#: widgets/service-block/skins/skin-style4.php:39
-#: widgets/service-block/skins/skin-style5.php:40
-#: widgets/service-block/skins/skin-style7.php:40
-#: widgets/service-block/skins/skin-style8.php:39
+#: widgets/service-block/skins/skin-style1.php:44
+#: widgets/service-block/skins/skin-style10.php:43
+#: widgets/service-block/skins/skin-style11.php:43
+#: widgets/service-block/skins/skin-style12.php:43
+#: widgets/service-block/skins/skin-style13.php:43
+#: widgets/service-block/skins/skin-style14.php:43
+#: widgets/service-block/skins/skin-style15.php:43
+#: widgets/service-block/skins/skin-style2.php:43
+#: widgets/service-block/skins/skin-style3.php:43
+#: widgets/service-block/skins/skin-style4.php:43
+#: widgets/service-block/skins/skin-style5.php:44
+#: widgets/service-block/skins/skin-style7.php:44
+#: widgets/service-block/skins/skin-style8.php:43
+#: widgets/team-block/skins/skin-style1.php:48
+#: widgets/team-block/skins/skin-style10.php:47
 #: widgets/team-block/skins/skin-style2.php:48
 #: widgets/team-block/skins/skin-style3.php:48
-#: widgets/team-block/skins/skin-style6.php:47
+#: widgets/team-block/skins/skin-style4.php:48
+#: widgets/team-block/skins/skin-style5.php:48
+#: widgets/team-block/skins/skin-style6.php:48
 #: widgets/team-block/skins/skin-style7.php:47
 #: widgets/team-block/skins/skin-style8.php:48
 #: widgets/team-block/skins/skin-style9.php:49
@@ -902,34 +953,57 @@ msgstr ""
 msgid "BG Color Options"
 msgstr ""
 
-#: cpt/blog/widget.php:888 cpt/blog/skins/skin-style-current-theme1.php:49
+#: cpt/blog/widget.php:893 cpt/blog/skins/skin-style-current-theme1.php:49
 #: cpt/blog/skins/skin-style-current-theme2.php:48
 #: cpt/blog/skins/skin-style-current-theme3.php:48
+#: cpt/blog/skins/skin-style-current-theme4.php:48
+#: cpt/blog/skins/skin-style-current-theme5.php:48
+#: cpt/blog/skins/skin-style-current-theme6.php:48
+#: cpt/blog/skins/skin-style-current-theme7.php:48
+#: cpt/blog/skins/skin-style-current-theme8.php:48
 #: cpt/projects/skins/skin-style-current-theme1.php:51
+#: cpt/projects/skins/skin-style-current-theme10.php:51
+#: cpt/projects/skins/skin-style-current-theme11.php:51
+#: cpt/projects/skins/skin-style-current-theme12.php:51
+#: cpt/projects/skins/skin-style-current-theme13.php:51
 #: cpt/projects/skins/skin-style-current-theme2.php:43
+#: cpt/projects/skins/skin-style-current-theme8.php:51
+#: cpt/projects/skins/skin-style-current-theme9.php:51
 #: widgets/countdown-timer/widget.php:429
 #: widgets/countdown-timer/widget.php:559
 #: widgets/counter-block/widget.php:1302 widgets/counter-block/widget.php:1387
 #: widgets/features-block/skins/skin-style4.php:48
+#: widgets/features-block/skins/skin-style5.php:48
 #: widgets/give-donation-form/widget.php:510
 #: widgets/give-donation-form/widget.php:1805
 #: widgets/give-donation-form/widget.php:2974
-#: widgets/service-block/skins/skin-style1.php:55
-#: widgets/service-block/skins/skin-style10.php:47
-#: widgets/service-block/skins/skin-style11.php:47
-#: widgets/service-block/skins/skin-style12.php:54
-#: widgets/service-block/skins/skin-style2.php:54
-#: widgets/service-block/skins/skin-style3.php:54
-#: widgets/service-block/skins/skin-style4.php:54
-#: widgets/service-block/skins/skin-style5.php:55
-#: widgets/service-block/skins/skin-style7.php:55
-#: widgets/service-block/skins/skin-style8.php:54
+#: widgets/service-block/skins/skin-style1.php:59
+#: widgets/service-block/skins/skin-style10.php:51
+#: widgets/service-block/skins/skin-style11.php:51
+#: widgets/service-block/skins/skin-style12.php:58
+#: widgets/service-block/skins/skin-style13.php:58
+#: widgets/service-block/skins/skin-style14.php:58
+#: widgets/service-block/skins/skin-style15.php:58
+#: widgets/service-block/skins/skin-style2.php:58
+#: widgets/service-block/skins/skin-style3.php:58
+#: widgets/service-block/skins/skin-style4.php:58
+#: widgets/service-block/skins/skin-style5.php:59
+#: widgets/service-block/skins/skin-style7.php:59
+#: widgets/service-block/skins/skin-style8.php:58
+#: widgets/team-block/skins/skin-style1.php:56
+#: widgets/team-block/skins/skin-style1.php:95
+#: widgets/team-block/skins/skin-style10.php:55
+#: widgets/team-block/skins/skin-style10.php:155
 #: widgets/team-block/skins/skin-style2.php:56
 #: widgets/team-block/skins/skin-style2.php:188
 #: widgets/team-block/skins/skin-style3.php:56
-#: widgets/team-block/skins/skin-style3.php:196
-#: widgets/team-block/skins/skin-style6.php:55
-#: widgets/team-block/skins/skin-style6.php:94
+#: widgets/team-block/skins/skin-style3.php:96
+#: widgets/team-block/skins/skin-style4.php:56
+#: widgets/team-block/skins/skin-style4.php:95
+#: widgets/team-block/skins/skin-style5.php:56
+#: widgets/team-block/skins/skin-style5.php:95
+#: widgets/team-block/skins/skin-style6.php:56
+#: widgets/team-block/skins/skin-style6.php:95
 #: widgets/team-block/skins/skin-style7.php:55
 #: widgets/team-block/skins/skin-style7.php:155
 #: widgets/team-block/skins/skin-style8.php:56
@@ -947,35 +1021,53 @@ msgstr ""
 #: widgets/testimonial-block/skins/skin-style4.php:89
 #: widgets/testimonial-block/skins/skin-style4.php:159
 #: widgets/testimonial-block/skins/skin-style5.php:89
-#: widgets/testimonial-block/skins/skin-style5.php:147
+#: widgets/testimonial-block/skins/skin-style5.php:176
 #: widgets/testimonial-block/skins/skin-style6.php:89
 #: widgets/testimonial-block/skins/skin-style6.php:147
 #: widgets/testimonial-block/skins/skin-style7.php:89
-#: widgets/testimonial-block/skins/skin-style7.php:147
+#: widgets/testimonial-block/skins/skin-style7.php:181
 #: widgets/testimonial-block/skins/skin-style8.php:89
-#: widgets/testimonial-block/skins/skin-style8.php:159
+#: widgets/testimonial-block/skins/skin-style8.php:181
 #: widgets/testimonial-block/skins/skin-style9.php:55
 #: widgets/testimonial-block/skins/skin-style9.php:105
 msgid "Custom Background Color"
 msgstr ""
 
-#: cpt/blog/widget.php:898 cpt/projects/skins/skin-style-current-theme1.php:61
+#: cpt/blog/widget.php:903 cpt/projects/skins/skin-style-current-theme1.php:61
+#: cpt/projects/skins/skin-style-current-theme10.php:61
+#: cpt/projects/skins/skin-style-current-theme11.php:61
+#: cpt/projects/skins/skin-style-current-theme12.php:61
+#: cpt/projects/skins/skin-style-current-theme13.php:61
 #: cpt/projects/skins/skin-style-current-theme2.php:63
+#: cpt/projects/skins/skin-style-current-theme8.php:61
+#: cpt/projects/skins/skin-style-current-theme9.php:61
 #: widgets/features-block/skins/skin-style4.php:58
-#: widgets/service-block/skins/skin-style1.php:65
-#: widgets/service-block/skins/skin-style12.php:64
-#: widgets/service-block/skins/skin-style2.php:64
-#: widgets/service-block/skins/skin-style3.php:64
-#: widgets/service-block/skins/skin-style4.php:64
-#: widgets/service-block/skins/skin-style5.php:65
-#: widgets/service-block/skins/skin-style7.php:65
-#: widgets/service-block/skins/skin-style8.php:65
+#: widgets/features-block/skins/skin-style5.php:58
+#: widgets/service-block/skins/skin-style1.php:69
+#: widgets/service-block/skins/skin-style12.php:68
+#: widgets/service-block/skins/skin-style13.php:68
+#: widgets/service-block/skins/skin-style14.php:68
+#: widgets/service-block/skins/skin-style15.php:68
+#: widgets/service-block/skins/skin-style2.php:68
+#: widgets/service-block/skins/skin-style3.php:68
+#: widgets/service-block/skins/skin-style4.php:68
+#: widgets/service-block/skins/skin-style5.php:69
+#: widgets/service-block/skins/skin-style7.php:69
+#: widgets/service-block/skins/skin-style8.php:69
+#: widgets/team-block/skins/skin-style1.php:67
+#: widgets/team-block/skins/skin-style1.php:105
+#: widgets/team-block/skins/skin-style10.php:66
+#: widgets/team-block/skins/skin-style10.php:165
 #: widgets/team-block/skins/skin-style2.php:67
 #: widgets/team-block/skins/skin-style2.php:198
 #: widgets/team-block/skins/skin-style3.php:67
-#: widgets/team-block/skins/skin-style3.php:206
-#: widgets/team-block/skins/skin-style6.php:66
-#: widgets/team-block/skins/skin-style6.php:104
+#: widgets/team-block/skins/skin-style3.php:106
+#: widgets/team-block/skins/skin-style4.php:67
+#: widgets/team-block/skins/skin-style4.php:105
+#: widgets/team-block/skins/skin-style5.php:67
+#: widgets/team-block/skins/skin-style5.php:105
+#: widgets/team-block/skins/skin-style6.php:67
+#: widgets/team-block/skins/skin-style6.php:105
 #: widgets/team-block/skins/skin-style7.php:66
 #: widgets/team-block/skins/skin-style7.php:102
 #: widgets/team-block/skins/skin-style7.php:165
@@ -994,22 +1086,22 @@ msgstr ""
 #: widgets/testimonial-block/skins/skin-style4.php:100
 #: widgets/testimonial-block/skins/skin-style4.php:169
 #: widgets/testimonial-block/skins/skin-style5.php:100
-#: widgets/testimonial-block/skins/skin-style5.php:157
+#: widgets/testimonial-block/skins/skin-style5.php:186
 #: widgets/testimonial-block/skins/skin-style6.php:100
 #: widgets/testimonial-block/skins/skin-style6.php:157
 #: widgets/testimonial-block/skins/skin-style7.php:100
-#: widgets/testimonial-block/skins/skin-style7.php:157
+#: widgets/testimonial-block/skins/skin-style7.php:191
 #: widgets/testimonial-block/skins/skin-style8.php:100
-#: widgets/testimonial-block/skins/skin-style8.php:169
+#: widgets/testimonial-block/skins/skin-style8.php:191
 #: widgets/testimonial-block/skins/skin-style9.php:66
 #: widgets/testimonial-block/skins/skin-style9.php:115
 msgid "Make BG Theme Colored"
 msgstr ""
 
-#: cpt/blog/widget.php:910 widgets/blog-list/widget.php:644
+#: cpt/blog/widget.php:915 widgets/blog-list/widget.php:644
 #: widgets/countdown-timer/widget.php:530 widgets/counter-block/widget.php:850
 #: widgets/counter-block/widget.php:996 widgets/counter-block/widget.php:1141
-#: widgets/features-block/widget.php:489 widgets/features-block/widget.php:626
+#: widgets/features-block/widget.php:490 widgets/features-block/widget.php:627
 #: widgets/give-donation-form/widget.php:599
 #: widgets/give-donation-form/widget.php:701
 #: widgets/give-donation-form/widget.php:803
@@ -1032,7 +1124,7 @@ msgstr ""
 #: widgets/pricing-plan-switcher/widget.php:258
 #: widgets/pricing-plan-switcher/skins/skin-style1.php:71
 #: widgets/pricing-plan-switcher/skins/skin-style1.php:125
-#: widgets/service-block/widget.php:495 widgets/service-block/widget.php:632
+#: widgets/service-block/widget.php:498 widgets/service-block/widget.php:635
 #: widgets/team-block/widget.php:437 widgets/team-block/widget.php:577
 #: widgets/team-block/widget.php:717 widgets/testimonial-block/widget.php:456
 #: widgets/testimonial-block/widget.php:594
@@ -1047,6 +1139,7 @@ msgstr ""
 #: widgets/testimonial-block/skins/skin-style6.php:50
 #: widgets/testimonial-block/skins/skin-style7.php:50
 #: widgets/testimonial-block/skins/skin-style8.php:50
+#: widgets/working-block/widget.php:492 widgets/working-block/widget.php:629
 #: widgets-shop/info-banner/widget.php:327
 #: widgets-shop/info-banner/widget.php:777
 #: widgets-shop/info-banner/widget.php:872
@@ -1056,12 +1149,12 @@ msgstr ""
 msgid "Margin"
 msgstr ""
 
-#: cpt/blog/widget.php:921 widgets/blog-list/widget.php:655
+#: cpt/blog/widget.php:926 widgets/blog-list/widget.php:655
 #: widgets/countdown-timer/widget.php:314
 #: widgets/countdown-timer/widget.php:350
 #: widgets/countdown-timer/widget.php:541 widgets/counter-block/widget.php:861
 #: widgets/counter-block/widget.php:1007 widgets/counter-block/widget.php:1152
-#: widgets/features-block/widget.php:500 widgets/features-block/widget.php:637
+#: widgets/features-block/widget.php:501 widgets/features-block/widget.php:638
 #: widgets/give-donation-form/widget.php:450
 #: widgets/give-donation-form/widget.php:610
 #: widgets/give-donation-form/widget.php:712
@@ -1082,7 +1175,7 @@ msgstr ""
 #: widgets/pricing-plan-switcher/skins/skin-style1.php:189
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:101
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:307
-#: widgets/service-block/widget.php:506 widgets/service-block/widget.php:643
+#: widgets/service-block/widget.php:509 widgets/service-block/widget.php:646
 #: widgets/team-block/widget.php:448 widgets/team-block/widget.php:588
 #: widgets/team-block/widget.php:728 widgets/testimonial-block/widget.php:467
 #: widgets/testimonial-block/widget.php:605
@@ -1097,6 +1190,7 @@ msgstr ""
 #: widgets/testimonial-block/skins/skin-style6.php:61
 #: widgets/testimonial-block/skins/skin-style7.php:61
 #: widgets/testimonial-block/skins/skin-style8.php:61
+#: widgets/working-block/widget.php:503 widgets/working-block/widget.php:640
 #: widgets-shop/info-banner/widget.php:788
 #: widgets-shop/info-banner/widget.php:883
 #: widgets-shop/info-banner/widget.php:980
@@ -1106,34 +1200,54 @@ msgstr ""
 msgid "Padding"
 msgstr ""
 
-#: cpt/blog/widget.php:934 cpt/blog/skins/skin-vertical-list.php:205
+#: cpt/blog/widget.php:939 cpt/blog/skins/skin-vertical-list.php:205
 #: cpt/projects/skins/skin-style-current-theme1.php:76
 #: cpt/projects/skins/skin-style-current-theme1.php:149
+#: cpt/projects/skins/skin-style-current-theme10.php:76
+#: cpt/projects/skins/skin-style-current-theme10.php:149
+#: cpt/projects/skins/skin-style-current-theme11.php:76
+#: cpt/projects/skins/skin-style-current-theme11.php:149
+#: cpt/projects/skins/skin-style-current-theme12.php:76
+#: cpt/projects/skins/skin-style-current-theme12.php:149
+#: cpt/projects/skins/skin-style-current-theme13.php:76
+#: cpt/projects/skins/skin-style-current-theme13.php:149
+#: cpt/projects/skins/skin-style-current-theme8.php:76
+#: cpt/projects/skins/skin-style-current-theme8.php:149
+#: cpt/projects/skins/skin-style-current-theme9.php:76
+#: cpt/projects/skins/skin-style-current-theme9.php:149
 #: external-plugins/mouse-helper/mouse-helper.php:548
 #: widgets/app-button/widget.php:217 widgets/app-button/widget.php:314
 #: widgets/app-button/widget.php:424 widgets/app-button/widget.php:542
 #: widgets/counter-block/widget.php:702 widgets/counter-block/widget.php:904
 #: widgets/counter-block/widget.php:1050 widgets/counter-block/widget.php:1195
-#: widgets/counter-block/widget.php:1374 widgets/features-block/widget.php:543
-#: widgets/features-block/widget.php:949
+#: widgets/counter-block/widget.php:1374 widgets/features-block/widget.php:544
+#: widgets/features-block/widget.php:950
 #: widgets/features-block/skins/skin-style4.php:73
+#: widgets/features-block/skins/skin-style5.php:73
 #: widgets/moving-text/widget.php:644 widgets/moving-text/widget.php:1069
 #: widgets/moving-text/widget.php:1267 widgets/pricing-plan/widget.php:1760
 #: widgets/pricing-plan/widget.php:1927 widgets/pricing-plan/widget.php:2010
-#: widgets/service-block/widget.php:549 widgets/service-block/widget.php:967
-#: widgets/service-block/skins/skin-style1.php:79
-#: widgets/service-block/skins/skin-style12.php:78
-#: widgets/service-block/skins/skin-style2.php:78
-#: widgets/service-block/skins/skin-style3.php:78
-#: widgets/service-block/skins/skin-style4.php:78
-#: widgets/service-block/skins/skin-style5.php:79
-#: widgets/service-block/skins/skin-style7.php:79
-#: widgets/service-block/skins/skin-style8.php:80
+#: widgets/service-block/widget.php:552 widgets/service-block/widget.php:970
+#: widgets/service-block/skins/skin-style1.php:83
+#: widgets/service-block/skins/skin-style12.php:82
+#: widgets/service-block/skins/skin-style13.php:82
+#: widgets/service-block/skins/skin-style14.php:82
+#: widgets/service-block/skins/skin-style15.php:82
+#: widgets/service-block/skins/skin-style2.php:82
+#: widgets/service-block/skins/skin-style3.php:82
+#: widgets/service-block/skins/skin-style4.php:82
+#: widgets/service-block/skins/skin-style5.php:83
+#: widgets/service-block/skins/skin-style7.php:83
+#: widgets/service-block/skins/skin-style8.php:103
 #: widgets/team-block/widget.php:491 widgets/team-block/widget.php:631
 #: widgets/team-block/widget.php:771 widgets/team-block/widget.php:1049
+#: widgets/team-block/skins/skin-style1.php:81
+#: widgets/team-block/skins/skin-style10.php:141
 #: widgets/team-block/skins/skin-style2.php:174
-#: widgets/team-block/skins/skin-style3.php:182
-#: widgets/team-block/skins/skin-style6.php:80
+#: widgets/team-block/skins/skin-style3.php:82
+#: widgets/team-block/skins/skin-style4.php:81
+#: widgets/team-block/skins/skin-style5.php:81
+#: widgets/team-block/skins/skin-style6.php:81
 #: widgets/team-block/skins/skin-style7.php:141
 #: widgets/team-block/skins/skin-style8.php:81
 #: widgets/team-block/skins/skin-style9.php:82
@@ -1142,7 +1256,7 @@ msgstr ""
 #: widgets/testimonial-block/widget.php:787
 #: widgets/testimonial-block/widget.php:926
 #: widgets/testimonial-block/skins/skin-style1.php:134
-#: widgets/testimonial-block/skins/skin-style1.php:235
+#: widgets/testimonial-block/skins/skin-style1.php:257
 #: widgets/testimonial-block/skins/skin-style10.php:133
 #: widgets/testimonial-block/skins/skin-style10.php:236
 #: widgets/testimonial-block/skins/skin-style2.php:133
@@ -1150,20 +1264,21 @@ msgstr ""
 #: widgets/testimonial-block/skins/skin-style3.php:234
 #: widgets/testimonial-block/skins/skin-style4.php:145
 #: widgets/testimonial-block/skins/skin-style4.php:289
-#: widgets/testimonial-block/skins/skin-style5.php:133
-#: widgets/testimonial-block/skins/skin-style5.php:234
+#: widgets/testimonial-block/skins/skin-style5.php:162
+#: widgets/testimonial-block/skins/skin-style5.php:263
 #: widgets/testimonial-block/skins/skin-style6.php:133
 #: widgets/testimonial-block/skins/skin-style6.php:236
-#: widgets/testimonial-block/skins/skin-style7.php:133
-#: widgets/testimonial-block/skins/skin-style7.php:233
-#: widgets/testimonial-block/skins/skin-style8.php:145
-#: widgets/testimonial-block/skins/skin-style8.php:259
+#: widgets/testimonial-block/skins/skin-style7.php:167
+#: widgets/testimonial-block/skins/skin-style7.php:267
+#: widgets/testimonial-block/skins/skin-style8.php:167
+#: widgets/testimonial-block/skins/skin-style8.php:282
 #: widgets/testimonial-block/skins/skin-style9.php:91
 #: widgets/tribe-events/skins/skin-fullwidth-style-current-theme1.php:735
 #: widgets/tribe-events/skins/skin-fullwidth-style1.php:735
 #: widgets/tribe-events/skins/skin-fullwidth-style2.php:735
 #: widgets/tribe-events/skins/skin-vertical-list-current-theme.php:756
 #: widgets/tribe-events/skins/skin-vertical-list1.php:756
+#: widgets/working-block/widget.php:546 widgets/working-block/widget.php:952
 #: widgets-shop/info-banner/widget.php:421
 #: widgets-shop/info-banner/widget.php:504
 #: widgets-shop/info-banner/widget.php:1480
@@ -1186,100 +1301,136 @@ msgstr ""
 msgid "Hover"
 msgstr ""
 
-#: cpt/blog/widget.php:940 cpt/blog/skins/skin-style-current-theme3.php:58
+#: cpt/blog/widget.php:945 cpt/blog/skins/skin-style-current-theme3.php:58
+#: cpt/blog/skins/skin-style-current-theme4.php:58
+#: cpt/blog/skins/skin-style-current-theme5.php:58
+#: cpt/blog/skins/skin-style-current-theme6.php:58
+#: cpt/blog/skins/skin-style-current-theme7.php:58
+#: cpt/blog/skins/skin-style-current-theme8.php:58
 #: cpt/projects/skins/skin-style-current-theme1.php:82
 #: cpt/projects/skins/skin-style-current-theme1.php:155
+#: cpt/projects/skins/skin-style-current-theme10.php:82
+#: cpt/projects/skins/skin-style-current-theme10.php:155
+#: cpt/projects/skins/skin-style-current-theme11.php:82
+#: cpt/projects/skins/skin-style-current-theme11.php:155
+#: cpt/projects/skins/skin-style-current-theme12.php:82
+#: cpt/projects/skins/skin-style-current-theme12.php:155
+#: cpt/projects/skins/skin-style-current-theme13.php:82
+#: cpt/projects/skins/skin-style-current-theme13.php:155
 #: cpt/projects/skins/skin-style-current-theme2.php:53
+#: cpt/projects/skins/skin-style-current-theme8.php:82
+#: cpt/projects/skins/skin-style-current-theme8.php:155
+#: cpt/projects/skins/skin-style-current-theme9.php:82
+#: cpt/projects/skins/skin-style-current-theme9.php:155
 #: widgets/countdown-timer/widget.php:439
 #: widgets/countdown-timer/widget.php:569
 #: widgets/features-block/skins/skin-style4.php:79
+#: widgets/features-block/skins/skin-style5.php:79
 #: widgets/give-donation-form/widget.php:520
 #: widgets/give-donation-form/widget.php:1815
 #: widgets/give-donation-form/widget.php:2984
-#: widgets/service-block/skins/skin-style1.php:85
-#: widgets/service-block/skins/skin-style12.php:84
-#: widgets/service-block/skins/skin-style2.php:84
-#: widgets/service-block/skins/skin-style3.php:84
-#: widgets/service-block/skins/skin-style4.php:84
-#: widgets/service-block/skins/skin-style5.php:85
-#: widgets/service-block/skins/skin-style7.php:85
-#: widgets/service-block/skins/skin-style8.php:86
+#: widgets/service-block/skins/skin-style1.php:89
+#: widgets/service-block/skins/skin-style12.php:88
+#: widgets/service-block/skins/skin-style13.php:88
+#: widgets/service-block/skins/skin-style14.php:88
+#: widgets/service-block/skins/skin-style15.php:88
+#: widgets/service-block/skins/skin-style2.php:88
+#: widgets/service-block/skins/skin-style3.php:88
+#: widgets/service-block/skins/skin-style4.php:88
+#: widgets/service-block/skins/skin-style5.php:89
+#: widgets/service-block/skins/skin-style7.php:89
+#: widgets/service-block/skins/skin-style8.php:109
 msgid "Custom Background Color (Hover)"
 msgstr ""
 
-#: cpt/blog/widget.php:950 cpt/projects/skins/skin-style-current-theme1.php:92
+#: cpt/blog/widget.php:955 cpt/projects/skins/skin-style-current-theme1.php:92
+#: cpt/projects/skins/skin-style-current-theme10.php:92
+#: cpt/projects/skins/skin-style-current-theme11.php:92
+#: cpt/projects/skins/skin-style-current-theme12.php:92
+#: cpt/projects/skins/skin-style-current-theme13.php:92
 #: cpt/projects/skins/skin-style-current-theme2.php:75
+#: cpt/projects/skins/skin-style-current-theme8.php:92
+#: cpt/projects/skins/skin-style-current-theme9.php:92
 #: widgets/features-block/skins/skin-style4.php:89
-#: widgets/service-block/skins/skin-style1.php:95
-#: widgets/service-block/skins/skin-style12.php:94
-#: widgets/service-block/skins/skin-style2.php:94
-#: widgets/service-block/skins/skin-style3.php:94
-#: widgets/service-block/skins/skin-style4.php:94
-#: widgets/service-block/skins/skin-style5.php:95
-#: widgets/service-block/skins/skin-style7.php:95
-#: widgets/service-block/skins/skin-style8.php:97
+#: widgets/features-block/skins/skin-style5.php:89
+#: widgets/service-block/skins/skin-style1.php:99
+#: widgets/service-block/skins/skin-style12.php:98
+#: widgets/service-block/skins/skin-style13.php:98
+#: widgets/service-block/skins/skin-style14.php:98
+#: widgets/service-block/skins/skin-style15.php:98
+#: widgets/service-block/skins/skin-style2.php:98
+#: widgets/service-block/skins/skin-style3.php:98
+#: widgets/service-block/skins/skin-style4.php:98
+#: widgets/service-block/skins/skin-style5.php:99
+#: widgets/service-block/skins/skin-style7.php:99
+#: widgets/service-block/skins/skin-style8.php:120
 msgid "Make BG Theme Colored (Hover)"
 msgstr ""
 
-#: cpt/blog/widget.php:973 cpt/projects/widget.php:420
-#: widgets/award-block/widget.php:573 widgets/features-block/widget.php:1119
-#: widgets/give-forms/widget.php:234 widgets/service-block/widget.php:1137
+#: cpt/blog/widget.php:978 cpt/projects/widget.php:426
+#: widgets/award-block/widget.php:573 widgets/features-block/widget.php:1120
+#: widgets/give-forms/widget.php:234 widgets/service-block/widget.php:1140
 #: widgets/team-block/widget.php:1216
 #: widgets/testimonial-block/widget.php:1055
-#: widgets/tribe-events/widget.php:297
+#: widgets/tribe-events/widget.php:297 widgets/working-block/widget.php:1122
 #: widgets-shop/product-tabs/widget.php:798
 #: widgets-shop/wc-products/widget.php:357
 msgid "Carousel Options"
 msgstr ""
 
-#: cpt/blog/widget.php:999 cpt/projects/widget.php:446
-#: widgets/award-block/widget.php:599 widgets/features-block/widget.php:1145
-#: widgets/give-forms/widget.php:260 widgets/service-block/widget.php:1163
+#: cpt/blog/widget.php:1004 cpt/projects/widget.php:452
+#: widgets/award-block/widget.php:599 widgets/features-block/widget.php:1146
+#: widgets/give-forms/widget.php:260 widgets/service-block/widget.php:1166
 #: widgets/team-block/widget.php:1242
 #: widgets/testimonial-block/widget.php:1081
-#: widgets/tribe-events/widget.php:323 widgets-shop/wc-products/widget.php:382
+#: widgets/tribe-events/widget.php:323 widgets/working-block/widget.php:1148
+#: widgets-shop/wc-products/widget.php:382
 msgid "Carousel Arrow Navigation Options"
 msgstr ""
 
-#: cpt/blog/widget.php:1045 cpt/projects/widget.php:492
-#: widgets/award-block/widget.php:645 widgets/features-block/widget.php:1191
-#: widgets/give-forms/widget.php:306 widgets/service-block/widget.php:1209
+#: cpt/blog/widget.php:1050 cpt/projects/widget.php:498
+#: widgets/award-block/widget.php:645 widgets/features-block/widget.php:1192
+#: widgets/give-forms/widget.php:306 widgets/service-block/widget.php:1212
 #: widgets/team-block/widget.php:1288
 #: widgets/testimonial-block/widget.php:1127
-#: widgets/tribe-events/widget.php:369 widgets-shop/wc-products/widget.php:428
+#: widgets/tribe-events/widget.php:369 widgets/working-block/widget.php:1194
+#: widgets-shop/wc-products/widget.php:428
 msgid "Carousel Arrow Nav Bootstrap5 Breakpoints"
 msgstr ""
 
-#: cpt/blog/widget.php:1073 cpt/projects/widget.php:520
-#: widgets/award-block/widget.php:673 widgets/features-block/widget.php:1219
-#: widgets/give-forms/widget.php:334 widgets/service-block/widget.php:1237
+#: cpt/blog/widget.php:1078 cpt/projects/widget.php:526
+#: widgets/award-block/widget.php:673 widgets/features-block/widget.php:1220
+#: widgets/give-forms/widget.php:334 widgets/service-block/widget.php:1240
 #: widgets/team-block/widget.php:1316
 #: widgets/testimonial-block/widget.php:1155
-#: widgets/tribe-events/widget.php:397 widgets-shop/wc-products/widget.php:456
+#: widgets/tribe-events/widget.php:397 widgets/working-block/widget.php:1222
+#: widgets-shop/wc-products/widget.php:456
 msgid "Carousel Bullets/Dots Options"
 msgstr ""
 
-#: cpt/blog/widget.php:1108 cpt/projects/widget.php:555
+#: cpt/blog/widget.php:1113 cpt/projects/widget.php:561
 #: widgets/give-forms/widget.php:441 widgets/tribe-events/widget.php:1969
 #: widgets-shop/wc-products/widget.php:491
 msgid "Category Filter"
 msgstr ""
 
-#: cpt/blog/widget.php:1123 cpt/projects/widget.php:573
-#: widgets/award-block/widget.php:529 widgets/features-block/widget.php:1075
+#: cpt/blog/widget.php:1128 cpt/projects/widget.php:579
+#: widgets/award-block/widget.php:529 widgets/features-block/widget.php:1076
 #: widgets/pricing-plan/widget.php:1568
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:64
-#: widgets/service-block/widget.php:1093 widgets/team-block/widget.php:1172
+#: widgets/service-block/widget.php:1096 widgets/team-block/widget.php:1172
 #: widgets/testimonial-block/widget.php:1011
+#: widgets/working-block/widget.php:1078
 #: widgets-shop/wc-products/widget.php:508
 msgid "Button Options"
 msgstr ""
 
-#: cpt/blog/widget.php:1147 cpt/projects/widget.php:597
-#: widgets/award-block/widget.php:553 widgets/features-block/widget.php:1099
+#: cpt/blog/widget.php:1152 cpt/projects/widget.php:603
+#: widgets/award-block/widget.php:553 widgets/features-block/widget.php:1100
 #: widgets/give-forms/widget.php:588 widgets/pricing-plan/widget.php:1618
-#: widgets/service-block/widget.php:1117 widgets/team-block/widget.php:1196
+#: widgets/service-block/widget.php:1120 widgets/team-block/widget.php:1196
 #: widgets/testimonial-block/widget.php:1035
+#: widgets/working-block/widget.php:1102
 #: widgets-shop/info-banner/widget.php:1324
 msgid "Button Color/Typography"
 msgstr ""
@@ -1293,6 +1444,11 @@ msgstr ""
 #: cpt/blog/skins/skin-style-current-theme1.php:35
 #: cpt/blog/skins/skin-style-current-theme2.php:34
 #: cpt/blog/skins/skin-style-current-theme3.php:34
+#: cpt/blog/skins/skin-style-current-theme4.php:34
+#: cpt/blog/skins/skin-style-current-theme5.php:34
+#: cpt/blog/skins/skin-style-current-theme6.php:34
+#: cpt/blog/skins/skin-style-current-theme7.php:34
+#: cpt/blog/skins/skin-style-current-theme8.php:34
 #: widgets/tribe-events/widget.php:1620
 msgid "Content Wrapper Styling"
 msgstr ""
@@ -1305,6 +1461,31 @@ msgstr ""
 #: cpt/blog/skins/skin-style-current-theme3.php:24
 #: cpt/projects/skins/skin-style-current-theme3.php:25
 msgid "Skin - Style Current Theme3"
+msgstr ""
+
+#: cpt/blog/skins/skin-style-current-theme4.php:24
+#: cpt/projects/skins/skin-style-current-theme4.php:25
+msgid "Skin - Style Current Theme4"
+msgstr ""
+
+#: cpt/blog/skins/skin-style-current-theme5.php:24
+#: cpt/projects/skins/skin-style-current-theme5.php:25
+msgid "Skin - Style Current Theme5"
+msgstr ""
+
+#: cpt/blog/skins/skin-style-current-theme6.php:24
+#: cpt/projects/skins/skin-style-current-theme6.php:25
+msgid "Skin - Style Current Theme6"
+msgstr ""
+
+#: cpt/blog/skins/skin-style-current-theme7.php:24
+#: cpt/projects/skins/skin-style-current-theme7.php:25
+msgid "Skin - Style Current Theme7"
+msgstr ""
+
+#: cpt/blog/skins/skin-style-current-theme8.php:24
+#: cpt/projects/skins/skin-style-current-theme8.php:25
+msgid "Skin - Style Current Theme8"
 msgstr ""
 
 #: cpt/blog/skins/skin-style10.php:24
@@ -1615,14 +1796,14 @@ msgstr ""
 #: cpt/blog/skins/skin-vertical-list.php:241 widgets/app-button/widget.php:533
 #: widgets/app-button/widget.php:580 widgets/countdown-timer/widget.php:622
 #: widgets/counter-block/widget.php:587 widgets/counter-block/widget.php:1344
-#: widgets/counter-block/widget.php:1429 widgets/features-block/widget.php:877
+#: widgets/counter-block/widget.php:1429 widgets/features-block/widget.php:878
 #: widgets/give-donation-form/widget.php:488
 #: widgets/give-donation-form/widget.php:1501
 #: widgets/give-donation-form/widget.php:1783
 #: widgets/give-donation-form/widget.php:2387
 #: widgets/give-donation-form/widget.php:2952
 #: widgets/page-title/widget.php:481 widgets/pricing-plan/widget.php:1749
-#: widgets/pricing-plan/widget.php:1796 widgets/service-block/widget.php:895
+#: widgets/pricing-plan/widget.php:1796 widgets/service-block/widget.php:898
 #: widgets/team-block/widget.php:977
 #: widgets/testimonial-block/skins/skin-style1.php:124
 #: widgets/testimonial-block/skins/skin-style1.php:181
@@ -1635,13 +1816,13 @@ msgstr ""
 #: widgets/testimonial-block/skins/skin-style4.php:135
 #: widgets/testimonial-block/skins/skin-style4.php:204
 #: widgets/testimonial-block/skins/skin-style5.php:123
-#: widgets/testimonial-block/skins/skin-style5.php:180
+#: widgets/testimonial-block/skins/skin-style5.php:209
 #: widgets/testimonial-block/skins/skin-style6.php:123
 #: widgets/testimonial-block/skins/skin-style6.php:180
 #: widgets/testimonial-block/skins/skin-style7.php:123
-#: widgets/testimonial-block/skins/skin-style7.php:180
-#: widgets/testimonial-block/skins/skin-style8.php:135
-#: widgets/testimonial-block/skins/skin-style8.php:204
+#: widgets/testimonial-block/skins/skin-style7.php:214
+#: widgets/testimonial-block/skins/skin-style8.php:137
+#: widgets/testimonial-block/skins/skin-style8.php:227
 #: widgets/tribe-events/widget.php:1163 widgets/tribe-events/widget.php:1775
 #: widgets/tribe-events/skins/skin-fullwidth-style-current-theme1.php:121
 #: widgets/tribe-events/skins/skin-fullwidth-style-current-theme1.php:716
@@ -1658,6 +1839,7 @@ msgstr ""
 #: widgets/tribe-events/skins/skin-vertical-list1.php:142
 #: widgets/tribe-events/skins/skin-vertical-list1.php:737
 #: widgets/tribe-events/skins/skin-vertical-list1.php:792
+#: widgets/working-block/widget.php:880
 #: widgets-shop/info-banner/widget.php:1450
 #: widgets-shop/info-banner/widget.php:1506
 msgid "Box Shadow"
@@ -1669,7 +1851,7 @@ msgstr ""
 #: widgets/app-button/widget.php:571 widgets/blog-list/widget.php:709
 #: widgets/countdown-timer/widget.php:638 widgets/counter-block/widget.php:568
 #: widgets/counter-block/widget.php:1352 widgets/counter-block/widget.php:1437
-#: widgets/features-block/widget.php:858
+#: widgets/features-block/widget.php:859
 #: widgets/give-donation-form/widget.php:469
 #: widgets/give-donation-form/widget.php:1433
 #: widgets/give-donation-form/widget.php:1764
@@ -1680,7 +1862,7 @@ msgstr ""
 #: widgets/header-primary-nav/widget.php:217
 #: widgets/header-primary-nav/widget.php:273
 #: widgets/header-primary-nav/widget.php:417 widgets/page-title/widget.php:463
-#: widgets/service-block/widget.php:876 widgets/team-block/widget.php:958
+#: widgets/service-block/widget.php:879 widgets/team-block/widget.php:958
 #: widgets/testimonial-block/skins/skin-style1.php:116
 #: widgets/testimonial-block/skins/skin-style1.php:173
 #: widgets/testimonial-block/skins/skin-style10.php:115
@@ -1692,13 +1874,13 @@ msgstr ""
 #: widgets/testimonial-block/skins/skin-style4.php:115
 #: widgets/testimonial-block/skins/skin-style4.php:184
 #: widgets/testimonial-block/skins/skin-style5.php:115
-#: widgets/testimonial-block/skins/skin-style5.php:172
+#: widgets/testimonial-block/skins/skin-style5.php:201
 #: widgets/testimonial-block/skins/skin-style6.php:115
 #: widgets/testimonial-block/skins/skin-style6.php:172
 #: widgets/testimonial-block/skins/skin-style7.php:115
-#: widgets/testimonial-block/skins/skin-style7.php:172
+#: widgets/testimonial-block/skins/skin-style7.php:206
 #: widgets/testimonial-block/skins/skin-style8.php:115
-#: widgets/testimonial-block/skins/skin-style8.php:184
+#: widgets/testimonial-block/skins/skin-style8.php:206
 #: widgets/testimonial-block/skins/skin-style9.php:81
 #: widgets/testimonial-block/skins/skin-style9.php:130
 #: widgets/tribe-events/widget.php:1137 widgets/tribe-events/widget.php:1144
@@ -1718,6 +1900,7 @@ msgstr ""
 #: widgets/tribe-events/skins/skin-vertical-list1.php:150
 #: widgets/tribe-events/skins/skin-vertical-list1.php:745
 #: widgets/tribe-events/skins/skin-vertical-list1.php:800
+#: widgets/working-block/widget.php:861
 #: widgets-shop/info-banner/widget.php:1458
 #: widgets-shop/info-banner/widget.php:1514
 #: widgets-shop/product-list/widget.php:574
@@ -1752,76 +1935,76 @@ msgstr ""
 msgid "Projects Grid"
 msgstr ""
 
-#: cpt/projects/widget.php:219
+#: cpt/projects/widget.php:225
 msgid "Thumbnail Image Size (Common for all)"
 msgstr ""
 
-#: cpt/projects/widget.php:306
+#: cpt/projects/widget.php:312
 msgid "Image Size Arrangement"
 msgstr ""
 
-#: cpt/projects/widget.php:317
+#: cpt/projects/widget.php:323
 msgid "For Project"
 msgstr ""
 
-#: cpt/projects/widget.php:326
+#: cpt/projects/widget.php:332
 msgid "Image Size"
 msgstr ""
 
-#: cpt/projects/widget.php:334
+#: cpt/projects/widget.php:340
 msgid "Project Image Sizes"
 msgstr ""
 
-#: cpt/projects/widget.php:348
+#: cpt/projects/widget.php:354
 #: external-plugins/redux-framework/init-redux-args.php:538
 #: widgets/give-forms/widget.php:457
 #: widgets/interactive-tabs-content/widget.php:121
 msgid "Content"
 msgstr ""
 
-#: cpt/projects/widget.php:354
+#: cpt/projects/widget.php:360
 msgid "Add Border Radius Around the Box"
 msgstr ""
 
-#: cpt/projects/widget.php:361
+#: cpt/projects/widget.php:367
 msgid "Custom Border Radius"
 msgstr ""
 
-#: cpt/projects/widget.php:363
+#: cpt/projects/widget.php:369
 msgid "Example: 15px 10px 15px 10px"
 msgstr ""
 
-#: cpt/projects/widget.php:398 widgets/give-forms/widget.php:508
+#: cpt/projects/widget.php:404 widgets/give-forms/widget.php:508
 #: widgets/tribe-events/widget.php:1901
 #: widgets-shop/wc-products/skins/skin-current-theme1.php:40
 msgid "Number of words to display. Example: 25. Default all"
 msgstr ""
 
-#: cpt/projects/widget.php:744
+#: cpt/projects/widget.php:750
 msgid "Category Styling"
 msgstr ""
 
-#: cpt/projects/widget.php:761
+#: cpt/projects/widget.php:767
 msgid "Text Color (Cat Hover)"
 msgstr ""
 
-#: cpt/projects/widget.php:781
+#: cpt/projects/widget.php:787
 msgid "Cat Theme Colored"
 msgstr ""
 
-#: cpt/projects/widget.php:793
+#: cpt/projects/widget.php:799
 msgid "Cat Theme Colored (Cat Hover)"
 msgstr ""
 
-#: cpt/projects/widget.php:805
+#: cpt/projects/widget.php:811
 msgid "Cat Theme Colored (Item Hover)"
 msgstr ""
 
-#: cpt/projects/widget.php:825
+#: cpt/projects/widget.php:831
 msgid "Cat Margin"
 msgstr ""
 
-#: cpt/projects/widget.php:836
+#: cpt/projects/widget.php:842
 msgid "Cat Padding"
 msgstr ""
 
@@ -1830,36 +2013,74 @@ msgid "Skin - Flat"
 msgstr ""
 
 #: cpt/projects/skins/skin-style-current-theme1.php:36
+#: cpt/projects/skins/skin-style-current-theme10.php:36
+#: cpt/projects/skins/skin-style-current-theme11.php:36
+#: cpt/projects/skins/skin-style-current-theme12.php:36
+#: cpt/projects/skins/skin-style-current-theme13.php:36
 #: cpt/projects/skins/skin-style-current-theme2.php:36
+#: cpt/projects/skins/skin-style-current-theme8.php:36
+#: cpt/projects/skins/skin-style-current-theme9.php:36
 msgid "Current Background Styling"
 msgstr ""
 
 #: cpt/projects/skins/skin-style-current-theme1.php:110
+#: cpt/projects/skins/skin-style-current-theme10.php:110
+#: cpt/projects/skins/skin-style-current-theme11.php:110
+#: cpt/projects/skins/skin-style-current-theme12.php:110
+#: cpt/projects/skins/skin-style-current-theme13.php:110
+#: cpt/projects/skins/skin-style-current-theme8.php:110
+#: cpt/projects/skins/skin-style-current-theme9.php:110
 msgid "Current Skin Button Styling"
 msgstr ""
 
 #: cpt/projects/skins/skin-style-current-theme1.php:125
+#: cpt/projects/skins/skin-style-current-theme10.php:125
+#: cpt/projects/skins/skin-style-current-theme11.php:125
+#: cpt/projects/skins/skin-style-current-theme12.php:125
+#: cpt/projects/skins/skin-style-current-theme13.php:125
+#: cpt/projects/skins/skin-style-current-theme8.php:125
+#: cpt/projects/skins/skin-style-current-theme9.php:125
 msgid "Custom Button BG Color"
 msgstr ""
 
 #: cpt/projects/skins/skin-style-current-theme1.php:135
+#: cpt/projects/skins/skin-style-current-theme10.php:135
+#: cpt/projects/skins/skin-style-current-theme11.php:135
+#: cpt/projects/skins/skin-style-current-theme12.php:135
+#: cpt/projects/skins/skin-style-current-theme13.php:135
+#: cpt/projects/skins/skin-style-current-theme8.php:135
+#: cpt/projects/skins/skin-style-current-theme9.php:135
 msgid "Custom Button Icon Color"
 msgstr ""
 
 #: cpt/projects/skins/skin-style-current-theme1.php:165
+#: cpt/projects/skins/skin-style-current-theme10.php:165
+#: cpt/projects/skins/skin-style-current-theme11.php:165
+#: cpt/projects/skins/skin-style-current-theme12.php:165
+#: cpt/projects/skins/skin-style-current-theme13.php:165
+#: cpt/projects/skins/skin-style-current-theme8.php:165
+#: cpt/projects/skins/skin-style-current-theme9.php:165
 msgid "Custom Button Icon Color (Hover)"
+msgstr ""
+
+#: cpt/projects/skins/skin-style-current-theme10.php:25
+msgid "Skin - Style Current Theme10"
+msgstr ""
+
+#: cpt/projects/skins/skin-style-current-theme11.php:25
+msgid "Skin - Style Current Theme11"
+msgstr ""
+
+#: cpt/projects/skins/skin-style-current-theme12.php:25
+msgid "Skin - Style Current Theme12"
+msgstr ""
+
+#: cpt/projects/skins/skin-style-current-theme13.php:25
+msgid "Skin - Style Current Theme13"
 msgstr ""
 
 #: cpt/projects/skins/skin-style-current-theme2.php:94
 msgid "Current Title Styling"
-msgstr ""
-
-#: cpt/projects/skins/skin-style-current-theme4.php:25
-msgid "Skin - Style Current Theme4"
-msgstr ""
-
-#: cpt/projects/skins/skin-style-current-theme5.php:25
-msgid "Skin - Style Current Theme5"
 msgstr ""
 
 #: cpt/projects/skins/skin-style-current-theme5.php:35
@@ -1870,19 +2091,28 @@ msgstr ""
 #: widgets/features-block/skins/skin-style2.php:33
 #: widgets/features-block/skins/skin-style3.php:33
 #: widgets/features-block/skins/skin-style4.php:33
-#: widgets/service-block/skins/skin-style1.php:33
-#: widgets/service-block/skins/skin-style10.php:32
-#: widgets/service-block/skins/skin-style11.php:32
-#: widgets/service-block/skins/skin-style12.php:32
-#: widgets/service-block/skins/skin-style2.php:32
-#: widgets/service-block/skins/skin-style3.php:32
-#: widgets/service-block/skins/skin-style4.php:32
-#: widgets/service-block/skins/skin-style5.php:33
-#: widgets/service-block/skins/skin-style7.php:33
-#: widgets/service-block/skins/skin-style8.php:32
+#: widgets/features-block/skins/skin-style5.php:33
+#: widgets/service-block/skins/skin-style1.php:37
+#: widgets/service-block/skins/skin-style10.php:36
+#: widgets/service-block/skins/skin-style11.php:36
+#: widgets/service-block/skins/skin-style12.php:36
+#: widgets/service-block/skins/skin-style13.php:36
+#: widgets/service-block/skins/skin-style14.php:36
+#: widgets/service-block/skins/skin-style15.php:36
+#: widgets/service-block/skins/skin-style2.php:36
+#: widgets/service-block/skins/skin-style3.php:36
+#: widgets/service-block/skins/skin-style4.php:36
+#: widgets/service-block/skins/skin-style5.php:37
+#: widgets/service-block/skins/skin-style6.php:37
+#: widgets/service-block/skins/skin-style7.php:37
+#: widgets/service-block/skins/skin-style8.php:36
+#: widgets/team-block/skins/skin-style1.php:32
+#: widgets/team-block/skins/skin-style10.php:31
 #: widgets/team-block/skins/skin-style2.php:32
 #: widgets/team-block/skins/skin-style3.php:32
-#: widgets/team-block/skins/skin-style6.php:31
+#: widgets/team-block/skins/skin-style4.php:32
+#: widgets/team-block/skins/skin-style5.php:32
+#: widgets/team-block/skins/skin-style6.php:32
 #: widgets/team-block/skins/skin-style7.php:31
 #: widgets/team-block/skins/skin-style8.php:32
 #: widgets/team-block/skins/skin-style9.php:33
@@ -1896,6 +2126,13 @@ msgstr ""
 #: widgets/testimonial-block/skins/skin-style7.php:32
 #: widgets/testimonial-block/skins/skin-style8.php:32
 #: widgets/testimonial-block/skins/skin-style9.php:31
+#: widgets/working-block/skins/skin-style1.php:32
+#: widgets/working-block/skins/skin-style2.php:32
+#: widgets/working-block/skins/skin-style3.php:32
+#: widgets/working-block/skins/skin-style4.php:32
+#: widgets/working-block/skins/skin-style5.php:32
+#: widgets/working-block/skins/skin-style6.php:32
+#: widgets/working-block/skins/skin-style7.php:32
 msgid "Current Skin Styling"
 msgstr ""
 
@@ -1906,6 +2143,14 @@ msgstr ""
 #: widgets/features-block/skins/skin-style1.php:39
 #: widgets/features-block/skins/skin-style2.php:40
 #: widgets/features-block/skins/skin-style3.php:40
+#: widgets/service-block/skins/skin-style6.php:44
+#: widgets/working-block/skins/skin-style1.php:39
+#: widgets/working-block/skins/skin-style2.php:39
+#: widgets/working-block/skins/skin-style3.php:39
+#: widgets/working-block/skins/skin-style4.php:39
+#: widgets/working-block/skins/skin-style5.php:39
+#: widgets/working-block/skins/skin-style6.php:39
+#: widgets/working-block/skins/skin-style7.php:39
 msgid "Custom Content BG Color"
 msgstr ""
 
@@ -1916,15 +2161,18 @@ msgstr ""
 #: widgets/features-block/skins/skin-style1.php:49
 #: widgets/features-block/skins/skin-style2.php:50
 #: widgets/features-block/skins/skin-style3.php:50
+#: widgets/working-block/skins/skin-style1.php:49
+#: widgets/working-block/skins/skin-style2.php:49
+#: widgets/working-block/skins/skin-style3.php:49
+#: widgets/working-block/skins/skin-style4.php:49
+#: widgets/working-block/skins/skin-style5.php:49
+#: widgets/working-block/skins/skin-style6.php:49
+#: widgets/working-block/skins/skin-style7.php:49
 msgid "Make Content BG Theme Colored"
 msgstr ""
 
-#: cpt/projects/skins/skin-style-current-theme6.php:25
-msgid "Skin - Style Current Theme6"
-msgstr ""
-
-#: cpt/projects/skins/skin-style-current-theme7.php:25
-msgid "Skin - Style Current Theme7"
+#: cpt/projects/skins/skin-style-current-theme9.php:25
+msgid "Skin - Style Current Theme9"
 msgstr ""
 
 #: cpt/projects/skins/skin-style-mouse-follow-floating-info.php:25
@@ -2310,6 +2558,7 @@ msgstr ""
 #: widgets/spin-text-around-logo/tpl/spin-text-around-logo.php:3
 #: widgets/team-block/tpl/part-thumb.php:1
 #: widgets/testimonial-block/tpl/part-thumb.php:1
+#: widgets/working-block/tpl/icon-type-image.php:1
 #: widgets-shop/info-banner/tpl/info-banner-layout-basic.php:9
 #: widgets-shop/info-banner/tpl/info-banner-layout-bottom.php:9
 #: widgets-shop/info-banner/tpl/info-banner-layout-center.php:9
@@ -2451,7 +2700,7 @@ msgstr ""
 #: inc/widgets/parts/blog-list/widget-blog-list.php:65
 #: widgets/app-button/widget.php:129 widgets/award-block/widget.php:196
 #: widgets/counter-block/widget.php:244 widgets/counter-block/widget.php:251
-#: widgets/features-block/widget.php:141
+#: widgets/features-block/widget.php:142
 #: widgets/give-donation-form/widget.php:182
 #: widgets/give-donation-form/widget.php:314
 #: widgets/give-donation-form/widget.php:571
@@ -2459,7 +2708,7 @@ msgstr ""
 #: widgets/give-forms/widget.php:413 widgets/interactive-list/widget.php:128
 #: widgets/interactive-tabs-title/widget.php:139
 #: widgets/page-title/widget.php:117 widgets/pricing-plan/widget.php:143
-#: widgets/service-block/widget.php:149
+#: widgets/service-block/widget.php:152 widgets/working-block/widget.php:144
 #: widgets-shop/info-banner/widget.php:206
 #: widgets-shop/info-banner/widget.php:213
 #: widgets-shop/product-category/widget.php:511
@@ -3026,7 +3275,7 @@ msgstr ""
 #: inc/post-types/portfolio/cpt-portfolio.php:120
 #: inc/post-types/projects/cpt-projects.php:110
 #: inc/post-types/side-push-panel/cpt-side-push-panel.php:87
-#: widgets/service-block/widget.php:210
+#: widgets/service-block/widget.php:213
 msgid "Featured Image"
 msgstr ""
 
@@ -4321,10 +4570,11 @@ msgstr ""
 
 #: lib/plugin-core-utility-variables-functions.php:395
 #: widgets/award-block/widget.php:350 widgets/counter-block/widget.php:416
-#: widgets/features-block/widget.php:422 widgets/features-block/widget.php:711
-#: widgets/moving-text/widget.php:177 widgets/service-block/widget.php:704
-#: widgets/service-block/widget.php:729
+#: widgets/features-block/widget.php:423 widgets/features-block/widget.php:712
+#: widgets/moving-text/widget.php:177 widgets/service-block/widget.php:707
+#: widgets/service-block/widget.php:732
 #: widgets/testimonial-block/widget.php:385
+#: widgets/working-block/widget.php:425 widgets/working-block/widget.php:714
 #: widgets-shop/product-tabs/widget.php:823
 msgid "None"
 msgstr ""
@@ -4390,8 +4640,8 @@ msgid "Tm - App Button"
 msgstr ""
 
 #: widgets/app-button/widget.php:121 widgets/award-block/widget.php:213
-#: widgets/features-block/widget.php:158 widgets/page-title/widget.php:119
-#: widgets/service-block/widget.php:166
+#: widgets/features-block/widget.php:159 widgets/page-title/widget.php:119
+#: widgets/service-block/widget.php:169 widgets/working-block/widget.php:161
 #: widgets-shop/info-banner/widget.php:240
 msgid "Subtitle"
 msgstr ""
@@ -4405,18 +4655,19 @@ msgid "App Store"
 msgstr ""
 
 #: widgets/app-button/widget.php:137 widgets/award-block/widget.php:254
-#: widgets/features-block/widget.php:183
+#: widgets/features-block/widget.php:184
 #: widgets/interactive-list/widget.php:135
-#: widgets/pricing-plan/widget.php:1575 widgets/service-block/widget.php:191
+#: widgets/pricing-plan/widget.php:1575 widgets/service-block/widget.php:194
+#: widgets/working-block/widget.php:186
 #: widgets-shop/info-banner/widget.php:1117
 msgid "Link URL"
 msgstr ""
 
 #: widgets/app-button/widget.php:148 widgets/counter-block/widget.php:316
-#: widgets/counter-block/widget.php:379 widgets/features-block/widget.php:270
+#: widgets/counter-block/widget.php:379 widgets/features-block/widget.php:271
 #: widgets/pricing-plan/widget.php:530 widgets/pricing-plan/widget.php:740
-#: widgets/pricing-plan/widget.php:839 widgets/service-block/widget.php:310
-#: widgets-shop/account/widget.php:131
+#: widgets/pricing-plan/widget.php:839 widgets/service-block/widget.php:313
+#: widgets/working-block/widget.php:273 widgets-shop/account/widget.php:131
 #: widgets-shop/header-search/widget.php:122
 #: widgets-shop/vertical-menu/widget.php:328
 #: widgets-shop/wishlist/widget.php:130
@@ -4452,7 +4703,7 @@ msgstr ""
 #: widgets/app-button/widget.php:602 widgets/blog-list/widget.php:202
 #: widgets/countdown-timer/widget.php:610 widgets/counter-block/widget.php:575
 #: widgets/counter-block/widget.php:1332 widgets/counter-block/widget.php:1417
-#: widgets/features-block/widget.php:865
+#: widgets/features-block/widget.php:866
 #: widgets/give-donation-form/widget.php:476
 #: widgets/give-donation-form/widget.php:1440
 #: widgets/give-donation-form/widget.php:1650
@@ -4463,7 +4714,7 @@ msgstr ""
 #: widgets/give-donation-form/widget.php:2841
 #: widgets/give-donation-form/widget.php:2940
 #: widgets/page-title/widget.php:470 widgets/pricing-plan/widget.php:1841
-#: widgets/service-block/widget.php:883 widgets/team-block/widget.php:965
+#: widgets/service-block/widget.php:886 widgets/team-block/widget.php:965
 #: widgets/testimonial-block/skins/skin-style1.php:40
 #: widgets/testimonial-block/skins/skin-style10.php:39
 #: widgets/testimonial-block/skins/skin-style2.php:39
@@ -4479,6 +4730,7 @@ msgstr ""
 #: widgets/tribe-events/skins/skin-fullwidth-style2.php:704
 #: widgets/tribe-events/skins/skin-vertical-list-current-theme.php:725
 #: widgets/tribe-events/skins/skin-vertical-list1.php:725
+#: widgets/working-block/widget.php:868
 #: widgets-shop/header-cart/widget.php:515
 #: widgets-shop/header-search/widget.php:462
 #: widgets-shop/header-search/widget.php:699
@@ -4521,30 +4773,33 @@ msgid "Award Items"
 msgstr ""
 
 #: widgets/award-block/widget.php:198 widgets/counter-block/widget.php:253
-#: widgets/features-block/widget.php:143 widgets/service-block/widget.php:151
+#: widgets/features-block/widget.php:144 widgets/service-block/widget.php:154
+#: widgets/working-block/widget.php:146
 msgid "This is a section title"
 msgstr ""
 
-#: widgets/award-block/widget.php:215 widgets/features-block/widget.php:160
-#: widgets/service-block/widget.php:168 widgets/team-block/widget.php:159
+#: widgets/award-block/widget.php:215 widgets/features-block/widget.php:161
+#: widgets/service-block/widget.php:171 widgets/team-block/widget.php:159
+#: widgets/working-block/widget.php:163
 msgid "This is a section subtitle"
 msgstr ""
 
-#: widgets/award-block/widget.php:221 widgets/features-block/widget.php:166
-#: widgets/service-block/widget.php:174
+#: widgets/award-block/widget.php:221 widgets/features-block/widget.php:167
+#: widgets/service-block/widget.php:177 widgets/working-block/widget.php:169
 msgid "Subtitle Tag"
 msgstr ""
 
-#: widgets/award-block/widget.php:230 widgets/features-block/widget.php:175
-#: widgets/service-block/widget.php:183 widgets-shop/account/widget.php:208
-#: widgets-shop/wishlist/widget.php:205
+#: widgets/award-block/widget.php:230 widgets/features-block/widget.php:176
+#: widgets/service-block/widget.php:186 widgets/working-block/widget.php:178
+#: widgets-shop/account/widget.php:208 widgets-shop/wishlist/widget.php:205
 msgid "Count"
 msgstr ""
 
 #: widgets/award-block/widget.php:232 widgets/award-block/widget.php:298
-#: widgets/features-block/widget.php:177 widgets/features-block/widget.php:302
-#: widgets/service-block/widget.php:185 widgets/service-block/widget.php:342
+#: widgets/features-block/widget.php:178 widgets/features-block/widget.php:303
+#: widgets/service-block/widget.php:188 widgets/service-block/widget.php:345
 #: widgets/testimonial-block/widget.php:242
+#: widgets/working-block/widget.php:180 widgets/working-block/widget.php:305
 msgid "01"
 msgstr ""
 
@@ -4568,44 +4823,50 @@ msgstr ""
 msgid "Featured Images"
 msgstr ""
 
-#: widgets/award-block/widget.php:280 widgets/features-block/widget.php:284
-#: widgets/service-block/widget.php:324
+#: widgets/award-block/widget.php:280 widgets/features-block/widget.php:285
+#: widgets/service-block/widget.php:327 widgets/working-block/widget.php:287
 #: widgets-shop/info-banner/widget.php:365
 #: widgets-shop/product-category/widget.php:263
 msgid "Paragraph"
 msgstr ""
 
-#: widgets/award-block/widget.php:281 widgets/features-block/widget.php:285
+#: widgets/award-block/widget.php:281 widgets/features-block/widget.php:286
+#: widgets/working-block/widget.php:288
 msgid "It will be displayed above/under title"
 msgstr ""
 
-#: widgets/award-block/widget.php:283 widgets/features-block/widget.php:287
-#: widgets/service-block/widget.php:326
+#: widgets/award-block/widget.php:283 widgets/features-block/widget.php:288
+#: widgets/service-block/widget.php:329
 #: widgets/testimonial-block/widget.php:211
+#: widgets/working-block/widget.php:290
 msgid ""
 "Write a short description, that will describe the title or something "
 "informational and useful."
 msgstr ""
 
-#: widgets/award-block/widget.php:294 widgets/features-block/widget.php:298
-#: widgets/service-block/widget.php:338 widgets/team-block/widget.php:265
+#: widgets/award-block/widget.php:294 widgets/features-block/widget.php:299
+#: widgets/service-block/widget.php:341 widgets/team-block/widget.php:265
 #: widgets/testimonial-block/widget.php:238
+#: widgets/working-block/widget.php:301
 msgid "Title #1"
 msgstr ""
 
-#: widgets/award-block/widget.php:295 widgets/features-block/widget.php:299
-#: widgets/service-block/widget.php:339 widgets/team-block/widget.php:266
+#: widgets/award-block/widget.php:295 widgets/features-block/widget.php:300
+#: widgets/service-block/widget.php:342 widgets/team-block/widget.php:266
+#: widgets/working-block/widget.php:302
 msgid "subtitle #1"
 msgstr ""
 
 #: widgets/award-block/widget.php:297 widgets/award-block/widget.php:306
-#: widgets/award-block/widget.php:315 widgets/features-block/widget.php:301
-#: widgets/features-block/widget.php:308 widgets/features-block/widget.php:315
-#: widgets/service-block/widget.php:341 widgets/service-block/widget.php:348
-#: widgets/service-block/widget.php:355
+#: widgets/award-block/widget.php:315 widgets/features-block/widget.php:302
+#: widgets/features-block/widget.php:309 widgets/features-block/widget.php:316
+#: widgets/service-block/widget.php:344 widgets/service-block/widget.php:351
+#: widgets/service-block/widget.php:358
 #: widgets/testimonial-block/widget.php:241
 #: widgets/testimonial-block/widget.php:248
 #: widgets/testimonial-block/widget.php:255
+#: widgets/working-block/widget.php:304 widgets/working-block/widget.php:311
+#: widgets/working-block/widget.php:318
 msgid "Item content. Click the edit button to change this text."
 msgstr ""
 
@@ -4614,17 +4875,19 @@ msgid "2018-2019"
 msgstr ""
 
 #: widgets/award-block/widget.php:303 widgets/award-block/widget.php:304
-#: widgets/features-block/widget.php:305 widgets/features-block/widget.php:306
-#: widgets/service-block/widget.php:345 widgets/service-block/widget.php:346
+#: widgets/features-block/widget.php:306 widgets/features-block/widget.php:307
+#: widgets/service-block/widget.php:348 widgets/service-block/widget.php:349
 #: widgets/team-block/widget.php:275 widgets/team-block/widget.php:276
 #: widgets/testimonial-block/widget.php:245
 #: widgets/testimonial-block/widget.php:246
+#: widgets/working-block/widget.php:308 widgets/working-block/widget.php:309
 msgid "Title #2"
 msgstr ""
 
-#: widgets/award-block/widget.php:307 widgets/features-block/widget.php:309
-#: widgets/service-block/widget.php:349
+#: widgets/award-block/widget.php:307 widgets/features-block/widget.php:310
+#: widgets/service-block/widget.php:352
 #: widgets/testimonial-block/widget.php:249
+#: widgets/working-block/widget.php:312
 msgid "02"
 msgstr ""
 
@@ -4637,17 +4900,19 @@ msgid "Bahance"
 msgstr ""
 
 #: widgets/award-block/widget.php:312 widgets/award-block/widget.php:313
-#: widgets/features-block/widget.php:312 widgets/features-block/widget.php:313
-#: widgets/service-block/widget.php:352 widgets/service-block/widget.php:353
+#: widgets/features-block/widget.php:313 widgets/features-block/widget.php:314
+#: widgets/service-block/widget.php:355 widgets/service-block/widget.php:356
 #: widgets/team-block/widget.php:285 widgets/team-block/widget.php:286
 #: widgets/testimonial-block/widget.php:252
 #: widgets/testimonial-block/widget.php:253
+#: widgets/working-block/widget.php:315 widgets/working-block/widget.php:316
 msgid "Title #3"
 msgstr ""
 
-#: widgets/award-block/widget.php:316 widgets/features-block/widget.php:316
-#: widgets/service-block/widget.php:356
+#: widgets/award-block/widget.php:316 widgets/features-block/widget.php:317
+#: widgets/service-block/widget.php:359
 #: widgets/testimonial-block/widget.php:256
+#: widgets/working-block/widget.php:319
 msgid "03"
 msgstr ""
 
@@ -4659,66 +4924,75 @@ msgstr ""
 msgid "Envato"
 msgstr ""
 
-#: widgets/award-block/widget.php:340 widgets/features-block/widget.php:412
+#: widgets/award-block/widget.php:340 widgets/features-block/widget.php:413
 #: widgets/interactive-tabs-title/widget.php:274
 #: widgets/testimonial-block/widget.php:375
+#: widgets/working-block/widget.php:415
 msgid "Icon Styling"
 msgstr ""
 
 #: widgets/award-block/widget.php:347 widgets/counter-block/widget.php:413
-#: widgets/features-block/widget.php:419 widgets/features-block/widget.php:708
-#: widgets/service-block/widget.php:701 widgets/service-block/widget.php:726
+#: widgets/features-block/widget.php:420 widgets/features-block/widget.php:709
+#: widgets/service-block/widget.php:704 widgets/service-block/widget.php:729
 #: widgets/testimonial-block/widget.php:382
+#: widgets/working-block/widget.php:422 widgets/working-block/widget.php:711
 msgid "Animate Icon on Hover"
 msgstr ""
 
 #: widgets/award-block/widget.php:351 widgets/counter-block/widget.php:417
-#: widgets/features-block/widget.php:423 widgets/features-block/widget.php:712
+#: widgets/features-block/widget.php:424 widgets/features-block/widget.php:713
 #: widgets/moving-text/widget.php:415 widgets/moving-text/widget.php:883
-#: widgets/service-block/widget.php:705 widgets/service-block/widget.php:730
+#: widgets/service-block/widget.php:708 widgets/service-block/widget.php:733
 #: widgets/testimonial-block/widget.php:386
+#: widgets/working-block/widget.php:426 widgets/working-block/widget.php:715
 msgid "Rotate"
 msgstr ""
 
 #: widgets/award-block/widget.php:352 widgets/counter-block/widget.php:418
-#: widgets/features-block/widget.php:424 widgets/features-block/widget.php:713
-#: widgets/service-block/widget.php:706 widgets/service-block/widget.php:731
+#: widgets/features-block/widget.php:425 widgets/features-block/widget.php:714
+#: widgets/service-block/widget.php:709 widgets/service-block/widget.php:734
 #: widgets/testimonial-block/widget.php:387
+#: widgets/working-block/widget.php:427 widgets/working-block/widget.php:716
 msgid "Rotate X"
 msgstr ""
 
 #: widgets/award-block/widget.php:353 widgets/counter-block/widget.php:419
-#: widgets/features-block/widget.php:425 widgets/features-block/widget.php:714
-#: widgets/service-block/widget.php:707 widgets/service-block/widget.php:732
+#: widgets/features-block/widget.php:426 widgets/features-block/widget.php:715
+#: widgets/service-block/widget.php:710 widgets/service-block/widget.php:735
 #: widgets/testimonial-block/widget.php:388
+#: widgets/working-block/widget.php:428 widgets/working-block/widget.php:717
 msgid "Rotate Y"
 msgstr ""
 
 #: widgets/award-block/widget.php:354 widgets/counter-block/widget.php:420
-#: widgets/features-block/widget.php:426 widgets/features-block/widget.php:715
-#: widgets/service-block/widget.php:708 widgets/service-block/widget.php:733
+#: widgets/features-block/widget.php:427 widgets/features-block/widget.php:716
+#: widgets/service-block/widget.php:711 widgets/service-block/widget.php:736
 #: widgets/testimonial-block/widget.php:389
+#: widgets/working-block/widget.php:429 widgets/working-block/widget.php:718
 msgid "Translate"
 msgstr ""
 
 #: widgets/award-block/widget.php:355 widgets/counter-block/widget.php:421
-#: widgets/features-block/widget.php:427 widgets/features-block/widget.php:716
-#: widgets/service-block/widget.php:709 widgets/service-block/widget.php:734
+#: widgets/features-block/widget.php:428 widgets/features-block/widget.php:717
+#: widgets/service-block/widget.php:712 widgets/service-block/widget.php:737
 #: widgets/testimonial-block/widget.php:390
+#: widgets/working-block/widget.php:430 widgets/working-block/widget.php:719
 msgid "Translate X"
 msgstr ""
 
 #: widgets/award-block/widget.php:356 widgets/counter-block/widget.php:422
-#: widgets/features-block/widget.php:428 widgets/features-block/widget.php:717
-#: widgets/service-block/widget.php:710 widgets/service-block/widget.php:735
+#: widgets/features-block/widget.php:429 widgets/features-block/widget.php:718
+#: widgets/service-block/widget.php:713 widgets/service-block/widget.php:738
 #: widgets/testimonial-block/widget.php:391
+#: widgets/working-block/widget.php:431 widgets/working-block/widget.php:720
 msgid "Translate Y"
 msgstr ""
 
 #: widgets/award-block/widget.php:357 widgets/counter-block/widget.php:423
-#: widgets/features-block/widget.php:429 widgets/features-block/widget.php:718
-#: widgets/service-block/widget.php:711 widgets/service-block/widget.php:736
+#: widgets/features-block/widget.php:430 widgets/features-block/widget.php:719
+#: widgets/service-block/widget.php:714 widgets/service-block/widget.php:739
 #: widgets/testimonial-block/widget.php:392
+#: widgets/working-block/widget.php:432 widgets/working-block/widget.php:721
 msgid "Scale"
 msgstr ""
 
@@ -4739,75 +5013,87 @@ msgid "Paragraph Color on Hover"
 msgstr ""
 
 #: widgets/award-block/widget.php:486 widgets/counter-block/widget.php:1468
-#: widgets/features-block/widget.php:1032
-#: widgets/service-block/widget.php:1050 widgets/team-block/widget.php:1129
+#: widgets/features-block/widget.php:1033
+#: widgets/service-block/widget.php:1053 widgets/team-block/widget.php:1129
 #: widgets/testimonial-block/widget.php:966
+#: widgets/working-block/widget.php:1035
 msgid "Other Options"
 msgstr ""
 
-#: widgets/award-block/widget.php:493 widgets/features-block/widget.php:1039
-#: widgets/service-block/widget.php:1057 widgets/team-block/widget.php:1136
+#: widgets/award-block/widget.php:493 widgets/features-block/widget.php:1040
+#: widgets/service-block/widget.php:1060 widgets/team-block/widget.php:1136
 #: widgets/testimonial-block/widget.php:973
+#: widgets/working-block/widget.php:1042
 msgid "Box Animation Style"
 msgstr ""
 
-#: widgets/award-block/widget.php:496 widgets/features-block/widget.php:1042
-#: widgets/service-block/widget.php:1060 widgets/team-block/widget.php:1139
+#: widgets/award-block/widget.php:496 widgets/features-block/widget.php:1043
+#: widgets/service-block/widget.php:1063 widgets/team-block/widget.php:1139
 #: widgets/testimonial-block/widget.php:976
+#: widgets/working-block/widget.php:1045
 msgid "No Animation"
 msgstr ""
 
-#: widgets/award-block/widget.php:497 widgets/features-block/widget.php:1043
-#: widgets/service-block/widget.php:1061 widgets/team-block/widget.php:1140
+#: widgets/award-block/widget.php:497 widgets/features-block/widget.php:1044
+#: widgets/service-block/widget.php:1064 widgets/team-block/widget.php:1140
 #: widgets/testimonial-block/widget.php:977
+#: widgets/working-block/widget.php:1046
 msgid "Style 1 - Current Theme Animation"
 msgstr ""
 
-#: widgets/award-block/widget.php:498 widgets/features-block/widget.php:1044
-#: widgets/service-block/widget.php:1062 widgets/team-block/widget.php:1141
+#: widgets/award-block/widget.php:498 widgets/features-block/widget.php:1045
+#: widgets/service-block/widget.php:1065 widgets/team-block/widget.php:1141
 #: widgets/testimonial-block/widget.php:978
+#: widgets/working-block/widget.php:1047
 msgid "Style 2 - Border Bottom"
 msgstr ""
 
-#: widgets/award-block/widget.php:499 widgets/features-block/widget.php:1045
-#: widgets/service-block/widget.php:1063 widgets/team-block/widget.php:1142
+#: widgets/award-block/widget.php:499 widgets/features-block/widget.php:1046
+#: widgets/service-block/widget.php:1066 widgets/team-block/widget.php:1142
 #: widgets/testimonial-block/widget.php:979
+#: widgets/working-block/widget.php:1048
 msgid "Style 3 - Moving Border Bottom"
 msgstr ""
 
-#: widgets/award-block/widget.php:500 widgets/features-block/widget.php:1046
-#: widgets/service-block/widget.php:1064 widgets/team-block/widget.php:1143
+#: widgets/award-block/widget.php:500 widgets/features-block/widget.php:1047
+#: widgets/service-block/widget.php:1067 widgets/team-block/widget.php:1143
 #: widgets/testimonial-block/widget.php:980
+#: widgets/working-block/widget.php:1049
 msgid "Style 4 - Hover BG Color"
 msgstr ""
 
-#: widgets/award-block/widget.php:501 widgets/features-block/widget.php:1047
-#: widgets/service-block/widget.php:1065 widgets/team-block/widget.php:1144
+#: widgets/award-block/widget.php:501 widgets/features-block/widget.php:1048
+#: widgets/service-block/widget.php:1068 widgets/team-block/widget.php:1144
 #: widgets/testimonial-block/widget.php:981
+#: widgets/working-block/widget.php:1050
 msgid "Style 5 - Hover Moving BG Color"
 msgstr ""
 
-#: widgets/award-block/widget.php:502 widgets/features-block/widget.php:1048
-#: widgets/service-block/widget.php:1066 widgets/team-block/widget.php:1145
+#: widgets/award-block/widget.php:502 widgets/features-block/widget.php:1049
+#: widgets/service-block/widget.php:1069 widgets/team-block/widget.php:1145
 #: widgets/testimonial-block/widget.php:982
+#: widgets/working-block/widget.php:1051
 msgid "Style 6 - Hover Moving Double BG Color"
 msgstr ""
 
-#: widgets/award-block/widget.php:503 widgets/features-block/widget.php:1049
-#: widgets/service-block/widget.php:1067 widgets/team-block/widget.php:1146
+#: widgets/award-block/widget.php:503 widgets/features-block/widget.php:1050
+#: widgets/service-block/widget.php:1070 widgets/team-block/widget.php:1146
 #: widgets/testimonial-block/widget.php:983
+#: widgets/working-block/widget.php:1052
 msgid "Style 7 - Hover Moving Border Around Box"
 msgstr ""
 
-#: widgets/award-block/widget.php:511 widgets/features-block/widget.php:1057
-#: widgets/service-block/widget.php:1075 widgets/team-block/widget.php:1154
+#: widgets/award-block/widget.php:511 widgets/features-block/widget.php:1058
+#: widgets/service-block/widget.php:1078 widgets/team-block/widget.php:1154
 #: widgets/testimonial-block/widget.php:991
+#: widgets/working-block/widget.php:1060
 msgid "Box Shadow?"
 msgstr ""
 
-#: widgets/award-block/widget.php:518 widgets/features-block/widget.php:1064
-#: widgets/service-block/widget.php:1082 widgets/team-block/widget.php:1161
+#: widgets/award-block/widget.php:518 widgets/features-block/widget.php:1065
+#: widgets/service-block/widget.php:1085 widgets/team-block/widget.php:1161
 #: widgets/testimonial-block/widget.php:998
+#: widgets/working-block/widget.php:1067
 msgid "Box Shadow only on Hover?"
 msgstr ""
 
@@ -4818,9 +5104,10 @@ msgstr ""
 #: widgets/interactive-tabs-title/skins/skin-style1.php:22
 #: widgets/moving-text/skins/skin-style1.php:22
 #: widgets/pricing-plan-switcher/skins/skin-style1.php:22
-#: widgets/service-block/skins/skin-style1.php:22
+#: widgets/service-block/skins/skin-style1.php:26
 #: widgets/team-block/skins/skin-style1.php:22
 #: widgets/testimonial-block/skins/skin-style1.php:22
+#: widgets/working-block/skins/skin-style1.php:22
 msgid "Skin Style1"
 msgstr ""
 
@@ -4828,10 +5115,11 @@ msgstr ""
 #: widgets/counter-block/skins/skin-style2.php:22
 #: widgets/features-block/skins/skin-style2.php:22
 #: widgets/pricing-plan-switcher/skins/skin-style2.php:22
-#: widgets/service-block/skins/skin-style2.php:22
+#: widgets/service-block/skins/skin-style2.php:26
 #: widgets/team-block/skins/skin-style2.php:22
 #: widgets/testimonial-block/skins/skin-style2.php:22
 #: widgets/tribe-events/skins/skin-style2.php:22
+#: widgets/working-block/skins/skin-style2.php:22
 msgid "Skin Style2"
 msgstr ""
 
@@ -4964,7 +5252,7 @@ msgid "Item Padding"
 msgstr ""
 
 #: widgets/countdown-timer/widget.php:55
-msgid "Countdown Timer (Pixlab)"
+msgid "Countdown Timer (Digicod)"
 msgstr ""
 
 #: widgets/countdown-timer/widget.php:136
@@ -4980,11 +5268,11 @@ msgid "Show or Hide Time of the date"
 msgstr ""
 
 #: widgets/countdown-timer/widget.php:159 widgets/counter-block/widget.php:151
-#: widgets/counter-block/widget.php:431 widgets/features-block/widget.php:339
+#: widgets/counter-block/widget.php:431 widgets/features-block/widget.php:340
 #: widgets/give-donation-form/widget.php:392
 #: widgets/give-donation-form/widget.php:1687
 #: widgets/page-title/widget.php:127 widgets/pricing-plan/widget.php:193
-#: widgets/service-block/widget.php:379
+#: widgets/service-block/widget.php:382 widgets/working-block/widget.php:342
 msgid "Text Alignment"
 msgstr ""
 
@@ -5053,19 +5341,20 @@ msgid "Counter Block"
 msgstr ""
 
 #: widgets/countdown-timer/widget.php:504 widgets/counter-block/widget.php:476
-#: widgets/features-block/widget.php:891
+#: widgets/features-block/widget.php:892
 #: widgets/give-donation-form/widget.php:414
 #: widgets/give-donation-form/widget.php:1709
 #: widgets/give-donation-form/widget.php:2876
 #: widgets/moving-text/widget.php:1040 widgets/moving-text/widget.php:1137
 #: widgets/moving-text/widget.php:1240 widgets/moving-text/widget.php:1306
-#: widgets/service-block/widget.php:909 widgets/team-block/widget.php:991
+#: widgets/service-block/widget.php:912 widgets/team-block/widget.php:991
+#: widgets/working-block/widget.php:894
 msgid "Width"
 msgstr ""
 
 #: widgets/countdown-timer/widget.php:603 widgets/counter-block/widget.php:560
 #: widgets/counter-block/widget.php:1324 widgets/counter-block/widget.php:1409
-#: widgets/features-block/widget.php:850
+#: widgets/features-block/widget.php:851
 #: widgets/give-donation-form/widget.php:461
 #: widgets/give-donation-form/widget.php:1425
 #: widgets/give-donation-form/widget.php:1756
@@ -5073,7 +5362,7 @@ msgstr ""
 #: widgets/give-donation-form/widget.php:2549
 #: widgets/give-donation-form/widget.php:2834
 #: widgets/give-donation-form/widget.php:2925
-#: widgets/service-block/widget.php:868 widgets/team-block/widget.php:950
+#: widgets/service-block/widget.php:871 widgets/team-block/widget.php:950
 #: widgets/tribe-events/widget.php:1748
 #: widgets/tribe-events/skins/skin-fullwidth-style-current-theme1.php:102
 #: widgets/tribe-events/skins/skin-fullwidth-style-current-theme1.php:573
@@ -5085,6 +5374,7 @@ msgstr ""
 #: widgets/tribe-events/skins/skin-vertical-list-current-theme.php:594
 #: widgets/tribe-events/skins/skin-vertical-list1.php:123
 #: widgets/tribe-events/skins/skin-vertical-list1.php:594
+#: widgets/working-block/widget.php:853
 #: widgets-shop/info-banner/widget.php:1430
 #: widgets-shop/info-banner/widget.php:1486
 msgid "Border Options"
@@ -5101,12 +5391,13 @@ msgid "Box Shadow(Hover)"
 msgstr ""
 
 #: widgets/counter-block/widget.php:50
-msgid "Funfact Counter (Pixlab)"
+msgid "Funfact Counter (Digicod)"
 msgstr ""
 
-#: widgets/counter-block/widget.php:132 widgets/features-block/widget.php:332
-#: widgets/service-block/widget.php:372 widgets/team-block/widget.php:305
+#: widgets/counter-block/widget.php:132 widgets/features-block/widget.php:333
+#: widgets/service-block/widget.php:375 widgets/team-block/widget.php:305
 #: widgets/testimonial-block/widget.php:269
+#: widgets/working-block/widget.php:335
 msgid "General Settings"
 msgstr ""
 
@@ -5231,8 +5522,8 @@ msgstr ""
 msgid "Font Icon"
 msgstr ""
 
-#: widgets/counter-block/widget.php:335 widgets/features-block/widget.php:198
-#: widgets/service-block/widget.php:238
+#: widgets/counter-block/widget.php:335 widgets/features-block/widget.php:199
+#: widgets/service-block/widget.php:241 widgets/working-block/widget.php:201
 #: widgets-shop/product-category/widget.php:183
 msgid "JPG/PNG Image"
 msgstr ""
@@ -5263,8 +5554,8 @@ msgstr ""
 msgid "Upload Icon Bg image"
 msgstr ""
 
-#: widgets/counter-block/widget.php:406 widgets/features-block/widget.php:694
-#: widgets/service-block/widget.php:694
+#: widgets/counter-block/widget.php:406 widgets/features-block/widget.php:695
+#: widgets/service-block/widget.php:697 widgets/working-block/widget.php:697
 msgid "Icon Custom Styling"
 msgstr ""
 
@@ -5276,60 +5567,70 @@ msgstr ""
 msgid "Icon Vertical Alignment(Flex)"
 msgstr ""
 
-#: widgets/counter-block/widget.php:469 widgets/features-block/widget.php:884
-#: widgets/service-block/widget.php:902 widgets/team-block/widget.php:984
+#: widgets/counter-block/widget.php:469 widgets/features-block/widget.php:885
+#: widgets/service-block/widget.php:905 widgets/team-block/widget.php:984
+#: widgets/working-block/widget.php:887
 msgid "Dimension Options"
 msgstr ""
 
-#: widgets/counter-block/widget.php:494 widgets/features-block/widget.php:909
-#: widgets/service-block/widget.php:927 widgets/team-block/widget.php:1009
+#: widgets/counter-block/widget.php:494 widgets/features-block/widget.php:910
+#: widgets/service-block/widget.php:930 widgets/team-block/widget.php:1009
+#: widgets/working-block/widget.php:912
 msgid "Make Icon Width to Auto?"
 msgstr ""
 
-#: widgets/counter-block/widget.php:504 widgets/features-block/widget.php:919
-#: widgets/service-block/widget.php:937 widgets/team-block/widget.php:1019
+#: widgets/counter-block/widget.php:504 widgets/features-block/widget.php:920
+#: widgets/service-block/widget.php:940 widgets/team-block/widget.php:1019
+#: widgets/working-block/widget.php:922
 msgid "Height"
 msgstr ""
 
-#: widgets/counter-block/widget.php:522 widgets/features-block/widget.php:937
-#: widgets/service-block/widget.php:955 widgets/team-block/widget.php:1037
+#: widgets/counter-block/widget.php:522 widgets/features-block/widget.php:938
+#: widgets/service-block/widget.php:958 widgets/team-block/widget.php:1037
+#: widgets/working-block/widget.php:940
 msgid "Make Icon Height to Auto?"
 msgstr ""
 
-#: widgets/counter-block/widget.php:532 widgets/features-block/widget.php:807
-#: widgets/service-block/widget.php:825 widgets/team-block/widget.php:909
+#: widgets/counter-block/widget.php:532 widgets/features-block/widget.php:808
+#: widgets/service-block/widget.php:828 widgets/team-block/widget.php:909
+#: widgets/working-block/widget.php:810
 msgid "Icon Line Height"
 msgstr ""
 
-#: widgets/counter-block/widget.php:601 widgets/features-block/widget.php:827
-#: widgets/pricing-plan/widget.php:593 widgets/service-block/widget.php:845
-#: widgets/team-block/widget.php:927 widgets-shop/info-banner/widget.php:1269
+#: widgets/counter-block/widget.php:601 widgets/features-block/widget.php:828
+#: widgets/pricing-plan/widget.php:593 widgets/service-block/widget.php:848
+#: widgets/team-block/widget.php:927 widgets/working-block/widget.php:830
+#: widgets-shop/info-banner/widget.php:1269
 msgid "Icon Margin"
 msgstr ""
 
-#: widgets/counter-block/widget.php:613 widgets/features-block/widget.php:839
-#: widgets/service-block/widget.php:857 widgets/team-block/widget.php:939
+#: widgets/counter-block/widget.php:613 widgets/features-block/widget.php:840
+#: widgets/service-block/widget.php:860 widgets/team-block/widget.php:939
+#: widgets/working-block/widget.php:842
 msgid "Icon Padding"
 msgstr ""
 
-#: widgets/counter-block/widget.php:638 widgets/features-block/widget.php:740
-#: widgets/features-block/widget.php:962 widgets/pricing-plan/widget.php:561
-#: widgets/service-block/widget.php:769 widgets/service-block/widget.php:991
+#: widgets/counter-block/widget.php:638 widgets/features-block/widget.php:741
+#: widgets/features-block/widget.php:963 widgets/pricing-plan/widget.php:561
+#: widgets/service-block/widget.php:772 widgets/service-block/widget.php:994
 #: widgets/team-block/widget.php:844 widgets/team-block/widget.php:1062
+#: widgets/working-block/widget.php:743 widgets/working-block/widget.php:965
 msgid "Make Icon Theme Colored"
 msgstr ""
 
-#: widgets/counter-block/widget.php:651 widgets/features-block/widget.php:753
-#: widgets/features-block/widget.php:975 widgets/service-block/widget.php:758
-#: widgets/service-block/widget.php:980 widgets/team-block/widget.php:856
-#: widgets/team-block/widget.php:1074
+#: widgets/counter-block/widget.php:651 widgets/features-block/widget.php:754
+#: widgets/features-block/widget.php:976 widgets/service-block/widget.php:761
+#: widgets/service-block/widget.php:983 widgets/team-block/widget.php:856
+#: widgets/team-block/widget.php:1074 widgets/working-block/widget.php:756
+#: widgets/working-block/widget.php:978
 msgid "Icon Custom Color"
 msgstr ""
 
 #: widgets/counter-block/widget.php:671 widgets/counter-block/widget.php:749
-#: widgets/features-block/widget.php:778 widgets/features-block/widget.php:992
-#: widgets/service-block/widget.php:796 widgets/service-block/widget.php:1010
+#: widgets/features-block/widget.php:779 widgets/features-block/widget.php:993
+#: widgets/service-block/widget.php:799 widgets/service-block/widget.php:1013
 #: widgets/team-block/widget.php:880 widgets/team-block/widget.php:1090
+#: widgets/working-block/widget.php:781 widgets/working-block/widget.php:995
 msgid "Icon Background Color Options"
 msgstr ""
 
@@ -5362,14 +5663,15 @@ msgid "Counter Custom CSS Class"
 msgstr ""
 
 #: widgets/counter-block/widget.php:874 widgets/counter-block/widget.php:1020
-#: widgets/counter-block/widget.php:1165 widgets/features-block/widget.php:513
-#: widgets/features-block/widget.php:650 widgets/service-block/widget.php:519
-#: widgets/service-block/widget.php:656 widgets/team-block/widget.php:461
+#: widgets/counter-block/widget.php:1165 widgets/features-block/widget.php:514
+#: widgets/features-block/widget.php:651 widgets/service-block/widget.php:522
+#: widgets/service-block/widget.php:659 widgets/team-block/widget.php:461
 #: widgets/team-block/widget.php:601 widgets/team-block/widget.php:741
 #: widgets/testimonial-block/widget.php:480
 #: widgets/testimonial-block/widget.php:618
 #: widgets/testimonial-block/widget.php:757
 #: widgets/testimonial-block/widget.php:896
+#: widgets/working-block/widget.php:516 widgets/working-block/widget.php:653
 msgid "Wrapper Hover"
 msgstr ""
 
@@ -5448,55 +5750,61 @@ msgstr ""
 
 #: widgets/counter-block/skins/skin-style3.php:22
 #: widgets/features-block/skins/skin-style3.php:22
-#: widgets/service-block/skins/skin-style3.php:22
+#: widgets/service-block/skins/skin-style3.php:26
 #: widgets/team-block/skins/skin-style3.php:22
 #: widgets/testimonial-block/skins/skin-style3.php:22
 #: widgets/tribe-events/skins/skin-style3.php:22
+#: widgets/working-block/skins/skin-style3.php:22
 msgid "Skin Style3"
 msgstr ""
 
 #: widgets/counter-block/skins/skin-style4.php:22
 #: widgets/features-block/skins/skin-style4.php:22
-#: widgets/service-block/skins/skin-style4.php:22
+#: widgets/service-block/skins/skin-style4.php:26
 #: widgets/team-block/skins/skin-style4.php:22
 #: widgets/testimonial-block/skins/skin-style4.php:22
 #: widgets/tribe-events/skins/skin-style4.php:22
+#: widgets/working-block/skins/skin-style4.php:22
 msgid "Skin Style4"
 msgstr ""
 
 #: widgets/counter-block/skins/skin-style5.php:22
-#: widgets/service-block/skins/skin-style5.php:22
+#: widgets/features-block/skins/skin-style5.php:22
+#: widgets/service-block/skins/skin-style5.php:26
 #: widgets/team-block/skins/skin-style5.php:22
 #: widgets/testimonial-block/skins/skin-style5.php:22
 #: widgets/tribe-events/skins/skin-style5.php:22
+#: widgets/working-block/skins/skin-style5.php:22
 msgid "Skin Style5"
 msgstr ""
 
 #: widgets/counter-block/skins/skin-style6.php:22
-#: widgets/service-block/skins/skin-style6.php:22
+#: widgets/service-block/skins/skin-style6.php:26
 #: widgets/team-block/skins/skin-style6.php:22
 #: widgets/testimonial-block/skins/skin-style6.php:22
 #: widgets/tribe-events/skins/skin-style6.php:22
+#: widgets/working-block/skins/skin-style6.php:22
 msgid "Skin Style6"
 msgstr ""
 
 #: widgets/counter-block/skins/skin-style7.php:22
-#: widgets/service-block/skins/skin-style7.php:22
+#: widgets/service-block/skins/skin-style7.php:26
 #: widgets/team-block/skins/skin-style7.php:22
 #: widgets/testimonial-block/skins/skin-style7.php:22
 #: widgets/tribe-events/skins/skin-style7.php:22
+#: widgets/working-block/skins/skin-style7.php:22
 msgid "Skin Style7"
 msgstr ""
 
 #: widgets/counter-block/skins/skin-style8.php:22
-#: widgets/service-block/skins/skin-style8.php:22
+#: widgets/service-block/skins/skin-style8.php:26
 #: widgets/team-block/skins/skin-style8.php:22
 #: widgets/testimonial-block/skins/skin-style8.php:22
 msgid "Skin Style8"
 msgstr ""
 
 #: widgets/counter-block/skins/skin-style9.php:22
-#: widgets/service-block/skins/skin-style9.php:22
+#: widgets/service-block/skins/skin-style9.php:26
 #: widgets/team-block/skins/skin-style9.php:22
 #: widgets/testimonial-block/skins/skin-style9.php:22
 msgid "Skin Style9"
@@ -5506,70 +5814,81 @@ msgstr ""
 msgid "Features Block"
 msgstr ""
 
-#: widgets/features-block/widget.php:126 widgets/features-block/widget.php:293
-#: widgets/pricing-plan/widget.php:383
+#: widgets/features-block/widget.php:127 widgets/features-block/widget.php:294
+#: widgets/pricing-plan/widget.php:383 widgets/working-block/widget.php:296
 msgid "Features Items"
 msgstr ""
 
-#: widgets/features-block/widget.php:194
+#: widgets/features-block/widget.php:195 widgets/working-block/widget.php:197
 msgid "Thumb Type"
 msgstr ""
 
-#: widgets/features-block/widget.php:197 widgets/service-block/widget.php:237
+#: widgets/features-block/widget.php:198 widgets/service-block/widget.php:240
+#: widgets/working-block/widget.php:200
 msgid "Font/Flat Icon"
 msgstr ""
 
-#: widgets/features-block/widget.php:206
+#: widgets/features-block/widget.php:207
 #: widgets/interactive-list/widget.php:146 widgets/team-block/widget.php:185
+#: widgets/working-block/widget.php:209
 msgid "Thumbnail Image"
 msgstr ""
 
-#: widgets/features-block/widget.php:208 widgets/features-block/widget.php:219
+#: widgets/features-block/widget.php:209 widgets/features-block/widget.php:220
 #: widgets/pricing-plan/widget.php:423 widgets/pricing-plan/widget.php:431
-#: widgets/service-block/widget.php:248 widgets/service-block/widget.php:259
+#: widgets/service-block/widget.php:251 widgets/service-block/widget.php:262
+#: widgets/working-block/widget.php:211 widgets/working-block/widget.php:222
 msgid "This image will be shown on the top of the pricing table"
 msgstr ""
 
-#: widgets/features-block/widget.php:217 widgets/pricing-plan/widget.php:429
+#: widgets/features-block/widget.php:218 widgets/pricing-plan/widget.php:429
+#: widgets/working-block/widget.php:220
 msgid "Thumbnail Image (Hover)"
 msgstr ""
 
-#: widgets/features-block/widget.php:228
+#: widgets/features-block/widget.php:229
 #: widgets/interactive-list/widget.php:184
+#: widgets/working-block/widget.php:231
 #: widgets-shop/product-list/widget.php:204
 #: widgets-shop/product-tabs/widget.php:146
 #: widgets-shop/wc-products/widget.php:233
 msgid "Choose Image Size"
 msgstr ""
 
-#: widgets/features-block/widget.php:240
+#: widgets/features-block/widget.php:241
 #: widgets/interactive-list/widget.php:193 widgets/pricing-plan/widget.php:446
 #: widgets/spin-text-around-logo/widget.php:144
+#: widgets/working-block/widget.php:243
 #: widgets-shop/info-banner/widget.php:583
 #: widgets-shop/product-category/widget.php:299
 msgid "Image Custom Width"
 msgstr ""
 
-#: widgets/features-block/widget.php:393 widgets/service-block/widget.php:433
+#: widgets/features-block/widget.php:394 widgets/service-block/widget.php:436
+#: widgets/working-block/widget.php:396
 #: widgets-shop/info-banner/widget.php:357
 #: widgets-shop/product-category/widget.php:255
 msgid "Show Paragraph"
 msgstr ""
 
-#: widgets/features-block/widget.php:785 widgets/features-block/widget.php:999
-#: widgets/service-block/widget.php:813 widgets/service-block/widget.php:1027
-#: widgets/team-block/widget.php:887 widgets/team-block/widget.php:1097
+#: widgets/features-block/widget.php:786
+#: widgets/features-block/widget.php:1000 widgets/service-block/widget.php:816
+#: widgets/service-block/widget.php:1030 widgets/team-block/widget.php:887
+#: widgets/team-block/widget.php:1097 widgets/working-block/widget.php:788
+#: widgets/working-block/widget.php:1002
 msgid "Icon Area BG Theme Colored"
 msgstr ""
 
-#: widgets/features-block/widget.php:797
-#: widgets/features-block/widget.php:1011 widgets/service-block/widget.php:803
-#: widgets/service-block/widget.php:1017 widgets/team-block/widget.php:899
-#: widgets/team-block/widget.php:1109
+#: widgets/features-block/widget.php:798
+#: widgets/features-block/widget.php:1012 widgets/service-block/widget.php:806
+#: widgets/service-block/widget.php:1020 widgets/team-block/widget.php:899
+#: widgets/team-block/widget.php:1109 widgets/working-block/widget.php:800
+#: widgets/working-block/widget.php:1014
 msgid "Icon Area Custom BG Color"
 msgstr ""
 
 #: widgets/features-block/skins/skin-style3.php:63
+#: widgets/service-block/skins/skin-style6.php:54
 msgid "Custom Content Shadow Color Opacity"
 msgstr ""
 
@@ -6448,7 +6767,7 @@ msgid "Padding/Border Options"
 msgstr ""
 
 #: widgets/interactive-list/widget.php:50
-msgid "Interactive List - Pixlab"
+msgid "Interactive List - Digicod"
 msgstr ""
 
 #: widgets/interactive-list/widget.php:158
@@ -6524,8 +6843,8 @@ msgstr ""
 
 #: widgets/interactive-tabs-title/widget.php:321
 #: widgets/interactive-tabs-title/widget.php:375
+#: widgets/team-block/skins/skin-style10.php:189
 #: widgets/team-block/skins/skin-style2.php:253
-#: widgets/team-block/skins/skin-style3.php:261
 #: widgets/team-block/skins/skin-style7.php:188
 msgid "Icon Bg Color"
 msgstr ""
@@ -6546,7 +6865,7 @@ msgid "Custom BG Color"
 msgstr ""
 
 #: widgets/moving-text/widget.php:55
-msgid "Moving Text - Pixlab"
+msgid "Moving Text - Digicod"
 msgstr ""
 
 #: widgets/moving-text/widget.php:118
@@ -6816,7 +7135,7 @@ msgid "Bullet Theme Colored"
 msgstr ""
 
 #: widgets/pricing-plan/widget.php:48
-msgid "Pricing Plan - Pixlab"
+msgid "Pricing Plan - Digicod"
 msgstr ""
 
 #: widgets/pricing-plan/widget.php:145
@@ -7247,7 +7566,7 @@ msgid "Skin Pricing Style8"
 msgstr ""
 
 #: widgets/pricing-plan-switcher/widget.php:48
-msgid "Pricing Plan Switcher - Pixlab"
+msgid "Pricing Plan Switcher - Digicod"
 msgstr ""
 
 #: widgets/pricing-plan-switcher/widget.php:122
@@ -7327,50 +7646,70 @@ msgstr ""
 msgid "Service Block"
 msgstr ""
 
-#: widgets/service-block/widget.php:134 widgets/service-block/widget.php:333
+#: widgets/service-block/widget.php:137 widgets/service-block/widget.php:336
 msgid "Service Items"
 msgstr ""
 
-#: widgets/service-block/widget.php:202
+#: widgets/service-block/widget.php:205
 msgid "Featured Image Section"
 msgstr ""
 
-#: widgets/service-block/widget.php:226
+#: widgets/service-block/widget.php:229
 msgid "Service Icon Section"
 msgstr ""
 
-#: widgets/service-block/widget.php:234
+#: widgets/service-block/widget.php:237
 msgid "Service Icon Type"
 msgstr ""
 
-#: widgets/service-block/widget.php:246
+#: widgets/service-block/widget.php:249
 msgid "Icon Type - Image"
 msgstr ""
 
-#: widgets/service-block/widget.php:257
+#: widgets/service-block/widget.php:260
 msgid "Icon Type - Image (Hover)"
 msgstr ""
 
-#: widgets/service-block/widget.php:268
+#: widgets/service-block/widget.php:271
 msgid "Icon Type - Image Size"
 msgstr ""
 
-#: widgets/service-block/widget.php:280
+#: widgets/service-block/widget.php:283
 msgid "Icon Image Custom Width"
 msgstr ""
 
-#: widgets/service-block/skins/skin-style10.php:22
+#: widgets/service-block/skins/skin-style10.php:26
 #: widgets/team-block/skins/skin-style10.php:22
 #: widgets/testimonial-block/skins/skin-style10.php:22
 msgid "Skin Style10"
 msgstr ""
 
-#: widgets/service-block/skins/skin-style11.php:22
+#: widgets/service-block/skins/skin-style11.php:26
 msgid "Skin Style11"
 msgstr ""
 
-#: widgets/service-block/skins/skin-style12.php:22
+#: widgets/service-block/skins/skin-style12.php:26
 msgid "Skin Style12"
+msgstr ""
+
+#: widgets/service-block/skins/skin-style13.php:26
+msgid "Skin Style13"
+msgstr ""
+
+#: widgets/service-block/skins/skin-style14.php:26
+msgid "Skin Style14"
+msgstr ""
+
+#: widgets/service-block/skins/skin-style15.php:26
+msgid "Skin Style15"
+msgstr ""
+
+#: widgets/service-block/skins/skin-style8.php:84
+msgid "Content Border Color Options"
+msgstr ""
+
+#: widgets/service-block/skins/skin-style8.php:91
+msgid "Content Border Color"
 msgstr ""
 
 #: widgets/site-logo/widget.php:45
@@ -7472,47 +7811,13 @@ msgstr ""
 msgid "Social Links Styling"
 msgstr ""
 
-#: widgets/team-block/skins/skin-style2.php:81
-#: widgets/team-block/skins/skin-style3.php:81
-msgid "Border Color Options"
-msgstr ""
-
-#: widgets/team-block/skins/skin-style2.php:90
-#: widgets/team-block/skins/skin-style2.php:220
-#: widgets/team-block/skins/skin-style3.php:89
-#: widgets/team-block/skins/skin-style3.php:228
-msgid "Custom Border Color"
-msgstr ""
-
-#: widgets/team-block/skins/skin-style2.php:101
-#: widgets/team-block/skins/skin-style2.php:230
-#: widgets/team-block/skins/skin-style3.php:99
-#: widgets/team-block/skins/skin-style3.php:238
-msgid "Make Border Theme Colored"
-msgstr ""
-
-#: widgets/team-block/skins/skin-style2.php:115
-#: widgets/team-block/skins/skin-style3.php:113
-#: widgets/team-block/skins/skin-style7.php:82
-msgid "Social Box Color Options"
-msgstr ""
-
-#: widgets/team-block/skins/skin-style2.php:124
-#: widgets/team-block/skins/skin-style3.php:122
-msgid "Custom Color"
-msgstr ""
-
-#: widgets/team-block/skins/skin-style2.php:135
-#: widgets/team-block/skins/skin-style2.php:264
-#: widgets/team-block/skins/skin-style3.php:133
-#: widgets/team-block/skins/skin-style3.php:272
-#: widgets/team-block/skins/skin-style7.php:199
-msgid "Make Theme Colored"
-msgstr ""
-
+#: widgets/team-block/skins/skin-style1.php:88
+#: widgets/team-block/skins/skin-style10.php:148
 #: widgets/team-block/skins/skin-style2.php:181
-#: widgets/team-block/skins/skin-style3.php:189
-#: widgets/team-block/skins/skin-style6.php:87
+#: widgets/team-block/skins/skin-style3.php:89
+#: widgets/team-block/skins/skin-style4.php:88
+#: widgets/team-block/skins/skin-style5.php:88
+#: widgets/team-block/skins/skin-style6.php:88
 #: widgets/team-block/skins/skin-style7.php:148
 #: widgets/team-block/skins/skin-style8.php:88
 #: widgets/team-block/skins/skin-style9.php:89
@@ -7521,28 +7826,55 @@ msgstr ""
 #: widgets/testimonial-block/skins/skin-style2.php:140
 #: widgets/testimonial-block/skins/skin-style3.php:140
 #: widgets/testimonial-block/skins/skin-style4.php:152
-#: widgets/testimonial-block/skins/skin-style5.php:140
+#: widgets/testimonial-block/skins/skin-style5.php:169
 #: widgets/testimonial-block/skins/skin-style6.php:140
-#: widgets/testimonial-block/skins/skin-style7.php:140
-#: widgets/testimonial-block/skins/skin-style8.php:152
+#: widgets/testimonial-block/skins/skin-style7.php:174
+#: widgets/testimonial-block/skins/skin-style8.php:174
 #: widgets/testimonial-block/skins/skin-style9.php:98
 msgid "BG Color Options (Hover)"
 msgstr ""
 
-#: widgets/team-block/skins/skin-style2.php:212
-#: widgets/team-block/skins/skin-style3.php:220
-msgid "Border Color Options (Hover)"
+#: widgets/team-block/skins/skin-style10.php:82
+#: widgets/team-block/skins/skin-style2.php:115
+#: widgets/team-block/skins/skin-style7.php:82
+msgid "Social Box Color Options"
 msgstr ""
 
+#: widgets/team-block/skins/skin-style10.php:91
+#: widgets/team-block/skins/skin-style2.php:124
+msgid "Custom Color"
+msgstr ""
+
+#: widgets/team-block/skins/skin-style10.php:102
+#: widgets/team-block/skins/skin-style10.php:200
+#: widgets/team-block/skins/skin-style2.php:135
+#: widgets/team-block/skins/skin-style2.php:264
+#: widgets/team-block/skins/skin-style7.php:199
+msgid "Make Theme Colored"
+msgstr ""
+
+#: widgets/team-block/skins/skin-style10.php:180
 #: widgets/team-block/skins/skin-style2.php:244
-#: widgets/team-block/skins/skin-style3.php:252
 #: widgets/team-block/skins/skin-style7.php:179
 msgid "Social Box Hover Color Options"
 msgstr ""
 
-#: widgets/team-block/skins/skin-style3.php:145
-#: widgets/team-block/skins/skin-style3.php:284
-msgid "Icon Border Color"
+#: widgets/team-block/skins/skin-style2.php:81
+msgid "Border Color Options"
+msgstr ""
+
+#: widgets/team-block/skins/skin-style2.php:90
+#: widgets/team-block/skins/skin-style2.php:220
+msgid "Custom Border Color"
+msgstr ""
+
+#: widgets/team-block/skins/skin-style2.php:101
+#: widgets/team-block/skins/skin-style2.php:230
+msgid "Make Border Theme Colored"
+msgstr ""
+
+#: widgets/team-block/skins/skin-style2.php:212
+msgid "Border Color Options (Hover)"
 msgstr ""
 
 #: widgets/testimonial-block/widget.php:50
@@ -7638,74 +7970,90 @@ msgstr ""
 #: widgets/testimonial-block/skins/skin-style10.php:196
 #: widgets/testimonial-block/skins/skin-style3.php:193
 #: widgets/testimonial-block/skins/skin-style4.php:217
-#: widgets/testimonial-block/skins/skin-style5.php:193
+#: widgets/testimonial-block/skins/skin-style5.php:222
 #: widgets/testimonial-block/skins/skin-style6.php:195
-#: widgets/testimonial-block/skins/skin-style7.php:193
-#: widgets/testimonial-block/skins/skin-style8.php:219
+#: widgets/testimonial-block/skins/skin-style7.php:227
+#: widgets/testimonial-block/skins/skin-style8.php:242
 msgid "Quote Icon Styling"
 msgstr ""
 
 #: widgets/testimonial-block/skins/skin-style1.php:210
-#: widgets/testimonial-block/skins/skin-style10.php:211
-#: widgets/testimonial-block/skins/skin-style3.php:208
-#: widgets/testimonial-block/skins/skin-style4.php:264
-#: widgets/testimonial-block/skins/skin-style5.php:208
-#: widgets/testimonial-block/skins/skin-style6.php:210
-#: widgets/testimonial-block/skins/skin-style7.php:208
-#: widgets/testimonial-block/skins/skin-style8.php:234
-msgid "Quote Icon Color"
+msgid "Quote Icon Bg Color"
 msgstr ""
 
 #: widgets/testimonial-block/skins/skin-style1.php:220
+msgid "Quote Icon Bg Theme Colored"
+msgstr ""
+
+#: widgets/testimonial-block/skins/skin-style1.php:232
+#: widgets/testimonial-block/skins/skin-style10.php:211
+#: widgets/testimonial-block/skins/skin-style3.php:208
+#: widgets/testimonial-block/skins/skin-style4.php:264
+#: widgets/testimonial-block/skins/skin-style5.php:237
+#: widgets/testimonial-block/skins/skin-style6.php:210
+#: widgets/testimonial-block/skins/skin-style7.php:242
+#: widgets/testimonial-block/skins/skin-style8.php:257
+msgid "Quote Icon Color"
+msgstr ""
+
+#: widgets/testimonial-block/skins/skin-style1.php:242
 #: widgets/testimonial-block/skins/skin-style10.php:221
 #: widgets/testimonial-block/skins/skin-style3.php:219
 #: widgets/testimonial-block/skins/skin-style4.php:242
 #: widgets/testimonial-block/skins/skin-style4.php:274
-#: widgets/testimonial-block/skins/skin-style5.php:219
+#: widgets/testimonial-block/skins/skin-style5.php:248
 #: widgets/testimonial-block/skins/skin-style6.php:221
-#: widgets/testimonial-block/skins/skin-style7.php:218
-#: widgets/testimonial-block/skins/skin-style8.php:244
+#: widgets/testimonial-block/skins/skin-style7.php:252
+#: widgets/testimonial-block/skins/skin-style8.php:267
 msgid "Quote Icon Theme Colored"
 msgstr ""
 
-#: widgets/testimonial-block/skins/skin-style1.php:242
+#: widgets/testimonial-block/skins/skin-style1.php:264
 #: widgets/testimonial-block/skins/skin-style10.php:243
 #: widgets/testimonial-block/skins/skin-style3.php:241
 #: widgets/testimonial-block/skins/skin-style4.php:296
-#: widgets/testimonial-block/skins/skin-style5.php:241
+#: widgets/testimonial-block/skins/skin-style5.php:270
 #: widgets/testimonial-block/skins/skin-style6.php:243
-#: widgets/testimonial-block/skins/skin-style7.php:240
-#: widgets/testimonial-block/skins/skin-style8.php:266
+#: widgets/testimonial-block/skins/skin-style7.php:274
+#: widgets/testimonial-block/skins/skin-style8.php:289
 msgid "Quote Icon Styling (Hover)"
 msgstr ""
 
-#: widgets/testimonial-block/skins/skin-style1.php:249
+#: widgets/testimonial-block/skins/skin-style1.php:271
+msgid "Quote Icon Bg Color (Hover)"
+msgstr ""
+
+#: widgets/testimonial-block/skins/skin-style1.php:281
+msgid "Quote Icon Bg Theme Colored (Hover)"
+msgstr ""
+
+#: widgets/testimonial-block/skins/skin-style1.php:293
 #: widgets/testimonial-block/skins/skin-style10.php:250
 #: widgets/testimonial-block/skins/skin-style3.php:248
 #: widgets/testimonial-block/skins/skin-style4.php:335
-#: widgets/testimonial-block/skins/skin-style5.php:248
+#: widgets/testimonial-block/skins/skin-style5.php:277
 #: widgets/testimonial-block/skins/skin-style6.php:250
-#: widgets/testimonial-block/skins/skin-style7.php:247
-#: widgets/testimonial-block/skins/skin-style8.php:273
+#: widgets/testimonial-block/skins/skin-style7.php:281
+#: widgets/testimonial-block/skins/skin-style8.php:296
 msgid "Quote Icon Color (Hover)"
 msgstr ""
 
-#: widgets/testimonial-block/skins/skin-style1.php:259
+#: widgets/testimonial-block/skins/skin-style1.php:303
 #: widgets/testimonial-block/skins/skin-style10.php:260
 #: widgets/testimonial-block/skins/skin-style3.php:258
 #: widgets/testimonial-block/skins/skin-style4.php:323
 #: widgets/testimonial-block/skins/skin-style4.php:345
-#: widgets/testimonial-block/skins/skin-style5.php:258
+#: widgets/testimonial-block/skins/skin-style5.php:287
 #: widgets/testimonial-block/skins/skin-style6.php:260
-#: widgets/testimonial-block/skins/skin-style7.php:257
-#: widgets/testimonial-block/skins/skin-style8.php:283
+#: widgets/testimonial-block/skins/skin-style7.php:291
+#: widgets/testimonial-block/skins/skin-style8.php:306
 msgid "Quote Icon Theme Colored (Hover)"
 msgstr ""
 
 #: widgets/testimonial-block/skins/skin-style4.php:123
 #: widgets/testimonial-block/skins/skin-style4.php:192
 #: widgets/testimonial-block/skins/skin-style8.php:123
-#: widgets/testimonial-block/skins/skin-style8.php:192
+#: widgets/testimonial-block/skins/skin-style8.php:214
 msgid "Inside Border Color"
 msgstr ""
 
@@ -7720,6 +8068,26 @@ msgstr ""
 
 #: widgets/testimonial-block/skins/skin-style4.php:303
 msgid "Quote Icon BG Color (Hover)"
+msgstr ""
+
+#: widgets/testimonial-block/skins/skin-style5.php:132
+#: widgets/testimonial-block/skins/skin-style7.php:134
+#: widgets/testimonial-block/skins/skin-style8.php:147
+msgid "Star Rating Color Options"
+msgstr ""
+
+#: widgets/testimonial-block/skins/skin-style5.php:139
+#: widgets/testimonial-block/skins/skin-style7.php:141
+msgid "Star Rating Color"
+msgstr ""
+
+#: widgets/testimonial-block/skins/skin-style5.php:150
+#: widgets/testimonial-block/skins/skin-style7.php:152
+msgid "Star Rating BG Color"
+msgstr ""
+
+#: widgets/testimonial-block/skins/skin-style8.php:154
+msgid "Star Rating border Color"
 msgstr ""
 
 #: widgets/tribe-events/widget.php:47
@@ -8506,6 +8874,14 @@ msgstr ""
 msgid "Skin Vertical List"
 msgstr ""
 
+#: widgets/working-block/widget.php:50
+msgid "Working Block"
+msgstr ""
+
+#: widgets/working-block/widget.php:129
+msgid "Working Block Items"
+msgstr ""
+
 #: widgets-shop/account/widget.php:50 widgets-shop/wishlist/widget.php:49
 msgid "TM Wishlist"
 msgstr ""
@@ -8526,8 +8902,7 @@ msgstr ""
 msgid "Cart Alignment"
 msgstr ""
 
-#: widgets-shop/account/widget.php:237 widgets-shop/header-cart/widget.php:142
-#: widgets-shop/wishlist/widget.php:212
+#: widgets-shop/account/widget.php:237 widgets-shop/wishlist/widget.php:212
 msgid "Hide Count"
 msgstr ""
 
@@ -8554,6 +8929,10 @@ msgstr ""
 
 #: widgets-shop/header-cart/widget.php:134
 msgid "Hide Price"
+msgstr ""
+
+#: widgets-shop/header-cart/widget.php:142
+msgid "Hide Count Items Label"
 msgstr ""
 
 #: widgets-shop/header-cart/widget.php:150
