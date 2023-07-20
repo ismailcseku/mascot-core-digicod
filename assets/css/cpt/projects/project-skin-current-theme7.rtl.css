@@ -63,7 +63,8 @@
   position: relative;
   display: block;
   padding: 30px;
-  background: #f2f3f5;
+  background: #fff;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
   border-left: 5px solid var(--theme-color1);
   border-radius: 10px 0px 0px 10px;
   margin-top: -60px;
