@@ -44,6 +44,9 @@
   min-height: 170px;
   margin-bottom: 50px;
 }
+.working-block-style1 .inner-box .icon-box i {
+  line-height: 1;
+}
 .working-block-style1 .inner-box .icon-box i::before {
   position: relative;
   display: inline-block;
