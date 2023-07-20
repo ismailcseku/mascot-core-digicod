@@ -471,6 +471,15 @@
     transition: none;
   }
 }
+.tm-sc-projects .projects-current-theme4 .info-box .title:hover {
+  color: var(--theme-color3);
+}
+.tm-sc-projects .projects-current-theme4 .info-box .title a {
+  color: #fff;
+}
+.tm-sc-projects .projects-current-theme4 .info-box .title a:hover {
+  color: var(--theme-color3);
+}
 
 .tm-sc-projects .cat-list {
   list-style: none;
