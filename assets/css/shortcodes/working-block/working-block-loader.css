@@ -415,7 +415,7 @@
   text-align: center;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
-  padding: 40px 20px 36px;
+  padding: 60px 20px 30px;
   margin-top: 40px;
   transition: all 300ms ease;
 }
@@ -461,7 +461,7 @@
 .working-block-style6 .inner-box .content-box .count {
   width: 60px;
   position: absolute;
-  top: -40px;
+  top: -30px;
   left: 50%;
   transform: translateX(-50%);
   height: 60px;
