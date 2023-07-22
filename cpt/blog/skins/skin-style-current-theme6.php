@@ -84,10 +84,6 @@ class Skin_Style_Current_Theme6 extends Elementor_Skin_Base {
 		//button classes
 		$settings['btn_classes'] = mascot_core_prepare_button_classes_from_params( $settings );
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-blog-skin-style-current-theme6', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/cpt/blog/blog-skin-style-current-theme6' . $direction_suffix . '.css' );
-
 		//classes
 		$classes = array();
 		$classes[] = $settings['custom_css_class'];

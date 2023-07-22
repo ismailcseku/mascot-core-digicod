@@ -1014,10 +1014,6 @@ class TM_Elementor_Projects extends Widget_Base {
 
 		$settings['the_query'] = $this->query_posts($new_cpt_class);
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-project-skin-style1', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/cpt/projects/project-skin-style1' . $direction_suffix . '.css' );
-
 		//classes
 		$classes = array();
 		if( $settings['add_border_radius'] ) {
