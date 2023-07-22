@@ -120,9 +120,6 @@ class Skin_Style4 extends Elementor_Skin_Base {
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-team-block-style4', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/team-block/team-block-style4' . $direction_suffix . '.css' );
 
 		//icon classes
 		$icon_classes = array();

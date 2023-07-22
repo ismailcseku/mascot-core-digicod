@@ -16,10 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 class TM_Elementor_Blog extends Widget_Base {
 	public function __construct($data = [], $args = null) {
 		parent::__construct($data, $args);
-		if( \Elementor\Plugin::$instance->preview->is_preview_mode() ) {
-			$direction_suffix = is_rtl() ? '.rtl' : '';
-			wp_enqueue_style( 'tm-blog-style', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/cpt/blog/blog-loader' . $direction_suffix . '.css' );
-		}
+		$direction_suffix = is_rtl() ? '.rtl' : '';
+		wp_enqueue_style( 'tm-blog-style', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/cpt/blog/blog-loader' . $direction_suffix . '.css' );
 	}
 
 	/**

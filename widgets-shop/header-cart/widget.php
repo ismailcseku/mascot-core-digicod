@@ -18,7 +18,7 @@ class TM_Elementor_Header_Cart extends Widget_Base {
 		parent::__construct($data, $args);
 		$direction_suffix = is_rtl() ? '.rtl' : '';
 
-		wp_register_style( 'tm-header-cart', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/woo/header-cart' . $direction_suffix . '.css' );
+		wp_enqueue_style( 'tm-header-cart', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/woo/header-cart' . $direction_suffix . '.css' );
 		wp_enqueue_script('tm-header-cart', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/js/woo/header-cart.js', array('jquery'), MASCOT_CORE_DIGICOD_VERSION, true);
 	}
 
@@ -93,9 +93,6 @@ class TM_Elementor_Header_Cart extends Widget_Base {
 	public function get_script_depends() {
 		return [ 'mascot-core-hellojs', 'tm-header-cart' ];
 	}
-	public function get_style_depends() {
-		return [ 'tm-header-cart' ];
-	}
 
 	/**
 	 * Register the widget controls.
@@ -141,7 +138,8 @@ class TM_Elementor_Header_Cart extends Widget_Base {
             [
                 'label' => esc_html__( 'Hide Count Items Label', 'mascot-core-digicod' ),
                 'type' => Controls_Manager::SWITCHER,
-                'prefix_class'	=> 'hide-cart-count-'
+                'prefix_class'	=> 'hide-cart-count-',
+                'default' => 'yes'
             ]
         );
         $this->add_control(

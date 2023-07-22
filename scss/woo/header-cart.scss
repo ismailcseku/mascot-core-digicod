@@ -1,11 +1,11 @@
 .elementor-widget-tm-ele-header-cart {
     &.hide-cart-count-yes {
-        .mini-cart-icon .cart-quick-info .count{
+        .mini-cart-icon .cart-quick-info{
             display: none;
         }
     }
     &.hide-cart-price-yes{
-        .mini-cart-icon .cart-quick-info {
+        .mini-cart-icon .cart-quick-info .amount{
             display: none;
         }
     }

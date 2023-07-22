@@ -10,10 +10,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 class Skin_Style15 extends Elementor_Skin_Base {
 
 	protected function _register_controls_actions() {
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-service-block-style15', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/service-block/service-block-style15' . $direction_suffix . '.css' );
-
 		add_action( 'elementor/element/tm-ele-service-block/general/after_section_end', [ $this, 'register_layout_controls' ] );
 	}
 

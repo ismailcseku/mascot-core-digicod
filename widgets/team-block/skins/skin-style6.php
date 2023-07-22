@@ -25,7 +25,6 @@ class Skin_Style6 extends Elementor_Skin_Base {
 
 	public function register_layout_controls( Widget_Base $widget ) {
 		$this->parent = $widget;
-		
 		$this->start_controls_section(
 			'current_wrapper_styling',
 			[
@@ -121,9 +120,6 @@ class Skin_Style6 extends Elementor_Skin_Base {
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-team-block-style6', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/team-block/team-block-style6' . $direction_suffix . '.css' );
 
 		//icon classes
 		$icon_classes = array();

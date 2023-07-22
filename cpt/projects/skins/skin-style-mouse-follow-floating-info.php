@@ -53,10 +53,6 @@ class Skin_Style_Mouse_Follow_Floating_Info extends Elementor_Skin_Base {
 
 		$settings['the_query'] = $this->parent->query_posts($new_cpt_class);
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-project-skin-mouse-follow-floating-info', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/cpt/projects/project-skin-mouse-follow-floating-info' . $direction_suffix . '.css' );
-
 		//classes
 		$classes = array();
 		if( $settings['add_border_radius'] ) {

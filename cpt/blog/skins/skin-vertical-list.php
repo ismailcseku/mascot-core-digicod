@@ -316,10 +316,6 @@ class Skin_Vertical_List extends Elementor_Skin_Base {
 
 		//button classes
 		$settings['btn_classes'] = mascot_core_prepare_button_classes_from_params( $settings );
-
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-blog-skin-vertical-list', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/cpt/blog/blog-skin-vertical-list' . $direction_suffix . '.css' );
 		
 		//classes
 		$classes = array();

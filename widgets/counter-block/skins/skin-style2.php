@@ -32,10 +32,6 @@ class Skin_Style2 extends Elementor_Skin_Base {
 
 		wp_enqueue_script( 'tm-counter-block-script', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/js/widgets/counter-block.js', array('jquery'), false, true );
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-counter-block-style2', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/counter-block/counter-block-style2' . $direction_suffix . '.css' );
-
 		//classes
 		$classes = array();
 		if ( $settings['animate_icon_on_hover'] ) {

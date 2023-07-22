@@ -31,10 +31,6 @@ class Skin_Style1 extends Elementor_Skin_Base {
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-counter-block-style1', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/counter-block/counter-block-style1' . $direction_suffix . '.css' );
-
 		//classes
 		$classes = array();
 		if ( $settings['animate_icon_on_hover'] ) {

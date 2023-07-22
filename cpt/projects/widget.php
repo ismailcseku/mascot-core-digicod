@@ -19,10 +19,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 class TM_Elementor_Projects extends Widget_Base {
 	public function __construct($data = [], $args = null) {
 		parent::__construct($data, $args);
-		if( \Elementor\Plugin::$instance->preview->is_preview_mode() ) {
-			$direction_suffix = is_rtl() ? '.rtl' : '';
-			wp_enqueue_style( 'tm-projects-style', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/cpt/projects/projects-loader' . $direction_suffix . '.css' );
-		}
+		$direction_suffix = is_rtl() ? '.rtl' : '';
+		wp_enqueue_style( 'tm-projects-style', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/cpt/projects/projects-loader' . $direction_suffix . '.css' );
 	}
 
 	/**
@@ -1034,7 +1032,7 @@ class TM_Elementor_Projects extends Widget_Base {
 		$settings['ptTaxKey'] = $new_cpt_class['ptTaxKey'];
 		//Owl Carousel Data
 		$settings['owl_carousel_data_info'] = mascot_core_prepare_owlcarousel_data_from_params( $settings );
-
+		
 		$settings['settings'] = $settings;
 
 		$html = mascot_core_digicod_get_cpt_shortcode_template_part( 'projects', $settings['display_type'], 'projects/tpl', $settings, true );

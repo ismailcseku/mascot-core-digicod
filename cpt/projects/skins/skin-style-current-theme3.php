@@ -53,10 +53,6 @@ class Skin_Style_Current_Theme3 extends Elementor_Skin_Base {
 
 		$settings['the_query'] = $this->parent->query_posts($new_cpt_class);
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-project-skin-current-theme3', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/cpt/projects/project-skin-current-theme3' . $direction_suffix . '.css' );
-
 		//classes
 		$classes = array();
 		if( $settings['add_border_radius'] ) {

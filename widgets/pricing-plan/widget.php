@@ -19,7 +19,7 @@ class TM_Elementor_Pricing_Plan extends Widget_Base {
 		parent::__construct($data, $args);
 		$direction_suffix = is_rtl() ? '.rtl' : '';
 
-		wp_register_style( 'tm-pricing-plan-style', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/pricing-plan/pricing-plan-loader' . $direction_suffix . '.css' );
+		wp_enqueue_style( 'tm-pricing-plan-style', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/pricing-plan/pricing-plan-loader' . $direction_suffix . '.css' );
 	}
 
 	/**
@@ -92,9 +92,6 @@ class TM_Elementor_Pricing_Plan extends Widget_Base {
 	 */
 	public function get_script_depends() {
 		return [ 'mascot-core-hellojs' ];
-	}
-	public function get_style_depends() {
-		return [ 'tm-pricing-plan-style' ];
 	}
 
 	/**
