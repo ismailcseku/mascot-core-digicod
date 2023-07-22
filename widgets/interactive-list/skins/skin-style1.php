@@ -45,10 +45,6 @@ class Skin_Style1 extends Elementor_Skin_Base {
 		}
 		$settings['classes'] = $classes;
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-interactive-list-skin-style1', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/interactive-list/interactive-list-skin-style1' . $direction_suffix . '.css' );
-
 		//classes
 
 

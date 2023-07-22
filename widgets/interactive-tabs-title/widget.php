@@ -19,11 +19,7 @@ class TM_Elementor_InteractiveTabsTitle extends Widget_Base {
 	public function __construct($data = [], $args = null) {
 		parent::__construct($data, $args);
 		$direction_suffix = is_rtl() ? '.rtl' : '';
-
-		if( \Elementor\Plugin::$instance->preview->is_preview_mode() ) {
-			$direction_suffix = is_rtl() ? '.rtl' : '';
-			wp_enqueue_style( 'tm-interactive-tabs', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/interactive-tabs/interactive-tabs-loader' . $direction_suffix . '.css' );
-		}
+		wp_enqueue_style( 'tm-interactive-tabs', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/interactive-tabs/interactive-tabs-loader' . $direction_suffix . '.css' );
 
 		wp_register_script( 'tm-interactive-tabs', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/js/widgets/interactive-tabs.js', array('jquery'), false, true );
 	}
@@ -590,10 +586,6 @@ class TM_Elementor_InteractiveTabsTitle extends Widget_Base {
 		//classes
 		$classes = array();
 		$settings['classes'] = $classes;
-
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-interactive-tabs-default', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/interactive-tabs/interactive-tabs-title-default' . $direction_suffix . '.css' );
 
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)

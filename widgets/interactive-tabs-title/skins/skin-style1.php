@@ -35,10 +35,6 @@ class Skin_Style1 extends Elementor_Skin_Base {
 		$classes = array();
 		$settings['classes'] = $classes;
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-interactive-tabs-title-skin-style1', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/interactive-tabs/interactive-tabs-title-skin-style1' . $direction_suffix . '.css' );
-
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = mascot_core_digicod_get_shortcode_template_part( 'interactive-tabs-title-skin-style1', null, 'interactive-tabs-title/tpl', $settings, true );
