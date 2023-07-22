@@ -7,6 +7,7 @@
     url("fonts/flaticon-set-digicod.svg#FlaticonDigicod") format("svg");
     font-weight: normal;
     font-style: normal;
+  font-display: swap;
 }
 
 i[class^="flaticon-digicod-"]:before, i[class*=" flaticon-digicod-"]:before {
