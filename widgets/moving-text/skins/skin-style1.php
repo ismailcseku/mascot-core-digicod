@@ -30,10 +30,6 @@ class Skin_Style1 extends Elementor_Skin_Base {
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-moving-text-current-item-style1', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/moving-text/moving-text-current-item-style1' . $direction_suffix . '.css' );
-
 		if ( 'mascot_wave' === $settings['path'] ) {
 			$path_svg = '
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">

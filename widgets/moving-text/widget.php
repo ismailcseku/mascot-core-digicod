@@ -21,10 +21,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 class TM_Elementor_MovingText extends Widget_Base {
     public function __construct($data = [], $args = null) {
 		parent::__construct($data, $args);
-		if( \Elementor\Plugin::$instance->preview->is_preview_mode() ) {
-			$direction_suffix = is_rtl() ? '.rtl' : '';
-			wp_enqueue_style( 'tm-moving-text', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/moving-text/moving-text-loader' . $direction_suffix . '.css' );
-		}
+		$direction_suffix = is_rtl() ? '.rtl' : '';
+		wp_enqueue_style( 'tm-moving-text', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/moving-text/moving-text-loader' . $direction_suffix . '.css' );
 
 		wp_register_script( 'tm-moving-text-script', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/js/widgets/moving-text.js', 'elementor-frontend', '1.0.0', true );
     }
@@ -1376,10 +1374,6 @@ class TM_Elementor_MovingText extends Widget_Base {
 	 */
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-moving-text-current-item-style1', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/moving-text/moving-text-current-item-style1' . $direction_suffix . '.css' );
 
 		if ( 'mascot_wave' === $settings['path'] ) {
 			$path_svg = '
