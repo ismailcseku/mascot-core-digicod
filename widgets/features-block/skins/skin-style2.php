@@ -62,10 +62,6 @@ class Skin_Style2 extends Elementor_Skin_Base {
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-features-block-style2', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/features-block/features-block-style2' . $direction_suffix . '.css' );
-
 		if( $settings['animate_icon_on_hover'] ) {
 			$classes[] = 'animate-icon-on-hover animate-icon-'.$settings['animate_icon_on_hover'];
 		}

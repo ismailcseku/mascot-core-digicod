@@ -1386,10 +1386,6 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-service-block-style1', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/service-block/service-block-style1' . $direction_suffix . '.css' );
-
 		if( $settings['animate_icon_on_hover'] ) {
 			$classes[] = 'animate-icon-on-hover animate-icon-'.$settings['animate_icon_on_hover'];
 		}

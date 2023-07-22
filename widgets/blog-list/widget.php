@@ -18,7 +18,7 @@ class TM_Elementor_Blog_List extends Widget_Base {
         parent::__construct($data, $args);
         $direction_suffix = is_rtl() ? '.rtl' : '';
 
-        wp_register_style( 'tm-blog-list-style', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/blog-list' . $direction_suffix . '.css' );
+        wp_enqueue_style( 'tm-blog-list-style', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/blog-list' . $direction_suffix . '.css' );
     }
 
 	/**
@@ -91,10 +91,6 @@ class TM_Elementor_Blog_List extends Widget_Base {
 	 */
 	public function get_script_depends() {
 		return [ 'mascot-core-hellojs' ];
-	}
-
-	public function get_style_depends() {
-		return [ 'tm-blog-list-style' ];
 	}
 
 	/**

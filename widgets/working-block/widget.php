@@ -18,10 +18,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 class TM_Elementor_WorkingBlock extends Widget_Base {
 	public function __construct($data = [], $args = null) {
 		parent::__construct($data, $args);
-		if( \Elementor\Plugin::$instance->preview->is_preview_mode() ) {
-			$direction_suffix = is_rtl() ? '.rtl' : '';
-			wp_enqueue_style( 'tm-working-block-loader', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/working-block/working-block-loader' . $direction_suffix . '.css' );
-		}
+		$direction_suffix = is_rtl() ? '.rtl' : '';
+		wp_enqueue_style( 'tm-working-block-loader', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/working-block/working-block-loader' . $direction_suffix . '.css' );
 	}
 
 	/**
@@ -94,10 +92,6 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 	 */
 	public function get_script_depends() {
 		return [ 'mascot-core-hellojs' ];
-	}
-
-	public function get_style_depends() {
-		return [ 'tm-working-block' ];
 	}
 
 
@@ -1258,10 +1252,6 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 	 */
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-
-		//enqueue css
-		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-working-block-style1', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/working-block/working-block-style1' . $direction_suffix . '.css' );
 
 		if( $settings['animate_icon_on_hover'] ) {
 			$classes[] = 'animate-icon-on-hover animate-icon-'.$settings['animate_icon_on_hover'];
