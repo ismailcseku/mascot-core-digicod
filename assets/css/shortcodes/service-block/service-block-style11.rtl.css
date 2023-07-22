@@ -8,6 +8,11 @@
   transition: all 300ms ease;
 }
 
+.owl-carousel .service-item .content-box {
+  box-shadow: none;
+  border: 1px solid #eee;
+}
+
 .service-block-style11 {
   position: relative;
 }

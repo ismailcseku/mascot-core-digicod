@@ -54,7 +54,7 @@ class Skin_Style15 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .service-item .inner-box' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .service-item .content-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -66,7 +66,7 @@ class Skin_Style15 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .service-item .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .service-item .content-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -84,7 +84,7 @@ class Skin_Style15 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color (Hover)", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .service-item:hover .inner-box' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .service-item:hover .content-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -96,7 +96,7 @@ class Skin_Style15 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .service-item:hover .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .service-item:hover .content-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -115,7 +115,7 @@ class Skin_Style15 extends Elementor_Skin_Base {
 			[
 				'name' => 'current_skin_border',
 				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .service-item .inner-box',
+				'selector' => '{{WRAPPER}} .service-item .content-box',
 			]
 		);
 		$this->add_responsive_control(
@@ -125,8 +125,23 @@ class Skin_Style15 extends Elementor_Skin_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .service-item .inner-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+					'{{WRAPPER}} .service-item .content-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
 				]
+			]
+		);
+		$this->add_control(
+			'current_skin_title_border_bottom_options',
+			[
+				'label' => esc_html__( 'Title Border', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+		$this->add_group_control(
+			\Elementor\Group_Control_Border::get_type(),
+			[
+				'name' => 'current_skin_title_border_bottom',
+				'label' => esc_html__( 'Title Bottom Border', 'mascot-core-digicod' ),
+				'selector' => '{{WRAPPER}} .service-item .content-box .service-title',
 			]
 		);
 		$this->end_controls_section();
