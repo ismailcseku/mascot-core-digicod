@@ -13,7 +13,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 		//enqueue css
 		$direction_suffix = is_rtl() ? '.rtl' : '';
 		wp_enqueue_style( 'tm-service-block-style2', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/service-block/service-block-style2' . $direction_suffix . '.css' );
-		
+
 		add_action( 'elementor/element/tm-ele-service-block/general/after_section_end', [ $this, 'register_layout_controls' ] );
 	}
 
@@ -58,7 +58,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style2' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .service-item .inner-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -70,7 +70,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style2' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .service-item .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -88,7 +88,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color (Hover)", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style2:hover' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .service-item:hover .inner-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -100,7 +100,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style2:hover' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .service-item:hover .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);

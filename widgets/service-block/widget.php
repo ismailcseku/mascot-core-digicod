@@ -583,6 +583,109 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 
 
 
+		$this->start_controls_section(
+			'subtitle_options_styling',
+			[
+				'label' => esc_html__( 'Subtitle Styling', 'mascot-core-digicod' ),
+				'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+		$this->start_controls_tabs('tabs_subtitle_styling');
+		$this->start_controls_tab(
+			'tabs_subtitle_styling_normal',
+			[
+				'label' => esc_html__('Normal', 'mascot-core-digicod'),
+			]
+		);
+		$this->add_control(
+			'subtitle_text_color',
+			[
+				'label' => esc_html__( "Text Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .service-item .service-subtitle' => 'color: {{VALUE}};'
+				]
+			]
+		);
+		$this->add_control(
+			'subtitle_theme_colored',
+			[
+				'label' => esc_html__( "Text Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .service-item .service-subtitle' => 'color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+		$this->add_group_control(
+			\Elementor\Group_Control_Typography::get_type(),
+			[
+				'name' => 'subtitle_typography',
+				'label' => esc_html__( 'Typography', 'mascot-core-digicod' ),
+				'selector' => '{{WRAPPER}} .service-item .service-subtitle',
+			]
+		);
+		$this->add_responsive_control(
+			'subtitle_margin',
+			[
+				'label' => esc_html__( 'Margin', 'mascot-core-digicod' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .service-item .service-subtitle' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+		$this->add_responsive_control(
+			'subtitle_padding',
+			[
+				'label' => esc_html__( 'Padding', 'mascot-core-digicod' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .service-item .service-subtitle' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+		$this->end_controls_tab();
+
+		$this->start_controls_tab(
+			'tabs_subtitle_styling_wrapper_hover',
+			[
+				'label' => esc_html__('Wrapper Hover', 'mascot-core-digicod'),
+			]
+		);
+		$this->add_control(
+			'subtitle_text_color_item_wrapper_hover',
+			[
+				'label' => esc_html__( "Text Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .service-item:hover .service-subtitle' => 'color: {{VALUE}};'
+				]
+			]
+		);
+		$this->add_control(
+			'subtitle_theme_colored_item_wrapper_hover',
+			[
+				'label' => esc_html__( "Text Theme Colored", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'options' => mascot_core_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .service-item:hover .service-subtitle' => 'color: var(--theme-color{{VALUE}});'
+				],
+			]
+		);
+		$this->end_controls_tab();
+		$this->end_controls_tabs();
+		$this->end_controls_section();
+
+
+
+
 
 
 		$this->start_controls_section(
@@ -690,7 +793,6 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 
 
 
-
 		$this->start_controls_section(
 			'icon_custom_styling',
 			[
@@ -761,6 +863,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Custom Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
+					'{{WRAPPER}} .icon-box .service-icon' => 'color: {{VALUE}};',
 					'{{WRAPPER}} .service-icon' => 'color: {{VALUE}};',
 					'{{WRAPPER}} .service-icon svg' => 'fill: {{VALUE}};',
 				]
@@ -774,6 +877,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
+					'{{WRAPPER}} .icon-box .service-icon' => 'color: var(--theme-color{{VALUE}});',
 					'{{WRAPPER}} .service-icon' => 'color: var(--theme-color{{VALUE}});',
 					'{{WRAPPER}} .service-icon svg' => 'fill: var(--theme-color{{VALUE}});',
 				],
@@ -806,6 +910,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Area Custom BG Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
+					'{{WRAPPER}} .icon-box .service-icon' => 'background-color: {{VALUE}};',
 					'{{WRAPPER}} .service-icon' => 'background-color: {{VALUE}};',
 				]
 			]
@@ -818,6 +923,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
+					'{{WRAPPER}} .icon-box .service-icon' => 'background-color: var(--theme-color{{VALUE}});',
 					'{{WRAPPER}} .service-icon' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
@@ -836,6 +942,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
+					'{{WRAPPER}} .icon-box .service-icon' => 'line-height: {{SIZE}}{{UNIT}};',
 					'{{WRAPPER}} .service-icon' => 'line-height: {{SIZE}}{{UNIT}};',
 					'{{WRAPPER}} .service-icon i' => 'line-height: {{SIZE}}{{UNIT}};',
 					'{{WRAPPER}} .service-icon svg' => 'line-height: {{SIZE}}{{UNIT}};',
@@ -920,6 +1027,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
+					'{{WRAPPER}} .icon-box .service-icon' => 'width: {{SIZE}}{{UNIT}};',
 					'{{WRAPPER}} .service-icon' => 'width: {{SIZE}}{{UNIT}};',
 				]
 			]
@@ -930,6 +1038,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Make Icon Width to Auto?", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
+					'{{WRAPPER}} .icon-box .service-icon' => 'width: auto;',
 					'{{WRAPPER}} .service-icon' => 'width: auto;',
 				]
 			]
@@ -948,6 +1057,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
+					'{{WRAPPER}} .icon-box .service-icon' => 'height: {{SIZE}}{{UNIT}};',
 					'{{WRAPPER}} .service-icon' => 'height: {{SIZE}}{{UNIT}};',
 				]
 			]
@@ -958,6 +1068,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Make Icon Height to Auto?", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
+					'{{WRAPPER}} .icon-box .service-icon' => 'height: auto;',
 					'{{WRAPPER}} .service-icon' => 'height: auto;',
 				]
 			]
@@ -983,6 +1094,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Custom Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
+					'{{WRAPPER}}:hover .icon-box .service-icon' => 'color: {{VALUE}};',
 					'{{WRAPPER}}:hover .service-icon' => 'color: {{VALUE}};',
 					'{{WRAPPER}}:hover .service-icon svg' => 'fill: {{VALUE}};',
 				]
@@ -996,6 +1108,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
+					'{{WRAPPER}}:hover .icon-box .service-icon' => 'color: var(--theme-color{{VALUE}});',
 					'{{WRAPPER}}:hover .service-icon' => 'color: var(--theme-color{{VALUE}});',
 					'{{WRAPPER}}:hover .service-icon svg' => 'fill: var(--theme-color{{VALUE}});',
 				],
@@ -1020,6 +1133,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Area Custom BG Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
+					'{{WRAPPER}}:hover .icon-box .service-icon' => 'background-color: {{VALUE}};',
 					'{{WRAPPER}}:hover .service-icon' => 'background-color: {{VALUE}};'
 				]
 			]
@@ -1032,6 +1146,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
+					'{{WRAPPER}}:hover .icon-box .service-icon' => 'background-color: var(--theme-color{{VALUE}});',
 					'{{WRAPPER}}:hover .service-icon' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]

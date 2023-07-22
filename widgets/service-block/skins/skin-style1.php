@@ -13,7 +13,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 		//enqueue css
 		$direction_suffix = is_rtl() ? '.rtl' : '';
 		wp_enqueue_style( 'tm-service-block-style1', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/service-block/service-block-style1' . $direction_suffix . '.css' );
-		 
+
 		add_action( 'elementor/element/tm-ele-service-block/general/after_section_end', [ $this, 'register_layout_controls' ] );
 	}
 
@@ -45,7 +45,6 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'type' => \Elementor\Controls_Manager::HEADING,
 			]
 		);
-
 		$this->start_controls_tabs('tabs_current_theme_styling');
 		$this->start_controls_tab(
 			'tabs_current_theme_styling_normal',
@@ -59,7 +58,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style1' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .service-item .inner-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -70,8 +69,9 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
+				'separator' => 'before',
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style1' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .service-item .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -89,7 +89,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color (Hover)", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style1:hover' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .service-item:hover .inner-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -101,12 +101,41 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style1:hover' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .service-item:hover .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
 		$this->end_controls_tab();
 		$this->end_controls_tabs();
+
+
+
+		$this->add_control(
+			'current_skin_border_options',
+			[
+				'label' => esc_html__( 'Border Options', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+		$this->add_group_control(
+			\Elementor\Group_Control_Border::get_type(),
+			[
+				'name' => 'current_skin_border',
+				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
+				'selector' => '{{WRAPPER}} .service-item .inner-box',
+			]
+		);
+		$this->add_responsive_control(
+			'current_skin_border_radius',
+			[
+				'label' => esc_html__( "Border Radius", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .service-item .inner-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+				]
+			]
+		);
 		$this->end_controls_section();
 
 	}

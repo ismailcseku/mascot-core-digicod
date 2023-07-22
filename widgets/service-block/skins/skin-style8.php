@@ -58,8 +58,7 @@ class Skin_Style8 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style8 .inner-box .content' => 'background-color: {{VALUE}};',
-					'{{WRAPPER}} .service-block-style8 .inner-box' => 'border: 1px solid {{VALUE}};'
+					'{{WRAPPER}} .service-item .inner-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -71,28 +70,8 @@ class Skin_Style8 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style8 .inner-box .content' => 'background-color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .service-block-style8 .inner-box' => 'border: 1px solid var(--theme-color{{VALUE}};'
+					'{{WRAPPER}} .service-item .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
-			]
-		);
-
-		// Star Rating Color
-		$this->add_control(
-			'current_rating_color_options',
-			[
-				'label' => esc_html__( 'Content Border Color Options', 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::HEADING,
-			]
-		);
-		$this->add_responsive_control(
-			'current_rating_color_options_bg_color',
-			[
-				'label' => esc_html__( "Content Border Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .service-block-style8 .inner-box .service-title' => 'border-bottom: 1px solid {{VALUE}};'
-				]
 			]
 		);
 		$this->end_controls_tab();
@@ -109,8 +88,7 @@ class Skin_Style8 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color (Hover)", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style8:hover .inner-box .content' => 'background-color: {{VALUE}};',
-					'{{WRAPPER}} .service-block-style8:hover .inner-box' => 'border: 1px solid var(--theme-color{{VALUE}};'
+					'{{WRAPPER}} .service-item:hover .inner-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -122,13 +100,39 @@ class Skin_Style8 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .service-block-style8:hover .inner-box .content' => 'background-color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .service-block-style8:hover .inner-box' => 'border: 1px solid var(--theme-color{{VALUE}};'
+					'{{WRAPPER}} .service-item:hover .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
 		$this->end_controls_tab();
 		$this->end_controls_tabs();
+
+		$this->add_control(
+			'current_skin_border_options',
+			[
+				'label' => esc_html__( 'Border Options', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+		$this->add_group_control(
+			\Elementor\Group_Control_Border::get_type(),
+			[
+				'name' => 'current_skin_border',
+				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
+				'selector' => '{{WRAPPER}} .service-item .inner-box',
+			]
+		);
+		$this->add_responsive_control(
+			'current_skin_border_radius',
+			[
+				'label' => esc_html__( "Border Radius", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .service-item .inner-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+				]
+			]
+		);
 		$this->end_controls_section();
 	}
 
