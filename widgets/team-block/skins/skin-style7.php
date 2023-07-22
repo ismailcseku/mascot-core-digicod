@@ -73,66 +73,6 @@ class Skin_Style7 extends Elementor_Skin_Base {
 			]
 		);
 
-
-
-		// Social Background Color
-		$this->add_control(
-			'content_social_box_color_options',
-			[
-				'label' => esc_html__( 'Social Box Color Options', 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::HEADING,
-				'separator' => 'before',
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_custom_bg_color',
-			[
-				'label' => esc_html__( "Custom BG Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon' => 'background-color: {{VALUE}};'
-				]
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_bg_theme_colored',
-			[
-				'label' => esc_html__( "Make BG Theme Colored", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => mascot_core_theme_color_list(),
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon' => 'background-color: var(--theme-color{{VALUE}});'
-				],
-			]
-		);
-		// Social Icon Color
-		$this->add_responsive_control(
-			'content_social_box_icon_color',
-			[
-				'label' => esc_html__( "Icon Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon' => 'color: {{VALUE}};'
-				]
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_icon_theme_colored',
-			[
-				'label' => esc_html__( "Icon Theme Colored", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => mascot_core_theme_color_list(),
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon' => 'color: var(--theme-color{{VALUE}});'
-				],
-			]
-		);
-
 		$this->end_controls_tab();
 
 		$this->start_controls_tab(
@@ -168,64 +108,6 @@ class Skin_Style7 extends Elementor_Skin_Base {
 				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .team-item:hover .info-box' => 'background-color: var(--theme-color{{VALUE}});'
-				],
-			]
-		);
-
-		// Social Background Hover Color
-		$this->add_control(
-			'content_social_box_hover_color_options',
-			[
-				'label' => esc_html__( 'Social Box Hover Color Options', 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::HEADING,
-				'separator' => 'before',
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_hover_icon_bg_color',
-			[
-				'label' => esc_html__( "Icon Bg Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon:hover' => 'background-color: {{VALUE}};'
-				]
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_hover_theme_colored',
-			[
-				'label' => esc_html__( "Make Theme Colored", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => mascot_core_theme_color_list(),
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon:hover' => 'background-color: var(--theme-color{{VALUE}});'
-				],
-			]
-		);
-		// Social Icon Color
-		$this->add_responsive_control(
-			'content_social_box_icon_hover_color',
-			[
-				'label' => esc_html__( "Icon Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon:hover' => 'color: {{VALUE}};'
-				]
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_icon_hover_theme_colored',
-			[
-				'label' => esc_html__( "Icon Theme Colored", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => mascot_core_theme_color_list(),
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon:hover' => 'color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);

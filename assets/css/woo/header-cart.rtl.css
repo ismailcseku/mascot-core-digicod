@@ -1,7 +1,7 @@
-.elementor-widget-tm-ele-header-cart.hide-cart-count-yes .mini-cart-icon .cart-quick-info .count {
+.elementor-widget-tm-ele-header-cart.hide-cart-count-yes .mini-cart-icon .cart-quick-info {
   display: none;
 }
-.elementor-widget-tm-ele-header-cart.hide-cart-price-yes .mini-cart-icon .cart-quick-info {
+.elementor-widget-tm-ele-header-cart.hide-cart-price-yes .mini-cart-icon .cart-quick-info .amount {
   display: none;
 }
 .elementor-widget-tm-ele-header-cart.hide-cart-mini-count-yes .mini-cart-icon .items-count {
