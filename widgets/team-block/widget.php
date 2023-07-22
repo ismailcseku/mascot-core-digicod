@@ -846,7 +846,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .team-item ul.social-links a' => 'color: var(--theme-color{{VALUE}});',
 				],
 			]
 		);
@@ -856,7 +856,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Custom Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .team-item ul.social-links a' => 'color: {{VALUE}};',
 				]
 			]
 		);
@@ -865,7 +865,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'name' => 'icon_typography',
 				'label' => esc_html__( 'Typography', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .team-item ul.social-link a',
+				'selector' => '{{WRAPPER}} .team-item ul.social-links a',
 			]
 		);
 		$this->add_control(
@@ -889,7 +889,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .team-item ul.social-links a' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -899,7 +899,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Area Custom BG Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .team-item ul.social-links a' => 'background-color: {{VALUE}};',
 				]
 			]
 		);
@@ -917,7 +917,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'line-height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .team-item ul.social-links a' => 'line-height: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -929,7 +929,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'size_units' => [ 'px', '%', 'em' ],
 				'separator' => 'before',
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .team-item ul.social-links a' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -940,7 +940,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .team-item ul.social-links a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -956,7 +956,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'name' => 'icon_area_border',
 				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .team-item ul.social-link a',
+				'selector' => '{{WRAPPER}} .team-item ul.social-links a',
 			]
 		);
 		$this->add_responsive_control(
@@ -966,7 +966,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+					'{{WRAPPER}} .team-item ul.social-links a' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
 				]
 			]
 		);
@@ -975,7 +975,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'name' => 'icon_area_box_shadow',
 				'label' => esc_html__( 'Box Shadow', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .team-item ul.social-link a',
+				'selector' => '{{WRAPPER}} .team-item ul.social-links a',
 			]
 		);
 		$this->add_control(
@@ -999,7 +999,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .team-item ul.social-links a' => 'width: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -1009,7 +1009,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Make Icon Width to Auto?", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'width: auto;',
+					'{{WRAPPER}} .team-item ul.social-links a' => 'width: auto;',
 				]
 			]
 		);
@@ -1027,7 +1027,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .team-item ul.social-links a' => 'height: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -1037,7 +1037,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Make Icon Height to Auto?", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a' => 'height: auto;',
+					'{{WRAPPER}} .team-item ul.social-links a' => 'height: auto;',
 				]
 			]
 		);
@@ -1064,7 +1064,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a:hover' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .team-item ul.social-links a:hover' => 'color: var(--theme-color{{VALUE}});',
 				],
 			]
 		);
@@ -1074,7 +1074,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Custom Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a:hover' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .team-item ul.social-links a:hover' => 'color: {{VALUE}};',
 				]
 			]
 		);
@@ -1099,7 +1099,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a:hover' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .team-item ul.social-links a:hover' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -1109,7 +1109,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Area Custom BG Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-link a:hover' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .team-item ul.social-links a:hover' => 'background-color: {{VALUE}};'
 				]
 			]
 		);

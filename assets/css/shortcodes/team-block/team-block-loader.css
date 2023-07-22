@@ -225,7 +225,7 @@
   list-style: none;
   margin-bottom: 0;
 }
-.team-current-theme2 .social-links li a {
+.team-current-theme2 .social-links a {
   position: relative;
   height: 40px;
   width: 40px;
@@ -240,11 +240,11 @@
   transition: all 300ms ease;
 }
 @media (prefers-reduced-motion: reduce) {
-  .team-current-theme2 .social-links li a {
+  .team-current-theme2 .social-links a {
     transition: none;
   }
 }
-.team-current-theme2 .social-links li a:hover {
+.team-current-theme2 .social-links a:hover {
   color: #fff;
   background-color: var(--theme-color1);
 }

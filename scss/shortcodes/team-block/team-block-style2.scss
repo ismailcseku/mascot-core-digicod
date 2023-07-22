@@ -62,23 +62,23 @@
     li {
       list-style: none;
       margin-bottom: 0;
-      a {
-        position: relative;
-        height: 40px;
-        width: 40px;
-        display: inline-block;
-        line-height: 40px;
-        text-align: center;
-        font-size: 14px;
-        background: #e3e3e3;
-        color: var(--theme-color1);
-        border-radius: 5px;
-        margin: 0 5px;
-        @include transition(all 300ms ease);
-        &:hover {
-          color: #fff;
-          background-color: var(--theme-color1);
-        }
+    }
+    a {
+      position: relative;
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      background: #e3e3e3;
+      color: var(--theme-color1);
+      border-radius: 5px;
+      margin: 0 5px;
+      @include transition(all 300ms ease);
+      &:hover {
+        color: #fff;
+        background-color: var(--theme-color1);
       }
     }
   }
