@@ -3,7 +3,9 @@
 <div class="working-block working-block-style5">
   <div class="inner-box">
     <div class="content-box">
+    <div class="icon-box">
       <?php mascot_core_digicod_get_shortcode_template_part( 'icon-type', $working_item['icon_type'], 'working-block/tpl', $working_item, false );?>
+    </div>
       <?php mascot_core_digicod_get_shortcode_template_part( 'part-title', null, 'working-block/tpl', $working_item, false );?>
       <?php mascot_core_digicod_get_shortcode_template_part( 'part-content', null, 'working-block/tpl', $working_item, false );?>
       <?php if ( $show_view_details_button == 'yes' ) : ?>

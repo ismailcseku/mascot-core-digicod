@@ -32,12 +32,6 @@
 .working-block-style3 .inner-box:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-.working-block-style3 .inner-box:hover .icon {
-  -webkit-transform: scaleX(-1);
-  -moz-transform: scaleX(-1);
-  -ms-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
 .working-block-style3 .inner-box .count {
   position: absolute;
   right: 50px;

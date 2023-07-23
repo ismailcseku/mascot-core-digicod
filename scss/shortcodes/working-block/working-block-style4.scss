@@ -12,27 +12,37 @@
     margin-top: 36px;
     @include transition(all 300ms ease);
     &:hover {
-      i::before {
-        background-color: var(--theme-color2);
+      .icon-box {
+        i {
+          background-color: var(--theme-color2);
+          &::before {
+            @include transform(scale(-1) rotate(180deg));
+            display: inline-block;
+          }
+        }
       }
       .count {
         color: var(--theme-color1);
       }
     }
-    i::before {
-      position: absolute;
-      right: 38px;
-      top: -36px;
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
-      text-align: center;
-      background: var(--theme-color1);
-      border-radius: 13.33px;
-      margin-bottom: 30px;
-      font-size: 36px;
-      color: #fff;
-      @include transition(all 300ms ease);
+    .icon-box {
+      i {
+        position: absolute;
+        right: 38px;
+        top: -36px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background: var(--theme-color1);
+        border-radius: 13.33px;
+        margin-bottom: 30px;
+        font-size: 36px;
+        color: #fff;
+        &::before {
+          @include transition(all 300ms ease);
+        }
+      }
     }
     .working-title {
       margin-top: 0;
