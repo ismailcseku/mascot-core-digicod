@@ -202,7 +202,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Color (Hover)", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .working-block .count' => 'color: {{VALUE}};'
+					'{{WRAPPER}} .working-block:hover .count' => 'color: {{VALUE}};'
 				]
 			]
 		);
