@@ -2,7 +2,7 @@
 <?php $testimonial_item['settings'] = $settings; ?>
 <div class="testimonial-block testimonial-block-style6">
   <div class="inner-box">
-    <div class="content-box">
+    <div class="testimonial-content">
       <span class="icon fa fa-quote-right"></span>
       <div class="rating">
         <?php mascot_core_digicod_get_shortcode_template_part( 'part-star-rating', null, 'testimonial-block/tpl', $testimonial_item, false );?>

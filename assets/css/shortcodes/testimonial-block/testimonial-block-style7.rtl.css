@@ -71,12 +71,12 @@
 .testimonial-block-style7 {
   position: relative;
 }
-.testimonial-block-style7 .inner-box {
+.testimonial-block-style7 .testimonial-content {
   position: relative;
   border: 1px solid #e3e3e3;
   border-radius: 10px;
 }
-.testimonial-block-style7 .inner-box:before {
+.testimonial-block-style7 .testimonial-content:before {
   position: absolute;
   right: 50%;
   bottom: 0;
@@ -88,11 +88,11 @@
   content: "";
 }
 @media (prefers-reduced-motion: reduce) {
-  .testimonial-block-style7 .inner-box:before {
+  .testimonial-block-style7 .testimonial-content:before {
     transition: none;
   }
 }
-.testimonial-block-style7 .inner-box:hover::before {
+.testimonial-block-style7 .testimonial-content:hover::before {
   right: 0;
   width: 100%;
 }

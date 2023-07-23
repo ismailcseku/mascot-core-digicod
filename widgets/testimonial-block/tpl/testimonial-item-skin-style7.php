@@ -1,7 +1,7 @@
 <!-- Testimonial Block Style7-->
 <?php $testimonial_item['settings'] = $settings; ?>
 <div class="testimonial-block testimonial-block-style7">
-  <div class="inner-box">
+  <div class="testimonial-content">
     <div class="info-box">
       <div class="thumb">
         <?php mascot_core_digicod_get_shortcode_template_part( 'part-thumb', null, 'testimonial-block/tpl', $testimonial_item, false );?>

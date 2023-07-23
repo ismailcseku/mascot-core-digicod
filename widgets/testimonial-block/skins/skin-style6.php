@@ -89,7 +89,8 @@ class Skin_Style6 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .testimonial-block .info-box' => 'background-color: {{VALUE}};opacity:.9;border:1px solid {{VALUE}};'
 				]
 			]
 		);
@@ -102,7 +103,8 @@ class Skin_Style6 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'background-color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .testimonial-block .info-box' => 'background-color: var(--theme-color{{VALUE}}-darker);'
 				],
 			]
 		);

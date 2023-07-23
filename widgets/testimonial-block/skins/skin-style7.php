@@ -84,9 +84,20 @@ class Skin_Style7 extends Elementor_Skin_Base {
 		);
 
 		$this->add_responsive_control(
+			'content_wrapper_custom_bg_color1',
+			[
+				'label' => esc_html__( "Custom Bottom Background Color", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .testimonial-block .info-box' => 'background-color: {{VALUE}};'
+				]
+			]
+		);
+
+		$this->add_responsive_control(
 			'content_wrapper_custom_bg_color',
 			[
-				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
+				'label' => esc_html__( "Custom Top Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'background-color: {{VALUE}};'
@@ -102,7 +113,8 @@ class Skin_Style7 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .testimonial-block .testimonial-content' => 'background-color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .testimonial-block .info-box' => 'background-color: var(--theme-color{{VALUE}}-darker);'
 				],
 			]
 		);

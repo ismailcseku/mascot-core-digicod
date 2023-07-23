@@ -124,8 +124,7 @@ class Skin_Style8 extends Elementor_Skin_Base {
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block .info-box' => 'border-bottom-color: {{VALUE}};',
-					'{{WRAPPER}} .testimonial-block .rating' => 'border-color: {{VALUE}};'
+					'{{WRAPPER}} .testimonial-block .author-text' => 'border-top-color: {{VALUE}};'
 
 				],
 			]
@@ -215,8 +214,7 @@ class Skin_Style8 extends Elementor_Skin_Base {
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .testimonial-block:hover .info-box' => 'border-bottom-color: {{VALUE}};',
-					'{{WRAPPER}} .testimonial-block:hover .rating' => 'border-bottom-color: {{VALUE}};'
+					'{{WRAPPER}} .testimonial-block:hover .author-text' => 'border-top-color: {{VALUE}};'
 				],
 			]
 		);

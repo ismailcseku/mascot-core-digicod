@@ -71,12 +71,12 @@
 .testimonial-block-style8 {
   position: relative;
 }
-.testimonial-block-style8 .inner-box {
+.testimonial-block-style8 .testimonial-content {
   position: relative;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
 }
-.testimonial-block-style8 .inner-box:hover .info-box .thumb {
+.testimonial-block-style8 .testimonial-content:hover .info-box .thumb {
   -webkit-transform: scaleX(-1);
   -moz-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
