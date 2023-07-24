@@ -74,95 +74,12 @@ class Skin_Style2 extends Elementor_Skin_Base {
 			]
 		);
 
-		// Border Color
-		$this->add_control(
-			'content_border_color_options',
+		$this->add_group_control(
+			\Elementor\Group_Control_Border::get_type(),
 			[
-				'label' => esc_html__( 'Border Color Options', 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::HEADING,
-				'separator' => 'before',
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_border_custom_bg_color',
-			[
-				'label' => esc_html__( "Custom Border Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .team-item .info-box' => 'border-color: {{VALUE}};'
-				]
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_border_theme_colored',
-			[
-				'label' => esc_html__( "Make Border Theme Colored", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => mascot_core_theme_color_list(),
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .team-item .info-box' => 'border-color: var(--theme-color{{VALUE}});'
-				],
-			]
-		);
-
-		// Social Background Color
-		$this->add_control(
-			'content_social_box_color_options',
-			[
-				'label' => esc_html__( 'Social Box Color Options', 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::HEADING,
-				'separator' => 'before',
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_custom_bg_color',
-			[
-				'label' => esc_html__( "Custom Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon' => 'background-color: {{VALUE}};'
-				]
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_bg_theme_colored',
-			[
-				'label' => esc_html__( "Make Theme Colored", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => mascot_core_theme_color_list(),
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon' => 'background-color: var(--theme-color{{VALUE}});'
-				],
-			]
-		);
-		// Social Icon Color
-		$this->add_responsive_control(
-			'content_social_box_icon_color',
-			[
-				'label' => esc_html__( "Icon Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon' => 'color: {{VALUE}};'
-				]
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_icon_theme_colored',
-			[
-				'label' => esc_html__( "Icon Theme Colored", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => mascot_core_theme_color_list(),
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon' => 'color: var(--theme-color{{VALUE}});'
-				],
+				'name' => 'current_skin_normal_border',
+				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
+				'selector' => '{{WRAPPER}} .team-item .info-box',
 			]
 		);
 
@@ -205,98 +122,35 @@ class Skin_Style2 extends Elementor_Skin_Base {
 			]
 		);
 
-		//Border Hover Color
-		$this->add_control(
-			'content_border_color_options_hover',
+		$this->add_group_control(
+			\Elementor\Group_Control_Border::get_type(),
 			[
-				'label' => esc_html__( 'Border Color Options (Hover)', 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::HEADING,
-				'separator' => 'before',
-			]
-		);
-		$this->add_responsive_control(
-			'content_border_custom_bg_color_hover',
-			[
-				'label' => esc_html__( "Custom Border Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .team-item:hover .info-box' => 'border-color: {{VALUE}};'
-				]
-			]
-		);
-		$this->add_responsive_control(
-			'content_border_theme_colored_hover',
-			[
-				'label' => esc_html__( "Make Border Theme Colored", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => mascot_core_theme_color_list(),
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .team-item:hover .info-box' => 'border-color: var(--theme-color{{VALUE}});'
-				],
-			]
-		);
-
-		// Social Background Hover Color
-		$this->add_control(
-			'content_social_box_hover_color_options',
-			[
-				'label' => esc_html__( 'Social Box Hover Color Options', 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::HEADING,
-				'separator' => 'before',
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_hover_icon_bg_color',
-			[
-				'label' => esc_html__( "Icon Bg Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon:hover' => 'background-color: {{VALUE}};'
-				]
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_hover_theme_colored',
-			[
-				'label' => esc_html__( "Make Theme Colored", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => mascot_core_theme_color_list(),
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon:hover' => 'background-color: var(--theme-color{{VALUE}});'
-				],
-			]
-		);
-		// Social Icon Color
-		$this->add_responsive_control(
-			'content_social_box_icon_hover_color',
-			[
-				'label' => esc_html__( "Icon Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon:hover' => 'color: {{VALUE}};'
-				]
-			]
-		);
-
-		$this->add_responsive_control(
-			'content_social_box_icon_hover_theme_colored',
-			[
-				'label' => esc_html__( "Icon Theme Colored", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => mascot_core_theme_color_list(),
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .team-item .share-icon:hover' => 'color: var(--theme-color{{VALUE}});'
-				],
+				'name' => 'current_skin_border_hover',
+				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
+				'selector' => '{{WRAPPER}} .team-item:hover .info-box',
 			]
 		);
 
 		$this->end_controls_tab();
 		$this->end_controls_tabs();
+		$this->add_control(
+			'current_skin_border_options',
+			[
+				'label' => esc_html__( 'Border Options', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+		$this->add_responsive_control(
+			'current_skin_border_radius',
+			[
+				'label' => esc_html__( "Border Radius", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .team-item .info-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+				]
+			]
+		);
 		$this->end_controls_section();
 	}
 

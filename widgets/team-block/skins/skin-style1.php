@@ -137,14 +137,6 @@ class Skin_Style1 extends Elementor_Skin_Base {
 				'type' => \Elementor\Controls_Manager::HEADING,
 			]
 		);
-		$this->add_group_control(
-			\Elementor\Group_Control_Border::get_type(),
-			[
-				'name' => 'current_skin_border',
-				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .team-item .info-box',
-			]
-		);
 		$this->add_responsive_control(
 			'current_skin_border_radius',
 			[
