@@ -784,7 +784,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .icon-box' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .icon-box i' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -794,7 +794,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Area Custom BG Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .icon-box' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .icon-box i' => 'background-color: {{VALUE}};',
 				]
 			]
 		);
@@ -837,7 +837,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .icon-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .icon-box i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -853,7 +853,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 			[
 				'name' => 'icon_area_border',
 				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .icon-box',
+				'selector' => '{{WRAPPER}} .icon-box i',
 			]
 		);
 		$this->add_responsive_control(
@@ -863,7 +863,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .icon-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+					'{{WRAPPER}} .icon-box i' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
 				]
 			]
 		);
@@ -872,7 +872,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 			[
 				'name' => 'icon_area_box_shadow',
 				'label' => esc_html__( 'Box Shadow', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .icon-box',
+				'selector' => '{{WRAPPER}} .icon-box i',
 			]
 		);
 		$this->add_control(
@@ -896,7 +896,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .icon-box' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .icon-box i' => 'width: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -906,7 +906,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 				'label' => esc_html__( "Make Icon Width to Auto?", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
-					'{{WRAPPER}} .icon-box' => 'width: auto;',
+					'{{WRAPPER}} .icon-box i' => 'width: auto;',
 				]
 			]
 		);
@@ -924,7 +924,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .icon-box' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .icon-box i' => 'height: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -934,7 +934,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 				'label' => esc_html__( "Make Icon Height to Auto?", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
-					'{{WRAPPER}} .icon-box' => 'height: auto;',
+					'{{WRAPPER}} .icon-box i' => 'height: auto;',
 				]
 			]
 		);
@@ -961,7 +961,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}}:hover .icon-box' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}}:hover .icon-box i' => 'color: var(--theme-color{{VALUE}});',
 					'{{WRAPPER}}:hover .icon-box svg' => 'fill: var(--theme-color{{VALUE}});',
 				],
 			]
@@ -998,7 +998,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}}:hover .icon-box' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}}:hover .icon-box i' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -1008,7 +1008,7 @@ class TM_Elementor_WorkingBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Area Custom BG Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}}:hover .icon-box' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}}:hover .icon-box i' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
