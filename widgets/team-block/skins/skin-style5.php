@@ -73,6 +73,14 @@ class Skin_Style5 extends Elementor_Skin_Base {
 				],
 			]
 		);
+		$this->add_group_control(
+			\Elementor\Group_Control_Border::get_type(),
+			[
+				'name' => 'current_skin_normal_border',
+				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
+				'selector' => '{{WRAPPER}} .team-item .info-box',
+			]
+		);
 		$this->end_controls_tab();
 
 		$this->start_controls_tab(
@@ -111,9 +119,36 @@ class Skin_Style5 extends Elementor_Skin_Base {
 				],
 			]
 		);
+		$this->add_group_control(
+			\Elementor\Group_Control_Border::get_type(),
+			[
+				'name' => 'current_skin_border_hover',
+				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
+				'selector' => '{{WRAPPER}} .team-item:hover .info-box',
+			]
+		);
 
 		$this->end_controls_tab();
 		$this->end_controls_tabs();
+
+		$this->add_control(
+			'current_skin_border_options',
+			[
+				'label' => esc_html__( 'Border Options', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+		$this->add_responsive_control(
+			'current_skin_border_radius',
+			[
+				'label' => esc_html__( "Border Radius", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .team-item .info-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+				]
+			]
+		);
 		$this->end_controls_section();
 	}
 

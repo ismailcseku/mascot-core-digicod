@@ -494,10 +494,6 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  border-bottom: 2px solid #e3e3e3;
-}
-.team-current-theme5 .inner-box:hover {
-  border-bottom: 2px solid var(--theme-color1);
 }
 .team-current-theme5 .inner-box:hover .image img {
   -webkit-transform: scale(1.1);
@@ -514,6 +510,7 @@
   visibility: visible;
 }
 .team-current-theme5 .inner-box:hover .info-box {
+  border-bottom: 2px solid var(--theme-color1);
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
 }
 .team-current-theme5 .image-box {
@@ -539,6 +536,8 @@
   background-color: #fff;
   text-align: center;
   z-index: 2;
+  border-bottom: 2px solid #e3e3e3;
+  border-radius: 0 0 10px 10px;
   transition: all 300ms ease;
 }
 .team-current-theme5 .info-box .team-title {
