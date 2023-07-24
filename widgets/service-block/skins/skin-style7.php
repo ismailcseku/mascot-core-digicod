@@ -130,6 +130,33 @@ class Skin_Style7 extends Elementor_Skin_Base {
 				]
 			]
 		);
+
+		$this->add_control(
+			'current_skin_icon_area_border_options',
+			[
+				'label' => esc_html__( 'Icon Border Options', 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+		$this->add_group_control(
+			\Elementor\Group_Control_Border::get_type(),
+			[
+				'name' => 'current_skin_icon_area_border',
+				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
+				'selector' => '{{WRAPPER}} .service-block-style7 .inner-box .content .icon-box',
+			]
+		);
+		$this->add_responsive_control(
+			'current_skin_icon_area_border_radius',
+			[
+				'label' => esc_html__( "Border Radius", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .service-block-style7 .inner-box .content .icon-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+				]
+			]
+		);
 		$this->end_controls_section();
 
 	}

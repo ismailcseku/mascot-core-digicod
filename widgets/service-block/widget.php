@@ -858,7 +858,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .icon-box .service-icon' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .service-icon' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .service-icon i' => 'color: {{VALUE}};',
 					'{{WRAPPER}} .service-icon svg' => 'fill: {{VALUE}};',
 				]
 			]
@@ -872,7 +872,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .icon-box .service-icon' => 'color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .service-icon' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .service-icon i' => 'color: var(--theme-color{{VALUE}});',
 					'{{WRAPPER}} .service-icon svg' => 'fill: var(--theme-color{{VALUE}});',
 				],
 			]
@@ -904,8 +904,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Area Custom BG Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .icon-box .service-icon' => 'background-color: {{VALUE}};',
-					'{{WRAPPER}} .service-icon' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .icon-box .service-icon i' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .service-icon i' => 'background-color: {{VALUE}};',
 				]
 			]
 		);
@@ -917,8 +917,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .icon-box .service-icon' => 'background-color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .service-icon' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .icon-box .service-icon i' => 'background-color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .service-icon i' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -936,8 +936,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .icon-box .service-icon' => 'line-height: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .service-icon' => 'line-height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .icon-box .service-icon i' => 'line-height: {{SIZE}}{{UNIT}};',
 					'{{WRAPPER}} .service-icon i' => 'line-height: {{SIZE}}{{UNIT}};',
 					'{{WRAPPER}} .service-icon svg' => 'line-height: {{SIZE}}{{UNIT}};',
 				]
@@ -951,7 +950,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'size_units' => [ 'px', '%', 'em' ],
 				'separator' => 'before',
 				'selectors' => [
-					'{{WRAPPER}} .service-icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .service-icon i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -962,7 +961,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .service-icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .service-icon i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -978,7 +977,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 			[
 				'name' => 'icon_area_border',
 				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .service-icon',
+				'selector' => '{{WRAPPER}} .service-icon i',
 			]
 		);
 		$this->add_responsive_control(
@@ -988,7 +987,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .service-icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+					'{{WRAPPER}} .service-icon i' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
 				]
 			]
 		);
@@ -997,7 +996,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 			[
 				'name' => 'icon_area_box_shadow',
 				'label' => esc_html__( 'Box Shadow', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .service-icon',
+				'selector' => '{{WRAPPER}} .service-icon i',
 			]
 		);
 		$this->add_control(
@@ -1021,8 +1020,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .icon-box .service-icon' => 'width: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .service-icon' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .icon-box .service-icon i' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .service-icon i' => 'width: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -1032,8 +1031,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Make Icon Width to Auto?", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
-					'{{WRAPPER}} .icon-box .service-icon' => 'width: auto;',
-					'{{WRAPPER}} .service-icon' => 'width: auto;',
+					'{{WRAPPER}} .icon-box .service-icon i' => 'width: auto;',
+					'{{WRAPPER}} .service-icon i' => 'width: auto;',
 				]
 			]
 		);
@@ -1051,8 +1050,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .icon-box .service-icon' => 'height: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .service-icon' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .icon-box .service-icon i' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .service-icon i' => 'height: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -1062,8 +1061,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Make Icon Height to Auto?", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
-					'{{WRAPPER}} .icon-box .service-icon' => 'height: auto;',
-					'{{WRAPPER}} .service-icon' => 'height: auto;',
+					'{{WRAPPER}} .icon-box .service-icon i' => 'height: auto;',
+					'{{WRAPPER}} .service-icon i' => 'height: auto;',
 				]
 			]
 		);
@@ -1088,8 +1087,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Custom Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}}:hover .icon-box .service-icon' => 'color: {{VALUE}};',
-					'{{WRAPPER}}:hover .service-icon' => 'color: {{VALUE}};',
+					'{{WRAPPER}}:hover .icon-box .service-icon i' => 'color: {{VALUE}};',
+					'{{WRAPPER}}:hover .service-icon i' => 'color: {{VALUE}};',
 					'{{WRAPPER}}:hover .service-icon svg' => 'fill: {{VALUE}};',
 				]
 			]
@@ -1102,8 +1101,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}}:hover .icon-box .service-icon' => 'color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}}:hover .service-icon' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}}:hover .icon-box .service-icon i' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}}:hover .service-icon i' => 'color: var(--theme-color{{VALUE}});',
 					'{{WRAPPER}}:hover .service-icon svg' => 'fill: var(--theme-color{{VALUE}});',
 				],
 			]
@@ -1127,8 +1126,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Area Custom BG Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}}:hover .icon-box .service-icon' => 'background-color: {{VALUE}};',
-					'{{WRAPPER}}:hover .service-icon' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}}:hover .icon-box .service-icon i' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}}:hover .service-icon i' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -1140,8 +1139,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}}:hover .icon-box .service-icon' => 'background-color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}}:hover .service-icon' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}}:hover .icon-box .service-icon i' => 'background-color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}}:hover .service-icon i' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);

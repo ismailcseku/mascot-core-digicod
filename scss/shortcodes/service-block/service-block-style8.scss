@@ -16,16 +16,24 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
       border: 1px solid var(--theme-color1);
       .service-icon {
-        @include transform(scale(-1) rotate(180deg));
+        i {
+          &::before {
+            @include transform(scale(-1) rotate(180deg));
+          }
+        }
       }
     }
     .service-icon {
-      display: inline-block;
-      font-size: 72px;
-      color: var(--theme-color1);
-      @include transition(all 300ms ease);
-      line-height: 1em;
-      margin-bottom: 32px;
+      i {
+        display: inline-block;
+        font-size: 72px;
+        color: var(--theme-color1);
+        line-height: 1em;
+        margin-bottom: 32px;
+        &::before {
+          @include transition(all 300ms ease);
+        }
+      }
     }
     .service-title {
       color: var(--theme-color2);

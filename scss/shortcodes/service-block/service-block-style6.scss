@@ -12,6 +12,9 @@
           i {
             background-color: var(--theme-color1);
             color: #fff;
+            &::before {
+              @include transform(scaleX(-1));
+            }
           }
         }
         .service-featured-img {
@@ -53,7 +56,10 @@
         font-size: 48px;
         background-color: #fff;
         border-radius: 10px;
-        @include transition(all 0.3s ease);
+        &::before {
+          @include transition(all 0.3s ease);
+          display: inline-block;
+        }
       }
     }
   }

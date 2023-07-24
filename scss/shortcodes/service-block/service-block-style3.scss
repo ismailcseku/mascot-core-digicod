@@ -10,7 +10,11 @@
         }
       }
       .service-icon {
-        @include transform(scaleX(-1));
+        i {
+          &::before {
+            @include transform(scaleX(-1));
+          }
+        }
       }
     }
     .image {
@@ -30,12 +34,17 @@
       text-align: center;
       margin: -40px auto 0;
       .service-icon {
-        font-size: 60px;
-        line-height: 1em;
-        color: var(--theme-color1);
-        display: block;
-        margin-bottom: 20px;
-        @include transition(all 300ms ease);
+        i {
+          font-size: 60px;
+          line-height: 1em;
+          color: var(--theme-color1);
+          display: block;
+          margin-bottom: 20px;
+          &::before {
+            @include transition(all 300ms ease);
+            display: inline-block;
+          }
+        }
       }
       .service-title {
         letter-spacing: -0.96px;

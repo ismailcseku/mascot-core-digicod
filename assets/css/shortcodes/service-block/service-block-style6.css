@@ -30,6 +30,12 @@
   background-color: var(--theme-color1);
   color: #fff;
 }
+.service-block-style6 .inner-box:hover .image-box .service-icon i::before {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 .service-block-style6 .inner-box:hover .image-box .service-featured-img img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -72,10 +78,13 @@
   font-size: 48px;
   background-color: #fff;
   border-radius: 10px;
+}
+.service-block-style6 .image-box .service-icon i::before {
   transition: all 0.3s ease;
+  display: inline-block;
 }
 @media (prefers-reduced-motion: reduce) {
-  .service-block-style6 .image-box .service-icon i {
+  .service-block-style6 .image-box .service-icon i::before {
     transition: none;
   }
 }

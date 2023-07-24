@@ -16,8 +16,13 @@
       }
       .content-box {
         .service-icon {
-          background-color: var(--theme-color1);
-          color: #fff;
+          i {
+            background-color: var(--theme-color1);
+            color: #fff;
+            &::before {
+              @include transform(scale(-1) rotate(180deg));
+            }
+          }
         }
       }
     }
@@ -31,17 +36,21 @@
         padding: 30px 20px;
       }
       .service-icon {
-        display: block;
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        line-height: 60px;
-        color: var(--theme-color1);
-        font-size: 30px;
-        border: 1px solid var(--theme-color1);
-        border-radius: 50%;
-        margin-bottom: 20px;
-        @include transition(all 300ms ease);
+        i {
+          display: block;
+          width: 60px;
+          height: 60px;
+          text-align: center;
+          line-height: 60px;
+          color: var(--theme-color1);
+          font-size: 30px;
+          border: 1px solid var(--theme-color1);
+          border-radius: 50%;
+          margin-bottom: 20px;
+          &::before {
+            @include transition(all 300ms ease);
+          }
+        }
       }
       .service-title {
         color: var(--theme-color2);

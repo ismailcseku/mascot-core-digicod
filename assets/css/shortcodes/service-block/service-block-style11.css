@@ -59,9 +59,15 @@
 .service-block-style11 .inner-box:hover::before {
   height: 100%;
 }
-.service-block-style11 .inner-box:hover .service-icon {
+.service-block-style11 .inner-box:hover .service-icon i {
   color: #fff;
   border-color: #fff;
+}
+.service-block-style11 .inner-box:hover .service-icon i::before {
+  -webkit-transform: scale(-1) rotate(180deg);
+  -moz-transform: scale(-1) rotate(180deg);
+  -ms-transform: scale(-1) rotate(180deg);
+  transform: scale(-1) rotate(180deg);
 }
 .service-block-style11 .inner-box:hover .service-title {
   color: #fff;
@@ -73,10 +79,11 @@
   background-color: #fff;
   color: var(--theme-color1);
 }
-.service-block-style11 .inner-box .service-icon {
+.service-block-style11 .inner-box .service-icon i {
   position: relative;
   width: 90px;
   height: 90px;
+  display: inline-block;
   line-height: 90px;
   text-align: center;
   border: 1px dashed var(--theme-color1);
@@ -84,10 +91,12 @@
   font-size: 54px;
   color: var(--theme-color1);
   margin-bottom: 30px;
+}
+.service-block-style11 .inner-box .service-icon i::before {
   transition: all 300ms ease;
 }
 @media (prefers-reduced-motion: reduce) {
-  .service-block-style11 .inner-box .service-icon {
+  .service-block-style11 .inner-box .service-icon i::before {
     transition: none;
   }
 }

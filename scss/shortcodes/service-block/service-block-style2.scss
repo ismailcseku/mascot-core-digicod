@@ -20,7 +20,11 @@
       }
       .content-box {
         .service-icon {
-          @include transform(scale(-1) rotate(180deg));
+          i {
+            &::before {
+              @include transform(scale(-1) rotate(180deg));
+            }
+          }
         }
       }
     }
@@ -35,20 +39,25 @@
       position: relative;
       padding: 50px 30px 40px;
       .service-icon {
-        position: absolute;
-        left: 50%;
-        top: -40px;
-        margin-left: -40px;
-        width: 80px;
-        height: 80px;
-        text-align: center;
-        line-height: 70px;
-        border-radius: 50%;
-        color: #ffffff;
-        border: 5px solid #ffffff;
-        background-color: var(--theme-color1);
-        font-size: 36px;
-        transition: all 300ms ease;
+        i {
+          position: absolute;
+          left: 50%;
+          top: -40px;
+          margin-left: -40px;
+          width: 80px;
+          height: 80px;
+          text-align: center;
+          line-height: 70px;
+          border-radius: 50%;
+          color: #ffffff;
+          border: 5px solid #ffffff;
+          background-color: var(--theme-color1);
+          font-size: 36px;
+          &::before {
+            @include transition(all 300ms ease);
+            display: inline-block;
+          }
+        }
       }
       .service-title {
         color: var(--theme-color2);
