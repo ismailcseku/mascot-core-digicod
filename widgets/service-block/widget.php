@@ -297,7 +297,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 					'icon_type' => array('image')
 				],
 				'selectors' => [
-					'{{WRAPPER}} .service-icon img' => 'width: {{SIZE}}{{UNIT}};'
+					'{{WRAPPER}} .service-item .service-icon img' => 'width: {{SIZE}}{{UNIT}};'
 				]
 			]
 		);
@@ -858,8 +858,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .icon-box .service-icon' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .service-icon i' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .service-icon svg' => 'fill: {{VALUE}};',
+					'{{WRAPPER}} .service-item .service-icon i' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .service-item .service-icon svg' => 'fill: {{VALUE}};',
 				]
 			]
 		);
@@ -872,8 +872,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .icon-box .service-icon' => 'color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .service-icon i' => 'color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .service-icon svg' => 'fill: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .service-item .service-icon i' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .service-item .service-icon svg' => 'fill: var(--theme-color{{VALUE}});',
 				],
 			]
 		);
@@ -882,7 +882,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 			[
 				'name' => 'icon_typography',
 				'label' => esc_html__( 'Typography', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .service-icon i, {{WRAPPER}} .service-icon svg',
+				'selector' => '{{WRAPPER}} .service-item .service-icon i, {{WRAPPER}} .service-item .service-icon svg',
 			]
 		);
 		$this->add_control(
@@ -905,7 +905,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .icon-box .service-icon i' => 'background-color: {{VALUE}};',
-					'{{WRAPPER}} .service-icon i' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .service-item .service-icon i' => 'background-color: {{VALUE}};',
 				]
 			]
 		);
@@ -918,7 +918,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .icon-box .service-icon i' => 'background-color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .service-icon i' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .service-item .service-icon i' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -937,8 +937,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				],
 				'selectors' => [
 					'{{WRAPPER}} .icon-box .service-icon i' => 'line-height: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .service-icon i' => 'line-height: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .service-icon svg' => 'line-height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .service-item .service-icon i' => 'line-height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .service-item .service-icon svg' => 'line-height: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -950,7 +950,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'size_units' => [ 'px', '%', 'em' ],
 				'separator' => 'before',
 				'selectors' => [
-					'{{WRAPPER}} .service-icon i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .service-item .service-icon i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -961,7 +961,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .service-icon i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .service-item .service-icon i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -977,7 +977,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 			[
 				'name' => 'icon_area_border',
 				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .service-icon i',
+				'selector' => '{{WRAPPER}} .service-item .service-icon i',
 			]
 		);
 		$this->add_responsive_control(
@@ -987,7 +987,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .service-icon i' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+					'{{WRAPPER}} .service-item .service-icon i' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
 				]
 			]
 		);
@@ -996,7 +996,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 			[
 				'name' => 'icon_area_box_shadow',
 				'label' => esc_html__( 'Box Shadow', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .service-icon i',
+				'selector' => '{{WRAPPER}} .service-item .service-icon i',
 			]
 		);
 		$this->add_control(
@@ -1021,7 +1021,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				],
 				'selectors' => [
 					'{{WRAPPER}} .icon-box .service-icon i' => 'width: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .service-icon i' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .service-item .service-icon i' => 'width: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -1032,7 +1032,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
 					'{{WRAPPER}} .icon-box .service-icon i' => 'width: auto;',
-					'{{WRAPPER}} .service-icon i' => 'width: auto;',
+					'{{WRAPPER}} .service-item .service-icon i' => 'width: auto;',
 				]
 			]
 		);
@@ -1051,7 +1051,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				],
 				'selectors' => [
 					'{{WRAPPER}} .icon-box .service-icon i' => 'height: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .service-icon i' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .service-item .service-icon i' => 'height: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -1062,7 +1062,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
 					'{{WRAPPER}} .icon-box .service-icon i' => 'height: auto;',
-					'{{WRAPPER}} .service-icon i' => 'height: auto;',
+					'{{WRAPPER}} .service-item .service-icon i' => 'height: auto;',
 				]
 			]
 		);
