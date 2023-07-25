@@ -857,9 +857,9 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Custom Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .icon-box .service-icon' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .service-icon i' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .service-icon svg' => 'fill: {{VALUE}};',
+					'{{WRAPPER}} .icon-box .service-icon i' => 'color: {{VALUE}}!important;',
+					'{{WRAPPER}} .service-icon i' => 'color: {{VALUE}}!important;',
+					'{{WRAPPER}} .service-icon svg' => 'fill: {{VALUE}}!important;',
 				]
 			]
 		);
@@ -871,9 +871,9 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .icon-box .service-icon' => 'color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .service-icon i' => 'color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .service-icon svg' => 'fill: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .icon-box .service-icon' => 'color: var(--theme-color{{VALUE}}!important);',
+					'{{WRAPPER}} .service-icon i' => 'color: var(--theme-color{{VALUE}}!important);',
+					'{{WRAPPER}} .service-icon svg' => 'fill: var(--theme-color{{VALUE}}!important);',
 				],
 			]
 		);
