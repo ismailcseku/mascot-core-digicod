@@ -857,10 +857,9 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Custom Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .content-box .service-icon i' => 'color: {{VALUE}}!important;',
-					'{{WRAPPER}} .icon-box .service-icon i' => 'color: {{VALUE}}!important;',
-					'{{WRAPPER}} .service-icon i' => 'color: {{VALUE}}!important;',
-					'{{WRAPPER}} .service-icon svg' => 'fill: {{VALUE}}!important;',
+					'{{WRAPPER}} .icon-box .service-icon' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .service-icon i' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .service-icon svg' => 'fill: {{VALUE}};',
 				]
 			]
 		);
@@ -872,10 +871,9 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .content-box .service-icon' => 'color: var(--theme-color{{VALUE}}!important);',
-					'{{WRAPPER}} .icon-box .service-icon' => 'color: var(--theme-color{{VALUE}}!important);',
-					'{{WRAPPER}} .service-icon i' => 'color: var(--theme-color{{VALUE}}!important);',
-					'{{WRAPPER}} .service-icon svg' => 'fill: var(--theme-color{{VALUE}}!important);',
+					'{{WRAPPER}} .icon-box .service-icon' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .service-icon i' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .service-icon svg' => 'fill: var(--theme-color{{VALUE}});',
 				],
 			]
 		);
@@ -1089,9 +1087,9 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Custom Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .inner-box:hover .icon-box .service-icon i' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .inner-box:hover .service-icon i' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .inner-box:hover .service-icon svg' => 'fill: {{VALUE}};',
+					'{{WRAPPER}}:hover .icon-box .service-icon i' => 'color: {{VALUE}};',
+					'{{WRAPPER}}:hover .service-icon i' => 'color: {{VALUE}};',
+					'{{WRAPPER}}:hover .service-icon svg' => 'fill: {{VALUE}};',
 				]
 			]
 		);
@@ -1103,9 +1101,9 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .inner-box:hover .icon-box .service-icon i' => 'color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .inner-box:hover .service-icon i' => 'color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .inner-box:hover .service-icon svg' => 'fill: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}}:hover .icon-box .service-icon i' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}}:hover .service-icon i' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}}:hover .service-icon svg' => 'fill: var(--theme-color{{VALUE}});',
 				],
 			]
 		);
@@ -1128,8 +1126,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Area Custom BG Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .inner-box:hover .icon-box .service-icon i' => 'background-color: {{VALUE}};',
-					'{{WRAPPER}} .inner-box:hover .service-icon i' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}}:hover .icon-box .service-icon i' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}}:hover .service-icon i' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -1141,8 +1139,8 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .inner-box:hover .icon-box .service-icon i' => 'background-color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .inner-box:hover .service-icon i' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}}:hover .icon-box .service-icon i' => 'background-color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}}:hover .service-icon i' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
