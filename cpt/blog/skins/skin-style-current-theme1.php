@@ -39,17 +39,27 @@ class Skin_Style_Current_Theme1 extends Elementor_Skin_Base {
 		$this->add_control(
 			'content_wrapper_color_options',
 			[
-				'label' => esc_html__( 'BG Color Options', 'mascot-core-digicod' ),
+				'label' => esc_html__( 'Border Color Options', 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 			]
 		);
 		$this->add_responsive_control(
 			'content_wrapper_custom_bg_color',
 			[
-				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
+				'label' => esc_html__( "Custom Border Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .blog-item-current-style1 .entry-content' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .blog-item-current-style1 .entry-content' => 'border-color: {{VALUE}};'
+				]
+			]
+		);
+		$this->add_responsive_control(
+			'content_wrapper_custom_bg_color_hover',
+			[
+				'label' => esc_html__( "Custom Border Color (Hover)", 'mascot-core-digicod' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .blog-item-current-style1:hover .entry-content' => 'border-color: {{VALUE}};'
 				]
 			]
 		);

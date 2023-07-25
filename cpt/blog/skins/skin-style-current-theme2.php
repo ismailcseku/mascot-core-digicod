@@ -28,32 +28,6 @@ class Skin_Style_Current_Theme2 extends Elementor_Skin_Base {
 	public function register_layout_controls( Widget_Base $widget ) {
 		$this->parent = $widget;
 
-		$this->start_controls_section(
-			'content_wrapper_styling',
-			[
-				'label' => esc_html__( 'Content Wrapper Styling', 'mascot-core-digicod' ),
-				'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
-			]
-		);
-		$this->add_control(
-			'content_wrapper_color_options',
-			[
-				'label' => esc_html__( 'BG Color Options', 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::HEADING,
-			]
-		);
-		$this->add_responsive_control(
-			'content_wrapper_custom_bg_color',
-			[
-				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .blog-item-current-style2:before' => 'background-color: {{VALUE}};'
-				]
-			]
-		);
-		$this->end_controls_section();
-
 	}
 
 	public function render() {
