@@ -84,7 +84,7 @@ class Skin_Style13 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color (Hover)", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .service-item:hover .inner-box' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .service-item .inner-box:hover .content-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -96,7 +96,7 @@ class Skin_Style13 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .service-item:hover .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .service-item .inner-box:hover .content-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
