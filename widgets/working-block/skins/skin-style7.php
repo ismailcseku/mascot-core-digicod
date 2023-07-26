@@ -52,7 +52,7 @@ class Skin_Style7 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .working-block .content-box' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .working-block .inner-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -64,7 +64,7 @@ class Skin_Style7 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .working-block .content-box' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .working-block .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -82,7 +82,7 @@ class Skin_Style7 extends Elementor_Skin_Base {
 				'label' => esc_html__( "Custom Background Color (Hover)", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .mascot-counter:hover .inner-box' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .working-block:hover .inner-box' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -94,7 +94,7 @@ class Skin_Style7 extends Elementor_Skin_Base {
 				'options' => mascot_core_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .mascot-counter:hover .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .working-block:hover .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -115,7 +115,7 @@ class Skin_Style7 extends Elementor_Skin_Base {
 			[
 				'name' => 'current_skin_border',
 				'label' => esc_html__( 'Border', 'mascot-core-digicod' ),
-				'selector' => '{{WRAPPER}} .working-block .content-box',
+				'selector' => '{{WRAPPER}} .working-block .inner-box',
 			]
 		);
 		$this->add_responsive_control(
@@ -125,7 +125,7 @@ class Skin_Style7 extends Elementor_Skin_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .working-block .content-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+					'{{WRAPPER}} .working-block .inner-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
 				]
 			]
 		);
