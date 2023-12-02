@@ -22,12 +22,14 @@
         var $self = $(e.target);
         $self.toggleClass("secondary-active");
         var pricing_plan = $self.parents(".elementor-section").find(".tm-sc-pricing-plan");
-
-        if( $self.hasClass( 'secondary-active' ) ) {
-          show_secondary_price(pricing_plan);
-        } else {
-          hide_secondary_price(pricing_plan);
-        }
+        pricing_plan.each(function(){
+          var this_item = $(this);
+          if( $self.hasClass( 'secondary-active' ) ) {
+            show_secondary_price(this_item);
+          } else {
+            hide_secondary_price(this_item);
+          }
+        });
       });
     }
   };
@@ -42,12 +44,14 @@
         pricing_btn_switcher.find("[data-pricing-trigger]").removeClass("active");
         $(this).addClass("active");
         var pricing_plan = $self.parents(".elementor-section").find(".tm-sc-pricing-plan");
-
-        if( target_id == "year" ) {
-          show_secondary_price(pricing_plan);
-        } else {
-          hide_secondary_price(pricing_plan);
-        }
+        pricing_plan.each(function(){
+          var this_item = $(this);
+          if( target_id == "year" ) {
+            show_secondary_price(pricing_plan);
+          } else {
+            hide_secondary_price(pricing_plan);
+          }
+        });
       });
     }
   };

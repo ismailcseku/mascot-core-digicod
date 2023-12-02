@@ -4,9 +4,8 @@
 		<?php include('filter.php'); ?>
 
 		<!-- Isotope Gallery Grid -->
-		<div id="<?php echo esc_attr( $holder_id ) ?>" class="isotope-layout grid-<?php echo esc_attr( $columns ); ?> <?php echo esc_attr( $gutter );?> clearfix">
+		<div id="<?php echo esc_attr( $holder_id ) ?>" class="isotope-layout onload-isotope-layout grid-<?php echo esc_attr( $columns ); ?> <?php echo esc_attr( $gutter );?> clearfix">
 			<div class="isotope-layout-inner">
-
                 <!-- the loop -->
                 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                 <?php include('filter-term-list-each-post.php'); ?>
