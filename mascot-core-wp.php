@@ -57,6 +57,9 @@ final class Mascot_Core_Digicod_Elementor {
 	 * @access public
 	 */
 	public function __construct() {
+		if ( !defined('ELEMENTOR_VERSION') ) {
+			return; // Exit if accessed directly.
+		}
 		define( 'MASCOT_CORE_DIGICOD_VERSION', '1' );
 		define( 'MASCOT_CORE_DIGICOD_ABS_PATH', plugin_dir_path( __FILE__ ) );
 		define( 'MASCOT_CORE_DIGICOD_URL_PATH', plugin_dir_url( __FILE__ ) );

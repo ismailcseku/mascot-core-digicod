@@ -20,10 +20,10 @@
           if ($(target_parent).find(target).is(':visible')) {
             return false;
           } else {
-            $this.parents('.elementor-top-section').find('.tab-buttons').find('.tab-btn').removeClass('active-btn');
+            $this.parents('.e-parent').find('.tab-buttons').find('.tab-btn').removeClass('active-btn');
             $this.addClass('active-btn');
-            $this.parents('.elementor-top-section').find('.tm-interactive-tabs-content').find('.tab').fadeOut(0);
-            $this.parents('.elementor-top-section').find('.tm-interactive-tabs-content').find('.tab').removeClass('active-tab');
+            $this.parents('.e-parent').find('.tm-interactive-tabs-content').find('.tab').fadeOut(0);
+            $this.parents('.e-parent').find('.tm-interactive-tabs-content').find('.tab').removeClass('active-tab');
             $(target_parent).find(target).fadeIn(500).addClass('active-tab');
           }
         });

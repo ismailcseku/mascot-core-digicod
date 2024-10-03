@@ -366,7 +366,7 @@ class TM_Elementor_InteractiveTabsTitle extends Widget_Base {
 			]
 		);
 		$this->add_control(
-			'icon_bg_color',
+			'icon_bg_color_hover',
 			[
 				'label' => esc_html__( "Icon Bg Color", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
@@ -377,7 +377,7 @@ class TM_Elementor_InteractiveTabsTitle extends Widget_Base {
 			]
 		);
 		$this->add_control(
-			'icon_bg_theme_colored',
+			'icon_bg_theme_colored_hover',
 			[
 				'label' => esc_html__( "Icon Bg Theme Colored", 'mascot-core-digicod' ),
 				'type' => \Elementor\Controls_Manager::SELECT,

@@ -1,4 +1,4 @@
-<div class="btn-view-details <?php echo esc_attr( $button_alignment );?>">
+<div class="btn-view-details <?php if(isset($button_alignment)) echo esc_attr( $button_alignment );?>">
     <a  
       <?php echo esc_attr($target);?>
       href="<?php echo esc_url( $url );?>"

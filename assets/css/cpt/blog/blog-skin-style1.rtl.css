@@ -131,7 +131,7 @@
   margin-top: 0;
 }
 .blog-skin-style1 .entry-content .entry-meta li {
-  font-family: var(--font-current-theme1);
+  font-family: var(--body-font-family);
 }
 .blog-skin-style1 .entry-content .entry-meta li i {
   color: var(--theme-color1);

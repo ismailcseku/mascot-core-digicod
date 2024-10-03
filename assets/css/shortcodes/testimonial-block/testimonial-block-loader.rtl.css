@@ -1497,7 +1497,7 @@
 .testimonial-block-style9 .inner-box .info-box .testimonial-position {
   display: block;
   color: #fff;
-  font-family: var(--font-current-theme2);
+  font-family: var(--heading-font-family);
 }
 .testimonial-block-style9 .inner-box .info-box .rating {
   position: absolute;

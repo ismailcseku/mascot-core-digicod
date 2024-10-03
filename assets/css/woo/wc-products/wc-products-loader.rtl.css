@@ -326,7 +326,7 @@
 }
 .tm-woo-product-block-two .product-inner .content-box .added_to_cart {
   line-height: 1.4;
-  font-family: var(--font-current-theme1);
+  font-family: var(--body-font-family);
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
