@@ -13,7 +13,7 @@
 				<?php if ( $show_title == 'yes' ) : ?>
 					<<?php echo esc_attr( $title_tag );?> class="title"><a href="<?php the_permalink();?>"><?php the_title();?></a></<?php echo esc_attr( $title_tag );?>>
 				<?php endif; ?>
-				
+
 				<?php mascot_core_digicod_get_cpt_shortcode_template_part( 'part-excerpt', null, 'projects/tpl', $settings, false );?>
 				<a class="btn-link" href="#">
 					<i class="fas fa-chevron-up"></i>

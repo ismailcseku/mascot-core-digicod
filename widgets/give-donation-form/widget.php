@@ -214,7 +214,7 @@ class TM_Elementor_Give_Single_Form extends Widget_Base {
 		);
 
 
-		
+
 		$this->add_control(
 			'hr03',
 			[
@@ -3041,7 +3041,7 @@ class TM_Elementor_Give_Single_Form extends Widget_Base {
 	 */
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		
+
 		//total earning calculation
 		$settings['custom_raised'] = $this->calculate_total_earnings($settings);
 
@@ -3064,7 +3064,7 @@ class TM_Elementor_Give_Single_Form extends Widget_Base {
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = mascot_core_digicod_get_shortcode_template_part( 'each-form', $settings['_skin'], 'give-donation-form/tpl', $settings, true );
-		
+
 		echo $html;
 	}
 

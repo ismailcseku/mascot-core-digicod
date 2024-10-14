@@ -10,7 +10,7 @@ class Mascot_Core_Digicod_Widget_EmptySpace extends Mascot_Core_Digicod_Widget_L
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
-		$this->widgetOptions = array( 
+		$this->widgetOptions = array(
 			'classname'		=> 'widget-empty-space clearfix',
 			'description'	=> esc_html__( 'The Widget lets you easily add Empty Space on your site.', 'mascot-core-digicod' ),
 		);
@@ -18,7 +18,7 @@ class Mascot_Core_Digicod_Widget_EmptySpace extends Mascot_Core_Digicod_Widget_L
 		$this->getFormFields();
 	}
 
-	
+
 	/**
 	 * Get form fields of the widget.
 	 */

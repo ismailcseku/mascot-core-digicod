@@ -1028,7 +1028,7 @@ class TM_Elementor_Projects extends Widget_Base {
 		$settings['ptTaxKey'] = $new_cpt_class['ptTaxKey'];
 		//Owl Carousel Data
 		$settings['owl_carousel_data_info'] = mascot_core_prepare_owlcarousel_data_from_params( $settings );
-		
+
 		$settings['settings'] = $settings;
 
 		$html = mascot_core_digicod_get_cpt_shortcode_template_part( 'projects', $settings['display_type'], 'projects/tpl', $settings, true );

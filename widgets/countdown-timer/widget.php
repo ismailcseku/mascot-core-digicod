@@ -671,7 +671,7 @@ class TM_Elementor_Countdown_Timer extends Widget_Base {
 	 */
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		
+
 		//classes
 		$classes = array();
 		$settings['classes'] = $classes;

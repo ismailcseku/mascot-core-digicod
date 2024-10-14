@@ -10,7 +10,7 @@ class Mascot_Core_Digicod_Widget_HorizontalRow extends Mascot_Core_Digicod_Widge
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
-		$this->widgetOptions = array( 
+		$this->widgetOptions = array(
 			'classname'		=> 'widget-horizontal-row clearfix',
 			'description'	=> esc_html__( 'The Widget lets you easily add Horizontal Row on your site.', 'mascot-core-digicod' ),
 		);
@@ -18,7 +18,7 @@ class Mascot_Core_Digicod_Widget_HorizontalRow extends Mascot_Core_Digicod_Widge
 		$this->getFormFields();
 	}
 
-	
+
 	/**
 	 * Get form fields of the widget.
 	 */

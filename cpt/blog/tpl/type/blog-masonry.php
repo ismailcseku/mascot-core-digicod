@@ -7,7 +7,7 @@
 		<div id="<?php echo esc_attr( $holder_id ) ?>" class="isotope-layout masonry grid-<?php echo esc_attr( $columns ); ?> <?php echo esc_attr( $gutter );?> clearfix">
 			<div class="isotope-layout-inner">
 				<div class="isotope-item isotope-item-sizer"></div>
-	
+
 				<!-- the loop -->
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 				<?php include('filter-term-list-each-post.php'); ?>
@@ -22,7 +22,7 @@
 		</div>
 		<?php wp_reset_postdata(); ?>
 	</div>
-		
+
 
 <?php else : ?>
 	<?php mascot_core_no_posts_match_criteria_text(); ?>

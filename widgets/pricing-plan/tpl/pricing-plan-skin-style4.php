@@ -25,7 +25,7 @@
 				</div>
 
 				<?php mascot_core_digicod_get_shortcode_template_part( 'content', null, 'pricing-plan/tpl', $settings, false );?>
-				
+
 			</div>
 			<?php if( in_array('has-label', $classes) ) { ?>
 				<span class="pricing-plan-label"><?php echo esc_html( $label_text ); ?></span>

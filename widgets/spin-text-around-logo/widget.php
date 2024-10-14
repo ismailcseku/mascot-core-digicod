@@ -221,7 +221,7 @@ class TM_Elementor_Spin_Text_Around_Logo extends Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 
-		
+
 		$html = mascot_core_digicod_get_shortcode_template_part( 'spin-text-around-logo', null, 'spin-text-around-logo/tpl', $settings, true );
 
 		echo $html;

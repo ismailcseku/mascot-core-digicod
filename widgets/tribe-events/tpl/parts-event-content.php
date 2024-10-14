@@ -17,7 +17,7 @@
 		<?php mascot_core_digicod_get_shortcode_template_part( 'parts-event-meta', null, 'tribe-events/tpl', $params, false );?>
 		<?php endif; ?>
 
-		
+
 		<?php if ( $show_title == 'yes' ) : ?>
 		<<?php echo esc_attr( $title_tag );?> class="event-title">
 			<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute(); ?>">

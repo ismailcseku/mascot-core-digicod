@@ -32,7 +32,7 @@
                   </ul>
                 </div>
                 <?php endif; ?>
-                
+
                 <?php if ( $show_title == 'yes' ) : ?>
                 <<?php echo esc_attr( $title_tag );?> class="event-title">
                   <a href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute(); ?>">
@@ -59,7 +59,7 @@
                 <?php endif; ?>
               </div>
 
-              
+
               <?php if ( $skin_fullwidth_style2_show_left_date == 'yes' &&  $skin_fullwidth_style2_left_date_placement == 'right' ) : ?>
               <div class="event-date">
                 <span class="day"><?php echo tribe_get_start_date( get_the_ID(), false, $skin_fullwidth_style2_date_single_meta_date_format_day ) ?></span>
@@ -83,7 +83,7 @@
     </div>
   </div>
   <?php wp_reset_postdata(); ?>
-    
+
 
 <?php else : ?>
   <?php mascot_core_no_posts_match_criteria_text(); ?>

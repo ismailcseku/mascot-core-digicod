@@ -10,7 +10,7 @@
 		<div class="post-right">
 		<<?php echo esc_attr( $post_title_tag );?> class="post-title">
 			<a href="<?php the_permalink();?>">
-				<?php 
+				<?php
 					if( !isset($limit_title_words) ) {
 						the_title();
 					} else {

@@ -620,7 +620,7 @@ class TM_Elementor_WC_Products extends Widget_Base {
 		$settings['holder_id'] = mascot_core_get_isotope_holder_ID('wc-product');
 		return $this->wc_render_output( $class_instance, $settings );
 	}
-	
+
 
 	public function wc_render_output( $class_instance, $settings ) {
         global $woocommerce;
@@ -691,10 +691,10 @@ class TM_Elementor_WC_Products extends Widget_Base {
             );
         }
 
-        
+
         $the_query = new \WP_Query( $args );
 		$settings['the_query'] = $the_query;
-		
+
 
 		//button classes
 		$settings['btn_classes'] = mascot_core_prepare_button_classes_from_params( $settings );

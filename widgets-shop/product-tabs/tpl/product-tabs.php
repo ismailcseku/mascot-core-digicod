@@ -48,7 +48,7 @@
 						</div>
 					</div>
 				</li>
-	
+
 			<?php endwhile; ?>
 			<!-- end of the loop -->
 		</ul>

@@ -10,7 +10,7 @@
             <?php echo tribe_event_featured_image( null, $skin_vertical_list1_left_thumb_image_size ); ?>
           </div>
           <?php endif; ?>
-          
+
           <?php if ( $skin_vertical_list1_show_left_date == 'yes' &&  $skin_vertical_list1_left_date_placement == 'left'  ) : ?>
           <?php mascot_core_digicod_get_shortcode_template_part( 'left-date-block', null, 'tribe-events/tpl', $params, false );?>
           <?php endif; ?>
@@ -34,7 +34,7 @@
           <?php mascot_core_digicod_get_shortcode_template_part( 'parts-event-meta', null, 'tribe-events/tpl', $params, false );?>
           <?php endif; ?>
 
-          
+
           <?php if ( $show_title == 'yes' ) : ?>
           <<?php echo esc_attr( $title_tag );?> class="event-title">
             <a href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute(); ?>">

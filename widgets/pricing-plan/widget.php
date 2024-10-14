@@ -1308,7 +1308,7 @@ class TM_Elementor_Pricing_Plan extends Widget_Base {
 		);
 		$this->end_controls_tab();
 
-		
+
 		$this->start_controls_tab(
 			'price_separator_style',
 			[
@@ -1373,7 +1373,7 @@ class TM_Elementor_Pricing_Plan extends Widget_Base {
 			]
 		);
 		$this->end_controls_tab();
-		
+
 		$this->start_controls_tab(
 			'price_postfix_style',
 			[
@@ -2051,11 +2051,11 @@ class TM_Elementor_Pricing_Plan extends Widget_Base {
 	 */
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		
+
 		//link url
 		$settings['button']['target'] = $settings['link']['is_external'] ? ' target="_blank"' : '';
 		$settings['button']['url'] = $settings['link']['url'];
-		
+
 		//link url - secondary
 		$settings['button_secondary_url'] = '';
 		if(!empty($settings['link_secondary']['url'])) {
@@ -2089,7 +2089,7 @@ class TM_Elementor_Pricing_Plan extends Widget_Base {
 		$title_classes = array();
 		$title_classes[] = $settings['title_custom_css_class'];
 		$settings['title_classes'] = $title_classes;
-		
+
 		//sub title classes
 		$sub_title_classes = array();
 		$sub_title_classes[] = $settings['subtitle_custom_css_class'];

@@ -26,10 +26,10 @@ class Skin_Pricing_Style7 extends Elementor_Skin_Base {
 	public function register_layout_controls( Widget_Base $widget ) {
 		$this->parent = $widget;
 	}
-	
+
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
-		
+
 		//link url
 		$settings['button']['target'] = $settings['link']['is_external'] ? ' target="_blank"' : '';
 		$settings['button']['url'] = $settings['link']['url'];
@@ -67,7 +67,7 @@ class Skin_Pricing_Style7 extends Elementor_Skin_Base {
 		$title_classes = array();
 		$title_classes[] = $settings['title_custom_css_class'];
 		$settings['title_classes'] = $title_classes;
-		
+
 		//sub title classes
 		$sub_title_classes = array();
 		$sub_title_classes[] = $settings['subtitle_custom_css_class'];

@@ -15,7 +15,7 @@ if(!function_exists('mascot_core_digicod_get_maintenance_mode_parts')) {
 		if( mascot_core_digicod_get_redux_option( 'maintenance-mode-text-align' ) ) {
 			$section_classes_array[] = mascot_core_digicod_get_redux_option( 'maintenance-mode-text-align' );
 		}
-		
+
 		//Add Background Overlay
 		if( mascot_core_digicod_get_redux_option( 'maintenance-mode-settings-bg-layer-overlay-status' ) ) {
 			$section_classes_array[] = 'layer-overlay overlay-'.mascot_core_digicod_get_redux_option( 'maintenance-mode-settings-bg-layer-overlay-color' ) .'-'.mascot_core_digicod_get_redux_option( 'maintenance-mode-settings-bg-layer-overlay' );
@@ -39,13 +39,13 @@ if(!function_exists('mascot_core_digicod_get_maintenance_mode_parts')) {
 		//ordering
 		$params['layout_ordering'] = mascot_core_digicod_get_redux_option( 'maintenance-mode-layout-ordering', false, 'ordering' );
 
-			
+
 		wp_register_script( 'flipclock', MASCOT_CORE_ELEMENTOR_ASSETS_URI . '/assets/js/plugins/flipclock/flipclock.min.js', array('jquery'), false, true );
 		wp_register_style( 'flipclock', MASCOT_CORE_ELEMENTOR_ASSETS_URI . '/assets/js/plugins/flipclock/flipclock.css' );
-		
+
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters)
 		$html = mascot_core_digicod_get_inc_folder_template_part( 'template' , null, 'maintenance-mode/tpl', $params );
-		
+
 		return $html;
 	}
 }
@@ -62,10 +62,10 @@ if (!function_exists('mascot_core_digicod_get_countdown_timer_layout')) {
 		$params['launch_minute'] = mascot_core_digicod_get_redux_option( 'maintenance-mode-settings-countdown-timer-minute' );
 
 		$params['style1_format'] = mascot_core_digicod_get_redux_option( 'maintenance-mode-settings-countdown-timer-style1-format' );
-		
+
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters)
 		$html = mascot_core_digicod_get_inc_folder_template_part( 'timer', mascot_core_digicod_get_redux_option( 'maintenance-mode-settings-countdown-timer-style' ), 'maintenance-mode/tpl/timer', $params );
-		
+
 		return $html;
 	}
 }
@@ -82,7 +82,7 @@ if (!function_exists('mascot_core_digicod_get_social_links_layout')) {
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters)
 		$html = mascot_core_digicod_get_inc_folder_template_part( 'social-icons', null, 'maintenance-mode/tpl/social', $params );
-		
+
 		return $html;
 	}
 }

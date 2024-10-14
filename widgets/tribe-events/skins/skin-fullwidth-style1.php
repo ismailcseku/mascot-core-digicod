@@ -382,7 +382,7 @@ class Skin_Fullwidth_Style1 extends Elementor_Skin_Base {
 			]
 		);
 		$this->end_controls_tab();
-		
+
 		$this->start_controls_tab(
 			'left_date_year_typo_tab',
 			[
@@ -880,7 +880,7 @@ class Skin_Fullwidth_Style1 extends Elementor_Skin_Base {
 	public function render_output( $class_instance, $settings ) {
 		$new_cpt_class = $class_instance;
 		$settings['the_query'] = $this->parent->query_posts();
-		
+
 		if ( !$settings['the_query']->have_posts() && isset( $settings['from_loadmore_ajax_handler'] ) && $settings['from_loadmore_ajax_handler'] === true ) {
 			return;
 		}
@@ -900,13 +900,13 @@ class Skin_Fullwidth_Style1 extends Elementor_Skin_Base {
 		//event-date classes
 		$event_left_classes = array();
 		$settings['event_left_classes'] = $event_left_classes;
-		
+
 		//Owl Carousel Data
 		$settings['owl_carousel_data_info'] = mascot_core_prepare_owlcarousel_data_from_params( $settings );
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = mascot_core_digicod_get_shortcode_template_part( 'tribe-events-fullwidth-style1', null, 'tribe-events/tpl', $settings, true );
-		
+
 		echo $html;
 	}
 }

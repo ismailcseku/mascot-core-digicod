@@ -153,7 +153,7 @@ class Skin_Style2 extends Elementor_Skin_Base {
 			]
 		);
 		$this->end_controls_section();
-		
+
 
 		//Button Active
 		$this->start_controls_section(

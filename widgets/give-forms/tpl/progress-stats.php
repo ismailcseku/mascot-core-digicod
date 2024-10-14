@@ -142,20 +142,20 @@ $progress = apply_filters( 'give_goal_amount_funded_percentage_output', $progres
 					)
 				);
 				?>
-			 
+
 			<div class="donation-default-info">
 				<?php
 
 				echo sprintf(
 					/* translators: 1: amount of income raised 2: goal target amount. */
-					wp_kses( 
-						__( '<span class="income" data-amounts="%1$s">%2$s</span> of <span class="goal-text" data-amounts="%3$s">%4$s</span> raised', 'mascot-core-digicod' ), 
-						array ( 
-							'span' => array ( 
+					wp_kses(
+						__( '<span class="income" data-amounts="%1$s">%2$s</span> of <span class="goal-text" data-amounts="%3$s">%4$s</span> raised', 'mascot-core-digicod' ),
+						array (
+							'span' => array (
 								'class' => array(),
 								'data-amounts' => array(),
-							) 
-						) 
+							)
+						)
 					),
 					esc_attr( wp_json_encode( $income_amounts, JSON_PRETTY_PRINT ) ),
 					esc_attr( $formatted_income ),
@@ -169,13 +169,13 @@ $progress = apply_filters( 'give_goal_amount_funded_percentage_output', $progres
 		  elseif ( 'percentage' === $goal_format ) :
 
 				echo sprintf( /* translators: %s: percentage of the amount raised compared to the goal target */
-					wp_kses( 
+					wp_kses(
 						__( '<span class="give-percentage">%s%%</span> funded', 'mascot-core-digicod' ),
-						array ( 
-							'span' => array ( 
+						array (
+							'span' => array (
 								'class' => array(),
-							) 
-						) 
+							)
+						)
 					),
 					round( $progress )
 				);

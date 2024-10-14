@@ -82,7 +82,7 @@
     <?php endwhile; ?>
   </div>
   <?php wp_reset_postdata(); ?>
-    
+
 
 <?php else : ?>
   <?php mascot_core_no_posts_match_criteria_text(); ?>

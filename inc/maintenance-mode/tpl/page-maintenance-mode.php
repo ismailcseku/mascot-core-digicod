@@ -7,7 +7,7 @@
  */
 add_filter( 'mascot_core_digicod_filter_show_header', 'mascot_core_digicod_return_false' );
 add_filter( 'mascot_core_digicod_filter_show_footer', 'mascot_core_digicod_return_false' );
-	
+
 //change the page title
 if( mascot_core_digicod_get_redux_option( 'maintenance-mode-settings-title' ) != '' ) {
 	add_filter('pre_get_document_title', 'mascot_core_digicod_change_the_title');
@@ -21,4 +21,4 @@ if( mascot_core_digicod_get_redux_option( 'maintenance-mode-settings-title' ) !=
 <?php
 	mascot_core_digicod_get_maintenance_mode_parts();
 ?>
-<?php 
+<?php

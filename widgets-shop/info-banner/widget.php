@@ -1014,7 +1014,7 @@ class TM_Elementor_InfoBanner extends Widget_Base {
 				'default' => 'hover-linear-crystal-animation',
 			]
 		);
-		
+
 		$this->add_control(
 			'animation_bg_zoom_animation',
 			[

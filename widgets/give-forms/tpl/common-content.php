@@ -13,7 +13,7 @@
 			<?php endif; ?>
 
 			<?php if ( $show_excerpt == 'yes' ) : ?>
-			<div class="form-description">  
+			<div class="form-description">
 				<?php if ( empty($excerpt_length) ) { ?>
 				<?php $give_form_excerpt = get_the_excerpt(); echo wp_kses( $give_form_excerpt, 'post' ); ?>
 				<?php } else { ?>
@@ -25,7 +25,7 @@
 			<?php if ( $show_progress == 'yes' || $show_donation_stats == 'yes' ) : ?>
 			<?php mascot_core_digicod_get_shortcode_template_part( 'progress-bar', null, 'give-forms/tpl', $params, false );?>
 			<?php endif; ?>
-			
+
 			<?php if ( $show_donation_stats == 'yes' ) : ?>
 			<?php //mascot_core_give_campaign_get_donation_summary( $campaign );?>
 			<?php endif; ?>

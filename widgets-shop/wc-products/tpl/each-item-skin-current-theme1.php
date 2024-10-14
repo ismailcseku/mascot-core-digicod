@@ -43,7 +43,7 @@ wp_enqueue_script('tm-countdown-script');
             ?>
             <?php digicod_woocommerce_get_product_short_description($skin_current_theme1_excerpt_length); ?>
             <?php woocommerce_template_loop_price(); ?>
-            <?php 
+            <?php
             echo apply_filters( 'woocommerce_loop_add_to_cart_link',
                 sprintf( '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" data-quantity="%s" class="%s product_type_%s single_add_to_cart_button btn btn-theme-colored1 btn-xs btn-round %s">%s</a>',
                      esc_url( $product->add_to_cart_url() ),

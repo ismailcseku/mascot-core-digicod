@@ -20,7 +20,7 @@
 		</div>
 		<?php wp_reset_postdata(); ?>
 	</div>
-		
+
 
 <?php else : ?>
 	<?php mascot_core_no_posts_match_criteria_text(); ?>

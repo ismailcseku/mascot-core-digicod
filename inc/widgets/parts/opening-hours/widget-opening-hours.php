@@ -10,7 +10,7 @@ class Mascot_Core_Digicod_Widget_OpeningHours extends Mascot_Core_Digicod_Widget
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
-		$this->widgetOptions = array( 
+		$this->widgetOptions = array(
 			'classname'		=> 'widget-opening-hours clearfix',
 			'description'	=> esc_html__( 'The widget lets you easily display Opening Hours.', 'mascot-core-digicod' ),
 		);
@@ -18,7 +18,7 @@ class Mascot_Core_Digicod_Widget_OpeningHours extends Mascot_Core_Digicod_Widget
 		$this->getFormFields();
 	}
 
-	
+
 	/**
 	 * Get form fields of the widget.
 	 */

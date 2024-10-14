@@ -146,7 +146,7 @@ if ( ! function_exists( 'tm_cursor_mouse_helper_add_redux_options' ) ) {
 					'default'  => 0,
 					'on'       => esc_html__( 'Yes', 'mascot-core-digicod' ),
 					'off'      => esc_html__( 'No', 'mascot-core-digicod' ),
-					'required' => array( 
+					'required' => array(
 						array( 'mouse_helper', '=', '1' ),
 					)
 				),
@@ -158,7 +158,7 @@ if ( ! function_exists( 'tm_cursor_mouse_helper_add_redux_options' ) ) {
 					'default'  => 0,
 					'on'       => esc_html__( 'Yes', 'mascot-core-digicod' ),
 					'off'      => esc_html__( 'No', 'mascot-core-digicod' ),
-					'required' => array( 
+					'required' => array(
 						array( 'mouse_helper', '=', '1' ),
 					)
 				),
@@ -173,12 +173,12 @@ if ( ! function_exists( 'tm_cursor_mouse_helper_add_redux_options' ) ) {
 					'step'          => 1,
 					'max'           => 20,
 					'display_value' => 'text',
-					'required' => array( 
+					'required' => array(
 						array( 'mouse_helper', '=', '1' ),
 					)
 				),
 
-				
+
 				array(
 					'id'       => 'mouse_helper_replace_cursor',
 					'type'     => 'button_set',
@@ -200,7 +200,7 @@ if ( ! function_exists( 'tm_cursor_mouse_helper_add_redux_options' ) ) {
 					'subtitle' => esc_html__( 'Select or upload image to use it as default cursor. If you select animated cursor .ANI - select alternative cursor for not supported browsers in the next field', 'mascot-core-digicod' ),
 					'compiler' => 'true',
 					'desc'     => '',
-					'required' => array( 
+					'required' => array(
 						array( 'mouse_helper_replace_cursor', '=', '1' )
 					)
 				),
@@ -212,7 +212,7 @@ if ( ! function_exists( 'tm_cursor_mouse_helper_add_redux_options' ) ) {
 					'subtitle' => esc_html__( 'Select or upload image to use it as alternative cursor', 'mascot-core-digicod' ),
 					'compiler' => 'true',
 					'desc'     => '',
-					'required' => array( 
+					'required' => array(
 						array( 'mouse_helper_replace_cursor', '=', '1' ),
 					)
 				),
@@ -224,7 +224,7 @@ if ( ! function_exists( 'tm_cursor_mouse_helper_add_redux_options' ) ) {
 					'subtitle' => esc_html__( 'Select or upload image to use it as cursor over links and buttons.  If you select animated cursor .ANI - select alternative cursor for not supported browsers in the next field', 'mascot-core-digicod' ),
 					'compiler' => 'true',
 					'desc'     => '',
-					'required' => array( 
+					'required' => array(
 						array( 'mouse_helper_replace_cursor', '=', '1' ),
 					)
 				),
@@ -236,7 +236,7 @@ if ( ! function_exists( 'tm_cursor_mouse_helper_add_redux_options' ) ) {
 					'subtitle' => esc_html__( 'Select or upload image to use it as alternative cursor', 'mascot-core-digicod' ),
 					'compiler' => 'true',
 					'desc'     => '',
-					'required' => array( 
+					'required' => array(
 						array( 'mouse_helper_replace_cursor', '=', '1' ),
 					)
 				),
@@ -352,7 +352,7 @@ if ( !function_exists( 'tm_cursor_mouse_helper_highlight_add_title_param_in_elem
 										'condition' => array(
 											'title!' => '',
 										),
-									)									
+									)
 								),
 								array_slice( $params, $k, null, true)
 								);
@@ -526,7 +526,7 @@ if (!function_exists('tm_cursor_mouse_helper_add_params_to_elements')) {
 		if ( !is_object($element) ) return;
 
 		if ( in_array( $element->get_name(), array( 'section', 'column', 'common' ) ) && $section_id == '_section_responsive' && (int) mascot_core_digicod_get_redux_option( 'mouse_helper' ) > 0 ) {
-			
+
 			$element->start_controls_section( 'section_tm_mouse_helper', array(
 																		'tab' => !empty($args['tab']) ? $args['tab'] : \Elementor\Controls_Manager::TAB_ADVANCED,
 																		'label' => TM_ELEMENTOR_WIDGET_BADGE . __( 'Mascot - Mouse Helper', 'mascot-core-digicod' )

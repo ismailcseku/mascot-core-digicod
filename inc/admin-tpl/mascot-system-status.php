@@ -115,7 +115,7 @@ Class Mascot_Core_Digicod_Get_System_Status {
 
 		return array_merge( $active_theme_info, $parent_theme_info );
 	}
-	
+
 
 	/**
 	 * Get a list of plugins active on the site.
@@ -250,7 +250,7 @@ $theme    = $system_status->get_theme_info();
 			</tr>
 		</tbody>
 	</table>
-	
+
 	<table class="mascot-status-table widefat" cellspacing="0" id="status">
 		<thead>
 			<tr>

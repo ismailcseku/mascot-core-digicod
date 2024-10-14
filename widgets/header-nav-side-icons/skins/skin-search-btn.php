@@ -87,11 +87,11 @@ class Skin_Search_Btn extends Elementor_Skin_Base {
 		);
 		$this->end_controls_section();
 	}
-	
+
 	public function render() {
 		$html = '';
 		$settings = $this->parent->get_settings_for_display();
-		
+
 
 		//classes
 		$classes = array();
@@ -102,7 +102,7 @@ class Skin_Search_Btn extends Elementor_Skin_Base {
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = mascot_core_digicod_get_shortcode_template_part( 'tpl', $settings['_skin'], 'header-nav-side-icons/tpl', $settings, true );
-		
+
 		echo $html;
 	}
 }

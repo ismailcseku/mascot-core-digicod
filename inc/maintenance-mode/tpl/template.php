@@ -11,7 +11,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							foreach ( $layout_ordering as $key => $value ) { 
+							foreach ( $layout_ordering as $key => $value ) {
 							if ( $key != "placebo" ) {
 								mascot_core_digicod_get_inc_folder_template_part( $key, null, 'maintenance-mode/tpl/parts', $params );
 							}

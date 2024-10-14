@@ -29,7 +29,7 @@ class Skin_Style_Mouse_Follow_Floating_Info extends Elementor_Skin_Base {
 	public function register_layout_controls( Widget_Base $widget ) {
 		$this->parent = $widget;
 	}
-	
+
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 
@@ -60,19 +60,19 @@ class Skin_Style_Mouse_Follow_Floating_Info extends Elementor_Skin_Base {
 		}
 		$classes[] = 'tm-has-mouse-follow-floating-info';
 		$settings['classes'] = $classes;
-		
+
 		//button classes
 		$settings['btn_classes'] = mascot_core_prepare_button_classes_from_params( $settings );
-		
+
 		//ptTaxKey
 		$settings['ptTaxKey'] = $new_cpt_class['ptTaxKey'];
 		//Owl Carousel Data
 		$settings['owl_carousel_data_info'] = mascot_core_prepare_owlcarousel_data_from_params( $settings );
-		
+
 		$settings['settings'] = $settings;
 
 		$html = mascot_core_digicod_get_cpt_shortcode_template_part( 'projects', $settings['display_type'], 'projects/tpl', $settings, true );
-		
+
 		echo $html;
 	}
 }

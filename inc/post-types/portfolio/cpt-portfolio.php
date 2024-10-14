@@ -9,7 +9,7 @@ use MASCOTCOREDIGICOD\Lib;
  * @package MASCOTCOREDIGICOD\CPT\Portfolio;
  */
 final class CPT_Portfolio implements Lib\Mascot_Core_Digicod_Interface_PostType {
-	
+
 	/**
 	 * @var string
 	 */
@@ -36,7 +36,7 @@ final class CPT_Portfolio implements Lib\Mascot_Core_Digicod_Interface_PostType 
 		}
 		return $inst;
 	}
-	
+
 	/**
 	 * Private ctor so nobody else can instance it
 	 *
@@ -54,7 +54,7 @@ final class CPT_Portfolio implements Lib\Mascot_Core_Digicod_Interface_PostType 
 
 
 		$this->masonry_mode_image_size = mascot_core_masonry_image_sizes();
-		
+
 		add_filter( 'manage_edit-'.$this->ptKey.'_columns', array($this, 'customColumnsSettings') ) ;
 		add_filter( 'manage_'.$this->ptKey.'_posts_custom_column', array($this, 'customColumnsContent') ) ;
 		add_filter( 'rwmb_meta_boxes', array($this, 'regMetaBoxes') ) ;
@@ -83,16 +83,16 @@ final class CPT_Portfolio implements Lib\Mascot_Core_Digicod_Interface_PostType 
 				return;
 			}
 		}
-		
+
 		$this->ptPluralName = mascot_core_digicod_get_redux_option( 'cpt-settings-portfolio-label', esc_html__( 'Portfolio', 'mascot-core-digicod' ) );
 		$this->ptMenuIcon = mascot_core_digicod_get_redux_option( 'cpt-settings-portfolio-admin-dashicon', $this->ptMenuIcon );
 		$this->ptKeyRewriteBase = mascot_core_digicod_get_redux_option( 'cpt-settings-portfolio-slug', $this->ptKeyRewriteBase );
-		
+
 		$this->registerCustomPostType();
 		$this->registerCustomTax();
 		$this->registerCustomTaxTag();
 	}
-	
+
 	/**
 	 * Regsiters custom post type
 	 */
@@ -152,7 +152,7 @@ final class CPT_Portfolio implements Lib\Mascot_Core_Digicod_Interface_PostType 
 		register_post_type( $this->ptKey, $args );
 
 	}
-	
+
 	/**
 	 * Regsiters custom Taxonomy
 	 */
@@ -192,7 +192,7 @@ final class CPT_Portfolio implements Lib\Mascot_Core_Digicod_Interface_PostType 
 		);
 		register_taxonomy( $this->ptTaxKey, array( $this->ptKey ), $args );
 	}
-	
+
 	/**
 	 * Regsiters custom Tag Taxonomy
 	 */
@@ -232,7 +232,7 @@ final class CPT_Portfolio implements Lib\Mascot_Core_Digicod_Interface_PostType 
 		);
 		register_taxonomy( $this->ptTagTaxKey, array( $this->ptKey ), $args );
 	}
-	
+
 	/**
 	 * Custom Columns Settings
 	 */
@@ -338,7 +338,7 @@ final class CPT_Portfolio implements Lib\Mascot_Core_Digicod_Interface_PostType 
 
 			// Tab style: 'default', 'box' or 'left'. Optional
 			'tab_style' => 'left',
-			
+
 			// Show meta box wrapper around tabs? true (default) or false. Optional
 			'tab_wrapper' => true,
 
@@ -553,7 +553,7 @@ final class CPT_Portfolio implements Lib\Mascot_Core_Digicod_Interface_PostType 
 								'show-post-checklist-custom-fields'	 => esc_html__( 'Show Checklist Custom Fields', 'mascot-core-digicod' ),
 							),
 							'multiple'  => true,
-							'std'		=> array( 
+							'std'		=> array(
 								'inherit'
 							),
 							'tab'		=> 'other',

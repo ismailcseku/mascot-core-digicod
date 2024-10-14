@@ -10,7 +10,7 @@ class Mascot_Core_Digicod_Widget_BlogList extends Mascot_Core_Digicod_Widget_Loa
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
-		$this->widgetOptions = array( 
+		$this->widgetOptions = array(
 			'classname'		=> 'widget-blog-list clearfix',
 			'description'	=> esc_html__( 'A widget that displays list of blog posts.', 'mascot-core-digicod' ),
 		);
@@ -18,7 +18,7 @@ class Mascot_Core_Digicod_Widget_BlogList extends Mascot_Core_Digicod_Widget_Loa
 		$this->getFormFields();
 	}
 
-	
+
 	/**
 	 * Get form fields of the widget.
 	 */
@@ -50,7 +50,7 @@ class Mascot_Core_Digicod_Widget_BlogList extends Mascot_Core_Digicod_Widget_Loa
 				'desc'		=> '',
 			),
 			array(
-				'id'		=> 'blog_category',				
+				'id'		=> 'blog_category',
 				'type'		=> 'dropdown',
 				'title'		=> esc_html__( 'Blog Category:', 'mascot-core-digicod' ),
 				'desc'		=> '',
@@ -131,7 +131,7 @@ class Mascot_Core_Digicod_Widget_BlogList extends Mascot_Core_Digicod_Widget_Loa
 		$instance['the_query'] = $the_query;
 
 		$instance['disable_thumb'] = isset($instance['disable_thumb']) ? $instance['disable_thumb'] : '';
-		
+
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, widget_ob_start)
 		$html = mascot_core_digicod_get_widget_template_part( 'blog-list', null, 'blog-list/tpl', $instance, false );
 

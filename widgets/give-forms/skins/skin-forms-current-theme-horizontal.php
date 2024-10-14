@@ -215,12 +215,12 @@ class Skin_Forms_CurrentTheme_Horizontal extends Elementor_Skin_Base {
 		}
 		return implode( '; ', $css_array );
 	}
-	
+
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 		$settings['thisobj'] = $this;
 		$settings['thisparent'] = $this->parent;
-		
+
 		$class_instance =  array();
 
 		$settings['holder_id'] = mascot_core_get_isotope_holder_ID('give-forms');
@@ -234,10 +234,10 @@ class Skin_Forms_CurrentTheme_Horizontal extends Elementor_Skin_Base {
 		if( $settings['display_type'] != 'masonry' ) {
 			$settings['use_masonry_tiles_featured_image_size'] = 'false';
 		}
-		
-		
+
+
 		$settings['the_query'] = $this->parent->query_posts();
-		
+
 		//classes
 		$classes = array();
 		if( isset($settings['_skin']) ) {
@@ -254,7 +254,7 @@ class Skin_Forms_CurrentTheme_Horizontal extends Elementor_Skin_Base {
 			$settings['meta_options'] = implode(",", $settings['meta_options']);
 			$settings['meta_options'] = explode(',', $settings['meta_options']);
 		}
-		
+
 		//Owl Carousel Data
 		$settings['owl_carousel_data_info'] = mascot_core_prepare_owlcarousel_data_from_params( $settings );
 
@@ -263,7 +263,7 @@ class Skin_Forms_CurrentTheme_Horizontal extends Elementor_Skin_Base {
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = mascot_core_digicod_get_shortcode_template_part( 'forms', $settings['display_type'], 'give-forms/tpl', $settings, true );
-		
+
 		echo $html;
 	}
 }

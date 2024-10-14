@@ -403,7 +403,7 @@ class Skin_Vertical_list1 extends Elementor_Skin_Base {
 			]
 		);
 		$this->end_controls_tab();
-		
+
 		$this->start_controls_tab(
 			'left_date_year_typo_tab',
 			[
@@ -920,13 +920,13 @@ class Skin_Vertical_list1 extends Elementor_Skin_Base {
 		//event-date classes
 		$event_left_classes = array();
 		$settings['event_left_classes'] = $event_left_classes;
-		
+
 		//Owl Carousel Data
 		$settings['owl_carousel_data_info'] = mascot_core_prepare_owlcarousel_data_from_params( $settings );
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = mascot_core_digicod_get_shortcode_template_part( 'tribe-events-vertical', $this->parent->get_instance_value_skin('display_type'), 'tribe-events/tpl', $settings, true );
-		
+
 		echo $html;
 	}
 }

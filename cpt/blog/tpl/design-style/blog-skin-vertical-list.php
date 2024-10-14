@@ -8,7 +8,7 @@
 				<?php digicod_get_post_thumbnail( $post_format, $featured_image_size ); ?>
 			</div>
 			<?php endif; ?>
-			
+
 			<div class="entry-content">
 				<?php if ( $show_post_meta == 'yes' &&  $skin_vertical_list_post_meta_placement == 'top' ) : ?>
 				<?php digicod_post_shortcode_meta( $post_meta_options, array( $show_post_meta_over_featured_image ) ); ?>
@@ -36,7 +36,7 @@
 				<?php mascot_core_digicod_get_cpt_shortcode_template_part( 'button', null, 'blog/tpl/post-format', $settings, false );?>
 				<?php endif; ?>
 
-				
+
 				<?php if ( $show_post_meta == 'yes' &&  $skin_vertical_list_post_meta_placement == 'bottom' ) : ?>
 				<?php digicod_post_shortcode_meta( $post_meta_options, array( $show_post_meta_over_featured_image ) ); ?>
 				<?php endif; ?>

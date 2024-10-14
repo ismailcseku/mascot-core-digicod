@@ -9,7 +9,7 @@
 		</div>
 		<div class="stats-info">
 			<<?php echo esc_attr( $stat_tag );?> class="stats-info"><?php echo esc_html( $title );?>
-			<?php 
+			<?php
 				switch ( $stat_type ) {
 					case 'campaign_count':
 						$count_posts = wp_count_posts( 'give_forms' );
@@ -23,7 +23,7 @@
 						switch ( $stat_time_duration ) {
 							case 'all_time':
 								echo give_currency_filter( give_format_amount( $stats->get_earnings( 0, null ), array( 'sanitize' => false ) ) );
-							
+
 							default:
 								echo give_currency_filter( give_format_amount( $stats->get_earnings( 0, $stat_time_duration ), array( 'sanitize' => false ) ) );
 								# code...
@@ -37,7 +37,7 @@
 						echo esc_html( $donors_count );
 						# code...
 						break;
-					
+
 					default:
 						# code...
 						break;

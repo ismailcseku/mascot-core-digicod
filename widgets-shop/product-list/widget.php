@@ -692,12 +692,12 @@ class TM_Elementor_Product_List extends Widget_Base {
             );
         }
 
-        
+
         $the_query = new \WP_Query( $args );
         $settings['the_query'] = $the_query;
 
         $settings['settings'] = $settings;
-        
+
         //Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
         $html = mascot_core_digicod_get_shortcode_shop_template_part( 'product-list', null, 'product-list/tpl', $settings, true );
 

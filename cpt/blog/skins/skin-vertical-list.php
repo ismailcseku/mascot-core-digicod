@@ -298,7 +298,7 @@ class Skin_Vertical_List extends Elementor_Skin_Base {
 		$this->end_controls_tabs();
 		$this->end_controls_section();
 	}
-	
+
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 		$class_instance =  '';
@@ -316,7 +316,7 @@ class Skin_Vertical_List extends Elementor_Skin_Base {
 
 		//button classes
 		$settings['btn_classes'] = mascot_core_prepare_button_classes_from_params( $settings );
-		
+
 		//classes
 		$classes = array();
 		$classes[] = $settings['custom_css_class'];

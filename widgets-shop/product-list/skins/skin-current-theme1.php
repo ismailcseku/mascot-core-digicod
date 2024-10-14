@@ -32,7 +32,7 @@ class Skin_Current_Theme1 extends Elementor_Skin_Base {
 	public function register_layout_controls1( Widget_Base $widget ) {
 		$this->parent = $widget;
 	}
-	
+
 	public function render() {
 		$html = '';
 		$settings = $this->parent->get_settings_for_display();
@@ -96,12 +96,12 @@ class Skin_Current_Theme1 extends Elementor_Skin_Base {
             );
         }
 
-        
+
         $the_query = new \WP_Query( $args );
         $settings['the_query'] = $the_query;
 
         $settings['settings'] = $settings;
-        
+
         //Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
         $html = mascot_core_digicod_get_shortcode_shop_template_part( 'product-list-current-theme1', null, 'product-list/tpl', $settings, true );
 

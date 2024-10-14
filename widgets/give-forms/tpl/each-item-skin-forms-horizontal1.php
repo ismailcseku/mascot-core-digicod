@@ -29,7 +29,7 @@
 							<?php endif; ?>
 
 							<?php if ( $show_excerpt == 'yes' ) : ?>
-							<div class="form-description">  
+							<div class="form-description">
 								<?php if ( empty($excerpt_length) ) { ?>
 								<?php $give_form_excerpt = get_the_excerpt(); echo wp_kses( $give_form_excerpt, 'post' ); ?>
 								<?php } else { ?>

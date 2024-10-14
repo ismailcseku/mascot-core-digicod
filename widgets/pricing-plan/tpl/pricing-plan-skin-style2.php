@@ -11,7 +11,7 @@
 				<?php mascot_core_digicod_get_shortcode_template_part( 'thumb', null, 'pricing-plan/tpl', $settings, false );?>
 				<?php mascot_core_digicod_get_shortcode_template_part( 'pricing', null, 'pricing-plan/tpl', $settings, false );?>
 				<?php mascot_core_digicod_get_shortcode_template_part( 'content', null, 'pricing-plan/tpl', $settings, false );?>
-				
+
 				<?php if ( $show_view_details_button == 'yes' ) : ?>
 				<div class="pricing-plan-footer">
 					<?php mascot_core_digicod_get_shortcode_template_part( 'button', null, 'pricing-plan/tpl', $settings, false );?>

@@ -7,7 +7,7 @@
  */
 add_filter( 'digicod_filter_show_header', 'digicod_return_false' );
 add_filter( 'digicod_filter_show_footer', 'digicod_return_false' );
-	
+
 //change the page title
 if( digicod_get_redux_option( 'maintenance-mode-settings-title' ) != '' ) {
 	add_filter('pre_get_document_title', 'digicod_change_the_title');

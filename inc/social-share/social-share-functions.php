@@ -50,7 +50,7 @@ if(!function_exists('mascot_core_digicod_get_social_share_links')) {
 				"icon" => "twitter",
 				"color" => "#02B0E8",
 				"target" => "_blank",
-				"href" => "//twitter.com/intent/tweet?text=" . $title_encoded . 
+				"href" => "//twitter.com/intent/tweet?text=" . $title_encoded .
 						"&amp;url=" . $url_encoded,
 				"text" => digicod_get_redux_option( 'sharing-settings-tooltip-twitter' )
 			),
@@ -59,9 +59,9 @@ if(!function_exists('mascot_core_digicod_get_social_share_links')) {
 				"icon" => "facebook",
 				"color" => "#3B5998",
 				"target" => "_blank",
-				"href" => "//www.facebook.com/sharer.php?u=" . $url_encoded . 
-						"&amp;t=" . $title_encoded . 
-						"&amp;description=" . $excerpt_encoded . 
+				"href" => "//www.facebook.com/sharer.php?u=" . $url_encoded .
+						"&amp;t=" . $title_encoded .
+						"&amp;description=" . $excerpt_encoded .
 						"&amp;picture=" . $featured_image_url,
 				"text" => digicod_get_redux_option( 'sharing-settings-tooltip-facebook' )
 			),
@@ -70,7 +70,7 @@ if(!function_exists('mascot_core_digicod_get_social_share_links')) {
 				"icon" => "linkedin",
 				"color" => "#007BB6",
 				"target" => "_blank",
-				"href" => "//linkedin.com/shareArticle?mini=true&amp;url=" . $url_encoded . 
+				"href" => "//linkedin.com/shareArticle?mini=true&amp;url=" . $url_encoded .
 						"&amp;title=" . $title_encoded,
 				"text" => digicod_get_redux_option( 'sharing-settings-tooltip-linkedin' )
 			),
@@ -79,8 +79,8 @@ if(!function_exists('mascot_core_digicod_get_social_share_links')) {
 				"icon" => "tumblr",
 				"color" => "#35455C",
 				"target" => "_blank",
-				"href" => "//www.tumblr.com/share/link?url=" . $url_encoded . 
-						"&amp;name=" . $title_encoded . 
+				"href" => "//www.tumblr.com/share/link?url=" . $url_encoded .
+						"&amp;name=" . $title_encoded .
 						"&amp;description=" . $excerpt_encoded,
 				"text" => digicod_get_redux_option( 'sharing-settings-tooltip-tumblr' )
 			),
@@ -89,7 +89,7 @@ if(!function_exists('mascot_core_digicod_get_social_share_links')) {
 				"icon" => "envelope-o",
 				"color" => "#787482",
 				"target" => "_blank",
-				"href" => "mailto:?subject=" . esc_attr( get_the_title() ) . 
+				"href" => "mailto:?subject=" . esc_attr( get_the_title() ) .
 						"&amp;body=" . esc_attr( get_the_excerpt() ) . " " . esc_attr( get_permalink() ),
 				"text" => digicod_get_redux_option( 'sharing-settings-tooltip-email' )
 			),
@@ -98,8 +98,8 @@ if(!function_exists('mascot_core_digicod_get_social_share_links')) {
 				"icon" => "vk",
 				"color" => "#4C75A3",
 				"target" => "_blank",
-				"href" => "//vkontakte.ru/share.php?url=" . $url_encoded . 
-						"&amp;title=" . $title_encoded . 
+				"href" => "//vkontakte.ru/share.php?url=" . $url_encoded .
+						"&amp;title=" . $title_encoded .
 						"&amp;description=" . $excerpt_encoded,
 				"text" => digicod_get_redux_option( 'sharing-settings-tooltip-vk' )
 			),
@@ -108,8 +108,8 @@ if(!function_exists('mascot_core_digicod_get_social_share_links')) {
 				"icon" => "pinterest",
 				"color" => "#E71F28",
 				"target" => "_blank",
-				"href" => "//pinterest.com/pin/create/button/?url=" . $url_encoded . 
-						"&amp;description=" . $title_encoded . 
+				"href" => "//pinterest.com/pin/create/button/?url=" . $url_encoded .
+						"&amp;description=" . $title_encoded .
 						"&amp;media=" . $featured_image_url,
 				"text" => digicod_get_redux_option( 'sharing-settings-tooltip-pinterest' )
 			),
@@ -118,7 +118,7 @@ if(!function_exists('mascot_core_digicod_get_social_share_links')) {
 				"icon" => "reddit",
 				"color" => "#6CC0FF",
 				"target" => "_blank",
-				"href" => "//www.reddit.com/submit?url=" . $url_encoded . 
+				"href" => "//www.reddit.com/submit?url=" . $url_encoded .
 						"&amp;title=" . $title_encoded,
 				"text" => digicod_get_redux_option( 'sharing-settings-tooltip-reddit' )
 			),
@@ -134,7 +134,7 @@ if(!function_exists('mascot_core_digicod_get_social_share_links')) {
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters)
 		$html = mascot_core_digicod_get_inc_folder_template_part( 'social-share', null, 'social-share/tpl', $params );
-		
+
 		return $html;
 	}
 }

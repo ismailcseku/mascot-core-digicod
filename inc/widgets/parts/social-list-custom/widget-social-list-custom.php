@@ -10,7 +10,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
-		$this->widgetOptions = array( 
+		$this->widgetOptions = array(
 			'classname'		=> 'widget-social-list-custom clearfix',
 			'description'	=> esc_html__( 'The widget lets you easily display social icons.', 'mascot-core-digicod' ),
 		);
@@ -18,7 +18,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 		$this->getFormFields();
 	}
 
-	
+
 	/**
 	 * Get form fields of the widget.
 	 */
@@ -34,7 +34,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 			'fa-rss'  => esc_html__( 'RSS', 'mascot-core-digicod' ),
 			'fa-skype'  => esc_html__( 'Skype', 'mascot-core-digicod' ),
 			'fa-tumblr'  => esc_html__( 'Tumblr', 'mascot-core-digicod' ),
-			
+
 			'fa-twitter'  => esc_html__( 'Twitter', 'mascot-core-digicod' ),
 			'fa-vimeo-square'  => esc_html__( 'Vimeo', 'mascot-core-digicod' ),
 			'fa-vine'  => esc_html__( 'Vine', 'mascot-core-digicod' ),
@@ -96,7 +96,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				)
 			),
 
-			
+
 			array(
 				'id'		=> 'icon_border_style',
 				'type'		=> 'checkbox',
@@ -119,7 +119,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'value'	=> 'on',
 			),
 
-			
+
 
 			//link 1
 			array(
@@ -141,7 +141,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 2
 			array(
@@ -163,7 +163,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 3
 			array(
@@ -185,7 +185,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 4
 			array(
@@ -207,7 +207,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 5
 			array(
@@ -229,7 +229,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 6
 			array(
@@ -251,7 +251,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 7
 			array(
@@ -273,7 +273,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 8
 			array(
@@ -295,7 +295,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 9
 			array(
@@ -317,7 +317,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 10
 			array(
@@ -339,7 +339,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 11
 			array(
@@ -361,7 +361,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 12
 			array(
@@ -383,7 +383,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 13
 			array(
@@ -405,7 +405,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 14
 			array(
@@ -427,7 +427,7 @@ class Mascot_Core_Digicod_Widget_SocialListCustom extends Mascot_Core_Digicod_Wi
 				'type'		=> 'line',
 			),
 
-			
+
 
 			//link 15
 			array(

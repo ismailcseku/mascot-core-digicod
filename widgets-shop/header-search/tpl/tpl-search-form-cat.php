@@ -1,7 +1,7 @@
 
 <?php
 if (class_exists('Woocommerce')) :
-    $term = get_terms(array('taxonomy' => 'product_cat')); 
+    $term = get_terms(array('taxonomy' => 'product_cat'));
     $myaccount_page = get_option( 'woocommerce_myaccount_page_id' );
     $myaccount_page_url = '';
     $myaccount_page_url = get_permalink( $myaccount_page );

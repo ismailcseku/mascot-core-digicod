@@ -28,7 +28,7 @@ class Skin_Style9 extends Elementor_Skin_Base {
 	public function register_layout_controls( Widget_Base $widget ) {
 		$this->parent = $widget;
 	}
-	
+
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 		$class_instance =  '';
@@ -46,7 +46,7 @@ class Skin_Style9 extends Elementor_Skin_Base {
 
 		//button classes
 		$settings['btn_classes'] = mascot_core_prepare_button_classes_from_params( $settings );
-		
+
 		//classes
 		$classes = array();
 		$classes[] = $settings['custom_css_class'];

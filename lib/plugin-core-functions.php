@@ -217,13 +217,13 @@ add_action('init', 'mascot_core_digicod_admin_menu_actions');
 // Admin Bar Menu
 function mascot_core_digicod_admin_bar_menu( $wp_admin_bar ) {
 	$icon = '<i class="ab-icon dashicons-admin-generic dashicons-mascot-help"></i>';
-	
+
 	$wp_admin_bar->add_menu(array(
 		'id'	  => 'mascot-options',
 		'title'   => $icon . 'Mascot Help',
 		'href'	=> admin_url( 'admin.php?page=mascot-about' )
 	));
-	
+
 	$wp_admin_bar->add_menu(array(
 		'parent'  => 'mascot-options',
 		'id'	  => 'mascot-options-about',
@@ -244,14 +244,14 @@ function mascot_core_digicod_admin_bar_menu( $wp_admin_bar ) {
 		'title'   => 'FAQ',
 		'href'	=> admin_url( 'admin.php?page=mascot-faq' )
 	));
-	
+
 	$wp_admin_bar->add_menu(array(
 		'parent'  => 'mascot-options',
 		'id'	  => 'mascot-options-sub',
 		'title'   => 'Theme Options',
 		'href'	=> admin_url( 'admin.php?page=ThemeOptions' )
 	));
-	
+
 	if ( class_exists( 'OCDI_Plugin' ) ) {
 		$wp_admin_bar->add_menu(array(
 			'parent'  => 'mascot-options',
@@ -277,7 +277,7 @@ function mascot_core_digicod_admin_bar_menu( $wp_admin_bar ) {
 		'title'   => 'System Status',
 		'href'	=> admin_url( 'admin.php?page=mascot-system-status' )
 	));
-	
+
 	$wp_admin_bar->add_menu(array(
 		'parent'  => 'mascot-options',
 		'id'	  => 'mascot-themes',
@@ -482,7 +482,7 @@ if(!function_exists('mascot_core_digicod_theme_admin_login_custom_logo')) {
 				background-repeat: no-repeat;
 			}
 		</style>
-	<?php 
+	<?php
 		}
 	}
 	add_action( 'login_enqueue_scripts', 'mascot_core_digicod_theme_admin_login_custom_logo' );
@@ -497,7 +497,7 @@ if(!function_exists('mascot_core_digicod_generate_css_for_custom_theme_color_fro
 		if( mascot_core_digicod_theme_installed() && class_exists('ScssPhp\ScssPhp\Compiler') ) {
 			global $wp_filesystem;
 			WP_Filesystem();
-			
+
 			if ( digicod_is_css_colors_folder_writable() ) {
 				$scss_dir = DIGICOD_ASSETS_DIR . '/scss/colors/';
 				$css_colors_dir = DIGICOD_ASSETS_DIR . '/css/colors/';
@@ -509,9 +509,14 @@ if(!function_exists('mascot_core_digicod_generate_css_for_custom_theme_color_fro
 					'$theme-color2' => ValueConverter::parseValue( mascot_core_digicod_get_redux_option( 'theme-color-settings-custom-theme-color2' ) ),
 					'$theme-color3' => ValueConverter::parseValue( mascot_core_digicod_get_redux_option( 'theme-color-settings-custom-theme-color3' ) ),
 					'$theme-color4' => ValueConverter::parseValue( mascot_core_digicod_get_redux_option( 'theme-color-settings-custom-theme-color4' ) ),
+
+					'$text-color-over-bg-theme-color1' => ValueConverter::parseValue( mascot_core_digicod_get_redux_option( 'theme-color-settings-custom-theme-text-color1' ) ),
+					'$text-color-over-bg-theme-color2' => ValueConverter::parseValue( mascot_core_digicod_get_redux_option( 'theme-color-settings-custom-theme-text-color2' ) ),
+					'$text-color-over-bg-theme-color3' => ValueConverter::parseValue( mascot_core_digicod_get_redux_option( 'theme-color-settings-custom-theme-text-color3' ) ),
+					'$text-color-over-bg-theme-color4' => ValueConverter::parseValue( mascot_core_digicod_get_redux_option( 'theme-color-settings-custom-theme-text-color4' ) ),
 				));
 				$css =  $scss->compileString('@import "custom-theme-color.scss"')->getCss();
-				
+
 				//file name
 				$css_file_name = 'custom-theme-color';
 

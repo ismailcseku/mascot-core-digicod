@@ -10,7 +10,7 @@ class Mascot_Core_Digicod_Widget_StickInParent extends Mascot_Core_Digicod_Widge
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
-		$this->widgetOptions = array( 
+		$this->widgetOptions = array(
 			'classname'		=> 'tm-widget-sticky-sidebar-in-parent mb-0',
 			'description'	=> esc_html__( 'Stick Sidebar In Parent provides an easy way to attach elements to the page when the user scrolls such that the element is always visible.', 'mascot-core-digicod' ),
 		);
@@ -18,7 +18,7 @@ class Mascot_Core_Digicod_Widget_StickInParent extends Mascot_Core_Digicod_Widge
 		$this->getFormFields();
 	}
 
-	
+
 	/**
 	 * Get form fields of the widget.
 	 */

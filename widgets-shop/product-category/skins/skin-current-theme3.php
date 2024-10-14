@@ -212,7 +212,7 @@ class Skin_Current_Theme3 extends Elementor_Skin_Base {
 
 
 
-		
+
 
 
 		$this->start_controls_section(
@@ -289,7 +289,7 @@ class Skin_Current_Theme3 extends Elementor_Skin_Base {
 		$this->end_controls_tabs();
 		$this->end_controls_section();
 	}
-	
+
 	public function render() {
 		$html = '';
 		$settings = $this->parent->get_settings_for_display();

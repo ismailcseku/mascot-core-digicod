@@ -25,7 +25,7 @@ class Skin_Style9 extends Elementor_Skin_Base {
 
 	public function register_layout_controls( Widget_Base $widget ) {
 		$this->parent = $widget;
-		
+
 		$this->start_controls_section(
 			'current_skin_bg_styling',
 			[

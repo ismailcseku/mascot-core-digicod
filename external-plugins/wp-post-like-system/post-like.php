@@ -31,7 +31,7 @@ function mascot_core_digicod_sl_enqueue_scripts() {
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'like' => esc_html__( 'Like', 'mascot-core-digicod' ),
 		'unlike' => esc_html__( 'Unlike', 'mascot-core-digicod' )
-	) ); 
+	) );
 }
 
 /**
@@ -87,7 +87,7 @@ function mascot_core_digicod_sl_process_simple_like() {
 				if ( $post_users ) {
 					if ( $is_comment == 1 ) {
 						update_comment_meta( $post_id, "_user_comment_IP", $post_users );
-					} else { 
+					} else {
 						update_post_meta( $post_id, "_user_IP", $post_users );
 					}
 				}
@@ -114,12 +114,12 @@ function mascot_core_digicod_sl_process_simple_like() {
 					}
 				}
 				// Update Post
-				if ( $post_users ) {	
+				if ( $post_users ) {
 					$uid_key = array_search( $user_id, $post_users );
 					unset( $post_users[$uid_key] );
 					if ( $is_comment == 1 ) {
 						update_comment_meta( $post_id, "_user_comment_liked", $post_users );
-					} else { 
+					} else {
 						update_post_meta( $post_id, "_user_liked", $post_users );
 					}
 				}
@@ -132,7 +132,7 @@ function mascot_core_digicod_sl_process_simple_like() {
 					unset( $post_users[$uip_key] );
 					if ( $is_comment == 1 ) {
 						update_comment_meta( $post_id, "_user_comment_IP", $post_users );
-					} else { 
+					} else {
 						update_post_meta( $post_id, "_user_IP", $post_users );
 					}
 				}
@@ -144,7 +144,7 @@ function mascot_core_digicod_sl_process_simple_like() {
 		if ( $is_comment == 1 ) {
 			update_comment_meta( $post_id, "_comment_like_count", $like_count );
 			update_comment_meta( $post_id, "_comment_like_modified", date( 'Y-m-d H:i:s' ) );
-		} else { 
+		} else {
 			update_post_meta( $post_id, "_post_like_count", $like_count );
 			update_post_meta( $post_id, "_post_like_modified", date( 'Y-m-d H:i:s' ) );
 		}
@@ -179,7 +179,7 @@ function mascot_core_digicod_sl_already_liked( $post_id, $is_comment ) {
 		}
 	} else { // user is anonymous
 		$user_id = mascot_core_digicod_sl_get_ip();
-		$post_meta_users = ( $is_comment == 1 ) ? get_comment_meta( $post_id, "_user_comment_IP" ) : get_post_meta( $post_id, "_user_IP" ); 
+		$post_meta_users = ( $is_comment == 1 ) ? get_comment_meta( $post_id, "_user_comment_IP" ) : get_post_meta( $post_id, "_user_IP" );
 		if ( count( $post_meta_users ) != 0 ) { // meta exists, set up values
 			$post_users = $post_meta_users[0];
 		}
@@ -239,7 +239,7 @@ function sl_shortcode() {
 } */// shortcode()
 
 /**
- * Utility retrieves post meta user likes (user id array), 
+ * Utility retrieves post meta user likes (user id array),
  * then adds new user id to retrieved array
  * @since    0.5
  */
@@ -259,7 +259,7 @@ function mascot_core_digicod_sl_post_user_likes( $user_id, $post_id, $is_comment
 } // mascot_core_digicod_sl_post_user_likes()
 
 /**
- * Utility retrieves post meta ip likes (ip array), 
+ * Utility retrieves post meta ip likes (ip array),
  * then adds new ip to retrieved array
  * @since    0.5
  */
@@ -301,7 +301,7 @@ function mascot_core_digicod_sl_get_ip() {
  * @since    0.5
  */
 function mascot_core_digicod_sl_get_liked_icon() {
-	$rand = mt_rand(100000,999999); 
+	$rand = mt_rand(100000,999999);
 	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart"></i> */
 	$icon = '<span class="sl-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve"><path id="heart-full-'.$rand.'" d="M124 20.4C111.5-7 73.7-4.8 64 19 54.3-4.9 16.5-7 4 20.4c-14.7 32.3 19.4 63 60 107.1C104.6 83.4 138.7 52.7 124 20.4z"/></svg></span>';
 	return $icon;
@@ -312,7 +312,7 @@ function mascot_core_digicod_sl_get_liked_icon() {
  * @since    0.5
  */
 function mascot_core_digicod_sl_get_unliked_icon() {
-	$rand = mt_rand(100000,999999); 
+	$rand = mt_rand(100000,999999);
 	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart-o"></i> */
 	$icon = '<span class="sl-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve"><path id="heart-'.$rand.'" d="M64 127.5C17.1 79.9 3.9 62.3 1 44.4c-3.5-22 12.2-43.9 36.7-43.9 10.5 0 20 4.2 26.4 11.2 6.3-7 15.9-11.2 26.4-11.2 24.3 0 40.2 21.8 36.7 43.9C124.2 62 111.9 78.9 64 127.5zM37.6 13.4c-9.9 0-18.2 5.2-22.3 13.8C5 49.5 28.4 72 64 109.2c35.7-37.3 59-59.8 48.6-82 -4.1-8.7-12.4-13.8-22.3-13.8 -15.9 0-22.7 13-26.4 19.2C60.6 26.8 54.4 13.4 37.6 13.4z"/></svg></span>';
 	return $icon;
@@ -342,13 +342,13 @@ function mascot_core_digicod_sl_format_count( $number ) {
 } // mascot_core_digicod_sl_format_count()
 
 /**
- * Utility retrieves count plus count options, 
+ * Utility retrieves count plus count options,
  * returns appropriate format based on options
  * @since    0.5
  */
 function mascot_core_digicod_sl_get_like_count( $like_count ) {
 	$like_text = esc_html__( 'Like', 'mascot-core-digicod' );
-	if ( is_numeric( $like_count ) && $like_count > 0 ) { 
+	if ( is_numeric( $like_count ) && $like_count > 0 ) {
 		$number = mascot_core_digicod_sl_format_count( $like_count );
 	} else {
 		$number = $like_text;
@@ -360,7 +360,7 @@ function mascot_core_digicod_sl_get_like_count( $like_count ) {
 // User Profile List
 add_action( 'show_user_profile', 'mascot_core_digicod_sl_show_user_likes' );
 add_action( 'edit_user_profile', 'mascot_core_digicod_sl_show_user_likes' );
-function mascot_core_digicod_sl_show_user_likes( $user ) { ?>        
+function mascot_core_digicod_sl_show_user_likes( $user ) { ?>
 	<table class="form-table">
 		<tr>
 			<th><label for="user_likes"><?php esc_html_e( 'You Like:', 'mascot-core-digicod' ); ?></label></th>
@@ -376,23 +376,23 @@ function mascot_core_digicod_sl_show_user_likes( $user ) { ?>
 				  'value' => $user->ID,
 				  'compare' => 'LIKE'
 				)
-			  ) );		
+			  ) );
 			$sep = '';
 			$like_query = new WP_Query( $args );
 			if ( $like_query->have_posts() ) : ?>
 			<p>
-			<?php while ( $like_query->have_posts() ) : $like_query->the_post(); 
+			<?php while ( $like_query->have_posts() ) : $like_query->the_post();
 			echo $sep; ?><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 			<?php
 			$sep = ' &middot; ';
-			endwhile; 
+			endwhile;
 			?>
 			</p>
 			<?php else : ?>
 			<p><?php esc_html_e( 'You do not like anything yet.', 'mascot-core-digicod' ); ?></p>
-			<?php 
-			endif; 
-			wp_reset_postdata(); 
+			<?php
+			endif;
+			wp_reset_postdata();
 			?>
 			</td>
 		</tr>

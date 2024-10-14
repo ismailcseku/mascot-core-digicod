@@ -1,5 +1,5 @@
 			<ul class="styled-icons icon-dark icon-circled icon-sm">
-				<?php 
+				<?php
 				if( $social_links ): foreach( $social_links as $key => $value ) {
 					if( !_empty( digicod_get_redux_option( 'social-links-url-'.$key ) ) ) :
 				?>

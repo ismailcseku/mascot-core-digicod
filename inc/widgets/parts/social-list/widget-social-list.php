@@ -10,7 +10,7 @@ class Mascot_Core_Digicod_Widget_SocialList extends Mascot_Core_Digicod_Widget_L
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
-		$this->widgetOptions = array( 
+		$this->widgetOptions = array(
 			'classname'		=> 'widget-social-icons clearfix',
 			'description'	=> esc_html__( 'The widget lets you easily display social icons which are configured at Theme Options > Social Links.', 'mascot-core-digicod' ),
 		);
@@ -18,7 +18,7 @@ class Mascot_Core_Digicod_Widget_SocialList extends Mascot_Core_Digicod_Widget_L
 		$this->getFormFields();
 	}
 
-	
+
 	/**
 	 * Get form fields of the widget.
 	 */
@@ -81,7 +81,7 @@ class Mascot_Core_Digicod_Widget_SocialList extends Mascot_Core_Digicod_Widget_L
 				)
 			),
 
-			
+
 			array(
 				'id'		=> 'icon_border_style',
 				'type'		=> 'checkbox',

@@ -3,7 +3,7 @@
 	<div class="info-banner-inner">
 		<div class="banner-background"></div>
 		<div class="banner-background-overlay"></div>
-		
+
   		<?php if( isset( $floating_banner_image['id'] ) && !empty( $floating_banner_image['id'] ) ): ?>
 		<div class="banner-floating-image-wrapper">
 			<img src="<?php $image = wp_get_attachment_image_src( $floating_banner_image['id'], $floating_banner_image_size); echo esc_url( $image[0] );?>" alt="<?php esc_attr_e( 'Image', 'mascot-core-digicod'); ?>">

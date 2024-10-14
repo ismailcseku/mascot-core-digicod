@@ -4,7 +4,7 @@
 		<div class="pricing-plan-inner">
 			<div class="pricing-plan-head">
 				<?php mascot_core_digicod_get_shortcode_template_part( 'thumb', null, 'pricing-plan/tpl', $settings, false );?>
-				
+
 				<?php if ( $title || $sub_title ) { ?>
 				<?php mascot_core_digicod_get_shortcode_template_part( 'title-area', null, 'pricing-plan/tpl', $settings, false );?>
 				<?php } ?>

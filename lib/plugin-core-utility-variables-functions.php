@@ -333,7 +333,7 @@ if(!function_exists('mascot_core_digicod_get_post_list_array_by_post_type')) {
 if(!function_exists('mascot_core_digicod_set_admin_ajax_url')){
 	/**
 	 * Set admin ajax url via javascript
-	 * 
+	 *
 	 */
 	function mascot_core_digicod_set_admin_ajax_url() {
 		echo '<script type="application/javascript">var MascotCoreAjaxUrl = "'.admin_url('admin-ajax.php').'"</script>';
@@ -344,11 +344,11 @@ if(!function_exists('mascot_core_digicod_set_admin_ajax_url')){
 if(!function_exists('mascot_core_digicod_row_typography')){
 	/**
 	 * Return Row Typography Array
-	 * 
+	 *
 	 */
 	function mascot_core_digicod_row_typography() {
 		$array = array();
-					
+
 		$array = array(
 			"type"			=> 'dropdown',
 			"heading"		=> esc_html__( "Row Typography", 'mascot-core-digicod' ) ,
@@ -369,7 +369,7 @@ if(!function_exists('mascot_core_digicod_row_typography')){
 if(!function_exists('mascot_core_digicod_base_64_decode')){
 	/**
 	 * Return urldecode base64_decode
-	 * 
+	 *
 	 */
 	function mascot_core_digicod_base_64_decode($code) {
 		return urldecode(base64_decode($code));
@@ -379,7 +379,7 @@ if(!function_exists('mascot_core_digicod_base_64_decode')){
 if(!function_exists('mascot_core_digicod_base_64_decode_raw_html')){
 	/**
 	 * Return rawurldecode base64_decode
-	 * 
+	 *
 	 */
 	function mascot_core_digicod_base_64_decode_raw_html($code) {
 		return rawurldecode( base64_decode( wp_strip_all_tags( $code ) ) );

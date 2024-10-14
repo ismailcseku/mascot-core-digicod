@@ -12,12 +12,12 @@
 			<?php if ( $show_post_meta == 'yes' &&  $post_meta_placement == 'top' ) : ?>
 			<?php digicod_post_shortcode_meta( $post_meta_options ); ?>
 			<?php endif; ?>
-			
+
 			<?php if ( $show_title == 'yes' ) : ?>
 			<div class="title-holder">
 				<<?php echo esc_attr( $title_tag );?> class="entry-title">
 					<a href="<?php the_permalink();?>">
-						<?php 
+						<?php
 							if ( empty($title_length) ) {
 								the_title();
 							} else {

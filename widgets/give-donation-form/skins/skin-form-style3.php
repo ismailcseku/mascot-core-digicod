@@ -26,7 +26,7 @@ class Skin_Form_Style3 extends Elementor_Skin_Base {
 	public function register_layout_controls( Widget_Base $widget ) {
 		$this->parent = $widget;
 	}
-	
+
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 
@@ -49,7 +49,7 @@ class Skin_Form_Style3 extends Elementor_Skin_Base {
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = mascot_core_digicod_get_shortcode_template_part( 'each-form', $settings['_skin'], 'give-donation-form/tpl', $settings, true );
-		
+
 		echo $html;
 	}
 }

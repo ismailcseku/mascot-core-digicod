@@ -10,7 +10,7 @@ class Mascot_Core_Digicod_Widget_ContactInfo extends Mascot_Core_Digicod_Widget_
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
-		$this->widgetOptions = array( 
+		$this->widgetOptions = array(
 			'classname'		=> 'widget-contact-info clearfix',
 			'description'	=> esc_html__( 'A widget that displays contact info in different styles.', 'mascot-core-digicod' ),
 		);
@@ -18,7 +18,7 @@ class Mascot_Core_Digicod_Widget_ContactInfo extends Mascot_Core_Digicod_Widget_
 		$this->getFormFields();
 	}
 
-	
+
 	/**
 	 * Get form fields of the widget.
 	 */

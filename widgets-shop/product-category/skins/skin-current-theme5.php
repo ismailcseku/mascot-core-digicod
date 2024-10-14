@@ -220,7 +220,7 @@ class Skin_Current_Theme5 extends Elementor_Skin_Base {
 
 
 
-		
+
 
 
 
@@ -706,7 +706,7 @@ class Skin_Current_Theme5 extends Elementor_Skin_Base {
 		$this->end_controls_tabs();
 		$this->end_controls_section();
 	}
-	
+
 	public function render() {
 		$html = '';
 		$settings = $this->parent->get_settings_for_display();

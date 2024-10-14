@@ -437,7 +437,7 @@ class TM_Elementor_Top_Primary_Nav extends Widget_Base {
 		$classes = array();
 		$settings['classes'] = $classes;
 
-		
+
 		$settings['holder_id'] = mascot_core_get_isotope_holder_ID();
 
 
@@ -452,7 +452,7 @@ class TM_Elementor_Top_Primary_Nav extends Widget_Base {
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = mascot_core_digicod_get_shortcode_template_part( 'nav1', null, 'header-primary-nav/tpl', $settings, true );
-		
+
 		echo $html;
 	}
 }

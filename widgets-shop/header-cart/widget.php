@@ -532,7 +532,7 @@ class TM_Elementor_Header_Cart extends Widget_Base {
 	 */
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		
+
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = mascot_core_digicod_get_shortcode_shop_template_part( 'header-cart', null, 'header-cart/tpl', $settings, true );
 

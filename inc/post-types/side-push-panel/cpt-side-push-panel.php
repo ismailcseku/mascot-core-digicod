@@ -9,7 +9,7 @@ use MASCOTCOREDIGICOD\Lib;
  * @package MASCOTCOREDIGICOD\CPT\SidePushPanel;
  */
 final class CPT_SidePushPanel implements Lib\Mascot_Core_Digicod_Interface_PostType {
-	
+
 	/**
 	 * @var string
 	 */
@@ -31,7 +31,7 @@ final class CPT_SidePushPanel implements Lib\Mascot_Core_Digicod_Interface_PostT
 		}
 		return $inst;
 	}
-	
+
 	/**
 	 * Private ctor so nobody else can instance it
 	 *
@@ -59,7 +59,7 @@ final class CPT_SidePushPanel implements Lib\Mascot_Core_Digicod_Interface_PostT
 	public function register() {
 		$this->registerCustomPostType();
 	}
-	
+
 	/**
 	 * Regsiters custom post type
 	 */
@@ -118,7 +118,7 @@ final class CPT_SidePushPanel implements Lib\Mascot_Core_Digicod_Interface_PostT
 		register_post_type( $this->ptKey, $args );
 
 	}
-	
+
 	/**
 	 * Custom Columns Settings
 	 */

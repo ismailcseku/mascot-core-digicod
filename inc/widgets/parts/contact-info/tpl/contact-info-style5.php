@@ -6,7 +6,7 @@
 	<?php if(!empty($description)): ?>
 	<div class="description"><?php echo wp_kses_post( $description );?></div>
 	<?php endif; ?>
-	
+
 	<ul>
 		<?php if(!empty($name)): ?>
 		<li class="contact-name">

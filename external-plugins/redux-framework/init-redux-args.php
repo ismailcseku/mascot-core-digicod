@@ -399,7 +399,7 @@
                     ),
                     'required' => array( 'maintenance-mode-settings-status', '=', '1' ),
                 ),
-                
+
                 array(
                     'id'       => 'maintenance-mode-settings-enable-social-links',
                     'type'     => 'switch',
@@ -436,7 +436,7 @@
                     'desc'     => esc_html__( 'Basic media uploader with disabled URL input field.', 'mascot-core-digicod' ),
                     'subtitle' => esc_html__( 'Upload a 32px x 32px png/gif image that will represent your website favicon.', 'mascot-core-digicod' ),
                     //'default'  => array( 'url' => MASCOT_ASSETS_URI . '/images/logo/logo-wide.png' ),
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-logo-status', '=', '1' )
                     )
                 ),
@@ -449,7 +449,7 @@
                     'min'     => '20',
                     'step'    => '1',
                     'max'     => '1000',
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-logo-status', '=', '1' )
                     )
                 ),
@@ -626,7 +626,7 @@
                     'type'     => 'background',
                     'title'    => esc_html__( 'Background', 'mascot-core-digicod' ),
                     'subtitle' => esc_html__( 'Choose background image or color.', 'mascot-core-digicod' ),
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-custom-background-status', '=', '1' )
                     )
                 ),
@@ -638,7 +638,7 @@
                     'default'  => 0,
                     'on'       => esc_html__( 'Yes', 'mascot-core-digicod' ),
                     'off'      => esc_html__( 'No', 'mascot-core-digicod' ),
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-custom-background-status', '=', '1' )
                     )
                 ),
@@ -653,7 +653,7 @@
                     'step'          => 1,
                     'max'           => 9,
                     'display_value' => 'text',
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-bg-layer-overlay-status', '=', '1' )
                     )
                 ),
@@ -669,7 +669,7 @@
                         'theme-colored' => esc_html__( 'Primary Theme Color', 'mascot-core-digicod' )
                     ),
                     'default' => 'dark',
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-bg-layer-overlay-status', '=', '1' )
                     )
                 ),
@@ -711,7 +711,7 @@
                     'desc'     => '',
                     'default'  => date('m/d/Y', strtotime('+2 Years')),
                     'placeholder'     => 'Choose Date',
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-countdown-timer-status', '=', '1' )
                     )
                 ),
@@ -726,7 +726,7 @@
                     'step'          => 1,
                     'max'           => 23,
                     'display_value' => 'text',
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-countdown-timer-status', '=', '1' )
                     )
                 ),
@@ -741,7 +741,7 @@
                     'step'          => 1,
                     'max'           => 59,
                     'display_value' => 'text',
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-countdown-timer-status', '=', '1' )
                     )
                 ),
@@ -763,7 +763,7 @@
                     'title'    => esc_html__( 'Margin Top & Bottom', 'mascot-core-digicod' ),
                     'subtitle' => '',
                     'desc'     => '',
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-countdown-timer-status', '=', '1' )
                     )
                 ),
@@ -779,7 +779,7 @@
                         '3' => 'Style 3 - Classy Countdown',
                     ),
                     'default'  => '1',
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-countdown-timer-status', '=', '1' )
                     )
                 ),
@@ -790,7 +790,7 @@
                     'subtitle' => esc_html__( 'Enter the date time format to display', 'mascot-core-digicod' ),
                     'desc'     => '',
                     'default'  => '%D <span>Days</span> %H <span>Hours</span> %M <span>Minutes</span> %S <span>Seconds</span>',
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-countdown-timer-style', '=', '1' )
                     )
                 ),
@@ -816,7 +816,7 @@
                     'preview'       => true, // Disable the previewer
                     'all_styles'    => true,
                     'units'         => 'px',
-                    'required' => array( 
+                    'required' => array(
                         array( 'maintenance-mode-settings-countdown-timer-style', '=', '1' )
                     )
                 ),

@@ -9,7 +9,7 @@ use MASCOTCOREDIGICOD\Lib;
  * @package MASCOTCOREDIGICOD\CPT\Projects;
  */
 final class CPT_Projects implements Lib\Mascot_Core_Digicod_Interface_PostType {
-	
+
 	/**
 	 * @var string
 	 */
@@ -33,7 +33,7 @@ final class CPT_Projects implements Lib\Mascot_Core_Digicod_Interface_PostType {
 		}
 		return $inst;
 	}
-	
+
 	/**
 	 * Private ctor so nobody else can instance it
 	 *
@@ -73,16 +73,16 @@ final class CPT_Projects implements Lib\Mascot_Core_Digicod_Interface_PostType {
 				return;
 			}
 		}
-		
+
 		$this->ptPluralName = mascot_core_digicod_get_redux_option( 'cpt-settings-projects-label', esc_html__( 'Projects', 'mascot-core-digicod' ) );
 		$this->ptMenuIcon = mascot_core_digicod_get_redux_option( 'cpt-settings-projects-admin-dashicon', $this->ptMenuIcon );
 		$this->ptKeyRewriteBase = mascot_core_digicod_get_redux_option( 'cpt-settings-projects-slug', $this->ptKeyRewriteBase );
 		$this->ptTaxKeyRewriteBase = mascot_core_digicod_get_redux_option( 'cpt-settings-projects-cat-slug', $this->ptKeyRewriteBase );
-		
+
 		$this->registerCustomPostType();
 		$this->registerCustomTax();
 	}
-	
+
 	/**
 	 * Regsiters custom post type
 	 */
@@ -142,7 +142,7 @@ final class CPT_Projects implements Lib\Mascot_Core_Digicod_Interface_PostType {
 		register_post_type( $this->ptKey, $args );
 
 	}
-	
+
 	/**
 	 * Regsiters custom Taxonomy
 	 */
@@ -182,7 +182,7 @@ final class CPT_Projects implements Lib\Mascot_Core_Digicod_Interface_PostType {
 		);
 		register_taxonomy( $this->ptTaxKey, array( $this->ptKey ), $args );
 	}
-	
+
 	/**
 	 * Custom Columns Settings
 	 */

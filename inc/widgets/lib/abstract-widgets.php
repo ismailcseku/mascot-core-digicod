@@ -48,7 +48,7 @@ abstract class Mascot_Core_Digicod_Widget_Loader extends WP_Widget {
 		}
 		return $instance;
 	}
-  
+
 	/**
 		* Common method
 		* Back-end widget form.
@@ -75,7 +75,7 @@ abstract class Mascot_Core_Digicod_Widget_Loader extends WP_Widget {
 				$default_value = ( isset( $eachFormField['default'] ) && !( $this->saved ) ) ? $eachFormField['default'] : ${$eachFormField['id']};
 			?>
 				<p>
-				<label for="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>"><?php echo esc_html( $eachFormField['title'] ); ?></label> 
+				<label for="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>"><?php echo esc_html( $eachFormField['title'] ); ?></label>
 				<input class="widefat <?php if( isset( $eachFormField['class'] ) ) echo esc_attr( $eachFormField['class'] ); ?>" id="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( $eachFormField['id'] ) ); ?>" type="text" value="<?php echo esc_attr( $default_value ); ?>" <?php if( isset( $eachFormField['width'] ) && $eachFormField['width'] == 'auto' ) echo 'style="width: auto;"'; ?>>
 				<?php if( isset( $eachFormField['desc'] ) ): ?>
 					<span><em><?php esc_html( $eachFormField['desc'] ); ?></em></span>
@@ -87,7 +87,7 @@ abstract class Mascot_Core_Digicod_Widget_Loader extends WP_Widget {
 			case 'textarea':
 			?>
 				<p>
-				<label for="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>"><?php echo esc_html( $eachFormField['title'] ); ?></label> 
+				<label for="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>"><?php echo esc_html( $eachFormField['title'] ); ?></label>
 				<textarea class="widefat" rows="8" cols="20" id="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( $eachFormField['id'] ) ); ?>"><?php echo wp_kses_post( ${$eachFormField['id']} ); ?></textarea>
 				<?php if( isset( $eachFormField['desc'] ) ): ?>
 					<span><em><?php esc_html( $eachFormField['desc'] ); ?></em></span>
@@ -99,7 +99,7 @@ abstract class Mascot_Core_Digicod_Widget_Loader extends WP_Widget {
 			case 'dropdown':
 			?>
 				<p>
-				<label for="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>"><?php echo esc_html( $eachFormField['title'] ); ?></label> 
+				<label for="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>"><?php echo esc_html( $eachFormField['title'] ); ?></label>
 				<select class="widefat" id="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( $eachFormField['id'] ) ); ?>" <?php if( isset( $eachFormField['width'] ) && $eachFormField['width'] == 'auto' ) echo 'style="width: auto;"'; ?>>
 					<?php
 					$iter = 0;
@@ -137,14 +137,14 @@ abstract class Mascot_Core_Digicod_Widget_Loader extends WP_Widget {
 					}
 				?>
 				<input <?php echo esc_attr( $checked_checkbox ); ?> class="form-check" id="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( $eachFormField['id'] ) ); ?>" type="checkbox" value="<?php echo esc_attr( $eachFormField['value'] ); ?>">
-				<label for="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>"><?php echo esc_html( $eachFormField['title'] ); ?></label> 
+				<label for="<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>"><?php echo esc_html( $eachFormField['title'] ); ?></label>
 				<?php if( isset( $eachFormField['desc'] ) ): ?>
 					<span><em><?php esc_html( $eachFormField['desc'] ); ?></em></span>
 				<?php endif; ?>
 				</p>
 			<?php
 			break;
-			
+
 			case 'media_upload':
 			?>
 				<p>
@@ -158,7 +158,7 @@ abstract class Mascot_Core_Digicod_Widget_Loader extends WP_Widget {
 					<a class="button tm-widget-image-upload" data-target="#<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>" data-preview=".tm-widget-preview-image" data-frame="select" data-state="wpc_widgets_insert_single" data-fetch="url" data-title="Insert Image" data-button="Insert" data-class="media-frame tm-widget-custom-uploader" title="Add Media"><?php echo esc_html__( 'Add Media', 'mascot-core-digicod' ); ?></a>
 
 					<a class="button tm-widget-delete-image" data-target="#<?php echo esc_attr( $this->get_field_id( $eachFormField['id'] ) ); ?>" data-preview=".tm-widget-preview-image"><?php echo esc_html__( 'Delete', 'mascot-core-digicod' ); ?></a>
-					
+
 				</div>
 				</p>
 			<?php
@@ -185,7 +185,7 @@ abstract class Mascot_Core_Digicod_Widget_Loader extends WP_Widget {
 				</p>
 			<?php
 			break;
-			
+
 			case 'line':
 			?>
 				<p>
@@ -193,7 +193,7 @@ abstract class Mascot_Core_Digicod_Widget_Loader extends WP_Widget {
 				</p>
 			<?php
 			break;
-			
+
 			case 'description':
 			?>
 				<p>
@@ -201,7 +201,7 @@ abstract class Mascot_Core_Digicod_Widget_Loader extends WP_Widget {
 				</p>
 			<?php
 			break;
-			
+
 			default:
 			?>
 				<p>

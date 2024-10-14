@@ -10,7 +10,7 @@ class Mascot_Core_Digicod_Widget_OpeningHoursCompressed extends Mascot_Core_Digi
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
-		$this->widgetOptions = array( 
+		$this->widgetOptions = array(
 			'classname'		=> 'widget-opening-hours-compressed clearfix',
 			'description'	=> esc_html__( 'The widget lets you easily display Opening Hours in compressed mode.', 'mascot-core-digicod' ),
 		);
@@ -18,7 +18,7 @@ class Mascot_Core_Digicod_Widget_OpeningHoursCompressed extends Mascot_Core_Digi
 		$this->getFormFields();
 	}
 
-	
+
 	/**
 	 * Get form fields of the widget.
 	 */

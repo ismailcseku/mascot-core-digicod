@@ -6,7 +6,7 @@
 			<a href="<?php the_permalink() ?>"><?php echo get_the_post_thumbnail( $postid, $feature_thumb_image_size, array( 'class' => 'img-fullwidth' ) ); ?></a>
 		</div>
 		<?php endif; ?>
-		
+
 		<div class="form-content">
 			<?php if ( $show_donation_stats == 'yes' ) : ?>
 			<?php mascot_core_digicod_get_shortcode_template_part( 'progress-stats', null, 'give-forms/tpl', $params, false );?>
@@ -29,7 +29,7 @@
 			<?php endif; ?>
 
 			<?php if ( $show_excerpt == 'yes' ) : ?>
-			<div class="form-description">  
+			<div class="form-description">
 				<?php if ( empty($excerpt_length) ) { ?>
 				<?php $give_form_excerpt = get_the_excerpt(); echo wp_kses( $give_form_excerpt, 'post' ); ?>
 				<?php } else { ?>

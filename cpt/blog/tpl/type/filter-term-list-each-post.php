@@ -2,7 +2,7 @@
 	$term_slugs_list = wp_get_post_terms( get_the_ID(), 'category', array("fields" => "slugs") );
 	$term_slugs_list_string = implode( ' ', $term_slugs_list );
 
-	
+
 	$masonry_tiles_image_size_class = 'tm-masonry-default';
 	if ( $use_masonry_tiles_featured_image_size == 'yes' ) :
 		$settings['featured_image_size'] = $meta_featured_image_size = digicod_get_rwmb_group( 'digicod_' . "portfolio_mb_featured_image_size_settings", 'masonry_tiles_featured_image_size' );
@@ -29,7 +29,7 @@
 				$settings['featured_image_size'] = $featured_image_size;
 				# code...
 				break;
-			
+
 			default:
 				# code...
 				break;

@@ -341,7 +341,7 @@ class TM_Elementor_Product_Tabs extends Widget_Base {
         $this->end_controls_section();
         // End Section Query
 
-        
+
         $this->add_control_carousel();
 
 

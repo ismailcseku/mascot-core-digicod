@@ -24,7 +24,7 @@
 				},
 				beforeSend:function(){
 					loader.html('&nbsp;<div class="loader">Loading...</div>');
-				},	
+				},
 				success: function(response){
 					var icon = response.icon;
 					var count = response.count;
@@ -38,10 +38,10 @@
 						allbuttons.prop('title', unlike_text);
 						allbuttons.addClass('liked');
 					}
-					loader.empty();					
+					loader.empty();
 				}
 			});
-			
+
 		}
 		return false;
 	});

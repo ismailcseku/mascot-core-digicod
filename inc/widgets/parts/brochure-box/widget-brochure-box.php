@@ -10,7 +10,7 @@ class Mascot_Core_Digicod_Widget_BrochureBox extends Mascot_Core_Digicod_Widget_
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
-		$this->widgetOptions = array( 
+		$this->widgetOptions = array(
 			'classname'		=> 'widget-brochure-box clearfix',
 			'description'	=> esc_html__( 'A widget that displays Brochure Box with download link.', 'mascot-core-digicod' ),
 		);
@@ -19,7 +19,7 @@ class Mascot_Core_Digicod_Widget_BrochureBox extends Mascot_Core_Digicod_Widget_
 
 		add_action('admin_enqueue_scripts', 'mascot_core_digicod_widget_brochure_enque_media_library_for_admin' );
 	}
-	
+
 	/**
 	 * Get form fields of the widget.
 	 */
@@ -119,7 +119,7 @@ class Mascot_Core_Digicod_Widget_BrochureBox extends Mascot_Core_Digicod_Widget_
 
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, widget_ob_start)
 		$html = mascot_core_digicod_get_widget_template_part( $instance['visual_style'], null, 'brochure-box/tpl', $instance, false );
-		
+
 		echo wp_kses_post($args['after_widget']);
 	}
 }

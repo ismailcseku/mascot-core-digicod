@@ -43,7 +43,7 @@ class Skin_Current_Theme1 extends Elementor_Skin_Base {
 		);
 		$this->end_controls_section();
 	}
-	
+
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 		$class_instance =  '';

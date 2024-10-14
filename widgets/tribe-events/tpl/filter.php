@@ -2,7 +2,7 @@
 	<?php if ( $show_cat_filter == 'yes' ) : ?>
 	<?php
 		$portfolio_filters = array();
-		while ( $the_query->have_posts() ) : 
+		while ( $the_query->have_posts() ) :
 			$the_query->the_post();
 			//Returns All Term Items for $ptTaxKey
 			$term_list = wp_get_post_terms(get_the_ID(), 'tribe_events_cat', array("fields" => "all"));
