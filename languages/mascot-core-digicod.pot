@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Package Name\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-28 20:51+0600\n"
+"POT-Creation-Date: 2024-10-22 14:39+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,33 +58,33 @@ msgstr ""
 msgid "Responsive Columns Layout"
 msgstr ""
 
-#: mascot-core-wp.php:177
+#: mascot-core-wp.php:180
 #, php-format
 msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
 msgstr ""
 
-#: mascot-core-wp.php:178
+#: mascot-core-wp.php:181
 msgid "Mascot Core - Digicod"
 msgstr ""
 
-#: mascot-core-wp.php:179
+#: mascot-core-wp.php:182
 msgid "Mascot Core"
 msgstr ""
 
-#: mascot-core-wp.php:200 mascot-core-wp.php:302
+#: mascot-core-wp.php:203 mascot-core-wp.php:305
 #, php-format
 msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
 msgstr ""
 
-#: mascot-core-wp.php:201 mascot-core-wp.php:303
+#: mascot-core-wp.php:204 mascot-core-wp.php:306
 msgid "Mascot Core - Digicod Elementor"
 msgstr ""
 
-#: mascot-core-wp.php:202
+#: mascot-core-wp.php:205
 msgid "Elementor"
 msgstr ""
 
-#: mascot-core-wp.php:304
+#: mascot-core-wp.php:307
 msgid "PHP"
 msgstr ""
 
