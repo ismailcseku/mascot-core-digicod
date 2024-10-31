@@ -223,7 +223,7 @@ class Skin_Current_Theme1 extends Elementor_Skin_Base {
 		}
 
 		$category = get_term_by('slug', $settings['categories'], 'product_cat');
-		if (!is_wp_error($category)) {
+		if (!is_wp_error($category) && !empty($category)) {
 
 			if (!empty($settings['category_image']['id'])) {
 				$image = Group_Control_Image_Size::get_attachment_image_src($settings['category_image']['id'], 'image', $settings);
