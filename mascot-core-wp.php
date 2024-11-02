@@ -4,7 +4,7 @@
 Plugin Name: Mascot Core - Digicod
 Plugin URI:  https://themeforest.net/user/thememascot/portfolio
 Description: Mascot Core Plugin for Elementor. It includes all the required Shortcodes needed by Elementor.
-Version:     1.0
+Version:     2.0
 Author:      ThemeMascot
 Author URI:  https://themeforest.net/user/thememascot/portfolio
 Text Domain: mascot-core-digicod
