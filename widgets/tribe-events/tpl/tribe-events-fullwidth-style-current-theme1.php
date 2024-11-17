@@ -1,6 +1,6 @@
 <?php if ( $the_query->have_posts() ) : ?>
 
-  <div class="tm-sc-tribe-events events-fullwidth-current-theme1 <?php echo esc_attr(implode(' ', $classes)); ?>">
+  <div class="tm-sc-tribe-events events-fullwidth-current-theme1 <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
     <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
     <div class="event <?php tribe_events_event_classes() ?>">
       <div class="event-inner">

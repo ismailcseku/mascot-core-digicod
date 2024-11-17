@@ -1,6 +1,6 @@
 
 <?php if ( $the_query->have_posts() ) : ?>
-  <div class="tm-sc-tribe-events tm-sc-tribe-events-vertical-list1 <?php echo esc_attr(implode(' ', $classes)); ?>">
+  <div class="tm-sc-tribe-events tm-sc-tribe-events-vertical-list1 <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
     <!-- the loop -->
     <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
       <div class="event <?php tribe_events_event_classes() ?>">

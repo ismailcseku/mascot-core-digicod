@@ -1,6 +1,6 @@
 <?php mascot_core_wp_enqueue_script_owl_carousel(); ?>
 <?php if ( $the_query->have_posts() ) : ?>
-  <div class="tm-sc-give-forms tm-sc-give-forms-horizontal tm-sc-give-forms-horizontal-carousel <?php echo esc_attr(implode(' ', $classes)); ?> <?php echo esc_attr( $equal_height_class );?>">
+  <div class="tm-sc-give-forms tm-sc-give-forms-horizontal tm-sc-give-forms-horizontal-carousel <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?> <?php echo esc_attr( $equal_height_class );?>">
     <div class="owl-carousel owl-theme tm-owl-carousel-1col" <?php echo html_entity_decode( esc_attr( implode(' ', $owl_carousel_data_info) ) ) ?>>
     <!-- the loop -->
     <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>

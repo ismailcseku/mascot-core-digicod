@@ -4,7 +4,7 @@
   wp_enqueue_style( 'jquery-bxslider' );
 ?>
 <?php if ( $the_query->have_posts() ) : ?>
-  <div id="<?php echo esc_attr( $holder_id ) ?>" class="tm-sc-tribe-events tm-sc-tribe-events-vertical-list1 tm-sc-tribe-events-list-vertical-slide <?php echo esc_attr(implode(' ', $classes)); ?>">
+  <div id="<?php echo esc_attr( $holder_id ) ?>" class="tm-sc-tribe-events tm-sc-tribe-events-vertical-list1 tm-sc-tribe-events-list-vertical-slide <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
     <div class="bxslider" data-minslides="<?php echo esc_attr( $skin_vertical_list1_slide_minslides ); ?>" data-autoplay="<?php echo esc_attr( $skin_vertical_list1_slide_autoplay ); ?>">
       <!-- the loop -->
       <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>

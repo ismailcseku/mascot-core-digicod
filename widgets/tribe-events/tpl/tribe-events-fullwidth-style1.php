@@ -1,5 +1,5 @@
 <?php if ( $the_query->have_posts() ) : ?>
-  <div class="tm-sc-tribe-events events-fullwidth-style1 <?php echo esc_attr(implode(' ', $classes)); ?>">
+  <div class="tm-sc-tribe-events events-fullwidth-style1 <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
     <!-- the loop -->
     <div id="<?php echo esc_attr( $holder_id ) ?>" class="clearfix">
       <div class="row">

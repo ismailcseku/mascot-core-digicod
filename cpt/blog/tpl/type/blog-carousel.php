@@ -1,11 +1,11 @@
 <?php $settings['post_format'] = get_post_format(get_the_ID()) ? : 'standard'; $settings['settings'] = $settings; ?>
 <?php digicod_enqueue_script_owl_carousel(); ?>
 <?php if ( $the_query->have_posts() ) : ?>
-	<div class="tm-sc-blog tm-sc-blog-carousel <?php echo esc_attr(implode(' ', $classes)); ?>">
+	<div class="tm-sc-blog tm-sc-blog-carousel <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
 		<?php include('filter-carousel.php'); ?>
 
 		<!-- Isotope Gallery Grid -->
-		<div id="<?php echo esc_attr( $holder_id ) ?>" class="owl-carousel owl-theme tm-owl-carousel-<?php echo esc_attr( $columns );?>col <?php echo esc_attr(implode(' ', $classes)); ?>" <?php echo html_entity_decode( esc_attr( implode(' ', $owl_carousel_data_info) ) ) ?>>
+		<div id="<?php echo esc_attr( $holder_id ) ?>" class="owl-carousel owl-theme tm-owl-carousel-<?php echo esc_attr( $columns );?>col <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>" <?php echo html_entity_decode( esc_attr( implode(' ', $owl_carousel_data_info) ) ) ?>>
 
 			<!-- the loop -->
 			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>

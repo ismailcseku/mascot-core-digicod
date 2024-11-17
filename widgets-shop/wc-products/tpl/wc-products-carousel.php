@@ -1,7 +1,7 @@
 <?php $settings['settings'] = $settings; ?>
 <?php mascot_core_wp_enqueue_script_owl_carousel(); ?>
 <?php if ( $the_query->have_posts() ) : ?>
-	<div class="tm-sc-wc-products tm-sc-wc-products-carousel woocommerce <?php echo esc_attr(implode(' ', $classes)); ?>">
+	<div class="tm-sc-wc-products tm-sc-wc-products-carousel woocommerce <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
 		<?php include('filter-carousel.php'); ?>
 
 		<!-- Isotope Gallery Grid -->

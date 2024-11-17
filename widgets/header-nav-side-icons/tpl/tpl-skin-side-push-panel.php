@@ -8,7 +8,7 @@
 
 
 <div class="side-panel-body-overlay" data-target="<?php echo esc_attr($holder_id)?>"></div>
-<div id="<?php echo esc_attr($holder_id)?>" class="side-panel-container <?php echo esc_attr(implode(' ', $classes)); ?>">
+<div id="<?php echo esc_attr($holder_id)?>" class="side-panel-container <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
 	<div class="side-panel-wrap">
 		<div class="side-panel-trigger side-panel-trigger-close" data-target="<?php echo esc_attr($holder_id)?>"><a href="#"><i class="fa fa-times side-panel-trigger-icon"></i></a></div>
 

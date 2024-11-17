@@ -1,7 +1,7 @@
 <?php $settings['post_format'] = get_post_format(get_the_ID()) ? : 'standard'; $settings['settings'] = $settings; ?>
 <?php if ( $the_query->have_posts() ) : ?>
 	<?php wp_enqueue_script( 'jquery-parallax-scroll' ); ?>
-	<div class="tm-sc-blog tm-sc-blog-floating-parallax <?php echo esc_attr(implode(' ', $classes)); ?>">
+	<div class="tm-sc-blog tm-sc-blog-floating-parallax <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
 		<?php include('filter.php'); ?>
 
 		<!-- Isotope Gallery Grid -->

@@ -1,6 +1,6 @@
 
 <?php if ( $the_query->have_posts() ) : ?>
-	<div class="tm-sc-give-forms tm-sc-give-forms-masonry <?php echo esc_attr(implode(' ', $classes)); ?>">
+	<div class="tm-sc-give-forms tm-sc-give-forms-masonry <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
 		<?php include('filter.php'); ?>
 
 		<!-- Isotope Gallery Grid -->

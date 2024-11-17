@@ -1,4 +1,4 @@
-<div class="tm-sc-give-donation-stats icon-box <?php echo esc_attr(implode(' ', $classes)); ?>">
+<div class="tm-sc-give-donation-stats icon-box <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
 	<div class="donation-stats-inner">
 		<div class="stats-icon icon <?php echo esc_attr(implode(' ', $icon_classes)); ?>">
 			<?php if( $icon_type == 'image' ) { ?>
