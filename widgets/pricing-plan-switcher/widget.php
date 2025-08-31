@@ -19,7 +19,7 @@ class TM_Elementor_Pricing_Plan_Switcher extends Widget_Base {
 		$direction_suffix = is_rtl() ? '.rtl' : '';
 		wp_register_script( 'tm-pricing-plan-switcher', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/js/widgets/pricing-plan-switcher.js', array('jquery'), false, true );
 
-		wp_register_style( 'tm-pricing-plan-style', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/pricing-plan/pricing-plan-loader' . $direction_suffix . '.css' );
+		wp_register_style( 'tm-pricing-plan-switcher', MASCOT_CORE_DIGICOD_URL_PATH . 'assets/css/shortcodes/pricing-plan/pricing-switcher' . $direction_suffix . '.css' );
 	}
 
 	/**
@@ -94,7 +94,7 @@ class TM_Elementor_Pricing_Plan_Switcher extends Widget_Base {
 		return [ 'mascot-core-hellojs', 'tm-pricing-plan-switcher' ];
 	}
 	public function get_style_depends() {
-		return [ 'tm-pricing-plan-style' ];
+		return [ 'tm-pricing-plan-switcher' ];
 	}
 
 	/**
